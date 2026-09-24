@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'WhatsApp Groups API Limits: 8-Participant Cap Explained (2026)',
-  description: 'Meta\'s WhatsApp Groups API is limited to 8 participants per group and requires invite-only setup. Understand the constraints and alternatives.',
+  title: 'WhatsApp Groups API Limits Explained',
+  description: 'Document Meta\'s official Groups API caps (8 participants, invite-only, 10k groups/number, OBA) in plain language.',
   alternates: {
     canonical: 'https://watask.com/guides/whatsapp-groups-api-limits',
   },
@@ -19,111 +19,106 @@ export default function GroupsAPILimitsPage() {
               ← Back to Guides
             </Link>
           </div>
-          <h1 className="text-4xl font-bold text-gray-900 mb-6">
-            WhatsApp Groups API Limits: 8-Participant Cap Explained
+          
+          <div className="flex items-center gap-2 mb-6">
+            <span className="bg-yellow-100 text-yellow-700 text-xs font-semibold px-3 py-1 rounded-full">
+              In progress
+            </span>
+            <span className="text-sm text-gray-500">Updated Sep 2026 · ETA: Q4 2026</span>
+          </div>
+          
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            WhatsApp Groups API Limits Explained
           </h1>
-          <p className="text-xl text-gray-600">
-            Meta's official WhatsApp Groups API has strict constraints that make it unsuitable 
-            for managing existing large community or marketing groups.
+          <p className="text-xl text-gray-600 leading-relaxed">
+            This guide will document Meta's official Groups API caps (8 participants, invite-only, 10k groups/number, OBA) in plain language.
           </p>
         </header>
 
         <div className="prose prose-lg max-w-none">
-          <div className="bg-yellow-50 border-2 border-yellow-400 rounded-lg p-6 mb-8">
-            <p className="text-gray-900 font-semibold mb-2">Coming Soon</p>
-            <p className="text-gray-700">
-              This guide is being prepared with full citations from Meta's official documentation. 
-              In the meantime, see the{' '}
-              <Link href="/guides/send-bulk-messages-to-multiple-whatsapp-groups" className="text-green-600 hover:text-green-700 font-medium">
-                main multi-group guide
-              </Link>{' '}
-              for an overview of the Groups API limitations.
-            </p>
+          <div className="bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-blue-200 rounded-xl p-8 mb-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4 mt-0">
+              What this guide will cover
+            </h2>
+            <ul className="space-y-3 mb-0">
+              <li className="text-gray-700">
+                Official Meta Groups API constraints with citations
+              </li>
+              <li className="text-gray-700">
+                8-participant cap and invite-only requirements
+              </li>
+              <li className="text-gray-700">
+                10,000 groups per business number limit
+              </li>
+              <li className="text-gray-700">
+                Official Business Account (OBA) requirements
+              </li>
+              <li className="text-gray-700">
+                Why the API doesn't work for existing large groups
+              </li>
+              <li className="text-gray-700">
+                Alternatives for existing community/marketing groups
+              </li>
+            </ul>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Key Constraints (Summary)</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            Quick summary (preview)
+          </h2>
           
-          <ul className="space-y-3 mb-8">
-            <li className="flex gap-3">
-              <span className="text-red-600 font-bold">✗</span>
-              <span className="text-gray-700">
-                <strong>Maximum 8 participants</strong> per group
-              </span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-red-600 font-bold">✗</span>
-              <span className="text-gray-700">
-                <strong>Invite-only groups</strong> created through the API
-              </span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-red-600 font-bold">✗</span>
-              <span className="text-gray-700">
-                Cannot message existing large consumer/community groups
-              </span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-green-600 font-bold">✓</span>
-              <span className="text-gray-700">
-                Can manage up to <strong>10,000 groups per phone number</strong>
-              </span>
-            </li>
-          </ul>
-
           <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-8">
-            <h3 className="text-lg font-semibold text-gray-900 mb-3">What This Means</h3>
-            <p className="text-gray-700">
-              If you already manage dozens or hundreds of WhatsApp groups with 50-500+ members each, 
-              the official Groups API will not help you send campaigns to those groups. You need a 
-              different approach.
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              The Meta WhatsApp Groups API is designed for small, API-created groups with a maximum of <strong>8 participants</strong>. These groups must be invite-only and created through the API. You can manage up to <strong>10,000</strong> such groups per business phone number, but each group is capped at 8 members.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              <strong>This means:</strong> If you already manage dozens or hundreds of WhatsApp groups with 50-500+ members each, the official Groups API will not help you send campaigns to those groups.
             </p>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mb-4 mt-8">References</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">
+            Read next (available now)
+          </h2>
           
-          <ul className="space-y-3 mb-8 text-gray-700">
-            <li>
-              <a 
-                href="https://developers.facebook.com/docs/whatsapp/business-management-api/guides/groups/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-green-600 hover:text-green-700"
-              >
-                Meta WhatsApp Groups API Documentation →
-              </a>
-            </li>
-            <li>
-              <a 
-                href="https://docs.360dialog.com/docs/messaging/groups" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-green-600 hover:text-green-700"
-              >
-                360dialog Groups Documentation →
-              </a>
-            </li>
-          </ul>
+          <div className="space-y-4 mb-12">
+            <Link 
+              href="/guides/send-bulk-messages-to-multiple-whatsapp-groups"
+              className="block bg-white border-2 border-green-200 rounded-lg p-6 hover:border-green-400 transition-colors"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-green-600">
+                How to Send Bulk Messages to Multiple WhatsApp Groups →
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Complete guide covering Cloud API, Groups API, and multi-group platforms
+              </p>
+            </Link>
+            
+            <Link 
+              href="/whatsapp-group-management-tool"
+              className="block bg-white border border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors"
+            >
+              <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-green-600">
+                WhatsApp Group Management Tool →
+              </h3>
+              <p className="text-gray-600 text-sm">
+                What group management tools are and how they differ from BSPs
+              </p>
+            </Link>
+          </div>
 
-          <div className="bg-green-50 border-2 border-green-600 rounded-lg p-8 mt-12">
-            <h3 className="text-xl font-bold text-gray-900 mb-4">Alternative: Multi-Group Platforms</h3>
-            <p className="text-gray-700 mb-6">
-              For managing and campaigning across many existing large groups, consider a multi-group 
-              management platform like WaTask instead of trying to work within the Groups API constraints.
+          <h2 className="text-3xl font-bold text-gray-900 mb-6 mt-12">
+            Get early access to the product
+          </h2>
+          
+          <div className="bg-gradient-to-br from-green-50 to-white border-2 border-green-600 rounded-xl p-8">
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              WaTask is built for managing and campaigning across many existing large groups — the job the official Groups API doesn't solve.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link 
-                href="/whatsapp-group-management-tool"
-                className="bg-white text-green-600 border-2 border-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-50 text-center"
-              >
-                Learn About Group Management Tools
-              </Link>
-              <Link 
-                href="/register"
-                className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 text-center"
-              >
-                Try WaTask Free
-              </Link>
-            </div>
+            <Link 
+              href="/register"
+              className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 inline-block transition-colors"
+            >
+              Start free trial
+            </Link>
           </div>
         </div>
       </article>
