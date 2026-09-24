@@ -26,8 +26,7 @@ const guides = [
     title: 'WhatsApp Groups API Limits Explained',
     href: '/guides/whatsapp-groups-api-limits',
     category: 'Technical',
-    status: 'In progress',
-    eta: 'Q4 2026',
+    status: 'Published',
     intent: 'Document Meta\'s official Groups API caps (8 participants, invite-only, 10k groups/number, OBA) in plain language.',
     youllLearn: 'What the API can and cannot do for existing large groups.',
   },
@@ -35,7 +34,7 @@ const guides = [
     title: 'WhatsApp Broadcast vs Group vs Communities',
     href: '/guides/whatsapp-broadcast-vs-group-vs-communities',
     category: 'Basics',
-    status: 'In progress',
+    status: 'Published',
     intent: 'Taxonomy so buyers stop mixing broadcast lists, group posts, and Communities announcement groups.',
     youllLearn: 'When each construct fits; when you still need multi-group tooling.',
   },
@@ -43,7 +42,7 @@ const guides = [
     title: 'Safer Multi-Group WhatsApp Campaigns',
     href: '/guides/safer-multi-group-whatsapp-campaigns',
     category: 'Best Practices',
-    status: 'In progress',
+    status: 'Published',
     intent: 'Pacing, consent, group norms, and account-health habits for operators.',
     youllLearn: 'Practical send hygiene — not fear, not "unlimited blast" advice.',
   },
@@ -51,7 +50,7 @@ const guides = [
     title: 'Does WhatsApp Business API Support Groups?',
     href: '/guides/does-whatsapp-business-api-support-groups',
     category: 'FAQ',
-    status: 'Ready to publish',
+    status: 'Published',
     intent: 'Direct answer for the common search: Cloud API 1:1 vs Groups API vs existing-group posting.',
     youllLearn: 'Why most BSP tools can\'t post into your groups.',
   },
@@ -115,12 +114,11 @@ export default function GuidesPage() {
                     <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">{guide.category}</span>
                     {guide.status && (
                       <span className={`text-xs px-2.5 py-1 rounded-full font-medium ${
-                        guide.status === 'Ready to publish' 
-                          ? 'bg-blue-100 text-blue-700' 
+                        guide.status === 'Published' 
+                          ? 'bg-green-100 text-green-700' 
                           : 'bg-yellow-100 text-yellow-700'
                       }`}>
                         {guide.status}
-                        {guide.eta && ` · ETA: ${guide.eta}`}
                       </span>
                     )}
                   </div>
