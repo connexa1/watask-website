@@ -34,10 +34,6 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     images: ['/opengraph-image'],
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
 };
 
 const organizationSchema = {
