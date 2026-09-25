@@ -49,7 +49,7 @@ body {
   }
   
   .prose :where(li)::marker {
-    color: #374151;
+    color: #6b7280;
   }
   
   .prose :where(strong, b):not(:where(.not-prose, .not-prose *)) {
@@ -107,63 +107,63 @@ body {
   }
   
   /* Dark theme prose for homepage only */
-  .bg-bg-primary .prose {
+  .theme-dark .prose {
     color: var(--text-secondary);
   }
   
-  .bg-bg-primary .prose :where(h1, h2, h3, h4, h5, h6):not(:where(.not-prose, .not-prose *)) {
+  .theme-dark .prose :where(h1, h2, h3, h4, h5, h6):not(:where(.not-prose, .not-prose *)) {
     color: var(--text-primary);
   }
   
-  .bg-bg-primary .prose :where(p, li, td, th):not(:where(.not-prose, .not-prose *)) {
+  .theme-dark .prose :where(p, li, td, th):not(:where(.not-prose, .not-prose *)) {
     color: var(--text-secondary);
   }
   
-  .bg-bg-primary .prose :where(li)::marker {
-    color: var(--text-secondary);
+  .theme-dark .prose :where(li)::marker {
+    color: #6b7280;
   }
   
-  .bg-bg-primary .prose :where(strong, b):not(:where(.not-prose, .not-prose *)) {
+  .theme-dark .prose :where(strong, b):not(:where(.not-prose, .not-prose *)) {
     color: var(--text-primary);
   }
   
-  .bg-bg-primary .prose :where(em, i):not(:where(.not-prose, .not-prose *)) {
+  .theme-dark .prose :where(em, i):not(:where(.not-prose, .not-prose *)) {
     color: var(--text-secondary);
   }
   
-  .bg-bg-primary .prose :where(a):not(:where(.not-prose, .not-prose *)) {
+  .theme-dark .prose :where(a):not(:where(.not-prose, .not-prose *)) {
     color: var(--accent-cyber);
     text-decoration: none;
   }
   
-  .bg-bg-primary .prose :where(a):not(:where(.not-prose, .not-prose *)):hover {
+  .theme-dark .prose :where(a):not(:where(.not-prose, .not-prose *)):hover {
     color: var(--accent-hover);
   }
   
-  .bg-bg-primary .prose :where(code):not(:where(.not-prose, .not-prose *)) {
+  .theme-dark .prose :where(code):not(:where(.not-prose, .not-prose *)) {
     color: var(--accent-cyan);
     background: var(--bg-card);
   }
   
-  .bg-bg-primary .prose :where(pre):not(:where(.not-prose, .not-prose *)) {
+  .theme-dark .prose :where(pre):not(:where(.not-prose, .not-prose *)) {
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
   }
   
-  .bg-bg-primary .prose :where(blockquote):not(:where(.not-prose, .not-prose *)) {
+  .theme-dark .prose :where(blockquote):not(:where(.not-prose, .not-prose *)) {
     border-left-color: var(--accent-cyber);
     color: var(--text-secondary);
   }
   
-  .bg-bg-primary .prose :where(table):not(:where(.not-prose, .not-prose *)) {
+  .theme-dark .prose :where(table):not(:where(.not-prose, .not-prose *)) {
     border-color: var(--border-subtle);
   }
   
-  .bg-bg-primary .prose :where(thead):not(:where(.not-prose, .not-prose *)) {
+  .theme-dark .prose :where(thead):not(:where(.not-prose, .not-prose *)) {
     border-bottom-color: var(--border-subtle);
   }
   
-  .bg-bg-primary .prose :where(tbody):not(:where(.not-prose, .not-prose *)) tr {
+  .theme-dark .prose :where(tbody):not(:where(.not-prose, .not-prose *)) tr {
     border-bottom-color: var(--border-subtle);
   }
 }

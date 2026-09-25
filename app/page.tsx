@@ -128,7 +128,7 @@ const homepageFaqSchema = {
 
 export default function HomePage() {
   return (
-    <div className="bg-bg-primary">
+    <div className="theme-dark bg-bg-primary">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageFaqSchema) }}
