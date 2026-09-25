@@ -1,14 +1,36 @@
 'use client';
 
+import { useEffect, useState } from 'react';
+
 export default function WhatsAppButton() {
+  const [isVisible, setIsVisible] = useState(false);
   const whatsappUrl = 'https://wa.me/306981337327?text=Hi%2C%20I%27d%20like%20to%20try%20WaTask';
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Show button after scrolling 500px (past hero section)
+      if (window.scrollY > 500) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    // Check on mount
+    handleScroll();
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <a
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-40 bg-cyber text-bg-primary p-4 rounded-full shadow-[0_0_30px_rgba(0,255,148,0.5)] hover:shadow-[0_0_40px_rgba(0,255,148,0.7)] hover:scale-110 transition-all duration-300"
+      className={`fixed bottom-6 right-6 z-40 bg-cyber text-bg-primary p-4 rounded-full shadow-[0_0_30px_rgba(0,255,148,0.5)] hover:shadow-[0_0_40px_rgba(0,255,148,0.7)] hover:scale-110 transition-all duration-300 ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16 pointer-events-none'
+      }`}
       aria-label="Chat on WhatsApp"
     >
       <svg 

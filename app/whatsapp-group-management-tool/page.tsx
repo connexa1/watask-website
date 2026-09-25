@@ -173,7 +173,7 @@ export default function CategoryPage() {
           
           <div className="glass-panel border-2 border-cyber rounded-xl p-8 mb-12 bg-bg-card">
             <p className="text-text-secondary text-lg mb-6 leading-relaxed">
-              WaTask is a WhatsApp OS for multi-group work: connect existing groups, organize collections, and run paced campaigns across your network.
+              WaTask provides multi-group campaign management: connect existing groups, organize collections, and run paced campaigns across your network.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 
