@@ -360,7 +360,7 @@ export default function AlternativesPage() {
                   </p>
                   <p className="text-gray-700">
                     Choose a <strong>multi-group platform</strong> like WaTask. Get group collections, pacing, monitoring, 
-                    and safety features built for this job.
+                    and control features built for this job.
                   </p>
                 </div>
               </div>
@@ -489,7 +489,7 @@ export default function AlternativesPage() {
                 </li>
                 <li>
                   <Link href="/guides/safer-multi-group-whatsapp-campaigns" className="text-green-700 hover:text-green-800">
-                    Safer Multi-Group Campaigns →
+                    Multi-Group Campaign Best Practices →
                   </Link>
                 </li>
                 <li>

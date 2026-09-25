@@ -558,7 +558,7 @@ export default function CommunitiesGuidePage() {
                 <li className="flex gap-3">
                   <span className="text-green-700 font-bold text-xl flex-shrink-0">✓</span>
                   <span>
-                    <strong>Get pacing and safety controls:</strong> Multi-group platforms add send intervals, delivery 
+                    <strong>Get pacing and control features:</strong> Multi-group platforms add send intervals, delivery 
                     monitoring, and delivery tracking that Communities don't provide.
                   </span>
                 </li>
@@ -732,7 +732,7 @@ export default function CommunitiesGuidePage() {
                 </li>
                 <li>
                   <Link href="/guides/safer-multi-group-whatsapp-campaigns" className="text-green-700 hover:text-green-800">
-                    Safer Multi-Group Campaigns →
+                    Multi-Group Campaign Best Practices →
                   </Link>
                 </li>
                 <li>
