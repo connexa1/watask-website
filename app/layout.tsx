@@ -49,7 +49,7 @@ export default function RootLayout({
                   WA<span className="text-cyber">TASK</span>
                 </h3>
                 <p className="text-text-secondary text-sm leading-relaxed">
-                  WhatsApp OS for multi-group campaigns at scale.
+                  Multi-group WhatsApp campaigns at scale.
                 </p>
               </div>
               

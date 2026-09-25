@@ -2,13 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Multi-Group WhatsApp Campaigns',
+  title: 'Send One Campaign to Many WhatsApp Groups',
   description: 'Send one campaign into many existing WhatsApp groups. Organize collections, pace safely, and run multi-group ops — built for agencies, brands, and community teams.',
   alternates: {
     canonical: 'https://www.watask.com',
   },
   openGraph: {
-    title: 'Multi-Group WhatsApp Campaigns | WaTask',
+    title: 'Send One Campaign to Many WhatsApp Groups | WaTask',
     description: 'Send one campaign into many existing WhatsApp groups. Organize collections, pace safely, and run multi-group ops — built for agencies, brands, and community teams.',
     url: 'https://www.watask.com',
     type: 'website',
@@ -134,7 +134,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <div className="inline-block mb-6">
               <span className="text-cyber text-xs sm:text-sm font-semibold tracking-wider uppercase border border-cyber/30 px-4 py-1.5 rounded-full">
-                WhatsApp OS for group networks
+                Multi-group WhatsApp campaigns
               </span>
             </div>
             

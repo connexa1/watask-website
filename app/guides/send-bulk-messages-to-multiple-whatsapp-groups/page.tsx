@@ -246,7 +246,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      Multi-Group Platform / WhatsApp OS
+                      Multi-Group Campaign Platform
                     </h3>
                     <p className="text-gray-700 mb-3">
                       <strong>Job-to-be-done:</strong> Connect and organize many groups you already use, then run 
