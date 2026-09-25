@@ -567,10 +567,10 @@ export default function SaferCampaignsPage() {
 
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <Link 
-                href="/register"
+                href="https://wa.me/306981337327?text=Hi%2C%20I%27d%20like%20to%20try%20WaTask"
                 className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 text-center transition-colors"
               >
-                Start Free Trial
+                Start on WhatsApp
               </Link>
               <Link 
                 href="/guides/send-bulk-messages-to-multiple-whatsapp-groups"

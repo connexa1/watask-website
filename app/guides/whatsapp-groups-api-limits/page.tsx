@@ -425,10 +425,10 @@ export default function GroupsAPILimitsPage() {
 
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <Link 
-                href="/register"
+                href="https://wa.me/306981337327?text=Hi%2C%20I%27d%20like%20to%20try%20WaTask"
                 className="bg-cyber text-bg-primary px-8 py-3 rounded-lg font-semibold hover:bg-cyber-hover text-center transition-all shadow-[0_0_20px_rgba(0,255,148,0.3)] hover:shadow-[0_0_30px_rgba(0,255,148,0.5)]"
               >
-                Start Free Trial
+                Start on WhatsApp
               </Link>
               <Link 
                 href="/guides/send-bulk-messages-to-multiple-whatsapp-groups"

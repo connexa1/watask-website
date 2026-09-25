@@ -148,10 +148,10 @@ export default function HomePage() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link 
-                href="/register"
+                href="https://wa.me/306981337327?text=Hi%2C%20I%27d%20like%20to%20try%20WaTask"
                 className="bg-cyber text-bg-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-cyber-hover transition-all shadow-[0_0_30px_rgba(0,255,148,0.4)] hover:shadow-[0_0_40px_rgba(0,255,148,0.6)] transform hover:-translate-y-0.5"
               >
-                Start free trial
+                Start on WhatsApp
               </Link>
               <Link 
                 href="/guides/send-bulk-messages-to-multiple-whatsapp-groups"
@@ -494,10 +494,10 @@ export default function HomePage() {
             Start your free trial today. No credit card. Connect your groups and launch your first controlled send.
           </p>
           <Link 
-            href="/register"
+            href="https://wa.me/306981337327?text=Hi%2C%20I%27d%20like%20to%20try%20WaTask"
             className="bg-cyber text-bg-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-cyber-hover transition-all shadow-[0_0_30px_rgba(0,255,148,0.4)] hover:shadow-[0_0_40px_rgba(0,255,148,0.6)] inline-block transform hover:-translate-y-0.5"
           >
-            Start free trial
+            Start on WhatsApp
           </Link>
         </div>
       </section>

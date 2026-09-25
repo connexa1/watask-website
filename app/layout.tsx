@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Link from 'next/link';
 import Navigation from './components/Navigation';
+import WhatsAppButton from './components/WhatsAppButton';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://watask.com'),
@@ -36,21 +37,19 @@ export default function RootLayout({
       </head>
       <body className="bg-bg-primary">
         <Navigation />
+        <WhatsAppButton />
         
         <main>{children}</main>
 
         <footer className="bg-bg-secondary border-t border-[var(--border-subtle)] mt-32">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div>
                 <h3 className="text-xl font-bold text-text-primary mb-4">
                   WA<span className="text-cyber">TASK</span>
                 </h3>
                 <p className="text-text-secondary text-sm leading-relaxed">
                   WhatsApp OS for multi-group campaigns at scale.
-                </p>
-                <p className="text-text-muted text-xs mt-3">
-                  Part of the Connexa product family.
                 </p>
               </div>
               
@@ -60,11 +59,6 @@ export default function RootLayout({
                   <li>
                     <Link href="/whatsapp-group-management-tool" className="text-text-secondary hover:text-cyber transition-colors">
                       How it works
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/register" className="text-text-secondary hover:text-cyber transition-colors">
-                      Start free trial
                     </Link>
                   </li>
                 </ul>
@@ -95,21 +89,10 @@ export default function RootLayout({
                   </li>
                 </ul>
               </div>
-              
-              <div>
-                <h4 className="font-semibold text-text-primary mb-4">Company</h4>
-                <ul className="space-y-3 text-sm">
-                  <li>
-                    <a href="https://myconnexa.online" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-cyber transition-colors">
-                      Connexa Suite
-                    </a>
-                  </li>
-                </ul>
-              </div>
             </div>
             
             <div className="mt-12 pt-8 border-t border-[var(--border-subtle)] text-center text-sm text-text-muted">
-              <p>&copy; {new Date().getFullYear()} WaTask. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} WaTask</p>
             </div>
           </div>
         </footer>
