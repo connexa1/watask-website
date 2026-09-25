@@ -40,7 +40,7 @@ const faqSchema = {
       'name': 'What are safe send intervals for multi-group campaigns?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'Conservative safe intervals: 30-60 seconds between groups for new accounts or large campaigns. Moderate: 15-30 seconds for established accounts with good history. Start conservative and adjust based on account health signals. Avoid sending to more than 50-100 groups per hour when starting. Always use pacing — never blast instantly.'
+        'text': 'Conservative intervals: 30-60 seconds between groups for new accounts or first campaigns. Moderate: 15-30 seconds for established accounts with good history. Start conservatively with 50-100 groups per campaign as a starting point and adjust based on how groups respond. Always use pacing — never blast instantly.'
       }
     },
     {
@@ -147,7 +147,7 @@ export default function SaferCampaignsPage() {
                         <strong>Moderate (established accounts):</strong> 15-30 seconds between groups
                       </li>
                       <li>
-                        <strong>Maximum hourly volume:</strong> Start with 50-100 groups per hour, adjust based on account health signals
+                        <strong>Starting point:</strong> 50-100 groups per campaign for new accounts, adjust based on how groups respond
                       </li>
                     </ul>
                   </div>
@@ -412,7 +412,7 @@ export default function SaferCampaignsPage() {
                       <ul className="space-y-2 text-sm text-gray-700">
                         <li>• Full control over pacing, logic, and workflows</li>
                         <li>• Requires technical expertise and ongoing maintenance</li>
-                        <li>• You're responsible for risk management and compliance</li>
+                        <li>• You're responsible for risk management</li>
                         <li>• No built-in safety nets — you build everything yourself</li>
                       </ul>
                     </div>
@@ -523,7 +523,7 @@ export default function SaferCampaignsPage() {
                   What are safe send intervals for multi-group campaigns?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  <strong>Conservative</strong> (new accounts or first campaigns): 30-60 seconds between groups. <strong>Moderate</strong> (established accounts): 15-30 seconds between groups. Start with 50-100 groups per hour maximum and adjust based on account health signals. Always use pacing — never blast instantly.
+                  <strong>Conservative</strong> (new accounts or first campaigns): 30-60 seconds between groups. <strong>Moderate</strong> (established accounts): 15-30 seconds between groups. Start with 50-100 groups per campaign as a starting point and adjust based on how groups respond. Always use pacing — never blast instantly.
                 </p>
               </div>
 

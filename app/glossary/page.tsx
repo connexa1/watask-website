@@ -58,7 +58,7 @@ const glossarySchema = {
     {
       '@type': 'DefinedTerm',
       'name': 'OBA',
-      'description': 'Official Business Account. A Meta-verified WhatsApp business account that displays a green checkmark. Required for using the Groups API and certain Business Platform features.'
+      'description': 'Official Business Account. A Meta-verified WhatsApp business account obtained through Meta Business verification. Required for using the Groups API and certain Business Platform features.'
     },
     {
       '@type': 'DefinedTerm',
@@ -193,12 +193,12 @@ const glossarySchema = {
     {
       '@type': 'DefinedTerm',
       'name': 'Phone Number Tier',
-      'description': 'The tier determines daily messaging limits on Cloud API. Starts at Tier 1 (1,000 conversations/day) and can scale up to unlimited with quality ratings and verification.'
+      'description': 'The tier determines daily messaging limits on Cloud API. Starts at Tier 1 and can scale up to unlimited with quality ratings and verification.'
     },
     {
       '@type': 'DefinedTerm',
       'name': 'Conversation Window',
-      'description': 'A 24-hour billing period that starts when a business sends a template or a customer sends a message. Multiple messages within this window count as one conversation for billing.'
+      'description': 'A 24-hour period that starts when a business sends a template or a customer sends a message. Meta moved from conversation-based billing to per-message pricing on July 1, 2025.'
     },
     {
       '@type': 'DefinedTerm',
@@ -281,7 +281,7 @@ const terms: Term[] = [
   },
   {
     term: 'OBA (Official Business Account)',
-    definition: 'A Meta-verified WhatsApp business account that displays a green checkmark badge. Indicates your business has been verified by Meta. Required for using the Groups API and certain advanced Business Platform features. Obtained through Meta Business verification process.',
+    definition: 'A Meta-verified WhatsApp business account obtained through Meta Business verification. Required for using the Groups API and certain advanced Business Platform features. Verification confirms business identity with Meta.',
     relatedGuides: []
   },
   {
@@ -305,7 +305,7 @@ const terms: Term[] = [
   },
   {
     term: 'Messaging Limits / Tiers',
-    definition: 'Daily conversation limits on Cloud API that scale based on your phone number\'s tier and quality rating. Starts at Tier 1 (1,000 conversations/day), progresses through higher tiers with good performance, and can reach unlimited. Limits reset daily. Quality rating issues can cause tier drops.',
+    definition: 'Daily messaging limits on Cloud API that scale based on your phone number\'s tier and quality rating. Starts at Tier 1, progresses through higher tiers with good performance, and can reach unlimited. Limits reset daily. Quality rating issues can cause tier drops.',
     relatedGuides: []
   },
   {
@@ -412,8 +412,8 @@ const terms: Term[] = [
     relatedGuides: []
   },
   {
-    term: 'Conversation Window (Billing)',
-    definition: 'A 24-hour period that starts when a business sends a template or a customer sends a message on Cloud API. Multiple messages exchanged within this 24-hour window count as one conversation for billing. Four conversation categories: Marketing, Utility, Authentication, and Service.',
+    term: 'Conversation Window',
+    definition: 'A 24-hour period that starts when a business sends a template or a customer sends a message on Cloud API. Meta moved from conversation-based billing (where multiple messages within 24 hours counted as one conversation) to per-message pricing on July 1, 2025.',
     relatedGuides: []
   },
   {
