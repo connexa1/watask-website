@@ -3,6 +3,11 @@ import './globals.css';
 import Link from 'next/link';
 import Navigation from './components/Navigation';
 import WhatsAppButton from './components/WhatsAppButton';
+import WhatsAppTracker from './components/WhatsAppTracker';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { GoogleAnalytics } from '@next/third-parties/google';
+import { GA_ID } from '@/lib/analytics';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.watask.com'),
@@ -10,17 +15,50 @@ export const metadata: Metadata = {
     default: 'Multi-Group WhatsApp Campaigns | WaTask',
     template: '%s | WaTask',
   },
-  description: 'Send one campaign into many existing WhatsApp groups. Organize collections, spread sends over time, and run multi-group ops — built for agencies, brands, and community teams.',
+  description: 'Send campaigns into many existing WhatsApp groups. Organize collections, pace delivery, and run multi-group ops for agencies, brands, and communities.',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.watask.com',
     siteName: 'WaTask',
+    images: [
+      {
+        url: '/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'WaTask - Send one campaign to many WhatsApp groups',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/opengraph-image'],
   },
   robots: {
     index: true,
     follow: true,
   },
+};
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'WaTask',
+  url: 'https://www.watask.com',
+  logo: 'https://www.watask.com/icon.svg',
+  contactPoint: {
+    '@type': 'ContactPoint',
+    url: 'https://wa.me/306981337327',
+    contactType: 'customer support',
+  },
+};
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'WaTask',
+  url: 'https://www.watask.com',
+  description: 'Send one campaign into many existing WhatsApp groups',
 };
 
 export default function RootLayout({
@@ -34,10 +72,19 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
       </head>
       <body>
         <Navigation />
         <WhatsAppButton />
+        <WhatsAppTracker />
         
         <main>{children}</main>
 
@@ -59,6 +106,11 @@ export default function RootLayout({
                   <li>
                     <Link href="/whatsapp-group-management-tool" className="text-text-secondary hover:text-cyber transition-colors">
                       How it works
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/register" className="text-text-secondary hover:text-cyber transition-colors">
+                      Sign up
                     </Link>
                   </li>
                 </ul>
@@ -96,6 +148,9 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+        <Analytics />
+        <SpeedInsights />
+        {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
       </body>
     </html>
   );

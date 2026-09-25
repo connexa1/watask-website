@@ -21,7 +21,7 @@ export default function AlternativesPage() {
       <section className="bg-gradient-to-b from-gray-50 to-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="mb-6">
-            <Link href="/guides" className="text-sm text-green-600 hover:text-green-700 inline-flex items-center gap-2">
+            <Link href="/guides" className="text-sm text-green-700 hover:text-green-800 inline-flex items-center gap-2">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
@@ -87,7 +87,7 @@ export default function AlternativesPage() {
               it cannot access your existing groups with 50-500+ members.
             </p>
             <p className="text-gray-700">
-              <Link href="/guides/whatsapp-groups-api-limits" className="text-green-600 hover:text-green-700 font-medium">
+              <Link href="/guides/whatsapp-groups-api-limits" className="text-green-700 hover:text-green-800 font-medium">
                 Read more about Groups API limits →
               </Link>
             </p>
@@ -190,7 +190,7 @@ export default function AlternativesPage() {
           </p>
 
           <div className="space-y-6 mb-12">
-            <div className="border-2 border-green-600 rounded-lg p-8 bg-green-50">
+            <div className="border-2 border-green-700 rounded-lg p-8 bg-green-50">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 1. Multi-Group Campaign Platforms
               </h3>
@@ -209,7 +209,7 @@ export default function AlternativesPage() {
               <div className="mt-6">
                 <Link 
                   href="/whatsapp-group-management-tool"
-                  className="text-green-600 hover:text-green-700 font-semibold"
+                  className="text-green-700 hover:text-green-800 font-semibold"
                 >
                   Learn more about group management platforms →
                 </Link>
@@ -263,7 +263,7 @@ export default function AlternativesPage() {
               <div className="mt-4">
                 <Link 
                   href="/guides/whatsapp-communities-bulk-messaging"
-                  className="text-green-600 hover:text-green-700 font-semibold"
+                  className="text-green-700 hover:text-green-800 font-semibold"
                 >
                   Read full Communities guide →
                 </Link>
@@ -412,7 +412,7 @@ export default function AlternativesPage() {
             </div>
           </div>
 
-          <div className="border border-2 border-green-600 bg-gray-50 rounded-lg p-8 mt-12">
+          <div className="border border-2 border-green-700 bg-gray-50 rounded-lg p-8 mt-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               Looking for a Multi-Group Platform?
             </h2>
@@ -424,13 +424,13 @@ export default function AlternativesPage() {
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <Link 
                 href="https://wa.me/306981337327?text=Hi%2C%20I%27d%20like%20to%20try%20WaTask"
-                className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-all shadow-md hover:shadow-lg text-center transition-colors"
+                className="bg-green-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-800 transition-all shadow-md hover:shadow-lg text-center transition-colors"
               >
                 Start on WhatsApp
               </Link>
               <Link 
                 href="/guides/send-bulk-messages-to-multiple-whatsapp-groups"
-                className="text-green-600 border-2 border-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 text-center transition-colors"
+                className="text-green-700 border-2 border-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 text-center transition-colors"
               >
                 Read the Multi-Group Guide
               </Link>
@@ -441,22 +441,22 @@ export default function AlternativesPage() {
               </p>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="/compare/multi-group-tools-vs-bsp-vs-extensions" className="text-green-600 hover:text-green-700">
+                  <Link href="/compare/multi-group-tools-vs-bsp-vs-extensions" className="text-green-700 hover:text-green-800">
                     Category Comparison: Multi-Group vs BSP vs Extensions →
                   </Link>
                 </li>
                 <li>
-                  <Link href="/whatsapp-group-management-tool" className="text-green-600 hover:text-green-700">
+                  <Link href="/whatsapp-group-management-tool" className="text-green-700 hover:text-green-800">
                     What is a Group Management Tool? →
                   </Link>
                 </li>
                 <li>
-                  <Link href="/guides/safer-multi-group-whatsapp-campaigns" className="text-green-600 hover:text-green-700">
+                  <Link href="/guides/safer-multi-group-whatsapp-campaigns" className="text-green-700 hover:text-green-800">
                     Safer Multi-Group Campaigns →
                   </Link>
                 </li>
                 <li>
-                  <Link href="/glossary" className="text-green-600 hover:text-green-700">
+                  <Link href="/glossary" className="text-green-700 hover:text-green-800">
                     WhatsApp Business Glossary →
                   </Link>
                 </li>

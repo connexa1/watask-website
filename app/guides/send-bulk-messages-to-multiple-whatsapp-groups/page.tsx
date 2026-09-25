@@ -81,7 +81,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header className="mb-12">
           <div className="flex items-center gap-2 mb-4">
-            <Link href="/guides" className="text-sm text-green-600 hover:text-green-700 transition-colors inline-flex items-center gap-2">
+            <Link href="/guides" className="text-sm text-green-700 hover:text-green-800 transition-colors inline-flex items-center gap-2">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
@@ -109,7 +109,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
               This guide explains the three main paths for WhatsApp group messaging, when each makes sense, and how 
               to choose the right approach for your needs. Whether you're an agency managing client groups, a community 
               manager, or a brand with regional networks, you'll understand where multi-group platforms like{' '}
-              <Link href="/" className="text-green-600 hover:text-green-700 font-medium">WaTask</Link> fit in.
+              <Link href="/" className="text-green-700 hover:text-green-800 font-medium">WaTask</Link> fit in.
             </p>
           </section>
 
@@ -154,7 +154,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
               for campaign tools when you manage dozens or hundreds of independent groups.
             </p>
             <p className="text-gray-700">
-              Learn more: <Link href="/guides/whatsapp-broadcast-vs-group-vs-communities" className="text-green-600 hover:text-green-700">
+              Learn more: <Link href="/guides/whatsapp-broadcast-vs-group-vs-communities" className="text-green-700 hover:text-green-800">
                 Broadcast vs Group vs Communities
               </Link>
             </p>
@@ -204,7 +204,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
                       Meta WhatsApp Groups API (Official, Capped)
                     </h3>
                     <p className="text-gray-700 mb-3">
-                      <strong>Key constraints:</strong> The official WhatsApp Groups API on the Business Platform 
+                      <strong>Key constraints:</strong> The WhatsApp Groups API on the Business Platform 
                       is limited to groups with a <strong>maximum of 8 participants</strong>. Groups must be 
                       invite-only and created through the API. You can manage up to 10,000 groups per phone number.
                     </p>
@@ -217,7 +217,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
                         href="https://developers.facebook.com/docs/whatsapp/business-management-api/guides/groups/" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-green-600 hover:text-green-700"
+                        className="text-green-700 hover:text-green-800"
                       >
                         Meta WhatsApp Groups API Documentation
                       </a> and{' '}
@@ -225,13 +225,13 @@ export default function BulkWhatsAppGroupsGuidePage() {
                         href="https://docs.360dialog.com/docs/messaging/groups" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-green-600 hover:text-green-700"
+                        className="text-green-700 hover:text-green-800"
                       >
                         360dialog Groups Documentation
                       </a>
                     </p>
                     <p className="text-gray-700 mt-3">
-                      Read more: <Link href="/guides/whatsapp-groups-api-limits" className="text-green-600 hover:text-green-700">
+                      Read more: <Link href="/guides/whatsapp-groups-api-limits" className="text-green-700 hover:text-green-800">
                         WhatsApp Groups API Limits Explained
                       </Link>
                     </p>
@@ -239,9 +239,9 @@ export default function BulkWhatsAppGroupsGuidePage() {
                 </div>
               </div>
 
-              <div className="border-2 border-green-600 rounded-lg p-6 bg-green-50">
+              <div className="border-2 border-green-700 rounded-lg p-6 bg-green-50">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center font-bold text-white">
+                  <div className="flex-shrink-0 w-12 h-12 bg-green-700 rounded-lg flex items-center justify-center font-bold text-white">
                     C
                   </div>
                   <div className="flex-1">
@@ -265,7 +265,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
                     <div className="mt-4">
                       <Link 
                         href="/whatsapp-group-management-tool"
-                        className="text-green-600 hover:text-green-700 font-semibold"
+                        className="text-green-700 hover:text-green-800 font-semibold"
                       >
                         Learn about WhatsApp Group Management Tools →
                       </Link>
@@ -386,7 +386,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
               </p>
               <Link 
                 href="/guides/safer-multi-group-whatsapp-campaigns"
-                className="text-green-600 hover:text-green-700 font-semibold"
+                className="text-green-700 hover:text-green-800 font-semibold"
               >
                 Read: Safer Multi-Group WhatsApp Campaigns →
               </Link>
@@ -415,7 +415,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
                   Assuming Meta Groups API Unlocks Existing Large Groups
                 </h3>
                 <p className="text-gray-700">
-                  The 8-participant cap and invite-only requirements mean the official Groups API won't help 
+                  The 8-participant cap and invite-only requirements mean Meta's Groups API won't help 
                   with your existing 100+ member marketing or community groups. Don't build a strategy around 
                   this API if you already have established groups.
                 </p>
@@ -580,7 +580,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
             </div>
           </section>
 
-          <section className="bg-green-50 border-2 border-green-600 rounded-lg p-8">
+          <section className="bg-green-50 border-2 border-green-700 rounded-lg p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               Next Steps
             </h2>
@@ -593,7 +593,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
             <div className="mb-6">
               <Link 
                 href="https://wa.me/306981337327?text=Hi%2C%20I%27d%20like%20to%20try%20WaTask"
-                className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 inline-block"
+                className="bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-800 inline-block"
               >
                 Start on WhatsApp
               </Link>
@@ -605,22 +605,22 @@ export default function BulkWhatsAppGroupsGuidePage() {
               </p>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="/guides/whatsapp-groups-api-limits" className="text-green-600 hover:text-green-700">
+                  <Link href="/guides/whatsapp-groups-api-limits" className="text-green-700 hover:text-green-800">
                     WhatsApp Groups API Limits (8-participant cap) →
                   </Link>
                 </li>
                 <li>
-                  <Link href="/guides/whatsapp-broadcast-vs-group-vs-communities" className="text-green-600 hover:text-green-700">
+                  <Link href="/guides/whatsapp-broadcast-vs-group-vs-communities" className="text-green-700 hover:text-green-800">
                     Broadcast vs Group vs Communities →
                   </Link>
                 </li>
                 <li>
-                  <Link href="/whatsapp-group-management-tool" className="text-green-600 hover:text-green-700">
+                  <Link href="/whatsapp-group-management-tool" className="text-green-700 hover:text-green-800">
                     WhatsApp Group Management Tool (category overview) →
                   </Link>
                 </li>
                 <li>
-                  <Link href="/guides/safer-multi-group-whatsapp-campaigns" className="text-green-600 hover:text-green-700">
+                  <Link href="/guides/safer-multi-group-whatsapp-campaigns" className="text-green-700 hover:text-green-800">
                     Safer Multi-Group Campaigns →
                   </Link>
                 </li>

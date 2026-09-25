@@ -57,7 +57,7 @@ export default function CategoryComparisonPage() {
       <section className="bg-gradient-to-b from-gray-50 to-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="mb-6">
-            <Link href="/guides" className="text-sm text-green-600 hover:text-green-700 inline-flex items-center gap-2">
+            <Link href="/guides" className="text-sm text-green-700 hover:text-green-800 inline-flex items-center gap-2">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
@@ -139,9 +139,9 @@ export default function CategoryComparisonPage() {
               </div>
             </div>
 
-            <div className="border-2 border-green-600 rounded-xl p-8 bg-green-50">
+            <div className="border-2 border-green-700 rounded-xl p-8 bg-green-50">
               <div className="flex items-start gap-4 mb-4">
-                <div className="flex-shrink-0 w-14 h-14 bg-green-600 rounded-xl flex items-center justify-center">
+                <div className="flex-shrink-0 w-14 h-14 bg-green-700 rounded-xl flex items-center justify-center">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
@@ -279,48 +279,48 @@ export default function CategoryComparisonPage() {
                 <tr>
                   <td className="border border-gray-200 px-4 py-3 text-gray-700">Post into existing large groups</td>
                   <td className="border border-gray-200 px-4 py-3 text-center text-red-600 font-semibold">✗</td>
-                  <td className="border border-gray-200 px-4 py-3 text-center text-green-600 font-semibold bg-green-50">✓</td>
-                  <td className="border border-gray-200 px-4 py-3 text-center text-green-600 font-semibold">✓</td>
+                  <td className="border border-gray-200 px-4 py-3 text-center text-green-700 font-semibold bg-green-50">✓</td>
+                  <td className="border border-gray-200 px-4 py-3 text-center text-green-700 font-semibold">✓</td>
                 </tr>
                 <tr>
                   <td className="border border-gray-200 px-4 py-3 text-gray-700">1:1 template messaging to contacts</td>
-                  <td className="border border-gray-200 px-4 py-3 text-center text-green-600 font-semibold">✓</td>
+                  <td className="border border-gray-200 px-4 py-3 text-center text-green-700 font-semibold">✓</td>
                   <td className="border border-gray-200 px-4 py-3 text-center text-red-600 font-semibold bg-green-50">✗</td>
                   <td className="border border-gray-200 px-4 py-3 text-center text-red-600 font-semibold">✗</td>
                 </tr>
                 <tr>
                   <td className="border border-gray-200 px-4 py-3 text-gray-700">Group collections & organization</td>
                   <td className="border border-gray-200 px-4 py-3 text-center text-gray-400">N/A</td>
-                  <td className="border border-gray-200 px-4 py-3 text-center text-green-600 font-semibold bg-green-50">✓</td>
+                  <td className="border border-gray-200 px-4 py-3 text-center text-green-700 font-semibold bg-green-50">✓</td>
                   <td className="border border-gray-200 px-4 py-3 text-center text-red-600 font-semibold">✗</td>
                 </tr>
                 <tr>
                   <td className="border border-gray-200 px-4 py-3 text-gray-700">Built-in pacing controls</td>
-                  <td className="border border-gray-200 px-4 py-3 text-center text-green-600 font-semibold">✓</td>
-                  <td className="border border-gray-200 px-4 py-3 text-center text-green-600 font-semibold bg-green-50">✓</td>
+                  <td className="border border-gray-200 px-4 py-3 text-center text-green-700 font-semibold">✓</td>
+                  <td className="border border-gray-200 px-4 py-3 text-center text-green-700 font-semibold bg-green-50">✓</td>
                   <td className="border border-gray-200 px-4 py-3 text-center text-red-600 font-semibold">✗</td>
                 </tr>
                 <tr>
                   <td className="border border-gray-200 px-4 py-3 text-gray-700">Delivery monitoring per target</td>
-                  <td className="border border-gray-200 px-4 py-3 text-center text-green-600 font-semibold">✓</td>
-                  <td className="border border-gray-200 px-4 py-3 text-center text-green-600 font-semibold bg-green-50">✓</td>
+                  <td className="border border-gray-200 px-4 py-3 text-center text-green-700 font-semibold">✓</td>
+                  <td className="border border-gray-200 px-4 py-3 text-center text-green-700 font-semibold bg-green-50">✓</td>
                   <td className="border border-gray-200 px-4 py-3 text-center text-red-600 font-semibold">✗</td>
                 </tr>
                 <tr>
                   <td className="border border-gray-200 px-4 py-3 text-gray-700">Delivery monitoring</td>
-                  <td className="border border-gray-200 px-4 py-3 text-center text-green-600 font-semibold">✓</td>
-                  <td className="border border-gray-200 px-4 py-3 text-center text-green-600 font-semibold bg-green-50">✓</td>
+                  <td className="border border-gray-200 px-4 py-3 text-center text-green-700 font-semibold">✓</td>
+                  <td className="border border-gray-200 px-4 py-3 text-center text-green-700 font-semibold bg-green-50">✓</td>
                   <td className="border border-gray-200 px-4 py-3 text-center text-red-600 font-semibold">✗</td>
                 </tr>
                 <tr>
                   <td className="border border-gray-200 px-4 py-3 text-gray-700">Team collaboration & roles</td>
-                  <td className="border border-gray-200 px-4 py-3 text-center text-green-600 font-semibold">✓</td>
-                  <td className="border border-gray-200 px-4 py-3 text-center text-green-600 font-semibold bg-green-50">✓</td>
+                  <td className="border border-gray-200 px-4 py-3 text-center text-green-700 font-semibold">✓</td>
+                  <td className="border border-gray-200 px-4 py-3 text-center text-green-700 font-semibold bg-green-50">✓</td>
                   <td className="border border-gray-200 px-4 py-3 text-center text-red-600 font-semibold">✗</td>
                 </tr>
                 <tr>
                   <td className="border border-gray-200 px-4 py-3 text-gray-700">Shared inbox for customer chats</td>
-                  <td className="border border-gray-200 px-4 py-3 text-center text-green-600 font-semibold">✓</td>
+                  <td className="border border-gray-200 px-4 py-3 text-center text-green-700 font-semibold">✓</td>
                   <td className="border border-gray-200 px-4 py-3 text-center text-red-600 font-semibold bg-green-50">✗</td>
                   <td className="border border-gray-200 px-4 py-3 text-center text-red-600 font-semibold">✗</td>
                 </tr>
@@ -356,7 +356,7 @@ export default function CategoryComparisonPage() {
               </p>
             </div>
 
-            <div className="bg-green-50 border-l-4 border-green-600 p-6 rounded-r-lg">
+            <div className="bg-green-50 border-l-4 border-green-700 p-6 rounded-r-lg">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
                 Choose a Multi-Group Platform when:
               </h3>
@@ -464,7 +464,7 @@ export default function CategoryComparisonPage() {
             </div>
           </div>
 
-          <div className="border border-2 border-green-600 bg-gray-50 rounded-lg p-8 mt-12">
+          <div className="border border-2 border-green-700 bg-gray-50 rounded-lg p-8 mt-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               Need a Multi-Group Platform for Your Group Network?
             </h2>
@@ -476,13 +476,13 @@ export default function CategoryComparisonPage() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 
                 href="https://wa.me/306981337327?text=Hi%2C%20I%27d%20like%20to%20try%20WaTask"
-                className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-all shadow-md hover:shadow-lg text-center transition-colors"
+                className="bg-green-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-800 transition-all shadow-md hover:shadow-lg text-center transition-colors"
               >
                 Start on WhatsApp
               </Link>
               <Link 
                 href="/guides/send-bulk-messages-to-multiple-whatsapp-groups"
-                className="text-green-600 border-2 border-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 text-center transition-colors"
+                className="text-green-700 border-2 border-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 text-center transition-colors"
               >
                 Read the Multi-Group Guide
               </Link>

@@ -2,13 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Safer Multi-Group WhatsApp Campaigns: Pacing, Consent & Account Health (2026)',
+  title: 'Multi-Group Best Practices WhatsApp Campaigns: Pacing, Consent & Account Health (2026)',
   description: 'Operational best practices for multi-group campaigns: pacing send intervals, respecting group norms, monitoring account health, and avoiding spam behavior. Professional guidance without scare tactics.',
   alternates: {
     canonical: 'https://www.watask.com/guides/safer-multi-group-whatsapp-campaigns',
   },
   openGraph: {
-    title: 'Safer Multi-Group WhatsApp Campaigns: Pacing, Consent & Account Health (2026)',
+    title: 'Multi-Group Best Practices WhatsApp Campaigns: Pacing, Consent & Account Health (2026)',
     description: 'Operational best practices for multi-group campaigns: pacing send intervals, respecting group norms, monitoring account health, and avoiding spam behavior.',
     url: 'https://www.watask.com/guides/safer-multi-group-whatsapp-campaigns',
     type: 'article',
@@ -73,7 +73,7 @@ export default function SaferCampaignsPage() {
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header className="mb-12">
           <div className="flex items-center gap-2 mb-4">
-            <Link href="/guides" className="text-sm text-green-600 hover:text-green-700 inline-flex items-center gap-2">
+            <Link href="/guides" className="text-sm text-green-700 hover:text-green-800 inline-flex items-center gap-2">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
@@ -91,7 +91,7 @@ export default function SaferCampaignsPage() {
 
         <div className="prose prose-lg max-w-none">
           <section className="mb-12">
-            <div className="border border-2 border-green-600/30 rounded-xl p-8 mb-8 bg-gray-50">
+            <div className="border border-2 border-green-700/30 rounded-xl p-8 mb-8 bg-gray-50">
               <h2 className="text-2xl font-bold text-gray-900 mb-4 mt-0">
                 The Core Principle
               </h2>
@@ -117,9 +117,9 @@ export default function SaferCampaignsPage() {
             </h2>
 
             <div className="space-y-8">
-              <div className="border-2 border-green-600 rounded-xl p-8 bg-green-50">
+              <div className="border-2 border-green-700 rounded-xl p-8 bg-green-50">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
+                  <div className="flex-shrink-0 w-12 h-12 bg-green-700 rounded-lg flex items-center justify-center text-white font-bold text-xl">
                     1
                   </div>
                   <div className="flex-1">
@@ -165,7 +165,7 @@ export default function SaferCampaignsPage() {
                   <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
                     <p className="text-sm text-gray-700 mb-0">
                       <strong>Platform advantage:</strong> Tools like{' '}
-                      <Link href="/" className="text-green-600 hover:text-green-700 font-semibold">
+                      <Link href="/" className="text-green-700 hover:text-green-800 font-semibold">
                         WaTask
                       </Link>{' '}
                       include built-in pacing controls so you don't have to manually time each send. With Chrome extensions or DIY approaches, you must implement pacing yourself.
@@ -373,7 +373,7 @@ export default function SaferCampaignsPage() {
                         Multi-Group Management Platforms (Recommended for Business Use)
                       </h4>
                       <p className="text-gray-700 text-sm mb-3">
-                        Platforms like <Link href="/" className="text-green-600 hover:text-green-700 font-semibold">WaTask</Link> are built specifically for safe multi-group operations:
+                        Platforms like <Link href="/" className="text-green-700 hover:text-green-800 font-semibold">WaTask</Link> are built specifically for safe multi-group operations:
                       </p>
                       <ul className="space-y-2 text-sm text-gray-700">
                         <li>• Built-in pacing controls and send intervals</li>
@@ -556,7 +556,7 @@ export default function SaferCampaignsPage() {
             </div>
           </section>
 
-          <section className="bg-green-50 border-2 border-green-600 rounded-lg p-8">
+          <section className="bg-green-50 border-2 border-green-700 rounded-lg p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               Run Safer Multi-Group Campaigns with Built-In Controls
             </h2>
@@ -568,13 +568,13 @@ export default function SaferCampaignsPage() {
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <Link 
                 href="https://wa.me/306981337327?text=Hi%2C%20I%27d%20like%20to%20try%20WaTask"
-                className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 text-center transition-colors"
+                className="bg-green-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-800 text-center transition-colors"
               >
                 Start on WhatsApp
               </Link>
               <Link 
                 href="/guides/send-bulk-messages-to-multiple-whatsapp-groups"
-                className="text-green-600 border-2 border-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 text-center transition-colors"
+                className="text-green-700 border-2 border-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 text-center transition-colors"
               >
                 Read the Multi-Group Guide
               </Link>
@@ -586,17 +586,17 @@ export default function SaferCampaignsPage() {
               </p>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="/whatsapp-group-management-tool" className="text-green-600 hover:text-green-700">
+                  <Link href="/whatsapp-group-management-tool" className="text-green-700 hover:text-green-800">
                     WhatsApp Group Management Tool (category) →
                   </Link>
                 </li>
                 <li>
-                  <Link href="/guides/whatsapp-groups-api-limits" className="text-green-600 hover:text-green-700">
+                  <Link href="/guides/whatsapp-groups-api-limits" className="text-green-700 hover:text-green-800">
                     WhatsApp Groups API Limits Explained →
                   </Link>
                 </li>
                 <li>
-                  <Link href="/guides/whatsapp-broadcast-vs-group-vs-communities" className="text-green-600 hover:text-green-700">
+                  <Link href="/guides/whatsapp-broadcast-vs-group-vs-communities" className="text-green-700 hover:text-green-800">
                     Broadcast vs Group vs Communities →
                   </Link>
                 </li>

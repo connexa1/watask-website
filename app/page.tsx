@@ -3,15 +3,20 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Send One Campaign to Many WhatsApp Groups | WaTask',
-  description: 'Send one campaign into many existing WhatsApp groups. Organize collections, spread sends over time, and run multi-group ops — built for agencies, brands, and community teams.',
+  description: 'Send campaigns into many existing WhatsApp groups. Organize collections, pace delivery, and run multi-group ops for agencies, brands, and communities.',
   alternates: {
     canonical: 'https://www.watask.com',
   },
   openGraph: {
-    title: 'Send One Campaign to Many WhatsApp Groups | WaTask',
-    description: 'Send one campaign into many existing WhatsApp groups. Organize collections, spread sends over time, and run multi-group ops — built for agencies, brands, and community teams.',
+    title: 'Send One Campaign to Many WhatsApp Groups',
+    description: 'Send campaigns into many existing WhatsApp groups. Organize collections, pace delivery, and run multi-group ops for agencies, brands, and communities.',
     url: 'https://www.watask.com',
     type: 'website',
+    siteName: 'WaTask',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
   },
 };
 
@@ -40,7 +45,7 @@ const homepageFaqSchema = {
       'name': 'Can Meta\'s WhatsApp Groups API post into my existing large groups?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'No. Meta\'s Groups API is limited to small, invite-only API-created groups with a maximum of 8 participants. If you already manage groups with 50-500+ members, the official Groups API cannot post into those existing groups. You can manage up to 10,000 small API groups per number, but the 8-participant cap makes it unsuitable for typical community or marketing groups.'
+        'text': 'No. Meta\'s Groups API is limited to small, invite-only API-created groups with a maximum of 8 participants. If you already manage groups with 50-500+ members, Meta\'s Groups API cannot post into those existing groups. You can manage up to 10,000 small API groups per number, but the 8-participant cap makes it unsuitable for typical community or marketing groups.'
       }
     },
     {
@@ -420,7 +425,7 @@ export default function HomePage() {
                 Can Meta's WhatsApp Groups API post into my existing large groups?
               </h3>
               <p className="text-text-secondary leading-relaxed">
-                No. Meta's Groups API is limited to small, invite-only API-created groups with a maximum of 8 participants. If you already manage groups with 50-500+ members, the official Groups API cannot post into those existing groups. You can manage up to 10,000 small API groups per number, but the 8-participant cap makes it unsuitable for typical community or marketing groups.
+                No. Meta's Groups API is limited to small, invite-only API-created groups with a maximum of 8 participants. If you already manage groups with 50-500+ members, Meta's Groups API cannot post into those existing groups. You can manage up to 10,000 small API groups per number, but the 8-participant cap makes it unsuitable for typical community or marketing groups.
               </p>
             </div>
 

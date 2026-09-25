@@ -73,7 +73,7 @@ export default function DoesAPISupportGroupsPage() {
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header className="mb-12">
           <div className="flex items-center gap-2 mb-4">
-            <Link href="/guides" className="text-sm text-green-600 hover:text-green-700 inline-flex items-center gap-2">
+            <Link href="/guides" className="text-sm text-green-700 hover:text-green-800 inline-flex items-center gap-2">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
@@ -264,17 +264,17 @@ export default function DoesAPISupportGroupsPage() {
             </h2>
             
             <p className="text-gray-700 mb-6 leading-relaxed">
-              If the official WhatsApp Business API doesn't support posting into your existing large groups, what <em>does</em> work?
+              If the WhatsApp Business API doesn't support posting into your existing large groups, what <em>does</em> work?
             </p>
 
             <div className="space-y-6">
-              <div className="border-2 border-green-600 rounded-xl p-8 bg-green-50">
+              <div className="border-2 border-green-700 rounded-xl p-8 bg-green-50">
                 <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-3">
-                  <span className="flex-shrink-0 text-green-600">✓</span>
+                  <span className="flex-shrink-0 text-green-700">✓</span>
                   Multi-Group Management Platforms
                 </h3>
                 <p className="text-gray-700 mb-3 leading-relaxed">
-                  Platforms like <Link href="/" className="text-green-600 hover:text-green-700 font-semibold">WaTask</Link> are built specifically for managing and campaigning across many existing groups. They connect to your existing groups and provide:
+                  Platforms like <Link href="/" className="text-green-700 hover:text-green-800 font-semibold">WaTask</Link> are built specifically for managing and campaigning across many existing groups. They connect to your existing groups and provide:
                 </p>
                 <ul className="space-y-2 text-gray-700">
                   <li>• Group collections and organization</li>
@@ -288,7 +288,7 @@ export default function DoesAPISupportGroupsPage() {
                 <div className="mt-4">
                   <Link 
                     href="/whatsapp-group-management-tool"
-                    className="text-green-600 hover:text-green-700 font-semibold"
+                    className="text-green-700 hover:text-green-800 font-semibold"
                   >
                     Learn about Group Management Tools →
                   </Link>
@@ -314,7 +314,7 @@ export default function DoesAPISupportGroupsPage() {
                 <div className="mt-3">
                   <Link 
                     href="/guides/whatsapp-broadcast-vs-group-vs-communities"
-                    className="text-green-600 hover:text-green-700 font-semibold text-sm"
+                    className="text-green-700 hover:text-green-800 font-semibold text-sm"
                   >
                     Read: Broadcast vs Group vs Communities →
                   </Link>
@@ -394,7 +394,7 @@ export default function DoesAPISupportGroupsPage() {
             </div>
           </section>
 
-          <section className="bg-green-50 border-2 border-green-600 rounded-lg p-8">
+          <section className="bg-green-50 border-2 border-green-700 rounded-lg p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               Need to Campaign Across Your Existing Groups?
             </h2>
@@ -406,13 +406,13 @@ export default function DoesAPISupportGroupsPage() {
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <Link 
                 href="https://wa.me/306981337327?text=Hi%2C%20I%27d%20like%20to%20try%20WaTask"
-                className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 text-center transition-colors"
+                className="bg-green-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-800 text-center transition-colors"
               >
                 Start on WhatsApp
               </Link>
               <Link 
                 href="/guides/send-bulk-messages-to-multiple-whatsapp-groups"
-                className="text-green-600 border-2 border-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 text-center transition-colors"
+                className="text-green-700 border-2 border-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 text-center transition-colors"
               >
                 Read the Multi-Group Guide
               </Link>
@@ -424,17 +424,17 @@ export default function DoesAPISupportGroupsPage() {
               </p>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="/guides/whatsapp-groups-api-limits" className="text-green-600 hover:text-green-700">
+                  <Link href="/guides/whatsapp-groups-api-limits" className="text-green-700 hover:text-green-800">
                     WhatsApp Groups API Limits Explained →
                   </Link>
                 </li>
                 <li>
-                  <Link href="/whatsapp-group-management-tool" className="text-green-600 hover:text-green-700">
+                  <Link href="/whatsapp-group-management-tool" className="text-green-700 hover:text-green-800">
                     WhatsApp Group Management Tool (category) →
                   </Link>
                 </li>
                 <li>
-                  <Link href="/guides/whatsapp-broadcast-vs-group-vs-communities" className="text-green-600 hover:text-green-700">
+                  <Link href="/guides/whatsapp-broadcast-vs-group-vs-communities" className="text-green-700 hover:text-green-800">
                     Broadcast vs Group vs Communities →
                   </Link>
                 </li>
