@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     siteName: 'WaTask',
     images: [
       {
+<<<<<<< HEAD
         url: '/opengraph-image',
         width: 1200,
         height: 630,
@@ -37,6 +38,14 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+=======
+        url: 'https://www.watask.com/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'WaTask - Multi-Group WhatsApp Campaigns',
+      },
+    ],
+>>>>>>> 5b3c0f0 (fix: remove duplicate robots meta from layout)
   },
 };
 
