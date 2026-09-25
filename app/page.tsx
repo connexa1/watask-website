@@ -128,7 +128,7 @@ const homepageFaqSchema = {
 
 export default function HomePage() {
   return (
-    <div className="bg-bg-primary">
+    <div className="theme-dark bg-bg-primary">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageFaqSchema) }}
@@ -352,7 +352,7 @@ export default function HomePage() {
                   Pacing & account health
                 </h3>
                 <p className="text-text-secondary leading-relaxed">
-                  Built-in send controls help you pace messages safely, maintain account standing, and avoid looking spammy. Monitor delivery status per group in real time.
+                  Built-in send controls help you pace messages steadily across your groups. Monitor delivery status per group in real time.
                 </p>
               </div>
               <div className="glass-panel rounded-2xl p-8">
@@ -364,7 +364,7 @@ export default function HomePage() {
                       </svg>
                     </div>
                     <div className="flex-1">
-                      <p className="text-text-primary text-sm font-medium">Safe send rate</p>
+                      <p className="text-text-primary text-sm font-medium">Send rate</p>
                       <p className="text-text-muted text-xs">3 groups/minute</p>
                     </div>
                   </div>
