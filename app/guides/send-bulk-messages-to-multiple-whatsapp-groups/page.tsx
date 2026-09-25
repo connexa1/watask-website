@@ -3,13 +3,13 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Send Bulk Messages to Multiple WhatsApp Groups',
-  description: 'Learn why WhatsApp "bulk" tools usually mean 1:1 templates, what Meta\'s Groups API allows, and how multi-group platforms post campaigns into many existing groups.',
+  description: 'Why WhatsApp "bulk" tools usually mean 1:1 templates, what Meta\'s Groups API allows, and how multi-group platforms post into existing groups.',
   alternates: {
     canonical: 'https://www.watask.com/guides/send-bulk-messages-to-multiple-whatsapp-groups',
   },
   openGraph: {
     title: 'Send Bulk Messages to Multiple WhatsApp Groups',
-    description: 'Complete guide to sending campaigns across multiple WhatsApp groups. Understand Cloud API vs Groups API vs multi-group platforms.',
+    description: 'Why WhatsApp "bulk" tools usually mean 1:1 templates, what Meta\'s Groups API allows, and how multi-group platforms post into existing groups.',
     url: 'https://www.watask.com/guides/send-bulk-messages-to-multiple-whatsapp-groups',
     type: 'article',
     images: [

@@ -3,13 +3,13 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'WhatsApp Business & Group Messaging Glossary',
-  description: 'Plain-English definitions of WhatsApp business terms — broadcast list, group, Community, Cloud API, BSP, Groups API, OBA, template message, quality rating, pacing, and more.',
+  description: 'Plain-English definitions: broadcast list, group, Community, Cloud API, BSP, Groups API, OBA, template message, quality rating, pacing.',
   alternates: {
     canonical: 'https://www.watask.com/glossary',
   },
   openGraph: {
     title: 'WhatsApp Business & Group Messaging Glossary | WaTask',
-    description: 'Plain-English definitions of WhatsApp business terms — broadcast list, group, Community, Cloud API, BSP, Groups API, OBA, template message, quality rating, pacing, and more.',
+    description: 'Plain-English definitions: broadcast list, group, Community, Cloud API, BSP, Groups API, OBA, template message, quality rating, pacing.',
     url: 'https://www.watask.com/glossary',
     images: [
       {

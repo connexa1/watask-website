@@ -3,13 +3,13 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Multi-Group Tools vs BSP vs Extensions',
-  description: 'Category comparison: multi-group campaign platforms vs Cloud API BSPs vs browser extensions. When each fits, key differences, and which solves group posting.',
+  description: 'Category comparison: multi-group platforms vs Cloud API BSPs vs browser extensions. When each fits and which solves group posting.',
   alternates: {
     canonical: 'https://www.watask.com/compare/multi-group-tools-vs-bsp-vs-extensions',
   },
   openGraph: {
     title: 'Multi-Group Tools vs BSP vs Extensions',
-    description: 'Category comparison: multi-group campaign platforms vs Cloud API BSPs vs browser extensions.',
+    description: 'Category comparison: multi-group platforms vs Cloud API BSPs vs browser extensions. When each fits and which solves group posting.',
     url: 'https://www.watask.com/compare/multi-group-tools-vs-bsp-vs-extensions',
     type: 'article',
     images: [

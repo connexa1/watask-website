@@ -3,13 +3,13 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Send One Campaign to Many WhatsApp Groups | WaTask',
-  description: 'Send campaigns into many existing WhatsApp groups. Organize collections, pace delivery, and run multi-group ops for agencies, brands, and communities.',
+  description: 'Send campaigns into many existing WhatsApp groups. Organize collections, pace delivery, and run multi-group ops for agencies and communities.',
   alternates: {
     canonical: 'https://www.watask.com',
   },
   openGraph: {
     title: 'Send One Campaign to Many WhatsApp Groups',
-    description: 'Send campaigns into many existing WhatsApp groups. Organize collections, pace delivery, and run multi-group ops for agencies, brands, and communities.',
+    description: 'Send campaigns into many existing WhatsApp groups. Organize collections, pace delivery, and run multi-group ops for agencies and communities.',
     url: 'https://www.watask.com',
     type: 'website',
     siteName: 'WaTask',

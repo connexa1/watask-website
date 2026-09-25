@@ -3,13 +3,13 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'WhatsApp Multi-Group Campaign Best Practices',
-  description: 'Operational best practices for multi-group campaigns: pacing send intervals, respecting group norms, monitoring account health. Professional guidance without scare tactics.',
+  description: 'Multi-group campaign best practices: pacing send intervals, respecting group norms, monitoring account health. Professional guidance.',
   alternates: {
     canonical: 'https://www.watask.com/guides/safer-multi-group-whatsapp-campaigns',
   },
   openGraph: {
     title: 'WhatsApp Multi-Group Campaign Best Practices',
-    description: 'Operational best practices for multi-group campaigns: pacing send intervals, respecting group norms, monitoring account health.',
+    description: 'Multi-group campaign best practices: pacing send intervals, respecting group norms, monitoring account health. Professional guidance.',
     url: 'https://www.watask.com/guides/safer-multi-group-whatsapp-campaigns',
     type: 'article',
     images: [
@@ -436,11 +436,7 @@ export default function SaferCampaignsPage() {
                         Multi-Group Management Platforms (Recommended for Business Use)
                       </h4>
                       <p className="text-gray-700 text-sm mb-3">
-<<<<<<< HEAD
-                        Platforms like <Link href="/" className="text-green-700 hover:text-green-800 font-semibold">WaTask</Link> are built specifically for safe multi-group operations:
-=======
-                        Platforms like <Link href="/" className="text-green-600 hover:text-green-700 font-semibold">WaTask</Link> are built for controlled multi-group operations:
->>>>>>> e25209c (fix: rebase drop fixes - cards styling, titles, link text, safety wording, og:image, 404 page)
+                        Platforms like <Link href="/" className="text-green-700 hover:text-green-800 font-semibold">WaTask</Link> are built for controlled multi-group operations:
                       </p>
                       <ul className="space-y-2 text-sm text-gray-700">
                         <li>• Built-in pacing controls and send intervals</li>
