@@ -175,9 +175,9 @@ export default function AlternativesPage() {
               Verdict on BSPs for Multi-Group Posting
             </p>
             <p className="text-text-secondary">
-              BSPs excel at their designed job: <strong>1:1 customer messaging, support, and compliant marketing campaigns 
-              to opted-in contacts</strong>. If your job is posting campaigns into many existing large WhatsApp groups you 
-              already administrate, BSPs won't solve it. You need a different category of tool.
+              BSPs excel at their designed job: <strong>1:1 customer messaging, support, and marketing campaigns 
+              to opted-in contacts</strong>. If your job is posting campaigns into many existing large WhatsApp groups your numbers are 
+              already in, BSPs won't solve it. You need a different category of tool.
             </p>
           </div>
 
@@ -229,7 +229,7 @@ export default function AlternativesPage() {
               </p>
               <p className="text-text-secondary mb-4">
                 <strong>Cons:</strong> Lack group organization, pacing controls, delivery monitoring, team features, and 
-                account health safeguards. Carry account risks if used aggressively. Some have been flagged for excessive permissions.
+                delivery controls. Carry account risks if used aggressively. Some have been flagged for excessive permissions.
               </p>
               <p className="text-text-secondary mb-4">
                 <strong>Best for:</strong> Small-scale or experimental use where you're comfortable with account risks and 
@@ -238,7 +238,7 @@ export default function AlternativesPage() {
               <div className="bg-orange-100 border border-orange-300 rounded p-4 mt-4">
                 <p className="text-sm text-text-secondary">
                   <strong>Note:</strong> Check Chrome Web Store reviews carefully. User reviews mention account bans from 
-                  aggressive use. Professional businesses often avoid extensions due to compliance and trust concerns.
+                  aggressive use. Professional businesses often avoid extensions due to trust concerns.
                 </p>
               </div>
             </div>
@@ -308,7 +308,7 @@ export default function AlternativesPage() {
                   </p>
                   <p className="text-text-secondary">
                     Choose a <strong>BSP</strong> like WATI, AiSensy, or Interakt. They're purpose-built for this and 
-                    offer official Meta partnership, compliance, and inbox features.
+                    offer Meta partnership and inbox features.
                   </p>
                 </div>
               </div>
@@ -413,12 +413,12 @@ export default function AlternativesPage() {
 
             <div className="pb-6">
               <h3 className="text-lg font-semibold text-text-primary mb-3">
-                What about unofficial WhatsApp APIs for developers?
+                What about developer libraries?
               </h3>
               <p className="text-text-secondary">
-                Developers can build custom solutions using unofficial WhatsApp APIs (like Whapi, Maytapi, WAHA, 2Chat) that 
+                Developers can build custom solutions with code that 
                 provide group access. This requires ongoing development, maintenance, and risk management. For most businesses, 
-                a productized multi-group platform offers better reliability and built-in safety features without the development overhead.
+                a productized multi-group platform offers better reliability and built-in pacing controls without the development overhead.
               </p>
             </div>
           </div>

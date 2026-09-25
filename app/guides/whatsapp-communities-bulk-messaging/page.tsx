@@ -355,7 +355,7 @@ export default function CommunitiesGuidePage() {
                       in their own group chat.
                     </p>
                     <p className="text-text-secondary mb-3">
-                      <strong>Scope:</strong> Any groups you administrate, organized into collections. No limit 
+                      <strong>Scope:</strong> Any groups your numbers are in, organized into collections. No limit 
                       to structure — can target 20 groups or 200+ groups across any combination of Communities.
                     </p>
                     <p className="text-text-secondary">
@@ -497,7 +497,7 @@ export default function CommunitiesGuidePage() {
                   <span className="text-green-600 font-bold text-xl flex-shrink-0">✓</span>
                   <span>
                     <strong>Get pacing and safety controls:</strong> Multi-group platforms add send intervals, delivery 
-                    monitoring, and account health safeguards that Communities don't provide.
+                    monitoring, and delivery tracking that Communities don't provide.
                   </span>
                 </li>
               </ul>

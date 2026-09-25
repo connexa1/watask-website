@@ -43,7 +43,7 @@ const glossarySchema = {
     {
       '@type': 'DefinedTerm',
       'name': 'WhatsApp Cloud API',
-      'description': 'Meta\'s official API for business messaging. Enables 1:1 template messages, media sending, and automation. Does not provide access to post into existing large consumer groups.'
+      'description': 'Meta\'s WhatsApp Business API for business messaging. Enables 1:1 template messages, media sending, and automation. Does not provide access to post into existing large consumer groups.'
     },
     {
       '@type': 'DefinedTerm',
@@ -58,7 +58,7 @@ const glossarySchema = {
     {
       '@type': 'DefinedTerm',
       'name': 'OBA',
-      'description': 'Official Business Account. A Meta-verified WhatsApp business account that displays a green checkmark. Required for using the Groups API and certain Business Platform features.'
+      'description': 'Official Business Account. A Meta-verified WhatsApp business account obtained through Meta Business verification. Required for using the Groups API and certain Business Platform features.'
     },
     {
       '@type': 'DefinedTerm',
@@ -123,7 +123,7 @@ const glossarySchema = {
     {
       '@type': 'DefinedTerm',
       'name': 'Account Health',
-      'description': 'The overall standing of your WhatsApp account based on usage patterns, reports, blocks, and compliance. Poor account health can lead to restrictions or bans.'
+      'description': 'The overall standing of your WhatsApp account based on usage patterns, reports, and blocks. Poor account health can lead to restrictions or bans.'
     },
     {
       '@type': 'DefinedTerm',
@@ -193,22 +193,17 @@ const glossarySchema = {
     {
       '@type': 'DefinedTerm',
       'name': 'Phone Number Tier',
-      'description': 'The tier determines daily messaging limits on Cloud API. Starts at Tier 1 (1,000 conversations/day) and can scale up to unlimited with quality ratings and verification.'
+      'description': 'The tier determines daily messaging limits on Cloud API. Starts at Tier 1 and can scale up to unlimited with quality ratings and verification.'
     },
     {
       '@type': 'DefinedTerm',
       'name': 'Conversation Window',
-      'description': 'A 24-hour billing period that starts when a business sends a template or a customer sends a message. Multiple messages within this window count as one conversation for billing.'
+      'description': 'A 24-hour period that starts when a business sends a template or a customer sends a message. Meta moved from conversation-based billing to per-message pricing on July 1, 2025.'
     },
     {
       '@type': 'DefinedTerm',
       'name': 'WhatsApp Web',
       'description': 'Browser-based version of WhatsApp that mirrors your phone\'s account. Requires active internet on your phone. Used by some multi-group tools for Web-based sending.'
-    },
-    {
-      '@type': 'DefinedTerm',
-      'name': 'Multi-Device Support',
-      'description': 'WhatsApp feature allowing your account to work on up to 4 linked devices without your phone being online. Each device maintains its own connection to WhatsApp servers.'
     },
     {
       '@type': 'DefinedTerm',
@@ -258,7 +253,7 @@ const terms: Term[] = [
   },
   {
     term: 'WhatsApp Cloud API',
-    definition: 'Meta\'s official API for business messaging, replacing the older Business API. Enables 1:1 template messages, media sending, webhooks, and automation for businesses. Requires opt-in and approved message templates. Does not provide access to post into existing large consumer groups — that requires unofficial approaches or the Groups API (limited to 8 participants).',
+    definition: 'Meta\'s WhatsApp Business API for business messaging. Enables 1:1 template messages, media sending, webhooks, and automation for businesses. Requires opt-in and approved message templates. Does not provide access to post into existing large consumer groups. The Groups API is limited to small new groups (max 8 participants).',
     relatedGuides: [
       { title: 'Does Business API Support Groups?', href: '/guides/does-whatsapp-business-api-support-groups' },
       { title: 'Groups API Limits', href: '/guides/whatsapp-groups-api-limits' }
@@ -281,12 +276,12 @@ const terms: Term[] = [
   },
   {
     term: 'OBA (Official Business Account)',
-    definition: 'A Meta-verified WhatsApp business account that displays a green checkmark badge. Indicates your business has been verified by Meta. Required for using the Groups API and certain advanced Business Platform features. Obtained through Meta Business verification process.',
+    definition: 'A Meta-verified WhatsApp business account obtained through Meta Business verification. Required for using the Groups API and certain advanced Business Platform features. Verification confirms business identity with Meta.',
     relatedGuides: []
   },
   {
     term: 'Template Message',
-    definition: 'A pre-approved message format required for outbound marketing messages via the Cloud API. Must be submitted to Meta for approval before use. Structured with optional header, body text, footer, and buttons. Template rejections are common — Meta enforces strict quality and compliance rules. Can include variables for personalization.',
+    definition: 'A pre-approved message format required for outbound marketing messages via the Cloud API. Must be submitted to Meta for approval before use. Structured with optional header, body text, footer, and buttons. Template rejections are common — Meta enforces strict quality rules. Can include variables for personalization.',
     relatedGuides: [
       { title: 'How to Send to Multiple Groups', href: '/guides/send-bulk-messages-to-multiple-whatsapp-groups' }
     ]
@@ -305,7 +300,7 @@ const terms: Term[] = [
   },
   {
     term: 'Messaging Limits / Tiers',
-    definition: 'Daily conversation limits on Cloud API that scale based on your phone number\'s tier and quality rating. Starts at Tier 1 (1,000 conversations/day), progresses through higher tiers with good performance, and can reach unlimited. Limits reset daily. Quality rating issues can cause tier drops.',
+    definition: 'Daily messaging limits on Cloud API that scale based on your phone number\'s tier and quality rating. Starts at Tier 1, progresses through higher tiers with good performance, and can reach unlimited. Limits reset daily. Quality rating issues can cause tier drops.',
     relatedGuides: []
   },
   {
@@ -353,7 +348,7 @@ const terms: Term[] = [
   },
   {
     term: 'Multi-Group Campaign',
-    definition: 'Sending one coordinated message into many existing WhatsApp groups you administrate. All group members see the post in their group chat. Different from broadcast lists (1:1 individual messages) and Cloud API campaigns (also 1:1 template messages to contacts). Requires either unofficial tools or manual posting.',
+    definition: 'Sending one coordinated message into many existing WhatsApp groups your numbers are in. All group members see the post in their group chat. Different from broadcast lists (1:1 individual messages) and Cloud API campaigns (also 1:1 template messages to contacts).',
     relatedGuides: [
       { title: 'How to Send to Multiple Groups', href: '/guides/send-bulk-messages-to-multiple-whatsapp-groups' },
       { title: 'Safer Multi-Group Campaigns', href: '/guides/safer-multi-group-whatsapp-campaigns' }
@@ -361,7 +356,7 @@ const terms: Term[] = [
   },
   {
     term: 'Account Health',
-    definition: 'The overall standing of your WhatsApp account based on usage patterns, user reports, blocks, spam signals, and policy compliance. Poor account health leads to restrictions (throttling, messaging limits) or outright bans. Monitored by Meta for Cloud API users; consumer accounts also face restrictions for abuse.',
+    definition: 'The overall standing of your WhatsApp account based on usage patterns, user reports, blocks, and spam signals. Poor account health leads to restrictions (throttling, messaging limits) or outright bans. Monitored by Meta for Cloud API users; consumer accounts also face restrictions for abuse.',
     relatedGuides: [
       { title: 'Safer Multi-Group Campaigns', href: '/guides/safer-multi-group-whatsapp-campaigns' }
     ]
@@ -412,18 +407,13 @@ const terms: Term[] = [
     relatedGuides: []
   },
   {
-    term: 'Conversation Window (Billing)',
-    definition: 'A 24-hour period that starts when a business sends a template or a customer sends a message on Cloud API. Multiple messages exchanged within this 24-hour window count as one conversation for billing. Four conversation categories: Marketing, Utility, Authentication, and Service.',
+    term: 'Conversation Window',
+    definition: 'A 24-hour period that starts when a business sends a template or a customer sends a message on Cloud API. Meta moved from conversation-based billing (where multiple messages within 24 hours counted as one conversation) to per-message pricing on July 1, 2025.',
     relatedGuides: []
   },
   {
     term: 'WhatsApp Web',
-    definition: 'Browser-based version of WhatsApp (web.whatsapp.com) that mirrors your phone\'s account. Historically required phone to be online; now works independently with multi-device. Used by some multi-group tools for Web-based automation since it provides more access than Cloud API for group posting.',
-    relatedGuides: []
-  },
-  {
-    term: 'Multi-Device Support',
-    definition: 'WhatsApp feature allowing your account to work on up to 4 linked devices (phone + 3 companions: Web, Desktop, or tablets) without your phone being online. Each device maintains its own encrypted connection. Enabled by default on newer accounts.',
+    definition: 'Browser-based version of WhatsApp (web.whatsapp.com) that mirrors your phone\'s account. Used by some multi-group tools for Web-based automation since it provides more access than Cloud API for group posting.',
     relatedGuides: []
   }
 ];

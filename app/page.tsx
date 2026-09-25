@@ -3,13 +3,13 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Send One Campaign to Many WhatsApp Groups | WaTask',
-  description: 'Send one campaign into many existing WhatsApp groups. Organize collections, pace safely, and run multi-group ops — built for agencies, brands, and community teams.',
+  description: 'Send one campaign into many existing WhatsApp groups. Organize collections, spread sends over time, and run multi-group ops — built for agencies, brands, and community teams.',
   alternates: {
     canonical: 'https://www.watask.com',
   },
   openGraph: {
     title: 'Send One Campaign to Many WhatsApp Groups | WaTask',
-    description: 'Send one campaign into many existing WhatsApp groups. Organize collections, pace safely, and run multi-group ops — built for agencies, brands, and community teams.',
+    description: 'Send one campaign into many existing WhatsApp groups. Organize collections, spread sends over time, and run multi-group ops — built for agencies, brands, and community teams.',
     url: 'https://www.watask.com',
     type: 'website',
   },
@@ -21,10 +21,18 @@ const homepageFaqSchema = {
   'mainEntity': [
     {
       '@type': 'Question',
+      'name': 'How does WaTask work?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'You connect your own WhatsApp or WhatsApp Business numbers to WaTask (by scanning a QR code), and WaTask posts your campaign into the groups those numbers are already in. It provides group collections, scheduling, pacing, and spreading sends across several numbers — without code to run.'
+      }
+    },
+    {
+      '@type': 'Question',
       'name': 'What\'s the difference between multi-group posting and WhatsApp Business API broadcasts?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'WhatsApp Business API (Cloud API) tools send 1:1 template messages to opted-in contacts — each recipient sees a personal chat. Multi-group posting means sending a campaign message inside many existing group chats where all members can see and respond together. WaTask handles the multi-group job that BSP tools don\'t cover.'
+        'text': 'WhatsApp Business API (Cloud API) sends 1:1 template messages to opted-in contacts and, via the Groups API, only to small new API-created groups (max 8 participants). It cannot reach your existing large groups. Multi-group platforms post into groups your numbers are already in, which the Cloud API does not support.'
       }
     },
     {
@@ -40,7 +48,7 @@ const homepageFaqSchema = {
       'name': 'How does pacing work and why does it matter?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'Pacing spreads your campaign sends over time instead of blasting hundreds of groups instantly. This helps maintain account health, respects how communities experience posts, and reduces the risk of appearing spammy. WaTask includes built-in pacing controls so you can set safe send intervals and quiet windows.'
+        'text': 'Pacing spreads your campaign sends over time instead of blasting hundreds of groups instantly. This respects how communities experience posts and reduces the risk of appearing spammy. WaTask includes built-in pacing controls so you can set send intervals and quiet windows.'
       }
     },
     {
@@ -48,7 +56,7 @@ const homepageFaqSchema = {
       'name': 'Who is WaTask for — and who is it not for?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'WaTask is built for agencies managing client group packs, civic organizations with community networks, brands with regional groups, and multi-location teams. It\'s ideal when you already manage many existing WhatsApp groups. It\'s not primarily for single-inbox ecommerce sellers who only need 1:1 order and support messaging — a Cloud API BSP is better for that job.'
+        'text': 'WaTask is built for agencies managing client group packs, civic organizations with community networks, brands with regional groups, and multi-location teams. It\'s ideal when your numbers are already in many existing WhatsApp groups and you need to post campaigns across them. It\'s not primarily for single-inbox ecommerce sellers who only need 1:1 order and support messaging — a Cloud API BSP is better for that job.'
       }
     },
     {
@@ -56,7 +64,7 @@ const homepageFaqSchema = {
       'name': 'Is WaTask a Chrome extension or does it work differently?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'WaTask is a productized platform — not a browser extension. While some Chrome extensions can send to multiple groups, they typically lack collections, team collaboration, pacing controls, and account health management. WaTask provides a proper operating system for managing group networks at scale with built-in safety features.'
+        'text': 'WaTask is a productized platform — not a browser extension. Chrome extensions offer raw multi-select sending. WaTask provides group collections, scheduling, pacing, multi-number distribution, team collaboration, and no code to run — the full product layer for managing group networks.'
       }
     },
     {
@@ -85,10 +93,10 @@ const homepageFaqSchema = {
     },
     {
       '@type': 'Question',
-      'name': 'Is this safe? Will it risk my WhatsApp account?',
+      'name': 'How does pacing help with multi-group campaigns?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'WaTask includes pacing controls, delivery monitoring, and account health safeguards specifically to help reduce risks. The key to safe multi-group campaigns is respecting consent, using proper pacing, providing value to group members, and monitoring account signals. Capability does not equal permission — always ensure your messages are relevant and welcome in each group.'
+        'text': 'WaTask includes pacing controls and delivery monitoring so you can spread sends over time and avoid spam reports. The key is respecting group members: use proper pacing, provide value, and ensure your messages are relevant and welcome in each group. Capability does not equal permission.'
       }
     },
     {
@@ -180,7 +188,7 @@ export default function HomePage() {
                 </div>
                 <div className="glass-panel p-6 rounded-xl">
                   <h3 className="font-semibold text-text-primary mb-2 text-sm">Pacing & delivery</h3>
-                  <p className="text-text-secondary text-sm">Safe rhythm · status per group</p>
+                  <p className="text-text-secondary text-sm">Steady pacing · status per group</p>
                 </div>
               </div>
               <p className="text-center text-sm text-text-muted italic">
@@ -198,7 +206,7 @@ export default function HomePage() {
             Most "bulk WhatsApp" tools don't post into groups
           </h2>
           <p className="text-lg text-text-secondary text-center mb-12 leading-relaxed max-w-3xl mx-auto">
-            Business Service Providers excel at template messages to opted-in contacts. That's a different job. If your work is updating <strong className="text-text-primary">existing</strong> WhatsApp groups you already administer — dozens or hundreds of them — you need a multi-group campaign layer.
+            Business Service Providers excel at template messages to opted-in contacts. That's a different job. If your work is updating <strong className="text-text-primary">existing</strong> WhatsApp groups your numbers are already in — dozens or hundreds of them — you need a multi-group campaign layer.
           </p>
           
           <div className="grid md:grid-cols-3 gap-6">
@@ -235,16 +243,44 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Overview Section */}
+      {/* How WaTask Works Section */}
       <section className="py-20 sm:py-32">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-text-primary mb-4">
-              Your group network, in one operating view
-            </h2>
-            <p className="text-lg text-text-secondary max-w-3xl mx-auto leading-relaxed">
-              Connect the groups you manage. Segment them. Launch a campaign with pacing and delivery visibility — without hopping group-by-group in WhatsApp Web.
-            </p>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-text-primary mb-6 text-center">
+            How WaTask works
+          </h2>
+          <p className="text-lg text-text-secondary text-center mb-12 leading-relaxed max-w-3xl mx-auto">
+            Connect your own WhatsApp or WhatsApp Business numbers to WaTask (scan a QR code), and WaTask posts your campaign into the groups those numbers are already in.
+          </p>
+          
+          <div className="glass-panel border-cyber/30 rounded-xl p-8 mb-8">
+            <h3 className="text-xl font-semibold text-text-primary mb-4">The product layer</h3>
+            <ul className="space-y-3 text-text-secondary">
+              <li className="flex gap-3 items-start">
+                <svg className="w-5 h-5 text-cyber mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>Group collections and organization by client, region, or campaign</span>
+              </li>
+              <li className="flex gap-3 items-start">
+                <svg className="w-5 h-5 text-cyber mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>Scheduling and pacing controls to spread sends over time</span>
+              </li>
+              <li className="flex gap-3 items-start">
+                <svg className="w-5 h-5 text-cyber mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>Multi-number distribution for larger campaigns</span>
+              </li>
+              <li className="flex gap-3 items-start">
+                <svg className="w-5 h-5 text-cyber mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span>Team collaboration and delivery monitoring — no code to run</span>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -363,10 +399,19 @@ export default function HomePage() {
           <div className="space-y-6">
             <div className="glass-panel p-6 rounded-xl">
               <h3 className="text-lg font-semibold text-text-primary mb-3">
+                How does WaTask work?
+              </h3>
+              <p className="text-text-secondary leading-relaxed">
+                You connect your own WhatsApp or WhatsApp Business numbers to WaTask (by scanning a QR code), and WaTask posts your campaign into the groups those numbers are already in. It provides group collections, scheduling, pacing, and spreading sends across several numbers — without code to run.
+              </p>
+            </div>
+
+            <div className="glass-panel p-6 rounded-xl">
+              <h3 className="text-lg font-semibold text-text-primary mb-3">
                 What's the difference between multi-group posting and WhatsApp Business API broadcasts?
               </h3>
               <p className="text-text-secondary leading-relaxed">
-                WhatsApp Business API (Cloud API) tools send 1:1 template messages to opted-in contacts — each recipient sees a personal chat. Multi-group posting means sending a campaign message inside many existing group chats where all members can see and respond together. WaTask handles the multi-group job that BSP tools don't cover.
+                WhatsApp Business API (Cloud API) sends 1:1 template messages to opted-in contacts and, via the Groups API, only to small new API-created groups (max 8 participants). It cannot reach your existing large groups. Multi-group platforms post into groups your numbers are already in, which the Cloud API does not support.
               </p>
             </div>
 
@@ -384,7 +429,7 @@ export default function HomePage() {
                 How does pacing work and why does it matter?
               </h3>
               <p className="text-text-secondary leading-relaxed">
-                Pacing spreads your campaign sends over time instead of blasting hundreds of groups instantly. This helps maintain account health, respects how communities experience posts, and reduces the risk of appearing spammy. WaTask includes built-in pacing controls so you can set safe send intervals and quiet windows.
+                Pacing spreads your campaign sends over time instead of blasting hundreds of groups instantly. This respects how communities experience posts and reduces the risk of appearing spammy. WaTask includes built-in pacing controls so you can set send intervals and quiet windows.
               </p>
             </div>
 
@@ -393,7 +438,7 @@ export default function HomePage() {
                 Who is WaTask for — and who is it not for?
               </h3>
               <p className="text-text-secondary leading-relaxed">
-                WaTask is built for agencies managing client group packs, civic organizations with community networks, brands with regional groups, and multi-location teams. It's ideal when you already manage many existing WhatsApp groups. It's not primarily for single-inbox ecommerce sellers who only need 1:1 order and support messaging — a Cloud API BSP is better for that job.
+                WaTask is built for agencies managing client group packs, civic organizations with community networks, brands with regional groups, and multi-location teams. It's ideal when your numbers are already in many existing WhatsApp groups and you need to post campaigns across them. It's not primarily for single-inbox ecommerce sellers who only need 1:1 order and support messaging — a Cloud API BSP is better for that job.
               </p>
             </div>
 
@@ -402,7 +447,7 @@ export default function HomePage() {
                 Is WaTask a Chrome extension or does it work differently?
               </h3>
               <p className="text-text-secondary leading-relaxed">
-                WaTask is a productized platform — not a browser extension. While some Chrome extensions can send to multiple groups, they typically lack collections, team collaboration, pacing controls, and account health management. WaTask provides a proper operating system for managing group networks at scale with built-in safety features.
+                WaTask is a productized platform — not a browser extension. Chrome extensions offer raw multi-select sending. WaTask provides group collections, scheduling, pacing, multi-number distribution, team collaboration, and no code to run — the full product layer for managing group networks.
               </p>
             </div>
 
@@ -435,10 +480,10 @@ export default function HomePage() {
 
             <div className="glass-panel p-6 rounded-xl">
               <h3 className="text-lg font-semibold text-text-primary mb-3">
-                Is this safe? Will it risk my WhatsApp account?
+                How does pacing help with multi-group campaigns?
               </h3>
               <p className="text-text-secondary leading-relaxed">
-                WaTask includes pacing controls, delivery monitoring, and account health safeguards specifically to help reduce risks. The key to safe multi-group campaigns is respecting consent, using proper pacing, providing value to group members, and monitoring account signals. Capability does not equal permission — always ensure your messages are relevant and welcome in each group.
+                WaTask includes pacing controls and delivery monitoring so you can spread sends over time and avoid spam reports. The key is respecting group members: use proper pacing, provide value, and ensure your messages are relevant and welcome in each group. Capability does not equal permission.
               </p>
             </div>
 
