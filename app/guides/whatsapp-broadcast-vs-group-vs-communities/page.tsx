@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'WhatsApp Broadcast vs Group Messaging vs Communities (2026)',
   description: 'Clear taxonomy: broadcast lists send 1:1 messages, group chats are shared conversations, and Communities organize multiple groups. Learn when each fits your needs.',
   alternates: {
-    canonical: 'https://watask.com/guides/whatsapp-broadcast-vs-group-vs-communities',
+    canonical: 'https://www.watask.com/guides/whatsapp-broadcast-vs-group-vs-communities',
   },
   openGraph: {
     title: 'WhatsApp Broadcast vs Group Messaging vs Communities (2026)',
     description: 'Clear taxonomy: broadcast lists send 1:1 messages, group chats are shared conversations, and Communities organize multiple groups. Learn when each fits your needs.',
-    url: 'https://watask.com/guides/whatsapp-broadcast-vs-group-vs-communities',
+    url: 'https://www.watask.com/guides/whatsapp-broadcast-vs-group-vs-communities',
     type: 'article',
   },
 };
@@ -416,10 +416,10 @@ export default function BroadcastVsGroupPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link 
-                  href="/register"
+                  href="https://wa.me/306981337327?text=Hi%2C%20I%27d%20like%20to%20try%20WaTask"
                   className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 text-center transition-colors"
                 >
-                  Start Free Trial
+                  Start on WhatsApp
                 </Link>
                 <Link 
                   href="/guides/send-bulk-messages-to-multiple-whatsapp-groups"

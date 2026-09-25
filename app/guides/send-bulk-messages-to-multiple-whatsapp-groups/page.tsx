@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'How to Send Bulk Messages to Multiple WhatsApp Groups at Scale (2026)',
   description: 'Learn why WhatsApp "bulk" tools usually mean 1:1 templates, what Meta\'s Groups API (8-cap) allows, and how multi-group platforms post campaigns into many existing groups.',
   alternates: {
-    canonical: 'https://watask.com/guides/send-bulk-messages-to-multiple-whatsapp-groups',
+    canonical: 'https://www.watask.com/guides/send-bulk-messages-to-multiple-whatsapp-groups',
   },
   openGraph: {
     title: 'How to Send Bulk Messages to Multiple WhatsApp Groups at Scale (2026)',
     description: 'Complete guide to sending campaigns across multiple WhatsApp groups. Understand Cloud API vs Groups API vs multi-group platforms.',
-    url: 'https://watask.com/guides/send-bulk-messages-to-multiple-whatsapp-groups',
+    url: 'https://www.watask.com/guides/send-bulk-messages-to-multiple-whatsapp-groups',
     type: 'article',
   },
 };
@@ -258,7 +258,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
                       pacing controls, team collaboration, and account health management — not just raw bulk sending.
                     </p>
                     <p className="text-gray-700 mb-3">
-                      <strong>This is the wedge WaTask / Connexa targets.</strong> Rather than hacking together 
+                      <strong>This is the wedge WaTask targets.</strong> Rather than hacking together 
                       Chrome extensions or building custom API loops, multi-group platforms provide a proper 
                       operating system for group network management.
                     </p>
@@ -594,10 +594,10 @@ export default function BulkWhatsAppGroupsGuidePage() {
 
             <div className="mb-6">
               <Link 
-                href="/register"
+                href="https://wa.me/306981337327?text=Hi%2C%20I%27d%20like%20to%20try%20WaTask"
                 className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 inline-block"
               >
-                Start Free Trial
+                Start on WhatsApp
               </Link>
             </div>
 
