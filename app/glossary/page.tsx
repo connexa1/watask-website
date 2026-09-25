@@ -415,11 +415,6 @@ const terms: Term[] = [
     term: 'WhatsApp Web',
     definition: 'Browser-based version of WhatsApp (web.whatsapp.com) that mirrors your phone\'s account. Historically required phone to be online; now works independently with multi-device. Used by some multi-group tools for Web-based automation since it provides more access than Cloud API for group posting.',
     relatedGuides: []
-  },
-  {
-    term: 'Multi-Device Support',
-    definition: 'WhatsApp feature allowing your account to work on up to 4 linked devices (phone + 3 companions: Web, Desktop, or tablets) without your phone being online. Each device maintains its own encrypted connection. Enabled by default on newer accounts.',
-    relatedGuides: []
   }
 ];
 
