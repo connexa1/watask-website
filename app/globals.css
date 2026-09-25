@@ -102,40 +102,6 @@ body {
     border-left-color: var(--accent-cyber);
     color: var(--text-secondary);
   }
-  
-  /* Light background overrides for guides, glossary, and compare pages */
-  body:has(.light-content) .prose :where(h1):not(:where(.not-prose, .not-prose *)),
-  body:has(.light-content) .prose :where(h2):not(:where(.not-prose, .not-prose *)),
-  body:has(.light-content) .prose :where(h3):not(:where(.not-prose, .not-prose *)),
-  body:has(.light-content) .prose :where(h4):not(:where(.not-prose, .not-prose *)),
-  body:has(.light-content) .prose :where(h5):not(:where(.not-prose, .not-prose *)),
-  body:has(.light-content) .prose :where(h6):not(:where(.not-prose, .not-prose *)) {
-    color: #111827;
-  }
-  
-  body:has(.light-content) .prose :where(p):not(:where(.not-prose, .not-prose *)),
-  body:has(.light-content) .prose :where(li):not(:where(.not-prose, .not-prose *)),
-  body:has(.light-content) .prose :where(td):not(:where(.not-prose, .not-prose *)),
-  body:has(.light-content) .prose :where(th):not(:where(.not-prose, .not-prose *)) {
-    color: #374151;
-  }
-  
-  body:has(.light-content) .prose :where(strong):not(:where(.not-prose, .not-prose *)) {
-    color: #111827;
-  }
-  
-  body:has(.light-content) .prose :where(a):not(:where(.not-prose, .not-prose *)) {
-    color: #059669;
-    text-decoration: underline;
-    text-decoration-color: #059669;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 2px;
-  }
-  
-  body:has(.light-content) .prose :where(a):not(:where(.not-prose, .not-prose *)):hover {
-    color: #047857;
-    text-decoration-color: #047857;
-  }
 }
 
 @layer utilities {

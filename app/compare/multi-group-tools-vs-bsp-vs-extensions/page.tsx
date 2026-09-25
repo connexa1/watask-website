@@ -325,12 +325,6 @@ export default function CategoryComparisonPage() {
                   <td className="border border-gray-200 px-4 py-3 text-center text-red-600 font-semibold">✗</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-200 px-4 py-3 text-gray-700">Official Meta partnership</td>
-                  <td className="border border-gray-200 px-4 py-3 text-center text-green-600 font-semibold">✓</td>
-                  <td className="border border-gray-200 px-4 py-3 text-center text-red-600 font-semibold bg-green-50">✗</td>
-                  <td className="border border-gray-200 px-4 py-3 text-center text-red-600 font-semibold">✗</td>
-                </tr>
-                <tr>
                   <td className="border border-gray-200 px-4 py-3 text-gray-700">Typical pricing model</td>
                   <td className="border border-gray-200 px-4 py-3 text-center text-gray-700 text-sm">Per conversation<br/>+ platform fee</td>
                   <td className="border border-gray-200 px-4 py-3 text-center text-gray-700 text-sm bg-green-50">Subscription or<br/>usage-based</td>

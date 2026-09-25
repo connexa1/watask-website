@@ -72,7 +72,7 @@ const faqSchema = {
 
 export default function BulkWhatsAppGroupsGuidePage() {
   return (
-    <div className="bg-bg-primary">
+    <div className="bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -81,17 +81,17 @@ export default function BulkWhatsAppGroupsGuidePage() {
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header className="mb-12">
           <div className="flex items-center gap-2 mb-4">
-            <Link href="/guides" className="text-sm text-cyber hover:text-cyber-hover transition-colors inline-flex items-center gap-2">
+            <Link href="/guides" className="text-sm text-green-600 hover:text-green-700 transition-colors inline-flex items-center gap-2">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
               Back to Guides
             </Link>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-text-primary mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             How to Send Bulk Messages to Multiple WhatsApp Groups at Scale (2026)
           </h1>
-          <p className="text-xl text-text-secondary leading-relaxed">
+          <p className="text-xl text-gray-700 leading-relaxed">
             Understand your options for posting one campaign into many existing WhatsApp groups — 
             and why most "bulk WhatsApp" tools don't solve this problem.
           </p>
@@ -99,7 +99,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
 
         <div className="prose prose-lg max-w-none prose-invert">
           <section className="mb-12">
-            <p className="text-lg text-text-secondary leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed">
               If you manage multiple WhatsApp groups — for clients, communities, or marketing — you've likely searched 
               for a way to send one message to all of them at once. The problem? Most search results for "bulk WhatsApp" 
               lead to Business Service Provider (BSP) tools that send 1:1 template messages to contact lists, not posts 
