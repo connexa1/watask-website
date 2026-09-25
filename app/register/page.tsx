@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'Start on WhatsApp',
   description: 'Get started with WaTask for multi-group WhatsApp campaigns. Chat with us on WhatsApp to begin.',
   alternates: {
-    canonical: 'https://watask.com/register',
+    canonical: 'https://www.watask.com/register',
   },
   openGraph: {
     title: 'Start on WhatsApp | WaTask',
     description: 'Get started with WaTask for multi-group WhatsApp campaigns. Chat with us on WhatsApp to begin.',
-    url: 'https://watask.com/register',
+    url: 'https://www.watask.com/register',
   },
 };
 

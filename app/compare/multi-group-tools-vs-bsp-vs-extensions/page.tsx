@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'WhatsApp Multi-Group Tools vs BSP Platforms vs Chrome Extensions (2026)',
   description: 'Category comparison: multi-group campaign platforms vs Cloud API BSPs vs browser extensions. When each fits, key differences, and which solves group posting.',
   alternates: {
-    canonical: 'https://watask.com/compare/multi-group-tools-vs-bsp-vs-extensions',
+    canonical: 'https://www.watask.com/compare/multi-group-tools-vs-bsp-vs-extensions',
   },
   openGraph: {
     title: 'WhatsApp Multi-Group Tools vs BSP Platforms vs Chrome Extensions (2026)',
     description: 'Category comparison: multi-group campaign platforms vs Cloud API BSPs vs browser extensions. When each fits, key differences, and which solves group posting.',
-    url: 'https://watask.com/compare/multi-group-tools-vs-bsp-vs-extensions',
+    url: 'https://www.watask.com/compare/multi-group-tools-vs-bsp-vs-extensions',
     type: 'article',
   },
 };

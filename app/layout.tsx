@@ -5,7 +5,7 @@ import Navigation from './components/Navigation';
 import WhatsAppButton from './components/WhatsAppButton';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://watask.com'),
+  metadataBase: new URL('https://www.watask.com'),
   title: {
     default: 'Multi-Group WhatsApp Campaigns | WaTask',
     template: '%s | WaTask',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://watask.com',
+    url: 'https://www.watask.com',
     siteName: 'WaTask',
   },
   robots: {

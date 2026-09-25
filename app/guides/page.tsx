@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'WhatsApp Multi-Group Campaign Guides',
   description: 'Learn how multi-group WhatsApp campaigns differ from Cloud API broadcasts and Meta\'s Groups API — practical guides for agencies and community teams.',
   alternates: {
-    canonical: 'https://watask.com/guides',
+    canonical: 'https://www.watask.com/guides',
   },
   openGraph: {
     title: 'WhatsApp Multi-Group Campaign Guides | WaTask',
     description: 'Learn how multi-group WhatsApp campaigns differ from Cloud API broadcasts and Meta\'s Groups API — practical guides for agencies and community teams.',
-    url: 'https://watask.com/guides',
+    url: 'https://www.watask.com/guides',
   },
 };
 

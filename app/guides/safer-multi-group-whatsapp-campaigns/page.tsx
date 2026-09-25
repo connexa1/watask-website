@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'Safer Multi-Group WhatsApp Campaigns: Pacing, Consent & Account Health (2026)',
   description: 'Operational best practices for multi-group campaigns: pacing send intervals, respecting group norms, monitoring account health, and avoiding spam behavior. Professional guidance without scare tactics.',
   alternates: {
-    canonical: 'https://watask.com/guides/safer-multi-group-whatsapp-campaigns',
+    canonical: 'https://www.watask.com/guides/safer-multi-group-whatsapp-campaigns',
   },
   openGraph: {
     title: 'Safer Multi-Group WhatsApp Campaigns: Pacing, Consent & Account Health (2026)',
     description: 'Operational best practices for multi-group campaigns: pacing send intervals, respecting group norms, monitoring account health, and avoiding spam behavior.',
-    url: 'https://watask.com/guides/safer-multi-group-whatsapp-campaigns',
+    url: 'https://www.watask.com/guides/safer-multi-group-whatsapp-campaigns',
     type: 'article',
   },
 };

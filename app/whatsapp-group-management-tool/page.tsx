@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'WhatsApp Group Management Tool',
   description: 'What a WhatsApp group management tool is — organize many groups, run multi-group campaigns, and pace delivery. How this category differs from Cloud API BSPs.',
   alternates: {
-    canonical: 'https://watask.com/whatsapp-group-management-tool',
+    canonical: 'https://www.watask.com/whatsapp-group-management-tool',
   },
   openGraph: {
     title: 'WhatsApp Group Management Tool',
     description: 'What a WhatsApp group management tool is — organize many groups, run multi-group campaigns, and pace delivery. How this category differs from Cloud API BSPs.',
-    url: 'https://watask.com/whatsapp-group-management-tool',
+    url: 'https://www.watask.com/whatsapp-group-management-tool',
   },
 };
 

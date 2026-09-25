@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'WhatsApp Group Sending Tools & Alternatives (2026) | Multi-Group Comparison',
   description: 'Comparison of tools for sending to multiple WhatsApp groups — multi-group platforms, BSPs, and what each can and cannot do for group posting.',
   alternates: {
-    canonical: 'https://watask.com/compare/whatsapp-group-sending-alternatives',
+    canonical: 'https://www.watask.com/compare/whatsapp-group-sending-alternatives',
   },
   openGraph: {
     title: 'WhatsApp Group Sending Tools & Alternatives (2026) | Multi-Group Comparison',
     description: 'Comparison of tools for sending to multiple WhatsApp groups — multi-group platforms, BSPs, and what each can and cannot do for group posting.',
-    url: 'https://watask.com/compare/whatsapp-group-sending-alternatives',
+    url: 'https://www.watask.com/compare/whatsapp-group-sending-alternatives',
     type: 'article',
   },
 };
