@@ -23,9 +23,38 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  'itemListElement': [
+    {
+      '@type': 'ListItem',
+      'position': 1,
+      'name': 'Home',
+      'item': 'https://www.watask.com'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 2,
+      'name': 'Compare',
+      'item': 'https://www.watask.com/compare'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 3,
+      'name': 'WhatsApp Group Sending Tools & Alternatives',
+      'item': 'https://www.watask.com/compare/whatsapp-group-sending-alternatives'
+    }
+  ]
+};
+
 export default function AlternativesPage() {
   return (
     <div className="bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section className="bg-gradient-to-b from-gray-50 to-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="mb-6">

@@ -78,12 +78,66 @@ const faqSchema = {
   ]
 };
 
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  'headline': 'Send Bulk Messages to Multiple WhatsApp Groups',
+  'image': 'https://www.watask.com/opengraph-image',
+  'datePublished': '2026-01-15',
+  'dateModified': '2026-09-25',
+  'author': {
+    '@type': 'Organization',
+    'name': 'WaTask'
+  },
+  'publisher': {
+    '@type': 'Organization',
+    'name': 'WaTask'
+  },
+  'mainEntityOfPage': {
+    '@type': 'WebPage',
+    '@id': 'https://www.watask.com/guides/send-bulk-messages-to-multiple-whatsapp-groups'
+  }
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  'itemListElement': [
+    {
+      '@type': 'ListItem',
+      'position': 1,
+      'name': 'Home',
+      'item': 'https://www.watask.com'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 2,
+      'name': 'Guides',
+      'item': 'https://www.watask.com/guides'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 3,
+      'name': 'Send Bulk Messages to Multiple WhatsApp Groups',
+      'item': 'https://www.watask.com/guides/send-bulk-messages-to-multiple-whatsapp-groups'
+    }
+  ]
+};
+
 export default function BulkWhatsAppGroupsGuidePage() {
   return (
     <div className="bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

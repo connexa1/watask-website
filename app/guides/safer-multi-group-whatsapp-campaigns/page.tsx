@@ -70,12 +70,67 @@ const faqSchema = {
   ]
 };
 
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  'headline': 'WhatsApp Multi-Group Campaign Best Practices',
+  'description': 'Operational best practices for multi-group campaigns: pacing send intervals, respecting group norms, monitoring account health.',
+  'image': 'https://www.watask.com/opengraph-image',
+  'datePublished': '2026-01-15',
+  'dateModified': '2026-09-25',
+  'author': {
+    '@type': 'Organization',
+    'name': 'WaTask'
+  },
+  'publisher': {
+    '@type': 'Organization',
+    'name': 'WaTask'
+  },
+  'mainEntityOfPage': {
+    '@type': 'WebPage',
+    '@id': 'https://www.watask.com/guides/safer-multi-group-whatsapp-campaigns'
+  }
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  'itemListElement': [
+    {
+      '@type': 'ListItem',
+      'position': 1,
+      'name': 'Home',
+      'item': 'https://www.watask.com'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 2,
+      'name': 'Guides',
+      'item': 'https://www.watask.com/guides'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 3,
+      'name': 'Multi-Group Campaign Best Practices',
+      'item': 'https://www.watask.com/guides/safer-multi-group-whatsapp-campaigns'
+    }
+  ]
+};
+
 export default function SaferCampaignsPage() {
   return (
     <div className="bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

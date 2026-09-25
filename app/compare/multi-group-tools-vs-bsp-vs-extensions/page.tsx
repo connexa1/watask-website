@@ -48,8 +48,33 @@ const faqSchema = {
       'name': 'Which category should I choose for posting into existing large groups?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'For posting campaigns into many existing large groups you already manage, choose a multi-group platform. BSPs cannot access your groups (they only do 1:1 messaging), and Chrome extensions work but lack professional features and carry account risks. Multi-group platforms are purpose-built for this job with safety and control features.'
+        'text': 'For posting campaigns into many existing large groups you already manage, choose a multi-group platform. BSPs cannot access your groups (they only do 1:1 messaging), and Chrome extensions work but lack professional features and carry account risks. Multi-group platforms are purpose-built for this job with control and pacing features.'
       }
+    }
+  ]
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  'itemListElement': [
+    {
+      '@type': 'ListItem',
+      'position': 1,
+      'name': 'Home',
+      'item': 'https://www.watask.com'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 2,
+      'name': 'Compare',
+      'item': 'https://www.watask.com/compare'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 3,
+      'name': 'Multi-Group Tools vs BSP vs Extensions',
+      'item': 'https://www.watask.com/compare/multi-group-tools-vs-bsp-vs-extensions'
     }
   ]
 };
@@ -60,6 +85,10 @@ export default function CategoryComparisonPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       
       <section className="bg-gradient-to-b from-gray-50 to-white py-16 px-4 sm:px-6 lg:px-8">
@@ -298,7 +327,7 @@ export default function CategoryComparisonPage() {
                 </tr>
                 <tr>
                   <td className="border border-gray-200 px-4 py-3 text-gray-700">Group collections & organization</td>
-                  <td className="border border-gray-200 px-4 py-3 text-center text-gray-400">N/A</td>
+                  <td className="border border-gray-200 px-4 py-3 text-center text-gray-600">N/A</td>
                   <td className="border border-gray-200 px-4 py-3 text-center text-green-700 font-semibold bg-green-50">✓</td>
                   <td className="border border-gray-200 px-4 py-3 text-center text-red-600 font-semibold">✗</td>
                 </tr>
