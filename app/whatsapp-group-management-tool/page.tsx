@@ -204,7 +204,7 @@ export default function CategoryPage() {
           </h2>
           
           <div className="space-y-6 mb-12">
-            <div className="glass-panel border-[var(--border-subtle)] rounded-lg p-6 bg-bg-card">
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
                 What is a WhatsApp group management tool?
               </h3>
@@ -213,7 +213,7 @@ export default function CategoryPage() {
               </p>
             </div>
 
-            <div className="glass-panel border-[var(--border-subtle)] rounded-lg p-6 bg-bg-card">
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
                 How does a group management tool differ from WhatsApp Business API / BSP tools?
               </h3>
@@ -222,7 +222,7 @@ export default function CategoryPage() {
               </p>
             </div>
 
-            <div className="glass-panel border-[var(--border-subtle)] rounded-lg p-6 bg-bg-card">
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
                 Who needs a WhatsApp group management tool?
               </h3>
@@ -231,7 +231,7 @@ export default function CategoryPage() {
               </p>
             </div>
 
-            <div className="glass-panel border-[var(--border-subtle)] rounded-lg p-6 bg-bg-card">
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
                 Can I use a BSP instead of a group management tool?
               </h3>
@@ -240,7 +240,7 @@ export default function CategoryPage() {
               </p>
             </div>
 
-            <div className="glass-panel border-[var(--border-subtle)] rounded-lg p-6 bg-bg-card">
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
                 What features should I look for in a group management tool?
               </h3>
@@ -259,7 +259,7 @@ export default function CategoryPage() {
               </p>
             </div>
 
-            <div className="glass-panel border-[var(--border-subtle)] rounded-lg p-6 bg-bg-card">
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
                 Is this the same as Chrome WhatsApp group sender extensions?
               </h3>
@@ -268,7 +268,7 @@ export default function CategoryPage() {
               </p>
             </div>
 
-            <div className="glass-panel border-[var(--border-subtle)] rounded-lg p-6 bg-bg-card">
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
                 How many groups can I manage with these tools?
               </h3>
@@ -277,7 +277,7 @@ export default function CategoryPage() {
               </p>
             </div>
 
-            <div className="glass-panel border-[var(--border-subtle)] rounded-lg p-6 bg-bg-card">
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
                 Do I still need manual posting or can I fully automate?
               </h3>

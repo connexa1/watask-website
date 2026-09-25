@@ -450,7 +450,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
                 href="/guides/safer-multi-group-whatsapp-campaigns"
                 className="text-green-700 hover:text-green-800 font-semibold"
               >
-                Read: Safer Multi-Group WhatsApp Campaigns →
+                Multi-Group Campaign Best Practices →
               </Link>
             </div>
           </section>
@@ -683,7 +683,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
                 </li>
                 <li>
                   <Link href="/guides/safer-multi-group-whatsapp-campaigns" className="text-green-700 hover:text-green-800">
-                    Safer Multi-Group Campaigns →
+                    Multi-Group Campaign Best Practices →
                   </Link>
                 </li>
               </ul>

@@ -142,7 +142,7 @@ export default function CategoryComparisonPage() {
                 <div>
                   <p className="font-semibold text-gray-900 mb-2">What they do:</p>
                   <p className="text-gray-700">
-                    BSPs provide access to Meta's official WhatsApp Cloud API for <strong>1:1 template messaging</strong>, 
+                    BSPs provide access to Meta's WhatsApp Cloud API for <strong>1:1 template messaging</strong>, 
                     shared inboxes, customer conversations, and automation. Examples: WATI, AiSensy, Interakt, 360dialog, Respond.io.
                   </p>
                 </div>
@@ -401,7 +401,7 @@ export default function CategoryComparisonPage() {
                 <li>• Your job is <strong>posting campaigns into many existing groups</strong> your numbers are already in</li>
                 <li>• You manage <strong>dozens or hundreds of groups</strong> (client groups, community groups, regional groups)</li>
                 <li>• You need <strong>group collections</strong> to organize and segment your network</li>
-                <li>• You want <strong>pacing, monitoring, and safety controls</strong> for multi-group operations</li>
+                <li>• You want <strong>pacing, monitoring, and control features</strong> for multi-group operations</li>
                 <li>• You need <strong>team collaboration</strong> on group campaigns</li>
               </ul>
               <p className="text-gray-700 mt-4">
@@ -485,7 +485,7 @@ export default function CategoryComparisonPage() {
                 For posting campaigns into many existing large groups you already manage, choose a <strong>multi-group 
                 platform</strong>. BSPs cannot access your groups (they only do 1:1 messaging), and Chrome extensions work 
                 but lack professional features and carry account risks. Multi-group platforms are purpose-built for this 
-                job with safety and control features.
+                job with control features.
               </p>
             </div>
 
@@ -495,7 +495,7 @@ export default function CategoryComparisonPage() {
               </h3>
               <p className="text-gray-700">
                 Most "best WhatsApp marketing software" roundups focus on <strong>Cloud API BSPs</strong> because that's the 
-                mainstream, officially-supported category. Multi-group platforms serve a niche — teams who already manage many 
+                mainstream category. Multi-group platforms serve a niche — teams who already manage many 
                 existing groups. It's a separate category that roundup authors often don't know about or choose not to cover.
               </p>
             </div>

@@ -96,7 +96,7 @@ export default function AlternativesPage() {
           </h2>
 
           <p className="text-gray-700 mb-6">
-            Business Service Providers (BSPs) like WATI, AiSensy, Interakt, and others are built on Meta's official 
+            Business Service Providers (BSPs) like WATI, AiSensy, Interakt, and others are built on Meta's 
             WhatsApp Cloud API. This API is designed for <strong>1:1 template messaging</strong> to individual contacts — 
             not for posting inside group chats.
           </p>
@@ -360,7 +360,7 @@ export default function AlternativesPage() {
                   </p>
                   <p className="text-gray-700">
                     Choose a <strong>multi-group platform</strong> like WaTask. Get group collections, pacing, monitoring, 
-                    and safety features built for this job.
+                    and control features built for this job.
                   </p>
                 </div>
               </div>
@@ -419,7 +419,7 @@ export default function AlternativesPage() {
                 Why do "best WhatsApp marketing" roundups only show BSPs?
               </h3>
               <p className="text-gray-700">
-                Most roundups focus on <strong>Cloud API BSPs</strong> because that's the mainstream, officially-supported 
+                Most roundups focus on <strong>Cloud API BSPs</strong> because that's the mainstream 
                 category. Multi-group platforms serve a specific niche — teams who already manage many existing groups. 
                 It's a separate category that general WhatsApp marketing roundups often don't cover, or authors may not 
                 be aware of.
@@ -489,7 +489,7 @@ export default function AlternativesPage() {
                 </li>
                 <li>
                   <Link href="/guides/safer-multi-group-whatsapp-campaigns" className="text-green-700 hover:text-green-800">
-                    Safer Multi-Group Campaigns →
+                    Multi-Group Campaign Best Practices →
                   </Link>
                 </li>
                 <li>
