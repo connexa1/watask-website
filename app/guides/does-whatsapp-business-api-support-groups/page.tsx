@@ -140,7 +140,7 @@ export default function DoesAPISupportGroupsPage() {
 
                 <div className="space-y-4">
                   <p className="text-gray-700 leading-relaxed">
-                    This is what BSP platforms (WATI, AiSensy, Interakt, Respond.io) use. The Cloud API is designed exclusively for <strong>1:1 template-based messaging</strong> to opted-in contacts.
+                    This is what BSP platforms (WATI, AiSensy, Interakt, Respond.io) use. The Cloud API sends <strong>1:1 template-based messages</strong> to opted-in contacts and, via the Groups API, only to small new API-created groups (max 8 participants).
                   </p>
 
                   <div>
@@ -370,7 +370,7 @@ export default function DoesAPISupportGroupsPage() {
                   Why do BSP tools like WATI not post into groups?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  BSP (Business Service Provider) tools use the WhatsApp Cloud API, which is designed <strong>exclusively for 1:1 template messaging</strong> to opted-in contacts. The API does not provide access to group chats, so BSPs cannot post into groups — this is an <strong>API design constraint</strong>, not a feature the BSPs chose to omit.
+                  BSP (Business Service Provider) tools use the WhatsApp Cloud API, which sends <strong>1:1 template messages</strong> to opted-in contacts and, via the Groups API, only to small new API-created groups (max 8 participants). The API does not provide access to existing large groups, so BSPs cannot post into them — this is an <strong>API design constraint</strong>, not a feature the BSPs chose to omit.
                 </p>
               </div>
 
