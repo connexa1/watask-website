@@ -23,7 +23,7 @@ const categoryFaqSchema = {
       'name': 'What is a WhatsApp group management tool?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'A WhatsApp group management tool helps teams organize, segment, and campaign across many existing WhatsApp groups. These platforms provide group collections, multi-group sending, pacing controls, and team collaboration features — solving the job that traditional Business API platforms (BSPs) and the official API don\'t address.'
+        'text': 'A WhatsApp group management tool helps teams organize, segment, and campaign across many existing WhatsApp groups. These platforms provide group collections, multi-group sending, pacing controls, and team collaboration features — solving the job that traditional Business API platforms (BSPs) don\'t address.'
       }
     },
     {
@@ -201,7 +201,7 @@ export default function CategoryPage() {
                 What is a WhatsApp group management tool?
               </h3>
               <p className="text-text-secondary leading-relaxed">
-                A WhatsApp group management tool helps teams <strong className="text-text-primary">organize, segment, and campaign across many existing WhatsApp groups</strong>. These platforms provide group collections, multi-group sending, pacing controls, and team collaboration features — solving the job that traditional Business API platforms (BSPs) and the official API don't address.
+                A WhatsApp group management tool helps teams <strong className="text-text-primary">organize, segment, and campaign across many existing WhatsApp groups</strong>. These platforms provide group collections, multi-group sending, pacing controls, and team collaboration features — solving the job that traditional Business API platforms (BSPs) don't address.
               </p>
             </div>
 

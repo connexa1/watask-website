@@ -43,7 +43,7 @@ const glossarySchema = {
     {
       '@type': 'DefinedTerm',
       'name': 'WhatsApp Cloud API',
-      'description': 'Meta\'s official API for business messaging. Enables 1:1 template messages, media sending, and automation. Does not provide access to post into existing large consumer groups.'
+      'description': 'Meta\'s WhatsApp Business API for business messaging. Enables 1:1 template messages, media sending, and automation. Does not provide access to post into existing large consumer groups.'
     },
     {
       '@type': 'DefinedTerm',
@@ -207,11 +207,6 @@ const glossarySchema = {
     },
     {
       '@type': 'DefinedTerm',
-      'name': 'Multi-Device Support',
-      'description': 'WhatsApp feature allowing your account to work on up to 4 linked devices without your phone being online. Each device maintains its own connection to WhatsApp servers.'
-    },
-    {
-      '@type': 'DefinedTerm',
       'name': 'Business Messaging',
       'description': 'The broader category of using WhatsApp for business communications, including customer service, marketing campaigns, transactional notifications, and group management.'
     }
@@ -258,7 +253,7 @@ const terms: Term[] = [
   },
   {
     term: 'WhatsApp Cloud API',
-    definition: 'Meta\'s official API for business messaging, replacing the older Business API. Enables 1:1 template messages, media sending, webhooks, and automation for businesses. Requires opt-in and approved message templates. Does not provide access to post into existing large consumer groups — that requires unofficial approaches or the Groups API (limited to 8 participants).',
+    definition: 'Meta\'s WhatsApp Business API for business messaging. Enables 1:1 template messages, media sending, webhooks, and automation for businesses. Requires opt-in and approved message templates. Does not provide access to post into existing large consumer groups. The Groups API is limited to small new groups (max 8 participants).',
     relatedGuides: [
       { title: 'Does Business API Support Groups?', href: '/guides/does-whatsapp-business-api-support-groups' },
       { title: 'Groups API Limits', href: '/guides/whatsapp-groups-api-limits' }
@@ -353,7 +348,7 @@ const terms: Term[] = [
   },
   {
     term: 'Multi-Group Campaign',
-    definition: 'Sending one coordinated message into many existing WhatsApp groups you administrate. All group members see the post in their group chat. Different from broadcast lists (1:1 individual messages) and Cloud API campaigns (also 1:1 template messages to contacts). Requires either unofficial tools or manual posting.',
+    definition: 'Sending one coordinated message into many existing WhatsApp groups your numbers are in. All group members see the post in their group chat. Different from broadcast lists (1:1 individual messages) and Cloud API campaigns (also 1:1 template messages to contacts).',
     relatedGuides: [
       { title: 'How to Send to Multiple Groups', href: '/guides/send-bulk-messages-to-multiple-whatsapp-groups' },
       { title: 'Safer Multi-Group Campaigns', href: '/guides/safer-multi-group-whatsapp-campaigns' }
