@@ -391,17 +391,6 @@ export default function AlternativesPage() {
 
             <div className="border-b border-[var(--border-subtle)] pb-6">
               <h3 className="text-lg font-semibold text-text-primary mb-3">
-                Are multi-group platforms official Meta partners?
-              </h3>
-              <p className="text-text-secondary">
-                <strong>No.</strong> Multi-group posting into existing consumer groups is not a feature Meta offers through 
-                Cloud API. Multi-group platforms use alternative approaches, so they don't have official BSP status. BSPs 
-                are official partners but cannot post into your existing large groups because the Cloud API doesn't support it.
-              </p>
-            </div>
-
-            <div className="border-b border-[var(--border-subtle)] pb-6">
-              <h3 className="text-lg font-semibold text-text-primary mb-3">
                 Can I use a BSP and a multi-group tool together?
               </h3>
               <p className="text-text-secondary">

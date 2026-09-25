@@ -242,7 +242,7 @@ export default function CategoryPage() {
               <ul className="space-y-2 text-text-secondary">
                 <li>• <strong className="text-text-primary">Group inventory and collections</strong> (organize by client, region, or topic)</li>
                 <li>• <strong className="text-text-primary">Multi-group campaign sending</strong> (post one message to many groups)</li>
-                <li>• <strong className="text-text-primary">Pacing and delivery controls</strong> (safe send intervals, not instant blasts)</li>
+                <li>• <strong className="text-text-primary">Pacing and delivery controls</strong> (steady send intervals, not instant blasts)</li>
                 <li>• <strong className="text-text-primary">Team collaboration and roles</strong> (shared access, audit trails)</li>
                 <li>• <strong className="text-text-primary">Delivery monitoring</strong> (track which groups received your message)</li>
                 <li>• <strong className="text-text-primary">Delivery monitoring</strong> (warnings, pause capabilities)</li>

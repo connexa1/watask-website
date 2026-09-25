@@ -364,7 +364,7 @@ export default function SaferCampaignsPage() {
 
                 <div className="space-y-4">
                   <p className="text-gray-700 leading-relaxed">
-                    The tools you use affect your ability to campaign safely. <strong>Built-in safety features</strong> make professional multi-group management easier.
+                    The tools you use affect your ability to campaign effectively. <strong>Built-in controls</strong> make professional multi-group management easier.
                   </p>
 
                   <div className="space-y-6">

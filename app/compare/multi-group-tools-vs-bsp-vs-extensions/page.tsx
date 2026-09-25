@@ -336,12 +336,6 @@ export default function CategoryComparisonPage() {
                   <td className="border border-[var(--border-subtle)] px-4 py-3 text-center text-text-secondary text-sm bg-green-50">Subscription or<br/>usage-based</td>
                   <td className="border border-[var(--border-subtle)] px-4 py-3 text-center text-text-secondary text-sm">Free to<br/>one-time fee</td>
                 </tr>
-                <tr>
-                  <td className="border border-[var(--border-subtle)] px-4 py-3 text-text-secondary">Account risk level</td>
-                  <td className="border border-[var(--border-subtle)] px-4 py-3 text-center text-green-700 font-medium">Low (official)</td>
-                  <td className="border border-[var(--border-subtle)] px-4 py-3 text-center text-yellow-700 font-medium bg-green-50">Medium (careful use)</td>
-                  <td className="border border-[var(--border-subtle)] px-4 py-3 text-center text-red-700 font-medium">Higher (no controls)</td>
-                </tr>
               </tbody>
             </table>
           </div>
@@ -461,18 +455,6 @@ export default function CategoryComparisonPage() {
                 platform</strong>. BSPs cannot access your groups (they only do 1:1 messaging), and Chrome extensions work 
                 but lack professional features and carry account risks. Multi-group platforms are purpose-built for this 
                 job with safety and control features.
-              </p>
-            </div>
-
-            <div className="border-b border-[var(--border-subtle)] pb-6">
-              <h3 className="text-lg font-semibold text-text-primary mb-3">
-                Are multi-group platforms official Meta partners?
-              </h3>
-              <p className="text-text-secondary">
-                <strong>No.</strong> Multi-group posting into existing consumer groups is not a feature Meta offers through 
-                Cloud API (which sends 1:1 messages and via Groups API to small 8-participant new groups). Multi-group platforms 
-                use alternative approaches, so they don't have official BSP status. BSPs are official partners but can't post 
-                into your existing large groups.
               </p>
             </div>
 

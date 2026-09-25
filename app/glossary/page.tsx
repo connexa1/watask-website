@@ -88,7 +88,7 @@ const glossarySchema = {
     {
       '@type': 'DefinedTerm',
       'name': 'Pacing',
-      'description': 'Spreading message sends over time rather than sending all at once. Essential for multi-group campaigns to maintain account health and respect community norms.'
+      'description': 'Spreading message sends over time rather than sending all at once. Used for multi-group campaigns to pace delivery.'
     },
     {
       '@type': 'DefinedTerm',
@@ -310,7 +310,7 @@ const terms: Term[] = [
   },
   {
     term: 'Pacing',
-    definition: 'Spreading message sends over time with delays between sends, rather than sending all at once. Essential for multi-group campaigns to maintain account health, respect community norms, and avoid appearing spammy. Professional multi-group tools build pacing controls in; with extensions or DIY approaches you manage it manually.',
+    definition: 'Spreading message sends over time with delays between sends, rather than sending all at once. Used for multi-group campaigns to pace delivery. Professional multi-group tools build pacing controls in; with extensions or DIY approaches you manage it manually.',
     relatedGuides: [
       { title: 'Safer Multi-Group Campaigns', href: '/guides/safer-multi-group-whatsapp-campaigns' },
       { title: 'How to Send to Multiple Groups', href: '/guides/send-bulk-messages-to-multiple-whatsapp-groups' }
@@ -531,7 +531,7 @@ export default function GlossaryPage() {
             Ready to manage your group network?
           </h2>
           <p className="text-text-secondary mb-6">
-            WaTask helps you organize collections, run multi-group campaigns, and pace delivery safely across your WhatsApp group network.
+            WaTask helps you organize collections, run multi-group campaigns, and pace delivery across your WhatsApp group network.
           </p>
           <Link 
             href="https://wa.me/306981337327?text=Hi%2C%20I%27d%20like%20to%20try%20WaTask"
