@@ -3,13 +3,13 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'WhatsApp Groups API Limits Explained (2026)',
-  description: 'Meta\'s official WhatsApp Groups API is limited to 8 participants per group, invite-only, and requires OBA. Learn what the API can and cannot do for your existing groups.',
+  description: 'Meta\'s WhatsApp Groups API is limited to 8 participants per group, invite-only, and requires OBA. Learn what the API can and cannot do for your existing groups.',
   alternates: {
     canonical: 'https://www.watask.com/guides/whatsapp-groups-api-limits',
   },
   openGraph: {
     title: 'WhatsApp Groups API Limits Explained (2026)',
-    description: 'Meta\'s official WhatsApp Groups API is limited to 8 participants per group, invite-only, and requires OBA. Learn what the API can and cannot do for your existing groups.',
+    description: 'Meta\'s WhatsApp Groups API is limited to 8 participants per group, invite-only, and requires OBA. Learn what the API can and cannot do for your existing groups.',
     url: 'https://www.watask.com/guides/whatsapp-groups-api-limits',
     type: 'article',
   },
@@ -85,7 +85,7 @@ export default function GroupsAPILimitsPage() {
             WhatsApp Groups API Limits Explained (2026)
           </h1>
           <p className="text-xl text-gray-700 leading-relaxed">
-            Understanding Meta's official Groups API constraints: 8-participant cap, invite-only requirements, and why it doesn't work for existing large groups.
+            Understanding Meta's Groups API constraints: 8-participant cap, invite-only requirements, and why it doesn't work for existing large groups.
           </p>
         </header>
 
@@ -99,12 +99,12 @@ export default function GroupsAPILimitsPage() {
                 The Meta WhatsApp Groups API is limited to groups with a <strong className="text-gray-900">maximum of 8 participants</strong>. These groups must be invite-only and created through the API. You can manage up to <strong className="text-gray-900">10,000</strong> such groups per business phone number.
               </p>
               <p className="text-gray-900 font-semibold mb-0 text-lg">
-                If you manage dozens or hundreds of existing WhatsApp groups with 50-500+ members each, the official Groups API will not help you send campaigns to those groups.
+                If you manage dozens or hundreds of existing WhatsApp groups with 50-500+ members each, Meta's Groups API will not help you send campaigns to those groups.
               </p>
             </div>
 
             <p className="text-gray-700 leading-relaxed">
-              When developers and marketers search for ways to message multiple WhatsApp groups, many assume the official WhatsApp Business API has a solution. The <strong className="text-gray-900">WhatsApp Groups API</strong> does exist on the Business Platform, but its design and constraints mean it's <em>not</em> the answer for most multi-group campaign needs.
+              When developers and marketers search for ways to message multiple WhatsApp groups, many assume the WhatsApp Business API has a solution. The <strong className="text-gray-900">WhatsApp Groups API</strong> does exist on the Business Platform, but its design and constraints mean it's <em>not</em> the answer for most multi-group campaign needs.
             </p>
             <p className="text-gray-700 leading-relaxed">
               This guide documents the official constraints with citations from Meta's documentation, explains what the API <em>can</em> do, and clarifies why it doesn't solve the "send one campaign to many existing large groups" job.
@@ -282,7 +282,7 @@ export default function GroupsAPILimitsPage() {
             </h2>
             
             <p className="text-gray-700 mb-6 leading-relaxed">
-              If the official Groups API doesn't fit your needs, what are the alternatives?
+              If Meta's Groups API doesn't fit your needs, what are the alternatives?
             </p>
 
             <div className="space-y-6">
@@ -420,7 +420,7 @@ export default function GroupsAPILimitsPage() {
             </h2>
             
             <p className="text-gray-700 mb-6 leading-relaxed">
-              WaTask is built for the job the official Groups API doesn't solve: managing and campaigning across many existing large groups with collections, pacing, and team collaboration.
+              WaTask is built for the job Meta's Groups API doesn't solve: managing and campaigning across many existing large groups with collections, pacing, and team collaboration.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-6">

@@ -204,7 +204,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
                       Meta WhatsApp Groups API (Official, Capped)
                     </h3>
                     <p className="text-gray-700 mb-3">
-                      <strong>Key constraints:</strong> The official WhatsApp Groups API on the Business Platform 
+                      <strong>Key constraints:</strong> The WhatsApp Groups API on the Business Platform 
                       is limited to groups with a <strong>maximum of 8 participants</strong>. Groups must be 
                       invite-only and created through the API. You can manage up to 10,000 groups per phone number.
                     </p>
@@ -415,7 +415,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
                   Assuming Meta Groups API Unlocks Existing Large Groups
                 </h3>
                 <p className="text-gray-700">
-                  The 8-participant cap and invite-only requirements mean the official Groups API won't help 
+                  The 8-participant cap and invite-only requirements mean Meta's Groups API won't help 
                   with your existing 100+ member marketing or community groups. Don't build a strategy around 
                   this API if you already have established groups.
                 </p>

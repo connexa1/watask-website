@@ -531,7 +531,7 @@ export default function BroadcastVsGroupPage() {
                   WhatsApp Groups API Limits Explained →
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  Why Meta's official Groups API (8-cap) doesn't solve multi-group campaigns
+                  Why Meta's Groups API (8-cap) doesn't solve multi-group campaigns
                 </p>
               </Link>
 

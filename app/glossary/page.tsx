@@ -53,7 +53,7 @@ const glossarySchema = {
     {
       '@type': 'DefinedTerm',
       'name': 'WhatsApp Groups API',
-      'description': 'An official Meta API for creating and managing small API-based groups. Limited to 8 participants per group, invite-only, and cannot access existing large consumer groups. Part of the Cloud API platform.'
+      'description': 'A Meta API for creating and managing small API-based groups. Limited to 8 participants per group, invite-only, and cannot access existing large consumer groups. Part of the Cloud API platform.'
     },
     {
       '@type': 'DefinedTerm',
@@ -268,7 +268,7 @@ const terms: Term[] = [
   },
   {
     term: 'WhatsApp Groups API',
-    definition: 'An official Meta API for creating and managing small API-based groups. Strictly limited to 8 participants per group, invite-only, and cannot access or post into existing large consumer groups. Part of the Cloud API Business Platform. Requires an Official Business Account (OBA). You can manage up to 10,000 groups per phone number.',
+    definition: 'A Meta API for creating and managing small API-based groups. Strictly limited to 8 participants per group, invite-only, and cannot access or post into existing large consumer groups. Part of the Cloud API Business Platform. Requires an Official Business Account (OBA). You can manage up to 10,000 groups per phone number.',
     relatedGuides: [
       { title: 'Groups API Limits Explained', href: '/guides/whatsapp-groups-api-limits' },
       { title: 'Does Business API Support Groups?', href: '/guides/does-whatsapp-business-api-support-groups' }
@@ -295,7 +295,7 @@ const terms: Term[] = [
     term: 'Quality Rating',
     definition: 'Meta\'s assessment of your business messaging quality on Cloud API. Based on user feedback signals like blocks, reports, and message response patterns. Ratings are Green (high quality), Yellow (medium), or Red (low). Poor ratings restrict your messaging limits and can lead to number suspension. Check in Meta Business Manager.',
     relatedGuides: [
-      { title: 'Safer Multi-Group Campaigns', href: '/guides/safer-multi-group-whatsapp-campaigns' }
+      { title: 'Multi-Group Best Practices Campaigns', href: '/guides/safer-multi-group-whatsapp-campaigns' }
     ]
   },
   {
@@ -312,7 +312,7 @@ const terms: Term[] = [
     term: 'Pacing',
     definition: 'Spreading message sends over time with delays between sends, rather than sending all at once. Used for multi-group campaigns to pace delivery. Professional multi-group tools build pacing controls in; with extensions or DIY approaches you manage it manually.',
     relatedGuides: [
-      { title: 'Safer Multi-Group Campaigns', href: '/guides/safer-multi-group-whatsapp-campaigns' },
+      { title: 'Multi-Group Best Practices Campaigns', href: '/guides/safer-multi-group-whatsapp-campaigns' },
       { title: 'How to Send to Multiple Groups', href: '/guides/send-bulk-messages-to-multiple-whatsapp-groups' }
     ]
   },
@@ -320,7 +320,7 @@ const terms: Term[] = [
     term: 'Throttling',
     definition: 'Rate limiting message sends to avoid triggering spam filters, platform restrictions, or overwhelming recipients. Similar to pacing. Can be platform-imposed (Meta limits) or self-imposed (your sending strategy). Important for account health in multi-group scenarios.',
     relatedGuides: [
-      { title: 'Safer Multi-Group Campaigns', href: '/guides/safer-multi-group-whatsapp-campaigns' }
+      { title: 'Multi-Group Best Practices Campaigns', href: '/guides/safer-multi-group-whatsapp-campaigns' }
     ]
   },
   {
@@ -351,14 +351,14 @@ const terms: Term[] = [
     definition: 'Sending one coordinated message into many existing WhatsApp groups your numbers are in. All group members see the post in their group chat. Different from broadcast lists (1:1 individual messages) and Cloud API campaigns (also 1:1 template messages to contacts).',
     relatedGuides: [
       { title: 'How to Send to Multiple Groups', href: '/guides/send-bulk-messages-to-multiple-whatsapp-groups' },
-      { title: 'Safer Multi-Group Campaigns', href: '/guides/safer-multi-group-whatsapp-campaigns' }
+      { title: 'Multi-Group Best Practices Campaigns', href: '/guides/safer-multi-group-whatsapp-campaigns' }
     ]
   },
   {
     term: 'Account Health',
     definition: 'The overall standing of your WhatsApp account based on usage patterns, user reports, blocks, and spam signals. Poor account health leads to restrictions (throttling, messaging limits) or outright bans. Monitored by Meta for Cloud API users; consumer accounts also face restrictions for abuse.',
     relatedGuides: [
-      { title: 'Safer Multi-Group Campaigns', href: '/guides/safer-multi-group-whatsapp-campaigns' }
+      { title: 'Multi-Group Best Practices Campaigns', href: '/guides/safer-multi-group-whatsapp-campaigns' }
     ]
   },
   {

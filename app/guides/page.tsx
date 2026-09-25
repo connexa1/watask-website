@@ -47,7 +47,7 @@ const guides = [
     youllLearn: 'Community structure, the 50-group cap, cross-Community campaigns, and when you need more than Communities.',
   },
   {
-    title: 'Safer Multi-Group WhatsApp Campaigns',
+    title: 'Multi-Group Best Practices WhatsApp Campaigns',
     href: '/guides/safer-multi-group-whatsapp-campaigns',
     category: 'Best Practices',
     status: 'Published',

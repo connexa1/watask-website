@@ -264,7 +264,7 @@ export default function DoesAPISupportGroupsPage() {
             </h2>
             
             <p className="text-gray-700 mb-6 leading-relaxed">
-              If the official WhatsApp Business API doesn't support posting into your existing large groups, what <em>does</em> work?
+              If the WhatsApp Business API doesn't support posting into your existing large groups, what <em>does</em> work?
             </p>
 
             <div className="space-y-6">
