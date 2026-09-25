@@ -534,6 +534,30 @@ export default function BroadcastVsGroupPage() {
                   Why Meta's official Groups API (8-cap) doesn't solve multi-group campaigns
                 </p>
               </Link>
+
+              <Link 
+                href="/guides/whatsapp-communities-bulk-messaging"
+                className="block bg-white border border-gray-200 rounded-lg p-4 hover:border-green-400 transition-colors"
+              >
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-green-600">
+                  WhatsApp Communities for Bulk Messaging →
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  How Communities work, their limits, and when multi-group tools complement them
+                </p>
+              </Link>
+
+              <Link 
+                href="/glossary"
+                className="block bg-white border border-gray-200 rounded-lg p-4 hover:border-green-400 transition-colors"
+              >
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-green-600">
+                  WhatsApp Business Glossary →
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  Definitions of broadcast list, group, Community, and more
+                </p>
+              </Link>
             </div>
           </section>
         </div>

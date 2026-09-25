@@ -84,8 +84,13 @@ export default function RootLayout({
                     </Link>
                   </li>
                   <li>
-                    <Link href="/guides/whatsapp-groups-api-limits" className="text-text-secondary hover:text-cyber transition-colors">
-                      API limits explained
+                    <Link href="/guides/whatsapp-communities-bulk-messaging" className="text-text-secondary hover:text-cyber transition-colors">
+                      Communities guide
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/glossary" className="text-text-secondary hover:text-cyber transition-colors">
+                      Glossary
                     </Link>
                   </li>
                 </ul>
