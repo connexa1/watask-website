@@ -2,16 +2,24 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'WhatsApp Broadcast vs Group Messaging vs Communities (2026)',
-  description: 'Clear taxonomy: broadcast lists send 1:1 messages, group chats are shared conversations, and Communities organize multiple groups. Learn when each fits your needs.',
+  title: 'WhatsApp Broadcast vs Group vs Communities',
+  description: 'Clear taxonomy: broadcast lists send 1:1 messages, group chats are shared conversations, and Communities organize groups. Learn when each fits your needs.',
   alternates: {
     canonical: 'https://www.watask.com/guides/whatsapp-broadcast-vs-group-vs-communities',
   },
   openGraph: {
-    title: 'WhatsApp Broadcast vs Group Messaging vs Communities (2026)',
-    description: 'Clear taxonomy: broadcast lists send 1:1 messages, group chats are shared conversations, and Communities organize multiple groups. Learn when each fits your needs.',
+    title: 'WhatsApp Broadcast vs Group vs Communities',
+    description: 'Clear taxonomy: broadcast lists send 1:1 messages, group chats are shared conversations, and Communities organize groups.',
     url: 'https://www.watask.com/guides/whatsapp-broadcast-vs-group-vs-communities',
     type: 'article',
+    images: [
+      {
+        url: 'https://www.watask.com/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'WaTask - Multi-Group WhatsApp Campaigns',
+      },
+    ],
   },
 };
 

@@ -11,6 +11,14 @@ export const metadata: Metadata = {
     title: 'Start on WhatsApp | WaTask',
     description: 'Get started with WaTask for multi-group WhatsApp campaigns. Chat with us on WhatsApp to begin.',
     url: 'https://www.watask.com/register',
+    images: [
+      {
+        url: 'https://www.watask.com/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'WaTask - Multi-Group WhatsApp Campaigns',
+      },
+    ],
   },
 };
 

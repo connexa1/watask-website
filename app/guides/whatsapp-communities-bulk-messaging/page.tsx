@@ -2,16 +2,24 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'WhatsApp Communities for Bulk Messaging & Multi-Group Campaigns (2026)',
-  description: 'How WhatsApp Communities work, their limits, the announcement group feature, and when you need multi-group tools beyond Communities for cross-org campaigns.',
+  title: 'WhatsApp Communities for Multi-Group Campaigns',
+  description: 'How WhatsApp Communities work, their limits, the announcement group feature, and when multi-group tools complement Communities for cross-org campaigns.',
   alternates: {
     canonical: 'https://www.watask.com/guides/whatsapp-communities-bulk-messaging',
   },
   openGraph: {
-    title: 'WhatsApp Communities for Bulk Messaging & Multi-Group Campaigns (2026)',
-    description: 'How WhatsApp Communities work, their limits, the announcement group feature, and when you need multi-group tools beyond Communities for cross-org campaigns.',
+    title: 'WhatsApp Communities for Multi-Group Campaigns',
+    description: 'How WhatsApp Communities work, their limits, the announcement group feature, and when multi-group tools complement Communities.',
     url: 'https://www.watask.com/guides/whatsapp-communities-bulk-messaging',
     type: 'article',
+    images: [
+      {
+        url: 'https://www.watask.com/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'WaTask - Multi-Group WhatsApp Campaigns',
+      },
+    ],
   },
 };
 

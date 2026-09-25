@@ -2,16 +2,24 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'WhatsApp Group Sending Tools & Alternatives (2026) | Multi-Group Comparison',
+  title: 'WhatsApp Group Sending Tools & Alternatives',
   description: 'Comparison of tools for sending to multiple WhatsApp groups — multi-group platforms, BSPs, and what each can and cannot do for group posting.',
   alternates: {
     canonical: 'https://www.watask.com/compare/whatsapp-group-sending-alternatives',
   },
   openGraph: {
-    title: 'WhatsApp Group Sending Tools & Alternatives (2026) | Multi-Group Comparison',
-    description: 'Comparison of tools for sending to multiple WhatsApp groups — multi-group platforms, BSPs, and what each can and cannot do for group posting.',
+    title: 'WhatsApp Group Sending Tools & Alternatives',
+    description: 'Comparison of tools for sending to multiple WhatsApp groups — multi-group platforms, BSPs, and what each can do.',
     url: 'https://www.watask.com/compare/whatsapp-group-sending-alternatives',
     type: 'article',
+    images: [
+      {
+        url: 'https://www.watask.com/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'WaTask - Multi-Group WhatsApp Campaigns',
+      },
+    ],
   },
 };
 

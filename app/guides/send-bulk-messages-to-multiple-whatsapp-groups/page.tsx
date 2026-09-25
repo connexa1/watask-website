@@ -2,16 +2,24 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'How to Send Bulk Messages to Multiple WhatsApp Groups at Scale (2026)',
-  description: 'Learn why WhatsApp "bulk" tools usually mean 1:1 templates, what Meta\'s Groups API (8-cap) allows, and how multi-group platforms post campaigns into many existing groups.',
+  title: 'Send Bulk Messages to Multiple WhatsApp Groups',
+  description: 'Learn why WhatsApp "bulk" tools usually mean 1:1 templates, what Meta\'s Groups API allows, and how multi-group platforms post campaigns into many existing groups.',
   alternates: {
     canonical: 'https://www.watask.com/guides/send-bulk-messages-to-multiple-whatsapp-groups',
   },
   openGraph: {
-    title: 'How to Send Bulk Messages to Multiple WhatsApp Groups at Scale (2026)',
+    title: 'Send Bulk Messages to Multiple WhatsApp Groups',
     description: 'Complete guide to sending campaigns across multiple WhatsApp groups. Understand Cloud API vs Groups API vs multi-group platforms.',
     url: 'https://www.watask.com/guides/send-bulk-messages-to-multiple-whatsapp-groups',
     type: 'article',
+    images: [
+      {
+        url: 'https://www.watask.com/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'WaTask - Multi-Group WhatsApp Campaigns',
+      },
+    ],
   },
 };
 

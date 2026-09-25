@@ -11,6 +11,14 @@ export const metadata: Metadata = {
     title: 'WhatsApp Group Management Tool',
     description: 'What a WhatsApp group management tool is — organize many groups, run multi-group campaigns, and pace delivery. How this category differs from Cloud API BSPs.',
     url: 'https://www.watask.com/whatsapp-group-management-tool',
+    images: [
+      {
+        url: 'https://www.watask.com/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'WaTask - Multi-Group WhatsApp Campaigns',
+      },
+    ],
   },
 };
 
@@ -86,7 +94,7 @@ export default function CategoryPage() {
           </h2>
           
           <div className="grid md:grid-cols-2 gap-6 mb-12">
-            <div className="glass-panel p-6 rounded-xl border-green-700/30 bg-bg-card">
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 Group inventory & collections
               </h3>
@@ -95,7 +103,7 @@ export default function CategoryPage() {
               </p>
             </div>
 
-            <div className="glass-panel p-6 rounded-xl border-cyan/30 bg-bg-card">
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 Multi-group campaign sends
               </h3>
@@ -104,7 +112,7 @@ export default function CategoryPage() {
               </p>
             </div>
 
-            <div className="glass-panel p-6 rounded-xl border-green-700/30 bg-bg-card">
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 Pacing / delivery controls
               </h3>
@@ -113,7 +121,7 @@ export default function CategoryPage() {
               </p>
             </div>
 
-            <div className="glass-panel p-6 rounded-xl border-cyan/30 bg-bg-card">
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 Team collaboration
               </h3>
@@ -127,7 +135,7 @@ export default function CategoryPage() {
             How this differs from BSPs
           </h2>
           
-          <div className="glass-panel border-[var(--border-subtle)] rounded-xl p-8 mb-12 bg-bg-card">
+          <div className="bg-gray-50 border border-gray-200 rounded-xl p-8 mb-12">
             <p className="text-gray-700 mb-4 leading-relaxed">
               BSPs (WATI, AiSensy, Interakt, etc.) are strong at <strong className="text-gray-900">template 1:1 messaging</strong>, inboxes, and automation on the Cloud API. Group management tools solve <strong className="text-gray-900">posting into many group chats your numbers are already in</strong>.
             </p>
@@ -171,20 +179,20 @@ export default function CategoryPage() {
             WaTask in this category
           </h2>
           
-          <div className="glass-panel border-2 border-green-700 rounded-xl p-8 mb-12 bg-bg-card">
+          <div className="bg-white border-2 border-green-600 rounded-xl p-8 mb-12">
             <p className="text-gray-700 text-lg mb-6 leading-relaxed">
               WaTask provides multi-group campaign management: connect existing groups, organize collections, and run paced campaigns across your network.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 
                 href="https://wa.me/306981337327?text=Hi%2C%20I%27d%20like%20to%20try%20WaTask"
-                className="bg-green-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-800 text-center transition-all"
+                className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 text-center transition-all"
               >
                 Start on WhatsApp
               </Link>
               <Link 
                 href="/guides/send-bulk-messages-to-multiple-whatsapp-groups"
-                className="text-cyber border-2 border-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-cyber/10 text-center transition-colors"
+                className="text-cyber border-2 border-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-cyber/10 text-center transition-colors"
               >
                 Read the multi-group guide
               </Link>
@@ -244,11 +252,10 @@ export default function CategoryPage() {
                 <li>• <strong className="text-gray-900">Multi-group campaign sending</strong> (post one message to many groups)</li>
                 <li>• <strong className="text-gray-900">Pacing and delivery controls</strong> (steady send intervals, not instant blasts)</li>
                 <li>• <strong className="text-gray-900">Team collaboration and roles</strong> (shared access, audit trails)</li>
-                <li>• <strong className="text-gray-900">Delivery monitoring</strong> (track which groups received your message)</li>
-                <li>• <strong className="text-gray-900">Delivery monitoring</strong> (warnings, pause capabilities)</li>
+                <li>• <strong className="text-gray-900">Delivery monitoring</strong> (track status and pause when needed)</li>
               </ul>
               <p className="text-gray-700 leading-relaxed mt-3">
-                Professional tools prioritize safety and control over raw volume.
+                Professional tools are built for control and pacing over raw volume.
               </p>
             </div>
 
@@ -280,28 +287,28 @@ export default function CategoryPage() {
             </div>
           </div>
 
-          <div className="mt-12 pt-8 border-t border-[var(--border-subtle)]">
+          <div className="mt-12 pt-8 border-t border-gray-200">
             <h3 className="text-xl font-semibold text-gray-900 mb-4">
               Learn more
             </h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/guides/send-bulk-messages-to-multiple-whatsapp-groups" className="text-green-700 hover:text-green-800 font-medium">
+                <Link href="/guides/send-bulk-messages-to-multiple-whatsapp-groups" className="text-green-600 hover:text-green-700 font-medium">
                   How to Send Bulk Messages to Multiple WhatsApp Groups →
                 </Link>
               </li>
               <li>
-                <Link href="/guides/whatsapp-groups-api-limits" className="text-green-700 hover:text-green-800 font-medium">
+                <Link href="/guides/whatsapp-groups-api-limits" className="text-green-600 hover:text-green-700 font-medium">
                   WhatsApp Groups API Limits Explained →
                 </Link>
               </li>
               <li>
-                <Link href="/guides/safer-multi-group-whatsapp-campaigns" className="text-green-700 hover:text-green-800 font-medium">
-                  Safer Multi-Group Campaigns →
+                <Link href="/guides/safer-multi-group-whatsapp-campaigns" className="text-green-600 hover:text-green-700 font-medium">
+                  Multi-Group Campaign Best Practices →
                 </Link>
               </li>
               <li>
-                <Link href="/guides" className="text-green-700 hover:text-green-800 font-medium">
+                <Link href="/guides" className="text-green-600 hover:text-green-700 font-medium">
                   All guides →
                 </Link>
               </li>

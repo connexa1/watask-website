@@ -11,6 +11,14 @@ export const metadata: Metadata = {
     title: 'WhatsApp Business & Group Messaging Glossary | WaTask',
     description: 'Plain-English definitions of WhatsApp business terms — broadcast list, group, Community, Cloud API, BSP, Groups API, OBA, template message, quality rating, pacing, and more.',
     url: 'https://www.watask.com/glossary',
+    images: [
+      {
+        url: 'https://www.watask.com/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'WaTask - Multi-Group WhatsApp Campaigns',
+      },
+    ],
   },
 };
 

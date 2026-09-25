@@ -2,16 +2,24 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Does WhatsApp Business API Support Groups? (2026 Answer)',
-  description: 'Short answer: Cloud API is 1:1 only. Groups API exists but is limited to 8-participant API-created groups. Your existing large groups need a different approach.',
+  title: 'Does WhatsApp Business API Support Groups?',
+  description: 'Cloud API is 1:1 only. Groups API exists but is limited to 8-participant API-created groups. Your existing large groups need a different approach.',
   alternates: {
     canonical: 'https://www.watask.com/guides/does-whatsapp-business-api-support-groups',
   },
   openGraph: {
-    title: 'Does WhatsApp Business API Support Groups? (2026 Answer)',
-    description: 'Short answer: Cloud API is 1:1 only. Groups API exists but is limited to 8-participant API-created groups. Your existing large groups need a different approach.',
+    title: 'Does WhatsApp Business API Support Groups?',
+    description: 'Cloud API is 1:1 only. Groups API exists but is limited to 8-participant API-created groups.',
     url: 'https://www.watask.com/guides/does-whatsapp-business-api-support-groups',
     type: 'article',
+    images: [
+      {
+        url: 'https://www.watask.com/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'WaTask - Multi-Group WhatsApp Campaigns',
+      },
+    ],
   },
 };
 

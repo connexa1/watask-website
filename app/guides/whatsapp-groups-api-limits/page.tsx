@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     description: 'Meta\'s WhatsApp Groups API is limited to 8 participants per group, invite-only, and requires OBA. Learn what the API can and cannot do for your existing groups.',
     url: 'https://www.watask.com/guides/whatsapp-groups-api-limits',
     type: 'article',
+    images: [
+      {
+        url: 'https://www.watask.com/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'WaTask - Multi-Group WhatsApp Campaigns',
+      },
+    ],
   },
 };
 
