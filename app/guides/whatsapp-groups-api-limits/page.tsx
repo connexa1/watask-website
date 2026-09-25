@@ -432,7 +432,7 @@ export default function GroupsAPILimitsPage() {
               </Link>
               <Link 
                 href="/guides/send-bulk-messages-to-multiple-whatsapp-groups"
-                className="text-cyber border-2 border-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-cyber/10 text-center transition-colors"
+                className="text-green-700 border-2 border-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-green-600/10 text-center transition-colors"
               >
                 Read the Multi-Group Guide
               </Link>

@@ -96,7 +96,7 @@ export default function CommunitiesGuidePage() {
           </p>
         </header>
 
-        <div className="prose prose-lg max-w-none prose-invert">
+        <div className="prose prose-lg max-w-none">
           <section className="mb-12">
             <p className="text-lg text-gray-700 leading-relaxed">
               WhatsApp Communities launched in 2022 as a way to organize related groups under one umbrella structure. 

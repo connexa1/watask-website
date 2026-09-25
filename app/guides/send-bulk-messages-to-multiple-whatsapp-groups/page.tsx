@@ -56,7 +56,7 @@ const faqSchema = {
       'name': 'Do Chrome WhatsApp group senders work?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'Some Chrome extensions do work for Web-session multi-select group sending. However, they carry account risks if not used carefully, especially without proper pacing and consent. Consider trust, account health, and whether a productized platform with built-in safety features would be more appropriate for business use.'
+        'text': 'Some Chrome extensions do work for Web-session multi-select group sending. However, they carry account risks if not used carefully, especially without proper pacing and consent. Consider trust, account health, and whether a productized platform with built-in pacing and scheduling controls would be more appropriate for business use.'
       }
     },
     {
@@ -97,7 +97,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
           </p>
         </header>
 
-        <div className="prose prose-lg max-w-none prose-invert">
+        <div className="prose prose-lg max-w-none">
           <section className="mb-12">
             <p className="text-lg text-gray-700 leading-relaxed">
               If you manage multiple WhatsApp groups — for clients, communities, or marketing — you've likely searched 
@@ -550,7 +550,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
                 <p className="text-gray-700">
                   <strong>Some do work</strong> for Web-session multi-select group sending. However, they carry 
                   account risks if not used carefully, especially without proper pacing and consent. Consider trust, 
-                  account health, and whether a productized platform with built-in safety features would be more 
+                  account health, and whether a productized platform with built-in pacing and scheduling controls would be more 
                   appropriate for business use.
                 </p>
               </div>

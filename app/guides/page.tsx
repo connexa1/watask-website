@@ -84,7 +84,7 @@ export default function GuidesPage() {
             </Link>
             <Link 
               href="/guides/send-bulk-messages-to-multiple-whatsapp-groups"
-              className="text-cyber border-2 border-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-cyber/10 transition-colors text-center"
+              className="text-green-700 border-2 border-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-green-600/10 transition-colors text-center"
             >
               Read the pillar guide
             </Link>
@@ -95,14 +95,14 @@ export default function GuidesPage() {
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-16">
           <div className="flex items-center gap-2 mb-4">
-            <span className="bg-cyber/20 text-cyber text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide border border-green-600/30">
+            <span className="bg-green-600/20 text-green-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide border border-green-600/30">
               Featured
             </span>
             <span className="text-sm text-gray-600">{featuredGuide.category}</span>
           </div>
           <Link href={featuredGuide.href} className="group block">
             <div className="border border-2 border-green-600/30 rounded-xl p-8 hover:border-green-600 transition-colors bg-gray-50">
-              <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-cyber transition-colors">
+              <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-green-700 transition-colors">
                 {featuredGuide.title} →
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed">
@@ -123,7 +123,7 @@ export default function GuidesPage() {
                     {guide.status && (
                       <span className={`text-xs px-2.5 py-1 rounded-full font-medium border ${
                         guide.status === 'Published' 
-                          ? 'bg-cyber/10 text-cyber border-green-600/30' 
+                          ? 'bg-green-600/10 text-green-700 border-green-600/30' 
                           : 'bg-cyan/10 text-cyan border-cyan/30'
                       }`}>
                         {guide.status}
