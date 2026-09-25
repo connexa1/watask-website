@@ -39,6 +39,14 @@ const guides = [
     youllLearn: 'When each construct fits; when you still need multi-group tooling.',
   },
   {
+    title: 'WhatsApp Communities for Bulk Messaging',
+    href: '/guides/whatsapp-communities-bulk-messaging',
+    category: 'Core Guide',
+    status: 'Published',
+    intent: 'How Communities work, their limits (50 groups), announcement groups, and when multi-group tools complement them.',
+    youllLearn: 'Community structure, the 50-group cap, cross-Community campaigns, and when you need more than Communities.',
+  },
+  {
     title: 'Safer Multi-Group WhatsApp Campaigns',
     href: '/guides/safer-multi-group-whatsapp-campaigns',
     category: 'Best Practices',
@@ -160,6 +168,119 @@ export default function GuidesPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        <div className="mt-16 pt-12 border-t border-gray-200">
+          <h2 className="text-2xl font-bold text-gray-900 mb-8">Comparison & Reference</h2>
+          <div className="space-y-6">
+            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">Comparison</span>
+                  <span className="text-xs px-2.5 py-1 rounded-full font-medium bg-green-100 text-green-700">
+                    Published
+                  </span>
+                </div>
+              </div>
+              
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                Multi-Group Tools vs BSP Platforms vs Chrome Extensions
+              </h3>
+              
+              <div className="mb-3">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  <span className="font-medium text-gray-900">Intent:</span> Category comparison for teams choosing between BSPs (1:1 messaging), multi-group platforms, and browser extensions.
+                </p>
+              </div>
+              
+              <div className="mb-4">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  <span className="font-medium text-gray-900">You'll learn:</span> When each category fits, feature matrix, and why BSPs don't post into existing large groups.
+                </p>
+              </div>
+              
+              <div className="flex items-center gap-4 text-sm">
+                <Link 
+                  href="/compare/multi-group-tools-vs-bsp-vs-extensions"
+                  className="text-green-600 hover:text-green-700 font-medium"
+                >
+                  View comparison →
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">Alternatives</span>
+                  <span className="text-xs px-2.5 py-1 rounded-full font-medium bg-green-100 text-green-700">
+                    Published
+                  </span>
+                </div>
+              </div>
+              
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                WhatsApp Group Sending Tools & Alternatives (2026)
+              </h3>
+              
+              <div className="mb-3">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  <span className="font-medium text-gray-900">Intent:</span> Roundup for people searching BSP brands for group sending, explaining why BSPs don't cover it and what alternatives exist.
+                </p>
+              </div>
+              
+              <div className="mb-4">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  <span className="font-medium text-gray-900">You'll learn:</span> Why WATI/AiSensy/etc. don't post into groups, and which tools actually do.
+                </p>
+              </div>
+              
+              <div className="flex items-center gap-4 text-sm">
+                <Link 
+                  href="/compare/whatsapp-group-sending-alternatives"
+                  className="text-green-600 hover:text-green-700 font-medium"
+                >
+                  View alternatives guide →
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">Reference</span>
+                  <span className="text-xs px-2.5 py-1 rounded-full font-medium bg-green-100 text-green-700">
+                    Published
+                  </span>
+                </div>
+              </div>
+              
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                WhatsApp Business & Group Messaging Glossary
+              </h3>
+              
+              <div className="mb-3">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  <span className="font-medium text-gray-900">Intent:</span> Plain-English definitions of WhatsApp business terms — broadcast list, group, Community, Cloud API, BSP, Groups API, template message, pacing, and more.
+                </p>
+              </div>
+              
+              <div className="mb-4">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  <span className="font-medium text-gray-900">You'll learn:</span> Clear definitions with links to relevant guides for every key term.
+                </p>
+              </div>
+              
+              <div className="flex items-center gap-4 text-sm">
+                <Link 
+                  href="/glossary"
+                  className="text-green-600 hover:text-green-700 font-medium"
+                >
+                  View glossary →
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
