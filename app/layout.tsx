@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Link from 'next/link';
+import Navigation from './components/Navigation';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://watask.com'),
@@ -34,60 +35,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
       </head>
       <body className="bg-bg-primary">
-        <nav className="sticky top-0 z-50 glass-panel border-b border-[var(--border-subtle)]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-16 sm:h-20">
-              {/* Logo */}
-              <Link href="/" className="flex items-center space-x-2">
-                <div className="flex items-center">
-                  <span className="text-xl sm:text-2xl font-bold text-text-primary tracking-tight">
-                    WA<span className="text-cyber">TASK</span>
-                  </span>
-                </div>
-              </Link>
-
-              {/* Desktop Navigation */}
-              <div className="hidden md:flex items-center space-x-8">
-                <Link 
-                  href="/whatsapp-group-management-tool" 
-                  className="text-text-secondary hover:text-text-primary transition-colors text-sm font-medium"
-                >
-                  Product
-                </Link>
-                <Link 
-                  href="/guides" 
-                  className="text-text-secondary hover:text-text-primary transition-colors text-sm font-medium"
-                >
-                  Guides
-                </Link>
-                <Link 
-                  href="/register" 
-                  className="bg-cyber text-bg-primary px-6 py-2.5 rounded-lg font-semibold hover:bg-cyber-hover transition-all shadow-[0_0_20px_rgba(0,255,148,0.3)] hover:shadow-[0_0_30px_rgba(0,255,148,0.5)] text-sm"
-                >
-                  Start Free Trial
-                </Link>
-              </div>
-
-              {/* Mobile Navigation */}
-              <div className="flex md:hidden items-center space-x-3">
-                <Link 
-                  href="/register" 
-                  className="bg-cyber text-bg-primary px-4 py-2 rounded-lg font-semibold hover:bg-cyber-hover transition-all text-sm whitespace-nowrap"
-                >
-                  Try Free
-                </Link>
-                <button
-                  className="text-text-secondary hover:text-text-primary p-2"
-                  aria-label="Menu"
-                >
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </nav>
+        <Navigation />
         
         <main>{children}</main>
 

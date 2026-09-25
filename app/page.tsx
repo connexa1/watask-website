@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Multi-Group WhatsApp Campaigns | WaTask',
+  title: 'Multi-Group WhatsApp Campaigns',
   description: 'Send one campaign into many existing WhatsApp groups. Organize collections, pace safely, and run multi-group ops — built for agencies, brands, and community teams.',
   alternates: {
     canonical: 'https://watask.com',

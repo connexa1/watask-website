@@ -64,7 +64,7 @@ const faqSchema = {
 
 export default function SaferCampaignsPage() {
   return (
-    <div className="bg-white">
+    <div className="bg-bg-primary">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -73,7 +73,7 @@ export default function SaferCampaignsPage() {
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header className="mb-12">
           <div className="flex items-center gap-2 mb-4">
-            <Link href="/guides" className="text-sm text-green-600 hover:text-green-700 inline-flex items-center gap-2">
+            <Link href="/guides" className="text-sm text-cyber hover:text-cyber-hover inline-flex items-center gap-2">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
@@ -81,32 +81,32 @@ export default function SaferCampaignsPage() {
             </Link>
           </div>
           
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold text-text-primary mb-6 leading-tight">
             Safer Multi-Group WhatsApp Campaigns
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed">
+          <p className="text-xl text-text-secondary leading-relaxed">
             Operational playbook for running multi-group campaigns professionally: pacing, consent, group norms, account health, and avoiding spam behavior.
           </p>
         </header>
 
         <div className="prose prose-lg max-w-none">
           <section className="mb-12">
-            <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-8 mb-8">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 mt-0">
+            <div className="glass-panel border-2 border-cyber/30 rounded-xl p-8 mb-8 bg-bg-card">
+              <h2 className="text-2xl font-bold text-text-primary mb-4 mt-0">
                 The Core Principle
               </h2>
-              <p className="text-gray-900 text-lg font-semibold mb-3">
+              <p className="text-text-primary text-lg font-semibold mb-3">
                 Capability ≠ Permission
               </p>
-              <p className="text-gray-700 leading-relaxed mb-0">
+              <p className="text-text-secondary leading-relaxed mb-0">
                 Just because you <em>can</em> post to hundreds of groups doesn't mean you <em>should</em> spam them. Safe multi-group campaigns balance efficiency with respect: proper pacing, relevant content, community consent, and account health monitoring. This guide teaches professionalism, not evasion tactics.
               </p>
             </div>
 
-            <p className="text-gray-700 leading-relaxed">
-              Multi-group WhatsApp campaigns are a legitimate operational need for agencies, community managers, and brands who already administer many groups. The difference between professional multi-group management and spammy behavior comes down to <strong>how</strong> you execute: pacing your sends, ensuring relevance, respecting group norms, and monitoring feedback.
+            <p className="text-text-secondary leading-relaxed">
+              Multi-group WhatsApp campaigns are a legitimate operational need for agencies, community managers, and brands who already administer many groups. The difference between professional multi-group management and spammy behavior comes down to <strong className="text-text-primary">how</strong> you execute: pacing your sends, ensuring relevance, respecting group norms, and monitoring feedback.
             </p>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-text-secondary leading-relaxed">
               This guide provides practical safety habits without fear-mongering or ban-evasion instructions. Follow these principles to run campaigns that serve your communities while maintaining account health.
             </p>
           </section>
