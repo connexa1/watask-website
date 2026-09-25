@@ -495,7 +495,7 @@ export default function CategoryComparisonPage() {
               </h3>
               <p className="text-gray-700">
                 Most "best WhatsApp marketing software" roundups focus on <strong>Cloud API BSPs</strong> because that's the 
-                mainstream, officially-supported category. Multi-group platforms serve a niche — teams who already manage many 
+                mainstream category. Multi-group platforms serve a niche — teams who already manage many 
                 existing groups. It's a separate category that roundup authors often don't know about or choose not to cover.
               </p>
             </div>
