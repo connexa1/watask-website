@@ -2,16 +2,24 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'WhatsApp Communities for Bulk Messaging & Multi-Group Campaigns (2026)',
-  description: 'How WhatsApp Communities work, their limits, the announcement group feature, and when you need multi-group tools beyond Communities for cross-org campaigns.',
+  title: 'WhatsApp Communities for Multi-Group Campaigns',
+  description: 'How WhatsApp Communities work, their limits, the announcement group feature, and when multi-group tools complement Communities for cross-org campaigns.',
   alternates: {
     canonical: 'https://www.watask.com/guides/whatsapp-communities-bulk-messaging',
   },
   openGraph: {
-    title: 'WhatsApp Communities for Bulk Messaging & Multi-Group Campaigns (2026)',
-    description: 'How WhatsApp Communities work, their limits, the announcement group feature, and when you need multi-group tools beyond Communities for cross-org campaigns.',
+    title: 'WhatsApp Communities for Multi-Group Campaigns',
+    description: 'How WhatsApp Communities work, their limits, the announcement group feature, and when multi-group tools complement Communities.',
     url: 'https://www.watask.com/guides/whatsapp-communities-bulk-messaging',
     type: 'article',
+    images: [
+      {
+        url: 'https://www.watask.com/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'WaTask - Multi-Group WhatsApp Campaigns',
+      },
+    ],
   },
 };
 
@@ -70,12 +78,66 @@ const faqSchema = {
   ]
 };
 
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  'headline': 'WhatsApp Communities for Multi-Group Campaigns',
+  'image': 'https://www.watask.com/opengraph-image',
+  'datePublished': '2026-01-15',
+  'dateModified': '2026-09-25',
+  'author': {
+    '@type': 'Organization',
+    'name': 'WaTask'
+  },
+  'publisher': {
+    '@type': 'Organization',
+    'name': 'WaTask'
+  },
+  'mainEntityOfPage': {
+    '@type': 'WebPage',
+    '@id': 'https://www.watask.com/guides/whatsapp-communities-bulk-messaging'
+  }
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  'itemListElement': [
+    {
+      '@type': 'ListItem',
+      'position': 1,
+      'name': 'Home',
+      'item': 'https://www.watask.com'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 2,
+      'name': 'Guides',
+      'item': 'https://www.watask.com/guides'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 3,
+      'name': 'WhatsApp Communities for Multi-Group Campaigns',
+      'item': 'https://www.watask.com/guides/whatsapp-communities-bulk-messaging'
+    }
+  ]
+};
+
 export default function CommunitiesGuidePage() {
   return (
     <div className="bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

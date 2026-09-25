@@ -3,15 +3,23 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'WhatsApp Groups API Limits Explained (2026)',
-  description: 'Meta\'s WhatsApp Groups API is limited to 8 participants per group, invite-only, and requires OBA. Learn what the API can and cannot do for your existing groups.',
+  description: 'Meta Groups API is limited to 8 participants per group, invite-only, and requires OBA. What the API can and cannot do for existing groups.',
   alternates: {
     canonical: 'https://www.watask.com/guides/whatsapp-groups-api-limits',
   },
   openGraph: {
     title: 'WhatsApp Groups API Limits Explained (2026)',
-    description: 'Meta\'s WhatsApp Groups API is limited to 8 participants per group, invite-only, and requires OBA. Learn what the API can and cannot do for your existing groups.',
+    description: 'Meta Groups API is limited to 8 participants per group, invite-only, requires OBA. What the API can and cannot do for your existing groups.',
     url: 'https://www.watask.com/guides/whatsapp-groups-api-limits',
     type: 'article',
+    images: [
+      {
+        url: 'https://www.watask.com/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'WaTask - Multi-Group WhatsApp Campaigns',
+      },
+    ],
   },
 };
 
@@ -62,12 +70,66 @@ const faqSchema = {
   ]
 };
 
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  'headline': 'WhatsApp Groups API Limits Explained',
+  'image': 'https://www.watask.com/opengraph-image',
+  'datePublished': '2026-01-15',
+  'dateModified': '2026-09-25',
+  'author': {
+    '@type': 'Organization',
+    'name': 'WaTask'
+  },
+  'publisher': {
+    '@type': 'Organization',
+    'name': 'WaTask'
+  },
+  'mainEntityOfPage': {
+    '@type': 'WebPage',
+    '@id': 'https://www.watask.com/guides/whatsapp-groups-api-limits'
+  }
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  'itemListElement': [
+    {
+      '@type': 'ListItem',
+      'position': 1,
+      'name': 'Home',
+      'item': 'https://www.watask.com'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 2,
+      'name': 'Guides',
+      'item': 'https://www.watask.com/guides'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 3,
+      'name': 'WhatsApp Groups API Limits Explained',
+      'item': 'https://www.watask.com/guides/whatsapp-groups-api-limits'
+    }
+  ]
+};
+
 export default function GroupsAPILimitsPage() {
   return (
     <div className="bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

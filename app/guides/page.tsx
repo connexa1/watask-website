@@ -11,6 +11,14 @@ export const metadata: Metadata = {
     title: 'WhatsApp Multi-Group Campaign Guides | WaTask',
     description: 'Learn how multi-group WhatsApp campaigns differ from Cloud API broadcasts and Meta\'s Groups API — practical guides for agencies and community teams.',
     url: 'https://www.watask.com/guides',
+    images: [
+      {
+        url: 'https://www.watask.com/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'WaTask - Multi-Group WhatsApp Campaigns',
+      },
+    ],
   },
 };
 
@@ -47,7 +55,7 @@ const guides = [
     youllLearn: 'Community structure, the 50-group cap, cross-Community campaigns, and when you need more than Communities.',
   },
   {
-    title: 'Multi-Group Best Practices WhatsApp Campaigns',
+    title: 'Multi-Group Campaign Best Practices',
     href: '/guides/safer-multi-group-whatsapp-campaigns',
     category: 'Best Practices',
     status: 'Published',

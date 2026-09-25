@@ -2,16 +2,24 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Does WhatsApp Business API Support Groups? (2026 Answer)',
-  description: 'Short answer: Cloud API is 1:1 only. Groups API exists but is limited to 8-participant API-created groups. Your existing large groups need a different approach.',
+  title: 'Does WhatsApp Business API Support Groups?',
+  description: 'Cloud API is 1:1 only. Groups API exists but is limited to 8-participant API-created groups. Your existing large groups need a different approach.',
   alternates: {
     canonical: 'https://www.watask.com/guides/does-whatsapp-business-api-support-groups',
   },
   openGraph: {
-    title: 'Does WhatsApp Business API Support Groups? (2026 Answer)',
-    description: 'Short answer: Cloud API is 1:1 only. Groups API exists but is limited to 8-participant API-created groups. Your existing large groups need a different approach.',
+    title: 'Does WhatsApp Business API Support Groups?',
+    description: 'Cloud API is 1:1 only. Groups API exists but is limited to 8-participant API-created groups.',
     url: 'https://www.watask.com/guides/does-whatsapp-business-api-support-groups',
     type: 'article',
+    images: [
+      {
+        url: 'https://www.watask.com/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'WaTask - Multi-Group WhatsApp Campaigns',
+      },
+    ],
   },
 };
 
@@ -62,12 +70,66 @@ const faqSchema = {
   ]
 };
 
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  'headline': 'Does WhatsApp Business API Support Groups?',
+  'image': 'https://www.watask.com/opengraph-image',
+  'datePublished': '2026-01-15',
+  'dateModified': '2026-09-25',
+  'author': {
+    '@type': 'Organization',
+    'name': 'WaTask'
+  },
+  'publisher': {
+    '@type': 'Organization',
+    'name': 'WaTask'
+  },
+  'mainEntityOfPage': {
+    '@type': 'WebPage',
+    '@id': 'https://www.watask.com/guides/does-whatsapp-business-api-support-groups'
+  }
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  'itemListElement': [
+    {
+      '@type': 'ListItem',
+      'position': 1,
+      'name': 'Home',
+      'item': 'https://www.watask.com'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 2,
+      'name': 'Guides',
+      'item': 'https://www.watask.com/guides'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 3,
+      'name': 'Does WhatsApp Business API Support Groups?',
+      'item': 'https://www.watask.com/guides/does-whatsapp-business-api-support-groups'
+    }
+  ]
+};
+
 export default function DoesAPISupportGroupsPage() {
   return (
     <div className="bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

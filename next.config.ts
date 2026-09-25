@@ -11,6 +11,11 @@ const nextConfig: NextConfig = {
         destination: '/guides',
         permanent: true,
       },
+      {
+        source: '/favicon.ico',
+        destination: '/icon.svg',
+        permanent: true,
+      },
     ];
   },
 };

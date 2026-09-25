@@ -2,22 +2,59 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'WhatsApp Group Sending Tools & Alternatives (2026) | Multi-Group Comparison',
+  title: 'WhatsApp Group Sending Tools & Alternatives',
   description: 'Comparison of tools for sending to multiple WhatsApp groups — multi-group platforms, BSPs, and what each can and cannot do for group posting.',
   alternates: {
     canonical: 'https://www.watask.com/compare/whatsapp-group-sending-alternatives',
   },
   openGraph: {
-    title: 'WhatsApp Group Sending Tools & Alternatives (2026) | Multi-Group Comparison',
-    description: 'Comparison of tools for sending to multiple WhatsApp groups — multi-group platforms, BSPs, and what each can and cannot do for group posting.',
+    title: 'WhatsApp Group Sending Tools & Alternatives',
+    description: 'Comparison of tools for sending to multiple WhatsApp groups — multi-group platforms, BSPs, and what each can do.',
     url: 'https://www.watask.com/compare/whatsapp-group-sending-alternatives',
     type: 'article',
+    images: [
+      {
+        url: 'https://www.watask.com/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'WaTask - Multi-Group WhatsApp Campaigns',
+      },
+    ],
   },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  'itemListElement': [
+    {
+      '@type': 'ListItem',
+      'position': 1,
+      'name': 'Home',
+      'item': 'https://www.watask.com'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 2,
+      'name': 'Compare',
+      'item': 'https://www.watask.com/compare'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 3,
+      'name': 'WhatsApp Group Sending Tools & Alternatives',
+      'item': 'https://www.watask.com/compare/whatsapp-group-sending-alternatives'
+    }
+  ]
 };
 
 export default function AlternativesPage() {
   return (
     <div className="bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section className="bg-gradient-to-b from-gray-50 to-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="mb-6">

@@ -3,14 +3,22 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'WhatsApp Business & Group Messaging Glossary',
-  description: 'Plain-English definitions of WhatsApp business terms — broadcast list, group, Community, Cloud API, BSP, Groups API, OBA, template message, quality rating, pacing, and more.',
+  description: 'Plain-English definitions: broadcast list, group, Community, Cloud API, BSP, Groups API, OBA, template message, quality rating, pacing.',
   alternates: {
     canonical: 'https://www.watask.com/glossary',
   },
   openGraph: {
     title: 'WhatsApp Business & Group Messaging Glossary | WaTask',
-    description: 'Plain-English definitions of WhatsApp business terms — broadcast list, group, Community, Cloud API, BSP, Groups API, OBA, template message, quality rating, pacing, and more.',
+    description: 'Plain-English definitions: broadcast list, group, Community, Cloud API, BSP, Groups API, OBA, template message, quality rating, pacing, and more.',
     url: 'https://www.watask.com/glossary',
+    images: [
+      {
+        url: 'https://www.watask.com/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'WaTask - Multi-Group WhatsApp Campaigns',
+      },
+    ],
   },
 };
 
@@ -418,12 +426,35 @@ const terms: Term[] = [
   }
 ];
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  'itemListElement': [
+    {
+      '@type': 'ListItem',
+      'position': 1,
+      'name': 'Home',
+      'item': 'https://www.watask.com'
+    },
+    {
+      '@type': 'ListItem',
+      'position': 2,
+      'name': 'Glossary',
+      'item': 'https://www.watask.com/glossary'
+    }
+  ]
+};
+
 export default function GlossaryPage() {
   return (
     <div className="bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(glossarySchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       
       <section className="bg-gradient-to-b from-gray-50 to-white py-16 px-4 sm:px-6 lg:px-8">
