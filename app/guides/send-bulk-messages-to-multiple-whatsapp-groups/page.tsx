@@ -372,9 +372,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
                     Consider Your Technical Approach
                   </h3>
                   <p className="text-gray-700">
-                    Developers can build custom loops using unofficial APIs (Whapi, Maytapi, WAHA, 2Chat), 
-                    but this requires ongoing maintenance and risk management. For most businesses, a 
-                    productized platform offers better reliability and compliance features.
+                    Developers can build custom loops with code, but this requires ongoing maintenance and risk management. For most businesses, a productized platform provides group collections, scheduling, pacing, multi-number distribution, and team collaboration without code to run.
                   </p>
                 </div>
               </li>

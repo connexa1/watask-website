@@ -48,7 +48,7 @@ const faqSchema = {
       'name': 'Why do BSP tools like WATI not post into groups?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'BSP (Business Service Provider) tools use the WhatsApp Cloud API, which is designed exclusively for 1:1 template messaging to opted-in contacts. The API does not provide access to group chats, so BSPs cannot post into groups — this is an API design constraint, not a feature the BSPs chose to omit.'
+        'text': 'BSP (Business Service Provider) tools use the WhatsApp Cloud API, which sends 1:1 template messages to opted-in contacts and, via the Groups API, only to small new API-created groups (max 8 participants). The API does not provide access to existing large groups, so BSPs cannot post into them — this is an API design constraint, not a feature the BSPs chose to omit.'
       }
     },
     {

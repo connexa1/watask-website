@@ -123,7 +123,7 @@ const glossarySchema = {
     {
       '@type': 'DefinedTerm',
       'name': 'Account Health',
-      'description': 'The overall standing of your WhatsApp account based on usage patterns, reports, blocks, and compliance. Poor account health can lead to restrictions or bans.'
+      'description': 'The overall standing of your WhatsApp account based on usage patterns, reports, and blocks. Poor account health can lead to restrictions or bans.'
     },
     {
       '@type': 'DefinedTerm',
@@ -281,7 +281,7 @@ const terms: Term[] = [
   },
   {
     term: 'Template Message',
-    definition: 'A pre-approved message format required for outbound marketing messages via the Cloud API. Must be submitted to Meta for approval before use. Structured with optional header, body text, footer, and buttons. Template rejections are common — Meta enforces strict quality and compliance rules. Can include variables for personalization.',
+    definition: 'A pre-approved message format required for outbound marketing messages via the Cloud API. Must be submitted to Meta for approval before use. Structured with optional header, body text, footer, and buttons. Template rejections are common — Meta enforces strict quality rules. Can include variables for personalization.',
     relatedGuides: [
       { title: 'How to Send to Multiple Groups', href: '/guides/send-bulk-messages-to-multiple-whatsapp-groups' }
     ]
@@ -356,7 +356,7 @@ const terms: Term[] = [
   },
   {
     term: 'Account Health',
-    definition: 'The overall standing of your WhatsApp account based on usage patterns, user reports, blocks, spam signals, and policy compliance. Poor account health leads to restrictions (throttling, messaging limits) or outright bans. Monitored by Meta for Cloud API users; consumer accounts also face restrictions for abuse.',
+    definition: 'The overall standing of your WhatsApp account based on usage patterns, user reports, blocks, and spam signals. Poor account health leads to restrictions (throttling, messaging limits) or outright bans. Monitored by Meta for Cloud API users; consumer accounts also face restrictions for abuse.',
     relatedGuides: [
       { title: 'Safer Multi-Group Campaigns', href: '/guides/safer-multi-group-whatsapp-campaigns' }
     ]
