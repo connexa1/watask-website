@@ -420,26 +420,26 @@ const terms: Term[] = [
 
 export default function GlossaryPage() {
   return (
-    <div className="bg-bg-primary">
+    <div className="bg-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(glossarySchema) }}
       />
       
-      <section className="bg-gradient-to-b from-bg-secondary to-bg-primary py-16 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-b from-gray-50 to-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="mb-6">
-            <Link href="/guides" className="text-sm text-cyber hover:text-cyber-hover inline-flex items-center gap-2">
+            <Link href="/guides" className="text-sm text-green-600 hover:text-green-700 inline-flex items-center gap-2">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
               Back to Guides
             </Link>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-text-primary mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             WhatsApp Business & Group Messaging Glossary
           </h1>
-          <p className="text-xl text-text-secondary leading-relaxed">
+          <p className="text-xl text-gray-600 leading-relaxed">
             Plain-English definitions of WhatsApp business terms — from broadcast lists and Cloud API to multi-group campaigns and account health. Reference this when navigating WhatsApp business tools and strategies.
           </p>
         </div>
@@ -447,29 +447,29 @@ export default function GlossaryPage() {
 
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-8">
-          <p className="text-text-secondary">
+          <p className="text-gray-600">
             This glossary covers terms for WhatsApp Business API, group management, Communities, and multi-group campaigns. Each term links to relevant guides where applicable.
           </p>
         </div>
 
         <div className="space-y-8">
           {terms.map((item, index) => (
-            <div key={index} className="border-b border-[var(--border-subtle)] pb-8 last:border-b-0">
-              <h2 className="text-2xl font-bold text-text-primary mb-3">
+            <div key={index} className="border-b border-gray-200 pb-8 last:border-b-0">
+              <h2 className="text-2xl font-bold text-gray-900 mb-3">
                 {item.term}
               </h2>
-              <p className="text-text-secondary leading-relaxed mb-4">
+              <p className="text-gray-700 leading-relaxed mb-4">
                 {item.definition}
               </p>
               {item.relatedGuides && item.relatedGuides.length > 0 && (
                 <div>
-                  <p className="text-sm font-medium text-text-primary mb-2">Related guides:</p>
+                  <p className="text-sm font-medium text-gray-900 mb-2">Related guides:</p>
                   <ul className="space-y-1">
                     {item.relatedGuides.map((guide, guideIndex) => (
                       <li key={guideIndex}>
                         <Link 
                           href={guide.href}
-                          className="text-sm text-cyber hover:text-cyber-hover"
+                          className="text-sm text-green-600 hover:text-green-700"
                         >
                           {guide.title} →
                         </Link>
@@ -482,43 +482,43 @@ export default function GlossaryPage() {
           ))}
         </div>
 
-        <div className="mt-16 pt-8 border-t border-[var(--border-subtle)]">
-          <h2 className="text-2xl font-bold text-text-primary mb-6">
+        <div className="mt-16 pt-8 border-t border-gray-200">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
             Learn More
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="glass-panel border-[var(--border-subtle)] rounded-lg p-6 bg-bg-card">
-              <h3 className="font-semibold text-text-primary mb-3">Core Multi-Group Guide</h3>
+            <div className="border border-gray-200 rounded-lg p-6 bg-gray-50">
+              <h3 className="font-semibold text-gray-900 mb-3">Core Multi-Group Guide</h3>
               <Link 
                 href="/guides/send-bulk-messages-to-multiple-whatsapp-groups"
-                className="text-cyber hover:text-cyber-hover font-medium"
+                className="text-green-600 hover:text-green-700 font-medium"
               >
                 How to Send Bulk Messages to Multiple WhatsApp Groups →
               </Link>
             </div>
-            <div className="glass-panel border-[var(--border-subtle)] rounded-lg p-6 bg-bg-card">
-              <h3 className="font-semibold text-text-primary mb-3">WhatsApp Communities</h3>
+            <div className="border border-gray-200 rounded-lg p-6 bg-gray-50">
+              <h3 className="font-semibold text-gray-900 mb-3">WhatsApp Communities</h3>
               <Link 
                 href="/guides/whatsapp-communities-bulk-messaging"
-                className="text-cyber hover:text-cyber-hover font-medium"
+                className="text-green-600 hover:text-green-700 font-medium"
               >
                 WhatsApp Communities for Bulk Messaging →
               </Link>
             </div>
-            <div className="glass-panel border-[var(--border-subtle)] rounded-lg p-6 bg-bg-card">
-              <h3 className="font-semibold text-text-primary mb-3">API Limits</h3>
+            <div className="border border-gray-200 rounded-lg p-6 bg-gray-50">
+              <h3 className="font-semibold text-gray-900 mb-3">API Limits</h3>
               <Link 
                 href="/guides/whatsapp-groups-api-limits"
-                className="text-cyber hover:text-cyber-hover font-medium"
+                className="text-green-600 hover:text-green-700 font-medium"
               >
                 WhatsApp Groups API Limits Explained →
               </Link>
             </div>
-            <div className="glass-panel border-[var(--border-subtle)] rounded-lg p-6 bg-bg-card">
-              <h3 className="font-semibold text-text-primary mb-3">All Guides</h3>
+            <div className="border border-gray-200 rounded-lg p-6 bg-gray-50">
+              <h3 className="font-semibold text-gray-900 mb-3">All Guides</h3>
               <Link 
                 href="/guides"
-                className="text-cyber hover:text-cyber-hover font-medium"
+                className="text-green-600 hover:text-green-700 font-medium"
               >
                 Browse all guides →
               </Link>
@@ -526,16 +526,16 @@ export default function GlossaryPage() {
           </div>
         </div>
 
-        <div className="mt-12 glass-panel border-2 border-cyber rounded-lg p-8 bg-bg-card">
-          <h2 className="text-2xl font-bold text-text-primary mb-4">
+        <div className="mt-12 border-2 border-green-600 rounded-lg p-8 bg-green-50">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
             Ready to manage your group network?
           </h2>
-          <p className="text-text-secondary mb-6">
+          <p className="text-gray-700 mb-6">
             WaTask helps you organize collections, run multi-group campaigns, and pace delivery across your WhatsApp group network.
           </p>
           <Link 
             href="https://wa.me/306981337327?text=Hi%2C%20I%27d%20like%20to%20try%20WaTask"
-            className="bg-cyber text-bg-primary px-8 py-3 rounded-lg font-semibold hover:bg-cyber-hover inline-block transition-all shadow-[0_0_20px_rgba(0,255,148,0.3)] hover:shadow-[0_0_30px_rgba(0,255,148,0.5)]"
+            className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 inline-block transition-all"
           >
             Start on WhatsApp
           </Link>
