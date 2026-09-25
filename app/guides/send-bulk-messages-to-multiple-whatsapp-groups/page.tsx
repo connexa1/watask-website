@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Send Bulk Messages to Multiple WhatsApp Groups',
-    description: 'Why WhatsApp "bulk" tools usually mean 1:1 templates, what Meta\'s Groups API allows, and how multi-group platforms post into existing groups.',
+    description: 'Why "bulk" tools usually mean 1:1 templates, what Meta\'s Groups API allows, and how multi-group platforms post into many existing groups.',
     url: 'https://www.watask.com/guides/send-bulk-messages-to-multiple-whatsapp-groups',
     type: 'article',
     images: [

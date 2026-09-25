@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'WhatsApp Business & Group Messaging Glossary | WaTask',
-    description: 'Plain-English definitions: broadcast list, group, Community, Cloud API, BSP, Groups API, OBA, template message, quality rating, pacing.',
+    description: 'Plain-English definitions: broadcast list, group, Community, Cloud API, BSP, Groups API, OBA, template message, quality rating, pacing, and more.',
     url: 'https://www.watask.com/glossary',
     images: [
       {

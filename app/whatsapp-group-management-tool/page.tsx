@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'WhatsApp Group Management Tool',
-    description: 'What a WhatsApp group management tool is — organize groups, run multi-group campaigns, pace delivery. How this differs from Cloud API BSPs.',
+    description: 'What a WhatsApp group management tool is — organize groups, run multi-group campaigns, pace delivery. How this differs from BSP platforms.',
     url: 'https://www.watask.com/whatsapp-group-management-tool',
     images: [
       {

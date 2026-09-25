@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'WhatsApp Multi-Group Campaign Best Practices',
-    description: 'Multi-group campaign best practices: pacing send intervals, respecting group norms, monitoring account health. Professional guidance.',
+    description: 'Multi-group campaign best practices: pacing send intervals, respecting group norms, monitoring account health. Professional guidance for operators.',
     url: 'https://www.watask.com/guides/safer-multi-group-whatsapp-campaigns',
     type: 'article',
     images: [
