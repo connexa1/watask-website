@@ -56,7 +56,7 @@ const faqSchema = {
       'name': 'What should I use to post into my existing WhatsApp groups?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'For existing large groups, you need multi-group management platforms like WaTask that connect to your existing groups (not through the official API) and provide campaign, collection, and pacing features. These platforms are built specifically for posting into many existing groups you already manage.'
+        'text': 'For existing large groups, you need multi-group management platforms like WaTask that connect to your existing groups and provide campaign, collection, and pacing features. These platforms are built specifically for posting into many existing groups your numbers are already in.'
       }
     }
   ]
@@ -91,7 +91,7 @@ export default function DoesAPISupportGroupsPage() {
 
         <div className="prose prose-lg max-w-none">
           <section className="mb-12">
-            <div className="bg-gradient-to-br from-red-50 to-red-100 border-2 border-red-600 rounded-xl p-8 mb-8">
+            <div className="bg-gradient-to-br from-red-50 to-red-100 border-2 border-red-600 rounded-xl p-8 mb-8 not-prose">
               <h2 className="text-2xl font-bold text-gray-900 mb-4 mt-0">
                 The Short Answer
               </h2>
@@ -238,7 +238,7 @@ export default function DoesAPISupportGroupsPage() {
             </h2>
             
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Most people searching "does WhatsApp Business API support groups" are actually asking: <strong>"Can I use the official API to post campaigns into my many existing large groups?"</strong>
+              Most people searching "does WhatsApp Business API support groups" are actually asking: <strong>"Can I use the Cloud API to post campaigns into my many existing large groups?"</strong>
             </p>
 
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-6">
@@ -254,7 +254,7 @@ export default function DoesAPISupportGroupsPage() {
             </div>
 
             <p className="text-gray-700 leading-relaxed">
-              This is why search results for "WhatsApp Business API" and "send to multiple groups" often don't match expectations: the official API wasn't designed for multi-group campaign posting. You need a <strong>different approach</strong> for that job.
+              This is why search results for "WhatsApp Business API" and "send to multiple groups" often don't match expectations: the Cloud API wasn't designed for multi-group campaign posting to existing large groups. You need a <strong>different approach</strong> for that job.
             </p>
           </section>
 
@@ -274,12 +274,12 @@ export default function DoesAPISupportGroupsPage() {
                   Multi-Group Management Platforms
                 </h3>
                 <p className="text-gray-700 mb-3 leading-relaxed">
-                  Platforms like <Link href="/" className="text-green-600 hover:text-green-700 font-semibold">WaTask</Link> are built specifically for managing and campaigning across many existing groups. They connect to your existing groups (not through the official API) and provide:
+                  Platforms like <Link href="/" className="text-green-600 hover:text-green-700 font-semibold">WaTask</Link> are built specifically for managing and campaigning across many existing groups. They connect to your existing groups and provide:
                 </p>
                 <ul className="space-y-2 text-gray-700">
                   <li>• Group collections and organization</li>
                   <li>• Multi-group campaign sends with pacing controls</li>
-                  <li>• Delivery monitoring and account health safeguards</li>
+                  <li>• Delivery monitoring and status tracking</li>
                   <li>• Team collaboration and audit trails</li>
                 </ul>
                 <p className="text-gray-700 mt-4 leading-relaxed">
@@ -326,7 +326,7 @@ export default function DoesAPISupportGroupsPage() {
                   Developer Custom Solutions (Advanced)
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Developers can build custom multi-group sending loops using unofficial APIs. This requires technical expertise, ongoing maintenance, risk management, and careful pacing implementation.
+                  Developers can build custom multi-group sending loops with code. This requires technical expertise, ongoing maintenance, risk management, and careful pacing implementation.
                 </p>
               </div>
             </div>
@@ -379,7 +379,7 @@ export default function DoesAPISupportGroupsPage() {
                   Will Meta add full group support to the Business API?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  There's no public roadmap confirming this. The current Groups API (8-participant cap) has been the official group solution since its release. For now, if you need to campaign across existing large groups, you need solutions outside the official API.
+                  There's no public roadmap confirming this. The current Groups API (8-participant cap) has been the group solution since its release. For now, if you need to campaign across existing large groups, you need different solutions.
                 </p>
               </div>
 
@@ -388,7 +388,7 @@ export default function DoesAPISupportGroupsPage() {
                   What should I use to post into my existing WhatsApp groups?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  For existing large groups, you need <strong>multi-group management platforms</strong> like WaTask that connect to your existing groups (not through the official API) and provide campaign, collection, and pacing features. These platforms are built specifically for posting into many existing groups you already manage.
+                  For existing large groups, you need <strong>multi-group management platforms</strong> like WaTask that connect to your existing groups and provide campaign, collection, and pacing features. These platforms are built specifically for posting into many existing groups your numbers are already in.
                 </p>
               </div>
             </div>

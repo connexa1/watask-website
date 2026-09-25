@@ -157,7 +157,7 @@ export default function BroadcastVsGroupPage() {
 
                 <div className="mt-6 bg-white border border-blue-200 rounded-lg p-4">
                   <p className="text-sm text-gray-700 mb-2">
-                    <strong>Cloud API parallel:</strong> The WhatsApp Business Cloud API offers template-based messaging to opted-in contacts at much larger scale (thousands to millions). BSP platforms like WATI and AiSensy specialize in this type of 1:1 messaging with automation, inboxes, and compliance features.
+                    <strong>Cloud API parallel:</strong> The WhatsApp Business Cloud API offers template-based messaging to opted-in contacts at much larger scale (thousands to millions). BSP platforms like WATI and AiSensy specialize in this type of 1:1 messaging with automation and inboxes.
                   </p>
                 </div>
               </div>
@@ -373,7 +373,7 @@ export default function BroadcastVsGroupPage() {
                     You need campaign controls beyond simple posting
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Pacing (spreading sends over time), delivery monitoring, account health safeguards, message variants per collection, and scheduled campaigns are features that require a purpose-built platform.
+                    Pacing (spreading sends over time), delivery monitoring, message variants per collection, and scheduled campaigns are features that require a purpose-built platform.
                   </p>
                 </div>
               </div>

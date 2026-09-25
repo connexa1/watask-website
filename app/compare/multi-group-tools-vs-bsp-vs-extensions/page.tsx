@@ -24,7 +24,7 @@ const faqSchema = {
       'name': 'What is the difference between a BSP and a multi-group tool?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'BSPs (Business Service Providers) like WATI and AiSensy provide access to WhatsApp Cloud API for 1:1 template messaging, shared inboxes, and customer conversations. Multi-group tools help you post campaigns into many existing WhatsApp groups you already administrate. They are complementary categories solving different jobs, not substitutes.'
+        'text': 'BSPs (Business Service Providers) like WATI and AiSensy provide access to WhatsApp Cloud API for 1:1 template messaging, shared inboxes, and customer conversations. Multi-group tools help you post campaigns into many existing WhatsApp groups your numbers are already in. They are complementary categories solving different jobs, not substitutes.'
       }
     },
     {
@@ -132,7 +132,7 @@ export default function CategoryComparisonPage() {
                 <div>
                   <p className="font-semibold text-text-primary mb-2">Best for:</p>
                   <p className="text-text-secondary">
-                    Customer service, transactional notifications, compliant marketing campaigns to opted-in contacts, 
+                    Customer service, transactional notifications, marketing campaigns to opted-in contacts, 
                     ecommerce order flows. Not for multi-group posting.
                   </p>
                 </div>
@@ -158,7 +158,7 @@ export default function CategoryComparisonPage() {
                   <p className="font-semibold text-text-primary mb-2">What they do:</p>
                   <p className="text-text-secondary">
                     Platforms purpose-built for <strong>posting campaigns into many existing WhatsApp groups</strong> you 
-                    already administrate. Organize groups into collections, send controlled campaigns, pace delivery, and 
+                    your numbers are already in. Organize groups into collections, send controlled campaigns, pace delivery, and 
                     monitor account health. Examples: WaTask, other group management platforms.
                   </p>
                 </div>
@@ -171,7 +171,7 @@ export default function CategoryComparisonPage() {
                     <li>• Send one campaign into many selected groups</li>
                     <li>• Pacing controls (spread sends over time)</li>
                     <li>• Delivery monitoring and status per group</li>
-                    <li>• Account health safeguards</li>
+                    <li>• Delivery monitoring</li>
                     <li>• Team collaboration and audit trails</li>
                   </ul>
                 </div>
@@ -237,7 +237,7 @@ export default function CategoryComparisonPage() {
                     <li>• Delivery monitoring or status tracking</li>
                     <li>• Account health warnings</li>
                     <li>• Team collaboration or audit trails</li>
-                    <li>• Compliance or safety features</li>
+                    <li>• Pacing or delivery controls</li>
                   </ul>
                 </div>
 
@@ -246,7 +246,7 @@ export default function CategoryComparisonPage() {
                   <p className="text-text-secondary">
                     <strong>Account health risks</strong> if used without proper pacing. Some extensions have been flagged 
                     for excessive permissions or unclear privacy policies. Chrome Web Store reviews mention account bans 
-                    from aggressive use. Professional businesses often avoid extensions due to trust and compliance concerns.
+                    from aggressive use. Professional businesses often avoid extensions due to trust concerns.
                   </p>
                 </div>
 
@@ -307,7 +307,7 @@ export default function CategoryComparisonPage() {
                   <td className="border border-[var(--border-subtle)] px-4 py-3 text-center text-red-600 font-semibold">✗</td>
                 </tr>
                 <tr>
-                  <td className="border border-[var(--border-subtle)] px-4 py-3 text-text-secondary">Account health safeguards</td>
+                  <td className="border border-[var(--border-subtle)] px-4 py-3 text-text-secondary">Delivery monitoring</td>
                   <td className="border border-[var(--border-subtle)] px-4 py-3 text-center text-green-600 font-semibold">✓</td>
                   <td className="border border-[var(--border-subtle)] px-4 py-3 text-center text-green-600 font-semibold bg-green-50">✓</td>
                   <td className="border border-[var(--border-subtle)] px-4 py-3 text-center text-red-600 font-semibold">✗</td>
@@ -340,7 +340,7 @@ export default function CategoryComparisonPage() {
                   <td className="border border-[var(--border-subtle)] px-4 py-3 text-text-secondary">Account risk level</td>
                   <td className="border border-[var(--border-subtle)] px-4 py-3 text-center text-green-700 font-medium">Low (official)</td>
                   <td className="border border-[var(--border-subtle)] px-4 py-3 text-center text-yellow-700 font-medium bg-green-50">Medium (careful use)</td>
-                  <td className="border border-[var(--border-subtle)] px-4 py-3 text-center text-red-700 font-medium">Higher (no safeguards)</td>
+                  <td className="border border-[var(--border-subtle)] px-4 py-3 text-center text-red-700 font-medium">Higher (no controls)</td>
                 </tr>
               </tbody>
             </table>
@@ -358,13 +358,13 @@ export default function CategoryComparisonPage() {
               <ul className="space-y-2 text-text-secondary ml-6">
                 <li>• Your job is <strong>1:1 customer messaging</strong> (support, notifications, marketing to contacts)</li>
                 <li>• You need a <strong>shared team inbox</strong> for customer conversations</li>
-                <li>• You want <strong>official Meta partnership</strong> and compliance-ready infrastructure</li>
+                <li>• You want <strong>Meta partnership</strong> infrastructure</li>
                 <li>• You're sending <strong>template messages</strong> to opted-in contacts</li>
                 <li>• You don't need to post into existing large groups</li>
               </ul>
               <p className="text-text-secondary mt-4">
                 <strong>Examples:</strong> Ecommerce order confirmations, customer service, appointment reminders, 
-                compliant marketing campaigns.
+                marketing campaigns.
               </p>
             </div>
 
@@ -373,7 +373,7 @@ export default function CategoryComparisonPage() {
                 Choose a Multi-Group Platform when:
               </h3>
               <ul className="space-y-2 text-text-secondary ml-6">
-                <li>• Your job is <strong>posting campaigns into many existing groups</strong> you already administrate</li>
+                <li>• Your job is <strong>posting campaigns into many existing groups</strong> your numbers are already in</li>
                 <li>• You manage <strong>dozens or hundreds of groups</strong> (client groups, community groups, regional groups)</li>
                 <li>• You need <strong>group collections</strong> to organize and segment your network</li>
                 <li>• You want <strong>pacing, monitoring, and safety controls</strong> for multi-group operations</li>
@@ -435,7 +435,7 @@ export default function CategoryComparisonPage() {
               <p className="text-text-secondary">
                 <strong>BSPs</strong> (Business Service Providers) like WATI and AiSensy provide access to WhatsApp Cloud API 
                 for <strong>1:1 template messaging</strong>, shared inboxes, and customer conversations. <strong>Multi-group 
-                tools</strong> help you <strong>post campaigns into many existing WhatsApp groups</strong> you already administrate. 
+                tools</strong> help you <strong>post campaigns into many existing WhatsApp groups</strong> your numbers are already in. 
                 They are complementary categories solving different jobs, not substitutes.
               </p>
             </div>
@@ -448,7 +448,7 @@ export default function CategoryComparisonPage() {
                 <strong>Yes</strong>, some Chrome extensions can send messages to multiple groups via WhatsApp Web automation. 
                 However, they typically lack features like group collections, team collaboration, pacing controls, delivery 
                 monitoring, and account health management that productized multi-group platforms provide. Extensions also carry 
-                account risks if not used carefully (no built-in safeguards against spam flags).
+                account risks if not used carefully (no built-in pacing controls).
               </p>
             </div>
 
@@ -470,7 +470,7 @@ export default function CategoryComparisonPage() {
               </h3>
               <p className="text-text-secondary">
                 <strong>No.</strong> Multi-group posting into existing consumer groups is not a feature Meta offers through 
-                Cloud API (the official API only does 1:1 messaging and small 8-participant API groups). Multi-group platforms 
+                Cloud API (which sends 1:1 messages and via Groups API to small 8-participant new groups). Multi-group platforms 
                 use alternative approaches, so they don't have official BSP status. BSPs are official partners but can't post 
                 into your existing large groups.
               </p>

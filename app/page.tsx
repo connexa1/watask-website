@@ -3,13 +3,13 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Send One Campaign to Many WhatsApp Groups | WaTask',
-  description: 'Send one campaign into many existing WhatsApp groups. Organize collections, pace safely, and run multi-group ops — built for agencies, brands, and community teams.',
+  description: 'Send one campaign into many existing WhatsApp groups. Organize collections, spread sends over time, and run multi-group ops — built for agencies, brands, and community teams.',
   alternates: {
     canonical: 'https://www.watask.com',
   },
   openGraph: {
     title: 'Send One Campaign to Many WhatsApp Groups | WaTask',
-    description: 'Send one campaign into many existing WhatsApp groups. Organize collections, pace safely, and run multi-group ops — built for agencies, brands, and community teams.',
+    description: 'Send one campaign into many existing WhatsApp groups. Organize collections, spread sends over time, and run multi-group ops — built for agencies, brands, and community teams.',
     url: 'https://www.watask.com',
     type: 'website',
   },
@@ -188,7 +188,7 @@ export default function HomePage() {
                 </div>
                 <div className="glass-panel p-6 rounded-xl">
                   <h3 className="font-semibold text-text-primary mb-2 text-sm">Pacing & delivery</h3>
-                  <p className="text-text-secondary text-sm">Safe rhythm · status per group</p>
+                  <p className="text-text-secondary text-sm">Steady pacing · status per group</p>
                 </div>
               </div>
               <p className="text-center text-sm text-text-muted italic">

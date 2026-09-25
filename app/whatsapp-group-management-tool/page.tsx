@@ -31,7 +31,7 @@ const categoryFaqSchema = {
       'name': 'How does a group management tool differ from WhatsApp Business API / BSP tools?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'BSPs like WATI, AiSensy, and Interakt focus on 1:1 template messaging, shared inboxes, and Cloud API automation. Group management tools focus on posting campaigns into many existing group chats you already administrate. They are complementary categories solving different jobs — not substitutes.'
+        'text': 'BSPs like WATI, AiSensy, and Interakt focus on 1:1 template messaging, shared inboxes, and Cloud API automation. Group management tools focus on posting campaigns into many existing group chats your numbers are already in. They are complementary categories solving different jobs — not substitutes.'
       }
     },
     {
@@ -55,7 +55,7 @@ const categoryFaqSchema = {
       'name': 'What features should I look for in a group management tool?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'Essential features include: group inventory and collections (organize by client, region, or topic), multi-group campaign sending, pacing and delivery controls, team collaboration and roles, delivery monitoring, and account health safeguards. Professional tools prioritize safety and control over raw volume.'
+        'text': 'Essential features include: group inventory and collections (organize by client, region, or topic), multi-group campaign sending, pacing and delivery controls, team collaboration and roles, and delivery monitoring. Professional tools prioritize control and pacing over raw volume.'
       }
     }
   ]
@@ -109,7 +109,7 @@ export default function CategoryPage() {
                 Pacing / delivery controls
               </h3>
               <p className="text-text-secondary text-sm">
-                Spread sends over time with built-in safeguards
+                Spread sends over time with built-in pacing controls
               </p>
             </div>
 
@@ -129,7 +129,7 @@ export default function CategoryPage() {
           
           <div className="glass-panel border-[var(--border-subtle)] rounded-xl p-8 mb-12 bg-bg-card">
             <p className="text-text-secondary mb-4 leading-relaxed">
-              BSPs (WATI, AiSensy, Interakt, etc.) are strong at <strong className="text-text-primary">template 1:1 messaging</strong>, inboxes, and automation on the Cloud API. Group management tools solve <strong className="text-text-primary">posting into many group chats you already administrate</strong>.
+              BSPs (WATI, AiSensy, Interakt, etc.) are strong at <strong className="text-text-primary">template 1:1 messaging</strong>, inboxes, and automation on the Cloud API. Group management tools solve <strong className="text-text-primary">posting into many group chats your numbers are already in</strong>.
             </p>
             <p className="text-text-primary font-medium">
               Complementary categories — not substitutes.
@@ -140,28 +140,28 @@ export default function CategoryPage() {
             Who needs it
           </h2>
           
-          <div className="space-y-4 mb-12">
+          <div className="space-y-4 mb-12 not-prose">
             <div className="flex gap-4 items-start">
               <span className="text-cyber font-bold text-xl flex-shrink-0">→</span>
-              <p className="text-text-secondary pt-1">
+              <p className="text-text-secondary my-0">
                 <strong className="text-text-primary">Agencies</strong> managing client group packs
               </p>
             </div>
             <div className="flex gap-4 items-start">
               <span className="text-cyber font-bold text-xl flex-shrink-0">→</span>
-              <p className="text-text-secondary pt-1">
+              <p className="text-text-secondary my-0">
                 <strong className="text-text-primary">Community / civic operators</strong> with large group networks
               </p>
             </div>
             <div className="flex gap-4 items-start">
               <span className="text-cyber font-bold text-xl flex-shrink-0">→</span>
-              <p className="text-text-secondary pt-1">
+              <p className="text-text-secondary my-0">
                 <strong className="text-text-primary">Brands</strong> with regional or vertical groups
               </p>
             </div>
             <div className="flex gap-4 items-start">
               <span className="text-cyber font-bold text-xl flex-shrink-0">→</span>
-              <p className="text-text-secondary pt-1">
+              <p className="text-text-secondary my-0">
                 <strong className="text-text-primary">Multi-location / franchise coordinators</strong> running location groups
               </p>
             </div>
@@ -210,7 +210,7 @@ export default function CategoryPage() {
                 How does a group management tool differ from WhatsApp Business API / BSP tools?
               </h3>
               <p className="text-text-secondary leading-relaxed">
-                BSPs like WATI, AiSensy, and Interakt focus on <strong className="text-text-primary">1:1 template messaging</strong>, shared inboxes, and Cloud API automation. Group management tools focus on <strong className="text-text-primary">posting campaigns into many existing group chats</strong> you already administrate. They are complementary categories solving different jobs — not substitutes.
+                BSPs like WATI, AiSensy, and Interakt focus on <strong className="text-text-primary">1:1 template messaging</strong>, shared inboxes, and Cloud API automation. Group management tools focus on <strong className="text-text-primary">posting campaigns into many existing group chats</strong> your numbers are already in. They are complementary categories solving different jobs — not substitutes.
               </p>
             </div>
 
@@ -245,7 +245,7 @@ export default function CategoryPage() {
                 <li>• <strong className="text-text-primary">Pacing and delivery controls</strong> (safe send intervals, not instant blasts)</li>
                 <li>• <strong className="text-text-primary">Team collaboration and roles</strong> (shared access, audit trails)</li>
                 <li>• <strong className="text-text-primary">Delivery monitoring</strong> (track which groups received your message)</li>
-                <li>• <strong className="text-text-primary">Account health safeguards</strong> (warnings, pause capabilities)</li>
+                <li>• <strong className="text-text-primary">Delivery monitoring</strong> (warnings, pause capabilities)</li>
               </ul>
               <p className="text-text-secondary leading-relaxed mt-3">
                 Professional tools prioritize safety and control over raw volume.

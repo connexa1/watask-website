@@ -32,7 +32,7 @@ const faqSchema = {
       'name': 'Will posting to multiple WhatsApp groups get my account banned?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'Account risk depends on behavior, not capability. Posting to groups you administrate with proper pacing, relevant content, and community consent is professional group management. Risk increases when you spam irrelevant content, blast hundreds of groups instantly, ignore complaints, or post to groups where your messages aren\'t welcome. Capability does not equal permission.'
+        'text': 'Account risk depends on behavior, not capability. Posting to groups your numbers are in with proper pacing, relevant content, and community consent is professional group management. Risk increases when you spam irrelevant content, blast hundreds of groups instantly, ignore complaints, or post to groups where your messages aren\'t welcome. Capability does not equal permission.'
       }
     },
     {
@@ -56,7 +56,7 @@ const faqSchema = {
       'name': 'Should I use Chrome extensions or a platform for multi-group sending?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'Platforms like WaTask offer built-in pacing controls, delivery monitoring, account health safeguards, and team collaboration features. Chrome extensions can work but typically lack safety features — if you use one, you must implement your own pacing, consent checks, and monitoring. For business use, platforms provide better risk management and professionalism.'
+        'text': 'Platforms like WaTask offer built-in pacing controls, delivery monitoring, and team collaboration features. Chrome extensions can work but typically lack these features — if you use one, you must implement your own pacing, consent checks, and monitoring. For business use, platforms provide better risk management and professionalism.'
       }
     }
   ]
@@ -104,7 +104,7 @@ export default function SaferCampaignsPage() {
             </div>
 
             <p className="text-text-secondary leading-relaxed">
-              Multi-group WhatsApp campaigns are a legitimate operational need for agencies, community managers, and brands who already administer many groups. The difference between professional multi-group management and spammy behavior comes down to <strong className="text-text-primary">how</strong> you execute: pacing your sends, ensuring relevance, respecting group norms, and monitoring feedback.
+              Multi-group WhatsApp campaigns are a legitimate operational need for agencies, community managers, and brands whose numbers are already in many groups. The difference between professional multi-group management and spammy behavior comes down to <strong className="text-text-primary">how</strong> you execute: pacing your sends, ensuring relevance, respecting group norms, and monitoring feedback.
             </p>
             <p className="text-text-secondary leading-relaxed">
               This guide provides practical safety habits without fear-mongering or ban-evasion instructions. Follow these principles to run campaigns that serve your communities while maintaining account health.
@@ -197,7 +197,7 @@ export default function SaferCampaignsPage() {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-3">Consent checklist:</h4>
                     <ul className="space-y-2 text-gray-700">
-                      <li>✓ You created or administrate the group</li>
+                      <li>✓ Your number is already in the group</li>
                       <li>✓ Members joined knowing they'd receive your updates</li>
                       <li>✓ Your message is relevant to the group's purpose</li>
                       <li>✓ You're following any stated frequency norms (e.g., "weekly updates only")</li>
@@ -407,7 +407,7 @@ export default function SaferCampaignsPage() {
                         DIY Developer Solutions (Advanced)
                       </h4>
                       <p className="text-gray-700 text-sm mb-3">
-                        Building custom solutions with unofficial APIs (Whapi, Maytapi, WAHA):
+                        Building custom solutions with code:
                       </p>
                       <ul className="space-y-2 text-sm text-gray-700">
                         <li>• Full control over pacing, logic, and workflows</li>
@@ -475,7 +475,7 @@ export default function SaferCampaignsPage() {
                     Posting to groups where you're not the admin or where messages aren't welcome
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    This guide is for managing groups you already administrate. Posting to groups you don't manage or where your content isn't wanted crosses into spam territory.
+                    This guide is for managing groups your numbers are already in. Posting to groups where your content isn't wanted crosses into spam territory.
                   </p>
                 </div>
               </div>
@@ -514,7 +514,7 @@ export default function SaferCampaignsPage() {
                   Will posting to multiple WhatsApp groups get my account banned?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Account risk depends on <strong>behavior, not capability</strong>. Posting to groups you administrate with proper pacing, relevant content, and community consent is professional group management. Risk increases when you spam irrelevant content, blast hundreds of groups instantly, ignore complaints, or post to groups where your messages aren't welcome. Capability does not equal permission.
+                  Account risk depends on <strong>behavior, not capability</strong>. Posting to groups your numbers are in with proper pacing, relevant content, and community consent is professional group management. Risk increases when you spam irrelevant content, blast hundreds of groups instantly, ignore complaints, or post to groups where your messages aren't welcome. Capability does not equal permission.
                 </p>
               </div>
 
@@ -541,7 +541,7 @@ export default function SaferCampaignsPage() {
                   Should I use Chrome extensions or a platform for multi-group sending?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  <strong>Platforms like WaTask</strong> offer built-in pacing controls, delivery monitoring, account health safeguards, and team collaboration features. Chrome extensions can work but typically lack safety features — if you use one, you must implement your own pacing, consent checks, and monitoring. For business use, platforms provide better risk management and professionalism.
+                  <strong>Platforms like WaTask</strong> offer built-in pacing controls, delivery monitoring, and team collaboration features. Chrome extensions can work but typically lack these features — if you use one, you must implement your own pacing, consent checks, and monitoring. For business use, platforms provide better risk management and professionalism.
                 </p>
               </div>
 
@@ -562,7 +562,7 @@ export default function SaferCampaignsPage() {
             </h2>
             
             <p className="text-gray-700 mb-6 leading-relaxed">
-              WaTask includes pacing controls, delivery monitoring, account health safeguards, and collections to help you run professional multi-group campaigns — without manual pacing or guesswork.
+              WaTask includes pacing controls, delivery monitoring, and collections to help you run professional multi-group campaigns — without manual pacing or guesswork.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-6">

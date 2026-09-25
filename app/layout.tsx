@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     default: 'Multi-Group WhatsApp Campaigns | WaTask',
     template: '%s | WaTask',
   },
-  description: 'Send one campaign into many existing WhatsApp groups. Organize collections, pace safely, and run multi-group ops — built for agencies, brands, and community teams.',
+  description: 'Send one campaign into many existing WhatsApp groups. Organize collections, spread sends over time, and run multi-group ops — built for agencies, brands, and community teams.',
   openGraph: {
     type: 'website',
     locale: 'en_US',

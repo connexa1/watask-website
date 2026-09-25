@@ -56,7 +56,7 @@ const faqSchema = {
       'name': 'What are the alternatives for managing existing large WhatsApp groups?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'For existing large groups, you need multi-group management platforms like WaTask that connect to your existing groups (not the official API) and provide campaign, collection, and pacing features. These platforms are built specifically for posting into many existing groups you already manage.'
+        'text': 'For existing large groups, you need multi-group management platforms like WaTask that connect to your existing groups and provide campaign, collection, and pacing features. These platforms are built specifically for posting into many existing groups your numbers are already in.'
       }
     }
   ]
@@ -183,7 +183,7 @@ export default function GroupsAPILimitsPage() {
                   Requires Official Business Account (OBA)
                 </h3>
                 <p className="text-text-secondary leading-relaxed">
-                  To use the WhatsApp Groups API, you need an <strong className="text-text-primary">Official Business Account (OBA)</strong> with Meta. Standard Business Accounts cannot access Groups API features. OBA requirements include verification, compliance with Meta's commerce and messaging policies, and meeting eligibility criteria.
+                  To use the WhatsApp Groups API, you need an <strong className="text-text-primary">Official Business Account (OBA)</strong> with Meta. Standard Business Accounts cannot access Groups API features. OBA requirements include verification, meeting Meta's commerce and messaging policies, and meeting eligibility criteria.
                 </p>
               </div>
             </div>
@@ -256,7 +256,7 @@ export default function GroupsAPILimitsPage() {
             </h2>
             
             <p className="text-text-secondary mb-6 leading-relaxed">
-              Most people searching for "WhatsApp Groups API" or "send message to multiple WhatsApp groups" are looking for a way to <strong className="text-text-primary">campaign across their existing large groups</strong>. The 8-participant cap makes the official API unsuitable for this job.
+              Most people searching for "WhatsApp Groups API" or "send message to multiple WhatsApp groups" are looking for a way to <strong className="text-text-primary">campaign across their existing large groups</strong>. The 8-participant cap makes the Groups API unsuitable for this job.
             </p>
 
             <div className="glass-panel border-[var(--border-subtle)] rounded-lg p-6 mb-6 bg-bg-card">
@@ -291,7 +291,7 @@ export default function GroupsAPILimitsPage() {
                   Multi-Group Management Platforms
                 </h3>
                 <p className="text-text-secondary mb-3 leading-relaxed">
-                  Platforms like <Link href="/" className="text-cyber hover:text-cyber-hover font-semibold">WaTask</Link> are designed specifically for managing and campaigning across many existing groups. They connect to your existing groups (not through the official API), organize them into collections, and provide pacing, team collaboration, and campaign features.
+                  Platforms like <Link href="/" className="text-cyber hover:text-cyber-hover font-semibold">WaTask</Link> are designed specifically for managing and campaigning across many existing groups. They connect to your existing groups, organize them into collections, and provide pacing, team collaboration, and campaign features.
                 </p>
                 <p className="text-text-secondary leading-relaxed">
                   <strong className="text-text-primary">Best for:</strong> Agencies, community managers, brands, and multi-location teams who already manage dozens or hundreds of WhatsApp groups and need to run controlled campaigns.
@@ -343,10 +343,10 @@ export default function GroupsAPILimitsPage() {
                   Developer-Built Custom Solutions
                 </h3>
                 <p className="text-text-secondary mb-3 leading-relaxed">
-                  Some teams use unofficial APIs (Whapi, Maytapi, WAHA, 2Chat) to build custom multi-group sending loops. This requires technical expertise, ongoing maintenance, careful rate-limit management, and awareness of account risks.
+                  Some teams build custom multi-group sending loops with code. This requires technical expertise, ongoing maintenance, careful rate-limit management, and awareness of account risks.
                 </p>
                 <p className="text-text-secondary leading-relaxed">
-                  <strong className="text-text-primary">Best for:</strong> Technical teams with developer resources who need full control and customization, and are comfortable managing risk and compliance themselves.
+                  <strong className="text-text-primary">Best for:</strong> Technical teams with developer resources who need full control and customization, and are comfortable managing risk themselves.
                 </p>
               </div>
             </div>
@@ -408,7 +408,7 @@ export default function GroupsAPILimitsPage() {
                   What are the alternatives for managing existing large WhatsApp groups?
                 </h3>
                 <p className="text-text-secondary leading-relaxed">
-                  For existing large groups, you need <strong className="text-text-primary">multi-group management platforms</strong> like WaTask that connect to your existing groups (not the official API) and provide campaign, collection, and pacing features. These platforms are built specifically for posting into many existing groups you already manage.
+                  For existing large groups, you need <strong className="text-text-primary">multi-group management platforms</strong> like WaTask that connect to your existing groups and provide campaign, collection, and pacing features. These platforms are built specifically for posting into many existing groups your numbers are already in.
                 </p>
               </div>
             </div>

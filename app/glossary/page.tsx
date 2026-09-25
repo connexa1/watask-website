@@ -413,7 +413,7 @@ const terms: Term[] = [
   },
   {
     term: 'WhatsApp Web',
-    definition: 'Browser-based version of WhatsApp (web.whatsapp.com) that mirrors your phone\'s account. Historically required phone to be online; now works independently with multi-device. Used by some multi-group tools for Web-based automation since it provides more access than Cloud API for group posting.',
+    definition: 'Browser-based version of WhatsApp (web.whatsapp.com) that mirrors your phone\'s account. Used by some multi-group tools for Web-based automation since it provides more access than Cloud API for group posting.',
     relatedGuides: []
   }
 ];
