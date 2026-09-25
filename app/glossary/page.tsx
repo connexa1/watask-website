@@ -429,7 +429,7 @@ export default function GlossaryPage() {
       <section className="bg-gradient-to-b from-gray-50 to-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="mb-6">
-            <Link href="/guides" className="text-sm text-green-600 hover:text-green-700 inline-flex items-center gap-2">
+            <Link href="/guides" className="text-sm text-green-700 hover:text-green-800 inline-flex items-center gap-2">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
@@ -469,7 +469,7 @@ export default function GlossaryPage() {
                       <li key={guideIndex}>
                         <Link 
                           href={guide.href}
-                          className="text-sm text-green-600 hover:text-green-700"
+                          className="text-sm text-green-700 hover:text-green-800"
                         >
                           {guide.title} →
                         </Link>
@@ -491,7 +491,7 @@ export default function GlossaryPage() {
               <h3 className="font-semibold text-gray-900 mb-3">Core Multi-Group Guide</h3>
               <Link 
                 href="/guides/send-bulk-messages-to-multiple-whatsapp-groups"
-                className="text-green-600 hover:text-green-700 font-medium"
+                className="text-green-700 hover:text-green-800 font-medium"
               >
                 How to Send Bulk Messages to Multiple WhatsApp Groups →
               </Link>
@@ -500,7 +500,7 @@ export default function GlossaryPage() {
               <h3 className="font-semibold text-gray-900 mb-3">WhatsApp Communities</h3>
               <Link 
                 href="/guides/whatsapp-communities-bulk-messaging"
-                className="text-green-600 hover:text-green-700 font-medium"
+                className="text-green-700 hover:text-green-800 font-medium"
               >
                 WhatsApp Communities for Bulk Messaging →
               </Link>
@@ -509,7 +509,7 @@ export default function GlossaryPage() {
               <h3 className="font-semibold text-gray-900 mb-3">API Limits</h3>
               <Link 
                 href="/guides/whatsapp-groups-api-limits"
-                className="text-green-600 hover:text-green-700 font-medium"
+                className="text-green-700 hover:text-green-800 font-medium"
               >
                 WhatsApp Groups API Limits Explained →
               </Link>
@@ -518,7 +518,7 @@ export default function GlossaryPage() {
               <h3 className="font-semibold text-gray-900 mb-3">All Guides</h3>
               <Link 
                 href="/guides"
-                className="text-green-600 hover:text-green-700 font-medium"
+                className="text-green-700 hover:text-green-800 font-medium"
               >
                 Browse all guides →
               </Link>
@@ -526,7 +526,7 @@ export default function GlossaryPage() {
           </div>
         </div>
 
-        <div className="mt-12 border-2 border-green-600 rounded-lg p-8 bg-green-50">
+        <div className="mt-12 border-2 border-green-700 rounded-lg p-8 bg-green-50">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             Ready to manage your group network?
           </h2>
@@ -535,7 +535,7 @@ export default function GlossaryPage() {
           </p>
           <Link 
             href="https://wa.me/306981337327?text=Hi%2C%20I%27d%20like%20to%20try%20WaTask"
-            className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 inline-block transition-all"
+            className="bg-green-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-800 inline-block transition-all"
           >
             Start on WhatsApp
           </Link>

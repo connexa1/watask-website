@@ -4,6 +4,15 @@ import createMDX from '@next/mdx';
 const nextConfig: NextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
   output: 'standalone',
+  async redirects() {
+    return [
+      {
+        source: '/tutorials',
+        destination: '/guides',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 const withMDX = createMDX({

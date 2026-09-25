@@ -78,13 +78,13 @@ export default function GuidesPage() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link 
               href="https://wa.me/306981337327?text=Hi%2C%20I%27d%20like%20to%20try%20WaTask"
-              className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-all text-center shadow-[0_0_20px_rgba(0,255,148,0.3)] hover:shadow-[0_0_30px_rgba(0,255,148,0.5)]"
+              className="bg-green-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-800 transition-all text-center shadow-[0_0_20px_rgba(0,255,148,0.3)] hover:shadow-[0_0_30px_rgba(0,255,148,0.5)]"
             >
               Start on WhatsApp
             </Link>
             <Link 
               href="/guides/send-bulk-messages-to-multiple-whatsapp-groups"
-              className="text-green-700 border-2 border-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-green-600/10 transition-colors text-center"
+              className="text-green-700 border-2 border-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-green-800/10 transition-colors text-center"
             >
               Read the pillar guide
             </Link>
@@ -95,14 +95,14 @@ export default function GuidesPage() {
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-16">
           <div className="flex items-center gap-2 mb-4">
-            <span className="bg-green-600/20 text-green-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide border border-green-600/30">
+            <span className="bg-green-700/20 text-green-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide border border-green-700/30">
               Featured
             </span>
             <span className="text-sm text-gray-600">{featuredGuide.category}</span>
           </div>
           <Link href={featuredGuide.href} className="group block">
-            <div className="border border-2 border-green-600/30 rounded-xl p-8 hover:border-green-600 transition-colors bg-gray-50">
-              <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-green-700 transition-colors">
+            <div className="border border-2 border-green-700/30 rounded-xl p-8 hover:border-green-800 transition-colors bg-gray-50">
+              <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-green-800 transition-colors">
                 {featuredGuide.title} →
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed">
@@ -116,14 +116,14 @@ export default function GuidesPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-8">All Guides</h2>
           <div className="space-y-6">
             {guides.map((guide) => (
-              <div key={guide.href} className="border border-gray-200 rounded-lg p-6 hover:border-green-600/30 transition-colors bg-gray-50">
+              <div key={guide.href} className="border border-gray-200 rounded-lg p-6 hover:border-green-800/30 transition-colors bg-gray-50">
                 <div className="flex items-start justify-between mb-3">
                   <div className="flex items-center gap-2">
                     <span className="text-xs font-medium text-gray-600 uppercase tracking-wide">{guide.category}</span>
                     {guide.status && (
                       <span className={`text-xs px-2.5 py-1 rounded-full font-medium border ${
                         guide.status === 'Published' 
-                          ? 'bg-green-600/10 text-green-700 border-green-600/30' 
+                          ? 'bg-green-700/10 text-green-700 border-green-700/30' 
                           : 'bg-cyan/10 text-cyan border-cyan/30'
                       }`}>
                         {guide.status}
@@ -155,7 +155,7 @@ export default function GuidesPage() {
                 <div className="flex items-center gap-4 text-sm">
                   <Link 
                     href={guide.href}
-                    className="text-green-600 hover:text-green-700 font-medium"
+                    className="text-green-700 hover:text-green-800 font-medium"
                   >
                     View page →
                   </Link>
@@ -203,7 +203,7 @@ export default function GuidesPage() {
               <div className="flex items-center gap-4 text-sm">
                 <Link 
                   href="/compare/multi-group-tools-vs-bsp-vs-extensions"
-                  className="text-green-600 hover:text-green-700 font-medium"
+                  className="text-green-700 hover:text-green-800 font-medium"
                 >
                   View comparison →
                 </Link>
@@ -239,7 +239,7 @@ export default function GuidesPage() {
               <div className="flex items-center gap-4 text-sm">
                 <Link 
                   href="/compare/whatsapp-group-sending-alternatives"
-                  className="text-green-600 hover:text-green-700 font-medium"
+                  className="text-green-700 hover:text-green-800 font-medium"
                 >
                   View alternatives guide →
                 </Link>
@@ -275,7 +275,7 @@ export default function GuidesPage() {
               <div className="flex items-center gap-4 text-sm">
                 <Link 
                   href="/glossary"
-                  className="text-green-600 hover:text-green-700 font-medium"
+                  className="text-green-700 hover:text-green-800 font-medium"
                 >
                   View glossary →
                 </Link>
@@ -295,7 +295,7 @@ export default function GuidesPage() {
           </p>
           <Link 
             href="https://wa.me/306981337327?text=Hi%2C%20I%27d%20like%20to%20try%20WaTask"
-            className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 inline-block transition-all shadow-[0_0_20px_rgba(0,255,148,0.3)] hover:shadow-[0_0_30px_rgba(0,255,148,0.5)]"
+            className="bg-green-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-800 inline-block transition-all shadow-[0_0_20px_rgba(0,255,148,0.3)] hover:shadow-[0_0_30px_rgba(0,255,148,0.5)]"
           >
             Start on WhatsApp
           </Link>

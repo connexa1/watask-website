@@ -81,7 +81,7 @@ export default function CommunitiesGuidePage() {
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header className="mb-12">
           <div className="flex items-center gap-2 mb-4">
-            <Link href="/guides" className="text-sm text-green-600 hover:text-green-700 transition-colors inline-flex items-center gap-2">
+            <Link href="/guides" className="text-sm text-green-700 hover:text-green-800 transition-colors inline-flex items-center gap-2">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
@@ -105,7 +105,7 @@ export default function CommunitiesGuidePage() {
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
               This guide explains what Communities are, how they compare to regular groups and broadcast lists, their limits 
-              (including the 50-group cap), and when you need a <Link href="/whatsapp-group-management-tool" className="text-green-600 hover:text-green-700 font-medium">multi-group platform</Link> beyond what Communities provide.
+              (including the 50-group cap), and when you need a <Link href="/whatsapp-group-management-tool" className="text-green-700 hover:text-green-800 font-medium">multi-group platform</Link> beyond what Communities provide.
             </p>
           </section>
 
@@ -114,7 +114,7 @@ export default function CommunitiesGuidePage() {
               What Are WhatsApp Communities?
             </h2>
             
-            <div className="border border-2 border-green-600/30 bg-gray-50 rounded-xl p-8 mb-6">
+            <div className="border border-2 border-green-700/30 bg-gray-50 rounded-xl p-8 mb-6">
               <p className="text-gray-900 font-semibold mb-4">
                 Definition:
               </p>
@@ -130,7 +130,7 @@ export default function CommunitiesGuidePage() {
             </h3>
 
             <div className="space-y-4">
-              <div className="border-l-4 border-green-600 border bg-gray-50 p-6 rounded-r-lg">
+              <div className="border-l-4 border-green-700 border bg-gray-50 p-6 rounded-r-lg">
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">
                   Announcement Group
                 </h4>
@@ -152,7 +152,7 @@ export default function CommunitiesGuidePage() {
                 </p>
               </div>
 
-              <div className="border-l-4 border-green-600 border bg-gray-50 p-6 rounded-r-lg">
+              <div className="border-l-4 border-green-700 border bg-gray-50 p-6 rounded-r-lg">
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">
                   Community Info & Description
                 </h4>
@@ -340,9 +340,9 @@ export default function CommunitiesGuidePage() {
                 </div>
               </div>
 
-              <div className="border-2 border-green-600 rounded-lg p-6 bg-green-50">
+              <div className="border-2 border-green-700 rounded-lg p-6 bg-green-50">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center font-bold text-white">
+                  <div className="flex-shrink-0 w-12 h-12 bg-green-700 rounded-lg flex items-center justify-center font-bold text-white">
                     M
                   </div>
                   <div className="flex-1">
@@ -373,7 +373,7 @@ export default function CommunitiesGuidePage() {
                 <strong>Summary:</strong> Communities help <em>organize</em> related groups and provide a built-in 
                 announcement channel. Multi-group platforms help you <em>campaign</em> across any groups you manage, 
                 regardless of structure.{' '}
-                <Link href="/guides/whatsapp-broadcast-vs-group-vs-communities" className="text-green-600 hover:text-green-700 font-medium">
+                <Link href="/guides/whatsapp-broadcast-vs-group-vs-communities" className="text-green-700 hover:text-green-800 font-medium">
                   Read full comparison
                 </Link>
               </p>
@@ -462,7 +462,7 @@ export default function CommunitiesGuidePage() {
             </h2>
 
             <p className="text-gray-700 mb-6">
-              Multi-group platforms like <Link href="/" className="text-green-600 hover:text-green-700 font-medium">WaTask</Link> work 
+              Multi-group platforms like <Link href="/" className="text-green-700 hover:text-green-800 font-medium">WaTask</Link> work 
               <em> with</em> Communities, not against them. Here's how they fit together:
             </p>
 
@@ -473,28 +473,28 @@ export default function CommunitiesGuidePage() {
               
               <ul className="space-y-3 text-gray-700">
                 <li className="flex gap-3">
-                  <span className="text-green-600 font-bold text-xl flex-shrink-0">✓</span>
+                  <span className="text-green-700 font-bold text-xl flex-shrink-0">✓</span>
                   <span>
                     <strong>Use Communities for organization:</strong> Keep related groups under one umbrella. 
                     Use the announcement group for all-Community broadcasts.
                   </span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-green-600 font-bold text-xl flex-shrink-0">✓</span>
+                  <span className="text-green-700 font-bold text-xl flex-shrink-0">✓</span>
                   <span>
                     <strong>Use multi-group platforms for campaigns:</strong> When you need to send to selected groups 
                     across multiple Communities, target specific sub-groups, or manage 50+ groups, use a multi-group tool.
                   </span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-green-600 font-bold text-xl flex-shrink-0">✓</span>
+                  <span className="text-green-700 font-bold text-xl flex-shrink-0">✓</span>
                   <span>
                     <strong>Import your Community announcement groups:</strong> Most multi-group platforms can include 
                     Community announcement groups as part of your group inventory, letting you campaign across them.
                   </span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-green-600 font-bold text-xl flex-shrink-0">✓</span>
+                  <span className="text-green-700 font-bold text-xl flex-shrink-0">✓</span>
                   <span>
                     <strong>Get pacing and safety controls:</strong> Multi-group platforms add send intervals, delivery 
                     monitoring, and delivery tracking that Communities don't provide.
@@ -558,7 +558,7 @@ export default function CommunitiesGuidePage() {
                   <strong>No.</strong> Communities only work within one Community structure. If you manage groups across 
                   multiple Communities, different clients, or independent organizations, you cannot use the Community 
                   announcement feature to reach all of them. You need a{' '}
-                  <Link href="/whatsapp-group-management-tool" className="text-green-600 hover:text-green-700">
+                  <Link href="/whatsapp-group-management-tool" className="text-green-700 hover:text-green-800">
                     multi-group platform
                   </Link>{' '}
                   for cross-Community campaigns.
@@ -619,7 +619,7 @@ export default function CommunitiesGuidePage() {
                     href="https://faq.whatsapp.com/1339803837120355" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-green-600 hover:text-green-700"
+                    className="text-green-700 hover:text-green-800"
                   >
                     official WhatsApp Help Center
                   </a>.
@@ -628,7 +628,7 @@ export default function CommunitiesGuidePage() {
             </div>
           </section>
 
-          <section className="border border-2 border-green-600 bg-gray-50 rounded-lg p-8">
+          <section className="border border-2 border-green-700 bg-gray-50 rounded-lg p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               Need to Campaign Across Multiple Communities or 50+ Groups?
             </h2>
@@ -642,7 +642,7 @@ export default function CommunitiesGuidePage() {
             <div className="mb-6">
               <Link 
                 href="https://wa.me/306981337327?text=Hi%2C%20I%27d%20like%20to%20try%20WaTask"
-                className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 inline-block"
+                className="bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-800 inline-block"
               >
                 Start on WhatsApp
               </Link>
@@ -654,27 +654,27 @@ export default function CommunitiesGuidePage() {
               </p>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="/guides/send-bulk-messages-to-multiple-whatsapp-groups" className="text-green-600 hover:text-green-700">
+                  <Link href="/guides/send-bulk-messages-to-multiple-whatsapp-groups" className="text-green-700 hover:text-green-800">
                     How to Send Bulk Messages to Multiple Groups →
                   </Link>
                 </li>
                 <li>
-                  <Link href="/guides/whatsapp-broadcast-vs-group-vs-communities" className="text-green-600 hover:text-green-700">
+                  <Link href="/guides/whatsapp-broadcast-vs-group-vs-communities" className="text-green-700 hover:text-green-800">
                     Broadcast vs Group vs Communities →
                   </Link>
                 </li>
                 <li>
-                  <Link href="/whatsapp-group-management-tool" className="text-green-600 hover:text-green-700">
+                  <Link href="/whatsapp-group-management-tool" className="text-green-700 hover:text-green-800">
                     WhatsApp Group Management Tools →
                   </Link>
                 </li>
                 <li>
-                  <Link href="/guides/safer-multi-group-whatsapp-campaigns" className="text-green-600 hover:text-green-700">
+                  <Link href="/guides/safer-multi-group-whatsapp-campaigns" className="text-green-700 hover:text-green-800">
                     Safer Multi-Group Campaigns →
                   </Link>
                 </li>
                 <li>
-                  <Link href="/glossary" className="text-green-600 hover:text-green-700">
+                  <Link href="/glossary" className="text-green-700 hover:text-green-800">
                     WhatsApp Business Glossary →
                   </Link>
                 </li>

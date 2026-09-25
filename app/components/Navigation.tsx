@@ -31,7 +31,7 @@ export default function Navigation() {
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   return (
-    <nav className="sticky top-0 z-50 glass-panel border-b border-[var(--border-subtle)]">
+    <nav className="sticky top-0 z-50 bg-[#0A0E1A]/95 backdrop-blur-sm border-b border-[var(--border-subtle)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 sm:h-20">
           {/* Logo */}
@@ -100,7 +100,7 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden glass-panel border-t border-[var(--border-subtle)]">
+        <div className="md:hidden bg-[#0A0E1A]/95 backdrop-blur-sm border-t border-[var(--border-subtle)]">
           <div className="px-4 py-6 space-y-4">
             <Link
               href="/whatsapp-group-management-tool"

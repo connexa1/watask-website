@@ -73,7 +73,7 @@ export default function BroadcastVsGroupPage() {
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header className="mb-12">
           <div className="flex items-center gap-2 mb-4">
-            <Link href="/guides" className="text-sm text-green-600 hover:text-green-700 inline-flex items-center gap-2">
+            <Link href="/guides" className="text-sm text-green-700 hover:text-green-800 inline-flex items-center gap-2">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
@@ -162,9 +162,9 @@ export default function BroadcastVsGroupPage() {
                 </div>
               </div>
 
-              <div className="border-2 border-green-600 rounded-xl p-8 bg-green-50">
+              <div className="border-2 border-green-700 rounded-xl p-8 bg-green-50">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
+                  <div className="flex-shrink-0 w-12 h-12 bg-green-700 rounded-lg flex items-center justify-center">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
@@ -216,7 +216,7 @@ export default function BroadcastVsGroupPage() {
                 <div className="mt-6 bg-white border border-green-200 rounded-lg p-4">
                   <p className="text-sm text-gray-700 mb-2">
                     <strong>Important distinction:</strong> "Broadcast to groups" is not an official WhatsApp feature. When people search for this, they usually mean <em>posting the same message into many existing groups</em> — which requires manual work or a multi-group platform like{' '}
-                    <Link href="/" className="text-green-600 hover:text-green-700 font-semibold">
+                    <Link href="/" className="text-green-700 hover:text-green-800 font-semibold">
                       WaTask
                     </Link>.
                   </p>
@@ -351,7 +351,7 @@ export default function BroadcastVsGroupPage() {
 
             <div className="space-y-4">
               <div className="flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-lg p-6">
-                <span className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-lg flex items-center justify-center font-bold">
+                <span className="flex-shrink-0 w-8 h-8 bg-green-700 text-white rounded-lg flex items-center justify-center font-bold">
                   1
                 </span>
                 <div>
@@ -365,7 +365,7 @@ export default function BroadcastVsGroupPage() {
               </div>
 
               <div className="flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-lg p-6">
-                <span className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-lg flex items-center justify-center font-bold">
+                <span className="flex-shrink-0 w-8 h-8 bg-green-700 text-white rounded-lg flex items-center justify-center font-bold">
                   2
                 </span>
                 <div>
@@ -379,7 +379,7 @@ export default function BroadcastVsGroupPage() {
               </div>
 
               <div className="flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-lg p-6">
-                <span className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-lg flex items-center justify-center font-bold">
+                <span className="flex-shrink-0 w-8 h-8 bg-green-700 text-white rounded-lg flex items-center justify-center font-bold">
                   3
                 </span>
                 <div>
@@ -393,7 +393,7 @@ export default function BroadcastVsGroupPage() {
               </div>
 
               <div className="flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-lg p-6">
-                <span className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-lg flex items-center justify-center font-bold">
+                <span className="flex-shrink-0 w-8 h-8 bg-green-700 text-white rounded-lg flex items-center justify-center font-bold">
                   4
                 </span>
                 <div>
@@ -407,7 +407,7 @@ export default function BroadcastVsGroupPage() {
               </div>
             </div>
 
-            <div className="mt-8 bg-green-50 border-2 border-green-600 rounded-xl p-8">
+            <div className="mt-8 bg-green-50 border-2 border-green-700 rounded-xl p-8">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
                 This is the job WaTask solves
               </h3>
@@ -417,13 +417,13 @@ export default function BroadcastVsGroupPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link 
                   href="https://wa.me/306981337327?text=Hi%2C%20I%27d%20like%20to%20try%20WaTask"
-                  className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 text-center transition-colors"
+                  className="bg-green-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-800 text-center transition-colors"
                 >
                   Start on WhatsApp
                 </Link>
                 <Link 
                   href="/guides/send-bulk-messages-to-multiple-whatsapp-groups"
-                  className="text-green-600 border-2 border-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 text-center transition-colors"
+                  className="text-green-700 border-2 border-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 text-center transition-colors"
                 >
                   Read the Multi-Group Guide
                 </Link>
@@ -503,7 +503,7 @@ export default function BroadcastVsGroupPage() {
                 href="/guides/send-bulk-messages-to-multiple-whatsapp-groups"
                 className="block bg-white border border-gray-200 rounded-lg p-4 hover:border-green-400 transition-colors"
               >
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-green-600">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-green-800">
                   How to Send Bulk Messages to Multiple WhatsApp Groups →
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -515,7 +515,7 @@ export default function BroadcastVsGroupPage() {
                 href="/whatsapp-group-management-tool"
                 className="block bg-white border border-gray-200 rounded-lg p-4 hover:border-green-400 transition-colors"
               >
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-green-600">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-green-800">
                   WhatsApp Group Management Tool (category) →
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -527,7 +527,7 @@ export default function BroadcastVsGroupPage() {
                 href="/guides/whatsapp-groups-api-limits"
                 className="block bg-white border border-gray-200 rounded-lg p-4 hover:border-green-400 transition-colors"
               >
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-green-600">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-green-800">
                   WhatsApp Groups API Limits Explained →
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -539,7 +539,7 @@ export default function BroadcastVsGroupPage() {
                 href="/guides/whatsapp-communities-bulk-messaging"
                 className="block bg-white border border-gray-200 rounded-lg p-4 hover:border-green-400 transition-colors"
               >
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-green-600">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-green-800">
                   WhatsApp Communities for Bulk Messaging →
                 </h3>
                 <p className="text-gray-600 text-sm">
@@ -551,7 +551,7 @@ export default function BroadcastVsGroupPage() {
                 href="/glossary"
                 className="block bg-white border border-gray-200 rounded-lg p-4 hover:border-green-400 transition-colors"
               >
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-green-600">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-green-800">
                   WhatsApp Business Glossary →
                 </h3>
                 <p className="text-gray-600 text-sm">

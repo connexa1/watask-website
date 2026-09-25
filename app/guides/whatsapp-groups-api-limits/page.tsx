@@ -73,7 +73,7 @@ export default function GroupsAPILimitsPage() {
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <header className="mb-12">
           <div className="flex items-center gap-2 mb-4">
-            <Link href="/guides" className="text-sm text-green-600 hover:text-green-700 inline-flex items-center gap-2">
+            <Link href="/guides" className="text-sm text-green-700 hover:text-green-800 inline-flex items-center gap-2">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
@@ -91,7 +91,7 @@ export default function GroupsAPILimitsPage() {
 
         <div className="prose prose-lg max-w-none">
           <section className="mb-12">
-            <div className="border border-2 border-green-600/30 rounded-xl p-8 mb-8 bg-gray-50">
+            <div className="border border-2 border-green-700/30 rounded-xl p-8 mb-8 bg-gray-50">
               <h2 className="text-2xl font-bold text-gray-900 mb-4 mt-0">
                 The Bottom Line
               </h2>
@@ -133,7 +133,7 @@ export default function GroupsAPILimitsPage() {
                     href="https://developers.facebook.com/docs/whatsapp/business-management-api/guides/groups/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-green-600 hover:text-green-700"
+                    className="text-green-700 hover:text-green-800"
                   >
                     Meta WhatsApp Groups API Documentation
                   </a> and{' '}
@@ -141,16 +141,16 @@ export default function GroupsAPILimitsPage() {
                     href="https://docs.360dialog.com/docs/messaging/groups" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-green-600 hover:text-green-700"
+                    className="text-green-700 hover:text-green-800"
                   >
                     360dialog Groups Documentation
                   </a>
                 </p>
               </div>
 
-              <div className="border border-2 border-green-600/30 rounded-xl p-6 bg-gray-50">
+              <div className="border border-2 border-green-700/30 rounded-xl p-6 bg-gray-50">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3 flex items-center gap-3">
-                  <span className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-lg flex items-center justify-center font-bold">
+                  <span className="flex-shrink-0 w-8 h-8 bg-green-700 text-white rounded-lg flex items-center justify-center font-bold">
                     2
                   </span>
                   Groups Must Be API-Created and Invite-Only
@@ -175,9 +175,9 @@ export default function GroupsAPILimitsPage() {
                 </p>
               </div>
 
-              <div className="border border-2 border-green-600/30 rounded-xl p-6 bg-gray-50">
+              <div className="border border-2 border-green-700/30 rounded-xl p-6 bg-gray-50">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3 flex items-center gap-3">
-                  <span className="flex-shrink-0 w-8 h-8 bg-green-600 text-white rounded-lg flex items-center justify-center font-bold">
+                  <span className="flex-shrink-0 w-8 h-8 bg-green-700 text-white rounded-lg flex items-center justify-center font-bold">
                     4
                   </span>
                   Requires Official Business Account (OBA)
@@ -236,7 +236,7 @@ export default function GroupsAPILimitsPage() {
               </div>
             </div>
 
-            <div className="border border-2 border-green-600/30 rounded-lg p-6 bg-gray-50">
+            <div className="border border-2 border-green-700/30 rounded-lg p-6 bg-gray-50">
               <p className="text-gray-700 mb-3 leading-relaxed">
                 <strong className="text-gray-900">What the Groups API is NOT designed for:</strong>
               </p>
@@ -286,12 +286,12 @@ export default function GroupsAPILimitsPage() {
             </p>
 
             <div className="space-y-6">
-              <div className="border-2 border-green-600 rounded-lg p-6 border bg-gray-50">
+              <div className="border-2 border-green-700 rounded-lg p-6 border bg-gray-50">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
                   Multi-Group Management Platforms
                 </h3>
                 <p className="text-gray-700 mb-3 leading-relaxed">
-                  Platforms like <Link href="/" className="text-green-600 hover:text-green-700 font-semibold">WaTask</Link> are designed specifically for managing and campaigning across many existing groups. They connect to your existing groups, organize them into collections, and provide pacing, team collaboration, and campaign features.
+                  Platforms like <Link href="/" className="text-green-700 hover:text-green-800 font-semibold">WaTask</Link> are designed specifically for managing and campaigning across many existing groups. They connect to your existing groups, organize them into collections, and provide pacing, team collaboration, and campaign features.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   <strong className="text-gray-900">Best for:</strong> Agencies, community managers, brands, and multi-location teams who already manage dozens or hundreds of WhatsApp groups and need to run controlled campaigns.
@@ -299,7 +299,7 @@ export default function GroupsAPILimitsPage() {
                 <div className="mt-4">
                   <Link 
                     href="/whatsapp-group-management-tool"
-                    className="text-green-600 hover:text-green-700 font-semibold"
+                    className="text-green-700 hover:text-green-800 font-semibold"
                   >
                     Learn about WhatsApp Group Management Tools →
                   </Link>
@@ -331,7 +331,7 @@ export default function GroupsAPILimitsPage() {
                 <div className="mt-4">
                   <Link 
                     href="/guides/whatsapp-broadcast-vs-group-vs-communities"
-                    className="text-green-600 hover:text-green-700 font-semibold"
+                    className="text-green-700 hover:text-green-800 font-semibold"
                   >
                     Read: Broadcast vs Group vs Communities →
                   </Link>
@@ -414,7 +414,7 @@ export default function GroupsAPILimitsPage() {
             </div>
           </section>
 
-          <section className="border border-2 border-green-600 rounded-lg p-8 bg-gray-50">
+          <section className="border border-2 border-green-700 rounded-lg p-8 bg-gray-50">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               Need to Campaign Across Existing Large Groups?
             </h2>
@@ -426,13 +426,13 @@ export default function GroupsAPILimitsPage() {
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
               <Link 
                 href="https://wa.me/306981337327?text=Hi%2C%20I%27d%20like%20to%20try%20WaTask"
-                className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 text-center transition-all shadow-[0_0_20px_rgba(0,255,148,0.3)] hover:shadow-[0_0_30px_rgba(0,255,148,0.5)]"
+                className="bg-green-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-800 text-center transition-all shadow-[0_0_20px_rgba(0,255,148,0.3)] hover:shadow-[0_0_30px_rgba(0,255,148,0.5)]"
               >
                 Start on WhatsApp
               </Link>
               <Link 
                 href="/guides/send-bulk-messages-to-multiple-whatsapp-groups"
-                className="text-green-700 border-2 border-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-green-600/10 text-center transition-colors"
+                className="text-green-700 border-2 border-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-green-800/10 text-center transition-colors"
               >
                 Read the Multi-Group Guide
               </Link>
@@ -444,17 +444,17 @@ export default function GroupsAPILimitsPage() {
               </p>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="/whatsapp-group-management-tool" className="text-green-600 hover:text-green-700">
+                  <Link href="/whatsapp-group-management-tool" className="text-green-700 hover:text-green-800">
                     WhatsApp Group Management Tool (category) →
                   </Link>
                 </li>
                 <li>
-                  <Link href="/guides/safer-multi-group-whatsapp-campaigns" className="text-green-600 hover:text-green-700">
+                  <Link href="/guides/safer-multi-group-whatsapp-campaigns" className="text-green-700 hover:text-green-800">
                     Safer Multi-Group Campaigns →
                   </Link>
                 </li>
                 <li>
-                  <Link href="/guides/does-whatsapp-business-api-support-groups" className="text-green-600 hover:text-green-700">
+                  <Link href="/guides/does-whatsapp-business-api-support-groups" className="text-green-700 hover:text-green-800">
                     Does WhatsApp Business API Support Groups? →
                   </Link>
                 </li>
