@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'WhatsApp Multi-Group Campaign Guides | WaTask',
+  title: 'WhatsApp Multi-Group Campaign Guides',
   description: 'Learn how multi-group WhatsApp campaigns differ from Cloud API broadcasts and Meta\'s Groups API — practical guides for agencies and community teams.',
   alternates: {
     canonical: 'https://watask.com/guides',
@@ -58,25 +58,25 @@ const guides = [
 
 export default function GuidesPage() {
   return (
-    <div className="bg-white">
-      <section className="bg-gradient-to-b from-green-50 to-white py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-bg-primary">
+      <section className="bg-gradient-to-b from-bg-secondary to-bg-primary py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-text-primary mb-6">
             Guides for multi-group WhatsApp campaigns
           </h1>
-          <p className="text-xl text-gray-600 mb-10">
+          <p className="text-xl text-text-secondary mb-10">
             Clear answers for teams who need to post into many existing groups — not another roundup of 1:1 BSP tools.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link 
               href="/register"
-              className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors text-center"
+              className="bg-cyber text-bg-primary px-8 py-3 rounded-lg font-semibold hover:bg-cyber-hover transition-all text-center shadow-[0_0_20px_rgba(0,255,148,0.3)] hover:shadow-[0_0_30px_rgba(0,255,148,0.5)]"
             >
               Start free trial
             </Link>
             <Link 
               href="/guides/send-bulk-messages-to-multiple-whatsapp-groups"
-              className="text-green-600 border-2 border-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 transition-colors text-center"
+              className="text-cyber border-2 border-cyber px-8 py-3 rounded-lg font-semibold hover:bg-cyber/10 transition-colors text-center"
             >
               Read the pillar guide
             </Link>
@@ -87,17 +87,17 @@ export default function GuidesPage() {
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-16">
           <div className="flex items-center gap-2 mb-4">
-            <span className="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">
+            <span className="bg-cyber/20 text-cyber text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide border border-cyber/30">
               Featured
             </span>
-            <span className="text-sm text-gray-500">{featuredGuide.category}</span>
+            <span className="text-sm text-text-muted">{featuredGuide.category}</span>
           </div>
           <Link href={featuredGuide.href} className="group block">
-            <div className="bg-white border-2 border-green-200 rounded-xl p-8 hover:border-green-400 transition-colors hover:shadow-md">
-              <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-green-600 transition-colors">
+            <div className="glass-panel border-2 border-cyber/30 rounded-xl p-8 hover:border-cyber transition-colors bg-bg-card">
+              <h2 className="text-2xl font-bold text-text-primary mb-3 group-hover:text-cyber transition-colors">
                 {featuredGuide.title} →
               </h2>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-text-secondary text-lg leading-relaxed">
                 {featuredGuide.description}
               </p>
             </div>
@@ -105,18 +105,18 @@ export default function GuidesPage() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-bold text-gray-900 mb-8">All Guides</h2>
+          <h2 className="text-2xl font-bold text-text-primary mb-8">All Guides</h2>
           <div className="space-y-6">
             {guides.map((guide) => (
-              <div key={guide.href} className="bg-white border border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors">
+              <div key={guide.href} className="glass-panel border-[var(--border-subtle)] rounded-lg p-6 hover:border-cyber/30 transition-colors bg-bg-card">
                 <div className="flex items-start justify-between mb-3">
                   <div className="flex items-center gap-2">
-                    <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">{guide.category}</span>
+                    <span className="text-xs font-medium text-text-muted uppercase tracking-wide">{guide.category}</span>
                     {guide.status && (
-                      <span className={`text-xs px-2.5 py-1 rounded-full font-medium ${
+                      <span className={`text-xs px-2.5 py-1 rounded-full font-medium border ${
                         guide.status === 'Published' 
-                          ? 'bg-green-100 text-green-700' 
-                          : 'bg-yellow-100 text-yellow-700'
+                          ? 'bg-cyber/10 text-cyber border-cyber/30' 
+                          : 'bg-cyan/10 text-cyan border-cyan/30'
                       }`}>
                         {guide.status}
                       </span>
@@ -124,22 +124,22 @@ export default function GuidesPage() {
                   </div>
                 </div>
                 
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                <h3 className="text-lg font-semibold text-text-primary mb-3">
                   {guide.title}
                 </h3>
                 
                 {guide.intent && (
                   <div className="mb-3">
-                    <p className="text-sm text-gray-700 leading-relaxed">
-                      <span className="font-medium text-gray-900">Intent:</span> {guide.intent}
+                    <p className="text-sm text-text-secondary leading-relaxed">
+                      <span className="font-medium text-text-primary">Intent:</span> {guide.intent}
                     </p>
                   </div>
                 )}
                 
                 {guide.youllLearn && (
                   <div className="mb-4">
-                    <p className="text-sm text-gray-700 leading-relaxed">
-                      <span className="font-medium text-gray-900">You'll learn:</span> {guide.youllLearn}
+                    <p className="text-sm text-text-secondary leading-relaxed">
+                      <span className="font-medium text-text-primary">You'll learn:</span> {guide.youllLearn}
                     </p>
                   </div>
                 )}
@@ -147,13 +147,13 @@ export default function GuidesPage() {
                 <div className="flex items-center gap-4 text-sm">
                   <Link 
                     href={guide.href}
-                    className="text-green-600 hover:text-green-700 font-medium"
+                    className="text-cyber hover:text-cyber-hover font-medium"
                   >
                     View page →
                   </Link>
                   <Link 
                     href="/guides/send-bulk-messages-to-multiple-whatsapp-groups"
-                    className="text-gray-500 hover:text-gray-700"
+                    className="text-text-muted hover:text-text-secondary"
                   >
                     Read pillar guide instead
                   </Link>
@@ -164,17 +164,17 @@ export default function GuidesPage() {
         </div>
       </section>
 
-      <section className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8 mt-12">
+      <section className="bg-bg-secondary py-16 px-4 sm:px-6 lg:px-8 mt-12">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl font-bold text-text-primary mb-4">
             Ready to run multi-group campaigns?
           </h2>
-          <p className="text-lg text-gray-600 mb-8">
+          <p className="text-lg text-text-secondary mb-8">
             Try WaTask free for 7 days. No credit card required.
           </p>
           <Link 
             href="/register"
-            className="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 inline-block transition-colors"
+            className="bg-cyber text-bg-primary px-8 py-3 rounded-lg font-semibold hover:bg-cyber-hover inline-block transition-all shadow-[0_0_20px_rgba(0,255,148,0.3)] hover:shadow-[0_0_30px_rgba(0,255,148,0.5)]"
           >
             Start free trial
           </Link>
