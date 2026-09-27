@@ -3,13 +3,13 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Start on WhatsApp',
-  description: 'Start with WaTask to run multi-group WhatsApp campaigns with pacing controls. Organize group collections, coordinate messaging, and manage campaigns. Chat on WhatsApp to begin.',
+  description: 'Start with WaTask to run multi-group WhatsApp campaigns with pacing controls. Organize group collections, coordinate messaging, and manage campaigns.',
   alternates: {
     canonical: 'https://www.watask.com/register',
   },
   openGraph: {
     title: 'Start on WhatsApp | WaTask',
-    description: 'Start with WaTask to run multi-group WhatsApp campaigns with pacing controls. Organize group collections, coordinate messaging, and manage campaigns. Chat on WhatsApp to begin.',
+    description: 'Start with WaTask to run multi-group WhatsApp campaigns with pacing controls. Organize group collections, coordinate messaging, and manage campaigns.',
     url: 'https://www.watask.com/register',
     images: [
       {

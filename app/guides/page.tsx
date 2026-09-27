@@ -35,7 +35,7 @@ const guides = [
     href: '/guides/whatsapp-groups-api-limits',
     category: 'Technical',
     status: 'Published',
-    intent: 'Document Meta\'s official Groups API caps (8 participants, invite-only, 10k groups/number, OBA) in plain language.',
+    intent: 'Document Meta\'s Groups API caps (8 participants, invite-only, 10k groups/number, OBA) in plain language.',
     youllLearn: 'What the API can and cannot do for existing large groups.',
   },
   {

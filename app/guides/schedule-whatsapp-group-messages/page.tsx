@@ -32,7 +32,7 @@ const faqSchema = {
       'name': 'Can I schedule a message to a WhatsApp group?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'As of early 2026, WhatsApp has been testing scheduled messages for chats and groups, though the feature is not yet widely available. Until native scheduling launches, you can use workarounds like iPhone Shortcuts (with limitations for groups), Android automation apps, or multi-group platforms that include scheduling for campaigns across many groups.'
+        'text': 'As of September 2026, WhatsApp is developing scheduled messages for chats and groups, but the feature is not yet available to users. Until native scheduling launches, you can use workarounds like iPhone Shortcuts (with limitations for groups), Android automation apps, or multi-group platforms that include scheduling for campaigns across many groups.'
       }
     },
     {
@@ -56,7 +56,7 @@ const faqSchema = {
       'name': 'What happens if I schedule a post to an admin-only group where I\'m not an admin?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'If a group is set to allow only admins to send messages and your number is not an admin, your scheduled post will fail silently when the send time arrives. Always verify your admin status in groups before scheduling posts, especially in large campaigns where some groups may have different permission settings.'
+        'text': 'If a group is set to allow only admins to send messages and your number is not an admin, your scheduled post will not be delivered when the send time arrives. Always verify your admin status in groups before scheduling posts, especially in large campaigns where some groups may have different permission settings.'
       }
     },
     {
@@ -165,7 +165,7 @@ export default function ScheduleGroupMessagesPage() {
                 Quick Answer
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                <strong className="text-gray-900">For individual groups:</strong> WhatsApp has been testing a native scheduled messages feature for chats and groups, reported in development updates since late 2025. Until it launches widely, workarounds like iPhone Shortcuts (limited for groups), Android automation, or reminder-based manual sends are the practical options.
+                <strong className="text-gray-900">For individual groups:</strong> WhatsApp has been testing a native scheduled messages feature for chats and groups, first reported by WABetaInfo in February 2026. Until it launches, workarounds like iPhone Shortcuts (limited for groups), Android automation, or reminder-based manual sends are the practical options.
               </p>
               <p className="text-gray-700 leading-relaxed mb-0">
                 <strong className="text-gray-900">For campaigns across many groups:</strong> Multi-group platforms provide scheduling for one message to dozens or hundreds of groups at once, with controls to spread sends over time and distribute across multiple WhatsApp numbers.
@@ -190,7 +190,7 @@ export default function ScheduleGroupMessagesPage() {
                 <div>
                   <p className="text-sm font-semibold text-gray-900 mb-2">Status as of September 2026</p>
                   <p className="text-sm text-gray-700 leading-relaxed">
-                    According to reports from sources like WABetaInfo and similar tracking outlets, WhatsApp has been testing scheduled messages for individual chats and group chats since late 2025. The feature has appeared in beta versions but is not yet widely available in production releases.
+                    According to <a href="https://wabetainfo.com/whatsapp-is-testing-scheduled-messages-for-chats-and-groups/" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:text-green-800">WABetaInfo</a>, WhatsApp has been developing scheduled messages for individual and group chats since February 2026. As of its latest report (June 2026), the feature is not yet available to users, including beta testers.
                   </p>
                 </div>
               </div>
@@ -290,7 +290,7 @@ export default function ScheduleGroupMessagesPage() {
                   <ul className="space-y-2 text-sm text-gray-700">
                     <li>• Requires programming skills (JavaScript, Python, etc.)</li>
                     <li>• Must handle session persistence and authentication</li>
-                    <li>• Needs careful pacing to avoid triggering automated behavior detection</li>
+                    <li>• Needs careful pacing and ongoing account-health monitoring</li>
                     <li>• Ongoing maintenance as WhatsApp Web changes</li>
                   </ul>
                 </div>
@@ -327,7 +327,7 @@ export default function ScheduleGroupMessagesPage() {
                 If you're not an admin in an admin-only group:
               </h3>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Your scheduled post will <strong>fail silently</strong> when the scheduled send time arrives. WhatsApp won't deliver the message, and depending on your scheduling method, you may not receive a clear error notification.
+                Your scheduled post will <strong>not be delivered</strong> when the send time arrives, and depending on your scheduling method, you may not get a clear error.
               </p>
               <div className="bg-white border border-red-200 rounded-lg p-4">
                 <h4 className="font-semibold text-gray-900 mb-2 text-sm">Before scheduling posts to groups:</h4>
@@ -498,7 +498,7 @@ export default function ScheduleGroupMessagesPage() {
                   Can I schedule a message to a WhatsApp group?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  As of early 2026, WhatsApp has been <strong>testing scheduled messages</strong> for chats and groups, though the feature is not yet widely available in production. Until native scheduling launches, you can use workarounds like iPhone Shortcuts (with limitations for groups), Android automation apps, or multi-group platforms that include scheduling for campaigns across many groups.
+                  As of September 2026, WhatsApp is <strong>developing scheduled messages</strong> for chats and groups, but the feature is not yet available to users. Until native scheduling launches, you can use workarounds like iPhone Shortcuts (with limitations for groups), Android automation apps, or multi-group platforms that include scheduling for campaigns across many groups.
                 </p>
               </div>
 
@@ -525,7 +525,7 @@ export default function ScheduleGroupMessagesPage() {
                   What happens if I schedule a post to an admin-only group where I'm not an admin?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  If a group is set to allow <strong>only admins to send messages</strong> and your number is not an admin, your scheduled post will <strong>fail silently</strong> when the send time arrives. Always verify your admin status in groups before scheduling posts, especially in large campaigns where some groups may have different permission settings. Multi-group platforms can track admin status per group to help avoid failed sends.
+                  If a group is set to allow <strong>only admins to send messages</strong> and your number is not an admin, your scheduled post will <strong>not be delivered</strong> when the send time arrives. Always verify your admin status in groups before scheduling posts, especially in large campaigns where some groups may have different permission settings. Multi-group platforms can track admin status per group to help avoid failed sends.
                 </p>
               </div>
 
