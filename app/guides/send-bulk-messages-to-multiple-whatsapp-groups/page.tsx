@@ -29,7 +29,7 @@ const faqSchema = {
   'mainEntity': [
     {
       '@type': 'Question',
-      'name': 'Can the official WhatsApp Business / Cloud API message my existing large groups?',
+      'name': 'Can the WhatsApp Business / Cloud API message my existing large groups?',
       'acceptedAnswer': {
         '@type': 'Answer',
         'text': 'Effectively no for ordinary large consumer groups. The Meta WhatsApp Groups API is designed for small, invite-only API-created groups with a maximum of 8 participants. It cannot be used to post into your existing large community or marketing groups that have 50-500+ members.'
@@ -263,7 +263,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      Meta WhatsApp Groups API (Official, Capped)
+                      Meta WhatsApp Groups API (Capped)
                     </h3>
                     <p className="text-gray-700 mb-3">
                       <strong>Key constraints:</strong> The WhatsApp Groups API on the Business Platform 
@@ -564,7 +564,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
             <div className="space-y-6">
               <div className="border-b border-gray-200 pb-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                  Can the official WhatsApp Business / Cloud API message my existing large groups?
+                  Can the WhatsApp Business / Cloud API message my existing large groups?
                 </h3>
                 <p className="text-gray-700">
                   <strong>Effectively no</strong> for ordinary large consumer groups. The Meta WhatsApp Groups API 
