@@ -32,7 +32,7 @@ const faqSchema = {
       'name': 'How many chats can I forward a WhatsApp message to?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'You can forward messages to up to five people or groups at a time. A message that was already forwarded to you can only be shared with one additional group chat. Messages forwarded through a chain of five or more chats are labeled "Forwarded many times" and can only be forwarded to one chat at a time.'
+        'text': 'Up to five people or groups per forward. A message that reached you as a forward can go to only one more group chat, and a message labeled "Forwarded many times" can go to only one chat at a time.'
       }
     },
     {
@@ -48,7 +48,7 @@ const faqSchema = {
       'name': 'What does "Forwarded many times" mean?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'A message forwarded through a chain of five or more chats is labeled "Forwarded many times" and shows a double-arrow icon. These messages can only be forwarded to one chat at a time. The forward counter is end-to-end encrypted, meaning WhatsApp cannot see the count.'
+        'text': 'It is the label WhatsApp adds, with a double-arrow icon, to a message that has passed through a chain of five or more chats. Such messages can be forwarded to only one chat at a time.'
       }
     },
     {
@@ -56,7 +56,7 @@ const faqSchema = {
       'name': 'Can I send one message to more than 5 WhatsApp groups?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'You can send your own content as a new message to as many groups as you need, with proper pacing. The five-chat limit applies only to forwarding messages. For campaigns across many groups, use batched forwards, send new messages instead of forwards, create a group or link, post in a Community announcement group, use broadcast lists for 1:1 delivery, or use a multi-group platform with pacing.'
+        'text': 'Yes. The five-chat limit applies to forwarding, not to messages you compose and send yourself.'
       }
     },
     {
@@ -64,7 +64,7 @@ const faqSchema = {
       'name': 'Does WhatsApp see how many times I forward a message?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'No. According to WhatsApp, the forward counter is end-to-end encrypted, which means WhatsApp cannot see how many times a message has been forwarded. The "Forwarded many times" label is applied locally on your device based on the encrypted forward count.'
+        'text': 'No. According to WhatsApp, the forward counter is end-to-end encrypted, which means WhatsApp cannot see how many times a message has been forwarded.'
       }
     },
     {
@@ -195,7 +195,7 @@ export default function ForwardLimitPage() {
                   1. Five Chats Per Forward (Standard)
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  When you forward a message you created or one that hasn't been forwarded many times, <strong>you can forward it to up to five people or groups at a time</strong>. This applies to both individual chats and group chats, and you can mix them in a single forward action.
+                  Each forward can go to <strong>up to five people or groups</strong> at once.
                 </p>
               </div>
 
@@ -217,7 +217,7 @@ export default function ForwardLimitPage() {
                 </p>
                 <div className="bg-white border border-gray-200 rounded-lg p-4">
                   <p className="text-sm text-gray-700 mb-0">
-                    <strong>Privacy note:</strong> The forward counter is end-to-end encrypted, which means WhatsApp cannot see how many times a specific message has been forwarded. The label is applied locally on your device.
+                    <strong>Privacy note:</strong> WhatsApp says only your device and the recipient's device can access the forward counter.
                   </p>
                 </div>
               </div>
@@ -241,14 +241,14 @@ export default function ForwardLimitPage() {
                 <div>
                   <p className="text-sm font-semibold text-gray-900 mb-2">Why this happens</p>
                   <p className="text-sm text-gray-700 leading-relaxed">
-                    WhatsApp's restriction applies to <strong>forwarded content</strong> — messages that already carry the "Forwarded" label when you receive them. Once a message has been forwarded at least once, WhatsApp limits how far it can spread through additional forwards.
+                    WhatsApp's restriction applies to <strong>forwarded content</strong>, meaning messages that were already forwarded to you. Once a message has been forwarded at least once, WhatsApp limits how far it can spread through additional forwards.
                   </p>
                 </div>
               </div>
             </div>
 
             <p className="text-gray-700 mt-6 leading-relaxed">
-              If you need to share that content with more than one group, your options are to forward it in separate one-group actions, copy the text and send it as a new message (not a forward), or use one of the other approaches described below.
+              If you need to share that content with more than one group, forward it in separate one-group actions, or use one of the other approaches described below.
             </p>
           </section>
 
@@ -258,7 +258,7 @@ export default function ForwardLimitPage() {
             </h2>
             
             <p className="text-gray-700 mb-6 leading-relaxed">
-              When you need to share your content with more groups than the forward limit allows, you have several approaches. These are ways to share your own content with groups you belong to, not workarounds to spread forwarded messages beyond WhatsApp's intended limits.
+              These are ways to share your own content with groups you belong to.
             </p>
 
             <div className="space-y-6">
@@ -270,7 +270,7 @@ export default function ForwardLimitPage() {
                       Forward in Batches of Up to Five Chats and Repeat
                     </h3>
                     <p className="text-gray-700 leading-relaxed">
-                      The simplest approach is to use the standard forward limit multiple times. Select up to five groups, forward the message, then repeat with the next batch of groups. This works for your own messages and lets you reach as many groups as you need through manual repetition.
+                      The simplest approach is to use the standard forward limit multiple times. Select up to five groups, forward the message, then repeat with the next batch of groups. This works for your own messages.
                     </p>
                   </div>
                 </div>
@@ -284,7 +284,7 @@ export default function ForwardLimitPage() {
                       Send Your Own Content as a New Message Rather Than a Forward
                     </h3>
                     <p className="text-gray-700 leading-relaxed">
-                      The five-chat limit applies to <strong>forwarding messages</strong>, not to sending new messages. If the content is yours or you can rewrite it, compose it fresh and send it to each group as a new message. No forwarding means no forward limit, and your message won't carry the "Forwarded" label.
+                      The five-chat limit applies to <strong>forwarding messages</strong>, not to sending new messages. If the content is yours or you can rewrite it, compose it fresh and send it to each group as a new message. No forwarding means no forward limit.
                     </p>
                   </div>
                 </div>
@@ -334,7 +334,7 @@ export default function ForwardLimitPage() {
                       Broadcast Lists Are 1:1, Not Groups
                     </h3>
                     <p className="text-gray-700 mb-4 leading-relaxed">
-                      A WhatsApp broadcast list sends individual 1:1 messages to each contact, not a single group post. Recipients see the message as if you sent it directly to them, and they cannot see or reply to each other. If 1:1 delivery is acceptable and your contacts have your number saved, broadcast lists let you reach many people without hitting the group forward limit.
+                      A WhatsApp broadcast list sends individual 1:1 messages to each contact, not a single group post. Recipients see the message as if you sent it directly to them, and they cannot see or reply to each other. If 1:1 delivery is acceptable, broadcast lists let you reach many people without the group forward limit.
                     </p>
                     <p className="text-sm text-gray-700">
                       Learn the differences: <Link href="/guides/whatsapp-broadcast-vs-group-vs-communities" className="text-green-700 hover:text-green-800">WhatsApp Broadcast vs Group vs Communities</Link>
@@ -374,7 +374,7 @@ export default function ForwardLimitPage() {
 
             <div className="mt-8 bg-yellow-50 border border-yellow-200 rounded-lg p-6">
               <p className="text-sm text-gray-700 leading-relaxed">
-                <strong>Important:</strong> These options are for sharing your own content with groups you belong to. Forwarding other people's messages repeatedly to circumvent the "Forwarded many times" restriction is likely to result in community friction and is not recommended.
+                <strong>Important:</strong> These options are for sharing your own content with groups you belong to.
               </p>
             </div>
           </section>
@@ -390,7 +390,7 @@ export default function ForwardLimitPage() {
                   How many chats can I forward a WhatsApp message to?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  You can forward messages to <strong>up to five people or groups</strong> at a time. A message that was already forwarded to you can only be shared with one additional group chat. Messages forwarded through a chain of five or more chats are labeled "Forwarded many times" and can only be forwarded to one chat at a time.
+                  <strong>Up to five people or groups</strong> per forward. A message that reached you as a forward can go to only one more group chat, and a message labeled "Forwarded many times" can go to only one chat at a time.
                 </p>
               </div>
 
@@ -408,7 +408,7 @@ export default function ForwardLimitPage() {
                   What does "Forwarded many times" mean?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  A message forwarded through a chain of <strong>five or more chats</strong> is labeled "Forwarded many times" and shows a double-arrow icon. These messages can only be forwarded to one chat at a time. The forward counter is end-to-end encrypted, meaning WhatsApp cannot see the count.
+                  It is the label WhatsApp adds, with a double-arrow icon, to a message that has passed through a chain of <strong>five or more chats</strong>. Such messages can be forwarded to only one chat at a time.
                 </p>
               </div>
 
@@ -417,7 +417,7 @@ export default function ForwardLimitPage() {
                   Can I send one message to more than 5 WhatsApp groups?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  <strong>Yes.</strong> You can send your own content as a new message to as many groups as you need, with proper pacing. The five-chat limit applies only to forwarding messages. For campaigns across many groups, use batched forwards, send new messages instead of forwards, create a group or link, post in a Community announcement group, use broadcast lists for 1:1 delivery, or use a multi-group platform with pacing.
+                  <strong>Yes.</strong> The five-chat limit applies to forwarding, not to messages you compose and send yourself.
                 </p>
               </div>
 
@@ -426,7 +426,7 @@ export default function ForwardLimitPage() {
                   Does WhatsApp see how many times I forward a message?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  <strong>No.</strong> According to WhatsApp, the forward counter is end-to-end encrypted, which means WhatsApp cannot see how many times a message has been forwarded. The "Forwarded many times" label is applied locally on your device based on the encrypted forward count.
+                  <strong>No.</strong> According to WhatsApp, the forward counter is end-to-end encrypted, which means WhatsApp cannot see how many times a message has been forwarded.
                 </p>
               </div>
 

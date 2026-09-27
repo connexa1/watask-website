@@ -75,7 +75,7 @@ const guides = [
     href: '/guides/whatsapp-forward-limit-more-than-5-groups',
     category: 'How-To',
     status: 'Published',
-    intent: 'How WhatsApp\'s forward limits work (5 chats, 1 for forwarded messages, 1 for "Forwarded many times") and practical options for reaching more groups.',
+    intent: 'How WhatsApp\'s forward limits work (5 chats at a time, 1 more group for forwarded messages, 1 chat for "Forwarded many times") and practical options for reaching more groups.',
     youllLearn: 'Exact forward limit rules, why forwarded messages hit stricter caps, and six ways to share content with many groups.',
   },
   {
