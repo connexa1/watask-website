@@ -408,6 +408,9 @@ export default function BulkWhatsAppGroupsGuidePage() {
                     extensions or DIY approaches, you need to manage it yourself. For scheduled campaigns, see:{' '}
                     <Link href="/guides/schedule-whatsapp-group-messages" className="text-green-700 hover:text-green-800">
                       How to Schedule WhatsApp Group Messages
+                    </Link>. Hitting the forward limit? See:{' '}
+                    <Link href="/guides/whatsapp-forward-limit-more-than-5-groups" className="text-green-700 hover:text-green-800">
+                      WhatsApp Forward Limit: How to Send to More Than 5 Groups
                     </Link>.
                   </p>
                 </div>
