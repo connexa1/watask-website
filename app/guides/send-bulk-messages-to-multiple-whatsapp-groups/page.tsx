@@ -405,7 +405,10 @@ export default function BulkWhatsAppGroupsGuidePage() {
                   <p className="text-gray-700">
                     Don't blast hundreds of groups instantly. Use pacing controls to spread sends over time, 
                     respect group norms, and maintain account health. Good platforms build this in; with 
-                    extensions or DIY approaches, you need to manage it yourself.
+                    extensions or DIY approaches, you need to manage it yourself. For scheduled campaigns, see:{' '}
+                    <Link href="/guides/schedule-whatsapp-group-messages" className="text-green-700 hover:text-green-800">
+                      How to Schedule WhatsApp Group Messages
+                    </Link>.
                   </p>
                 </div>
               </li>

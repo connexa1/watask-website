@@ -117,7 +117,10 @@ export default function CategoryPage() {
                 Pacing / delivery controls
               </h3>
               <p className="text-gray-700 text-sm">
-                Spread sends over time with built-in pacing controls
+                Spread sends over time with built-in pacing controls and{' '}
+                <Link href="/guides/schedule-whatsapp-group-messages" className="text-green-700 hover:text-green-800 font-medium">
+                  campaign scheduling
+                </Link>
               </p>
             </div>
 
