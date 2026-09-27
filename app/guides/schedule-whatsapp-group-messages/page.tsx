@@ -578,6 +578,11 @@ export default function ScheduleGroupMessagesPage() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/guides/whatsapp-forward-limit-more-than-5-groups" className="text-green-700 hover:text-green-800">
+                    WhatsApp Forward Limit: Sending to More Than 5 Groups →
+                  </Link>
+                </li>
+                <li>
                   <Link href="/guides/safer-multi-group-whatsapp-campaigns" className="text-green-700 hover:text-green-800">
                     Multi-Group Campaign Best Practices →
                   </Link>
