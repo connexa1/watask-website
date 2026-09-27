@@ -63,6 +63,14 @@ const guides = [
     youllLearn: 'Practical send hygiene — not fear, not "unlimited blast" advice.',
   },
   {
+    title: 'How to Schedule WhatsApp Group Messages',
+    href: '/guides/schedule-whatsapp-group-messages',
+    category: 'How-To',
+    status: 'Published',
+    intent: 'Can you schedule messages in WhatsApp groups and schedule campaigns across many groups? Native status, workarounds, and multi-group scheduling.',
+    youllLearn: 'Native scheduling status, iPhone/Android workarounds, and how to schedule campaigns across dozens of groups at once.',
+  },
+  {
     title: 'Does WhatsApp Business API Support Groups?',
     href: '/guides/does-whatsapp-business-api-support-groups',
     category: 'FAQ',

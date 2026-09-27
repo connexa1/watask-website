@@ -435,7 +435,11 @@ export default function BroadcastVsGroupPage() {
                     You need campaign controls beyond simple posting
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Pacing (spreading sends over time), delivery monitoring, message variants per collection, and scheduled campaigns are features that require a purpose-built platform.
+                    Pacing (spreading sends over time), delivery monitoring, message variants per collection, and{' '}
+                    <Link href="/guides/schedule-whatsapp-group-messages" className="text-green-700 hover:text-green-800 font-medium">
+                      scheduled campaigns
+                    </Link>{' '}
+                    are features that require a purpose-built platform.
                   </p>
                 </div>
               </div>
