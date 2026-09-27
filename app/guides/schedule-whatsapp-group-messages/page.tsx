@@ -327,7 +327,7 @@ export default function ScheduleGroupMessagesPage() {
                 If you're not an admin in an admin-only group:
               </h3>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Your scheduled post will <strong>not be delivered</strong> when the send time arrives, and depending on your scheduling method, you may not get a clear error. WhatsApp won't deliver the message, and depending on your scheduling method, you may not receive a clear error notification.
+                Your scheduled post will <strong>not be delivered</strong> when the send time arrives, and depending on your scheduling method, you may not get a clear error.
               </p>
               <div className="bg-white border border-red-200 rounded-lg p-4">
                 <h4 className="font-semibold text-gray-900 mb-2 text-sm">Before scheduling posts to groups:</h4>
