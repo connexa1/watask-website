@@ -511,6 +511,11 @@ export default function GroupsAPILimitsPage() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/guides/whatsapp-group-limits" className="text-green-700 hover:text-green-800">
+                    WhatsApp Group Limits 2026 (consumer app limits) →
+                  </Link>
+                </li>
+                <li>
                   <Link href="/guides/safer-multi-group-whatsapp-campaigns" className="text-green-700 hover:text-green-800">
                     Multi-Group Campaign Best Practices →
                   </Link>
