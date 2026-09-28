@@ -101,7 +101,7 @@ const glossarySchema = {
     {
       '@type': 'DefinedTerm',
       'name': 'Throttling',
-      'description': 'Rate limiting or delaying message sends to avoid triggering platform restrictions or looking like unwanted bulk messages. Similar to pacing but often refers to platform-imposed limits.'
+      'description': 'Rate limiting or delaying message sends to avoid triggering WhatsApp\'s filters or account restrictions. Similar to pacing but often refers to platform-imposed limits.'
     },
     {
       '@type': 'DefinedTerm',
@@ -328,7 +328,7 @@ const terms: Term[] = [
   },
   {
     term: 'Throttling',
-    definition: 'Rate limiting message sends to avoid triggering platform restrictions or looking like unwanted bulk messages. Similar to pacing. Can be platform-imposed (Meta limits) or self-imposed (your sending strategy). Important for account health in multi-group scenarios.',
+    definition: 'Rate limiting message sends to avoid triggering WhatsApp\'s filters or platform restrictions, and to avoid overwhelming recipients. Similar to pacing. Can be platform-imposed (Meta limits) or self-imposed (your sending strategy). Important for account health in multi-group scenarios.',
     relatedGuides: [
       { title: 'Multi-Group Best Practices Campaigns', href: '/guides/safer-multi-group-whatsapp-campaigns' }
     ]
@@ -366,7 +366,7 @@ const terms: Term[] = [
   },
   {
     term: 'Account Health',
-    definition: 'The overall standing of your WhatsApp account based on usage patterns, user reports, blocks, and signals that your sending looks automated. Poor account health leads to restrictions (throttling, messaging limits). Monitored by Meta for Cloud API users; consumer accounts also face restrictions for abuse.',
+    definition: 'The overall standing of your WhatsApp account based on usage patterns, user reports, and blocks. Poor account health leads to restrictions (throttling, messaging limits). Monitored by Meta for Cloud API users; consumer accounts also face restrictions for abuse.',
     relatedGuides: [
       { title: 'Multi-Group Best Practices Campaigns', href: '/guides/safer-multi-group-whatsapp-campaigns' }
     ]
