@@ -182,8 +182,7 @@ export default function CommunitiesGuidePage() {
               </p>
               <p className="text-gray-700 leading-relaxed">
                 A WhatsApp Community is a structure that organizes <strong>up to 100 groups</strong> under one umbrella, with a total of <strong>2,000 members</strong> across all groups. 
-                It includes one <strong>announcement group</strong> where admins broadcast to all Community members, plus 
-                linked sub-groups for focused discussions.
+                Admins post Community-wide updates in its <strong>announcement group</strong>, and members talk in the linked sub-groups.
               </p>
             </div>
 
@@ -233,7 +232,7 @@ export default function CommunitiesGuidePage() {
 
             <p className="text-gray-700 mb-6">
               WhatsApp Communities have specific constraints that affect how you can use them for bulk messaging. 
-              These limits are set by Meta and documented in official WhatsApp Help Center articles.
+              These limits are set by Meta and documented in WhatsApp Help Center articles.
             </p>
 
             <div className="border border-gray-200 bg-gray-50 rounded-xl overflow-hidden mb-6">
@@ -301,7 +300,7 @@ export default function CommunitiesGuidePage() {
                 </h3>
                 <p className="text-gray-700 mb-3">
                   Ideal for neighborhoods, schools, organizations, or brands with multiple topic-specific groups. 
-                  Examples: a neighborhood with groups for events, safety, gardening, and sports. Or a company with 
+                  Examples: a neighborhood with groups for events, lost-and-found, gardening, and sports. Or a company with 
                   groups for different teams, all under one Community.
                 </p>
                 <p className="text-gray-700 text-sm italic">
@@ -472,7 +471,7 @@ export default function CommunitiesGuidePage() {
                   Groups Beyond One Community's Limits
                 </h3>
                 <p className="text-gray-700">
-                  Large agencies, franchises, or civic organizations can outgrow one Community. WhatsApp's 100-group and 2,000-member limits per Community means you either split into multiple Communities (losing unified broadcast) or leave 
+                  Large agencies, franchises, or civic organizations can outgrow one Community. WhatsApp's 100-group and 2,000-member limits per Community mean you either split into multiple Communities (losing unified broadcast) or leave 
                   groups outside Communities entirely.
                 </p>
               </div>
@@ -676,7 +675,7 @@ export default function CommunitiesGuidePage() {
                     rel="noopener noreferrer"
                     className="text-green-700 hover:text-green-800"
                   >
-                    official WhatsApp Help Center
+                    WhatsApp Help Center
                   </a>.
                 </p>
               </div>
