@@ -32,7 +32,7 @@ const faqSchema = {
       'name': 'How many members can a WhatsApp group have in 2026?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'A WhatsApp group can have up to 1,024 members. This is the maximum participant limit according to WhatsApp Help Center, including the group creator and all members.'
+        'text': 'A WhatsApp group can have up to 1,024 members, according to WhatsApp Help Center. The group creator is counted separately, so a full group has 1,025 people.'
       }
     },
     {
@@ -56,7 +56,7 @@ const faqSchema = {
       'name': 'How many WhatsApp groups can I join?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'WhatsApp does not publish a fixed limit for how many groups one account can join. Users report temporary cooldowns with messages like "You have reached the limit for the number of groups you can join" when joining many groups quickly. The restriction is temporary; slow down and retry later.'
+        'text': 'WhatsApp does not publish a fixed limit for how many groups one account can join. Join groups gradually, and if WhatsApp stops you from joining, wait and try again later.'
       }
     },
     {
@@ -64,7 +64,7 @@ const faqSchema = {
       'name': 'What is the WhatsApp forward limit?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'You can forward messages to up to 5 chats at once. Already-forwarded messages can only be shared with 1 additional group. Messages labeled "Forwarded many times" can only be forwarded to 1 chat at a time.'
+        'text': 'Up to 5 chats per forward. A message that was already forwarded to you can go to only 1 more group chat, and a "Forwarded many times" message can go to only 1 chat at a time.'
       }
     },
     {
@@ -72,7 +72,7 @@ const faqSchema = {
       'name': 'Does the 1,024 limit apply to WhatsApp Business?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'Yes, regular WhatsApp groups in both WhatsApp and WhatsApp Business apps support up to 1,024 members. The WhatsApp Groups API is a separate product limited to 8 participants per group and does not post into existing large groups.'
+        'text': 'WhatsApp\'s Help Center lists 1,024 members as the group size limit and does not give a separate number for the WhatsApp Business app. The WhatsApp Groups API is a separate product limited to 8 participants per group and does not post into existing large groups.'
       }
     },
     {
@@ -196,7 +196,7 @@ export default function GroupLimitsPage() {
                   <tr className="bg-white">
                     <td className="border border-gray-300 px-4 py-3">Members in a group</td>
                     <td className="border border-gray-300 px-4 py-3 font-semibold">1,024</td>
-                    <td className="border border-gray-300 px-4 py-3">WhatsApp & WhatsApp Business groups</td>
+                    <td className="border border-gray-300 px-4 py-3">WhatsApp groups</td>
                     <td className="border border-gray-300 px-4 py-3">
                       <a href="https://faq.whatsapp.com/775771602130495/" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:text-green-800">Help Center</a>
                     </td>
@@ -247,7 +247,7 @@ export default function GroupLimitsPage() {
                     <td className="border border-gray-300 px-4 py-3 font-semibold">256 contacts</td>
                     <td className="border border-gray-300 px-4 py-3">Contacts who saved your number</td>
                     <td className="border border-gray-300 px-4 py-3">
-                      <a href="https://faq.whatsapp.com/1124732581644435" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:text-green-800">Help Center</a>
+                      <a href="https://faq.whatsapp.com/861663048350950/" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:text-green-800">Help Center</a>
                     </td>
                     <td className="border border-gray-300 px-4 py-3">
                       <Link href="/guides/whatsapp-broadcast-vs-group-vs-communities" className="text-green-700 hover:text-green-800">Broadcast vs groups guide</Link>
@@ -263,10 +263,10 @@ export default function GroupLimitsPage() {
                     <td className="border border-gray-300 px-4 py-3">Groups API is for small new groups only</td>
                   </tr>
                   <tr className="bg-gray-50">
-                    <td className="border border-gray-300 px-4 py-3">Groups you can join / people you can add per day</td>
+                    <td className="border border-gray-300 px-4 py-3">Groups you can join / people you can add</td>
                     <td className="border border-gray-300 px-4 py-3 font-semibold">No published cap</td>
-                    <td className="border border-gray-300 px-4 py-3">Temporary cooldowns reported</td>
-                    <td className="border border-gray-300 px-4 py-3">User reports</td>
+                    <td className="border border-gray-300 px-4 py-3">Joining groups and adding members</td>
+                    <td className="border border-gray-300 px-4 py-3">Not published by WhatsApp</td>
                     <td className="border border-gray-300 px-4 py-3">
                       <Link href="/guides/safer-multi-group-whatsapp-campaigns" className="text-green-700 hover:text-green-800">Pacing guide</Link>
                     </td>
@@ -289,14 +289,14 @@ export default function GroupLimitsPage() {
               What counts toward the 1,024
             </h3>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              The 1,024 limit includes the group creator and all members. According to <a href="https://faq.whatsapp.com/967457667545238/" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:text-green-800">WhatsApp Help Center</a>, groups support up to 1,025 participants including the creator, but most documentation rounds this to 1,024 members plus the creator. Every person who has not left the group counts toward this limit.
+              <a href="https://faq.whatsapp.com/967457667545238/" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:text-green-800">WhatsApp's Help Center</a> puts the maximum group size at 1,024 members, or 1,025 including the group creator.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">
               What happens when a group is full
             </h3>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              When a group reaches 1,024 members, no one else can join until someone leaves. Admins cannot add new people, and invite links will show an error. If you try to join a full group, WhatsApp displays "Can't join group because it's full." You can request to join and wait for a space to open, or the admin can send you a new invite link once someone leaves.
+              If a group has reached 1,024 members, new people can't join it. For groups inside a Community, <a href="https://faq.whatsapp.com/967457667545238/" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:text-green-800">WhatsApp's Help Center</a> says you can request to join a full group when a member leaves or is removed.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">
@@ -316,21 +316,21 @@ export default function GroupLimitsPage() {
               Groups per Community (100)
             </h3>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              A WhatsApp Community can include up to <strong>100 groups</strong> plus one announcement group, according to <a href="https://faq.whatsapp.com/438859978317289" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:text-green-800">WhatsApp's Help Center</a>. This includes all sub-groups linked to the Community. The announcement group is separate and does not count toward the 100-group limit.
+              You can create a WhatsApp Community with up to <strong>100 groups</strong>, according to <a href="https://faq.whatsapp.com/438859978317289" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:text-green-800">WhatsApp's Help Center</a>. WhatsApp automatically creates a Community Announcements group, where Community admins can send messages to all Community members.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">
               Members per Community (2,000 total, not per group)
             </h3>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              The 2,000-member cap applies to the <strong>total membership across the entire Community</strong>, including all sub-groups and the announcement group combined. This is not 2,000 per group. If you have 100 groups in a Community, the total unique members across all of them cannot exceed 2,000.
+              The 2,000-member cap applies to the <strong>total membership across the entire Community</strong>, including all sub-groups and the announcement group combined. This is not 2,000 per group. If you have 100 groups in a Community, the total number of members across all of them cannot exceed 2,000.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">
               Why blogs disagree (50 / 5,000 numbers)
             </h3>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Some older articles still mention a 50-group limit or 5,000-member limit for Communities. WhatsApp updated these caps, and as of 2026, the <a href="https://faq.whatsapp.com/438859978317289" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:text-green-800">Help Center states 100 groups and 2,000 members</a>. Always defer to WhatsApp's published documentation for current limits.
+              Some older articles still mention a 50-group limit or a 5,000-member limit for Communities. As of 2026-09-28, the <a href="https://faq.whatsapp.com/438859978317289" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:text-green-800">Help Center states 100 groups and 2,000 members</a>, so this guide uses those numbers.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">
@@ -351,7 +351,7 @@ export default function GroupLimitsPage() {
             </p>
 
             <p className="text-gray-700 mb-4 leading-relaxed">
-              For the full breakdown of how these limits work and practical workarounds, see <Link href="/guides/whatsapp-forward-limit-more-than-5-groups" className="text-green-700 hover:text-green-800">WhatsApp Forward Limit: How to Send to More Than 5 Groups</Link>.
+              For the full breakdown of how these limits work and your options for reaching more groups, see <Link href="/guides/whatsapp-forward-limit-more-than-5-groups" className="text-green-700 hover:text-green-800">WhatsApp Forward Limit: How to Send to More Than 5 Groups</Link>.
             </p>
 
             <p className="text-gray-700 mb-0 leading-relaxed">
@@ -361,22 +361,17 @@ export default function GroupLimitsPage() {
 
           <section className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Joining Groups and Adding Members — Cooldowns, Not a Fixed Cap
+              Joining Groups and Adding Members — No Published Cap
             </h2>
             
             <p className="text-gray-700 mb-4 leading-relaxed">
-              WhatsApp does not publish a fixed daily limit for how many groups you can join or how many members you can add to groups. Instead, users report seeing temporary restriction messages like <em>"You have reached the limit for the number of groups you can join"</em> when joining many groups quickly.
-            </p>
-
-            <p className="text-gray-700 mb-4 leading-relaxed">
-              These restrictions are temporary cooldowns, not permanent bans. Practical advice:
+              WhatsApp's Help Center does not publish a fixed number for how many groups you can join or how many people you can add to groups. Practical advice:
             </p>
 
             <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
-              <li>Join and add people gradually rather than in bulk</li>
+              <li>Join groups and add people gradually rather than all at once</li>
               <li>Prefer invite links so people join themselves</li>
-              <li>Space group join/add activity out over hours or days</li>
-              <li>If you hit a cooldown, wait and retry later</li>
+              <li>If WhatsApp stops you from joining or adding, wait before trying again</li>
             </ul>
 
             <p className="text-gray-700 mb-0 leading-relaxed">
@@ -391,7 +386,7 @@ export default function GroupLimitsPage() {
               </h2>
               
               <p className="text-gray-700 mb-4 leading-relaxed">
-                The WhatsApp Groups API is a separate product path capped at <strong>8 participants per group</strong> and designed for creating small invite-only groups via the Cloud API. It does not provide access to post into your existing large consumer groups.
+                The WhatsApp Groups API is a separate product path capped at <strong>8 participants per group</strong> and limited to small invite-only groups created through the API. It does not provide access to post into your existing large consumer groups.
               </p>
 
               <p className="text-gray-700 mb-0 leading-relaxed">
@@ -421,15 +416,6 @@ export default function GroupLimitsPage() {
               </li>
             </ol>
 
-            <div className="bg-green-50 border-2 border-green-700 rounded-lg p-6 mb-6">
-              <p className="text-gray-700 mb-4 leading-relaxed">
-                <strong className="text-gray-900">WaTask</strong> is one option for multi-group campaigns. You connect your own WhatsApp numbers with a QR scan, and WaTask posts one campaign into the groups those numbers are already in. It spreads the sends across your numbers, spaces them out, and schedules them.
-              </p>
-              <p className="text-gray-700 mb-0">
-                Questions? Message us on WhatsApp: <a href="https://wa.me/306981337327" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:text-green-800 font-semibold">+30 698 133 7327</a>
-              </p>
-            </div>
-
             <p className="text-gray-700 mb-0 leading-relaxed">
               Learn more: <Link href="/guides/send-bulk-messages-to-multiple-whatsapp-groups" className="text-green-700 hover:text-green-800">How to Send Bulk Messages to Multiple WhatsApp Groups</Link> and <Link href="/whatsapp-group-management-tool" className="text-green-700 hover:text-green-800">WhatsApp Group Management Tool</Link>.
             </p>
@@ -446,7 +432,7 @@ export default function GroupLimitsPage() {
                   How many members can a WhatsApp group have in 2026?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  A WhatsApp group can have up to <strong>1,024 members</strong>. This is the maximum participant limit according to <a href="https://faq.whatsapp.com/775771602130495/" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:text-green-800">WhatsApp Help Center</a>, including the group creator and all members.
+                  A WhatsApp group can have up to <strong>1,024 members</strong>, according to <a href="https://faq.whatsapp.com/775771602130495/" target="_blank" rel="noopener noreferrer" className="text-green-700 hover:text-green-800">WhatsApp Help Center</a>. The group creator is counted separately, so a full group has 1,025 people.
                 </p>
               </div>
 
@@ -473,7 +459,7 @@ export default function GroupLimitsPage() {
                   How many WhatsApp groups can I join?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  <strong>WhatsApp does not publish a fixed limit</strong> for how many groups one account can join. Users report temporary cooldowns with messages like "You have reached the limit for the number of groups you can join" when joining many groups quickly. The restriction is temporary; slow down and retry later.
+                  <strong>WhatsApp does not publish a fixed limit</strong> for how many groups one account can join. Join groups gradually, and if WhatsApp stops you from joining, wait and try again later.
                 </p>
               </div>
 
@@ -482,7 +468,7 @@ export default function GroupLimitsPage() {
                   What is the WhatsApp forward limit?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  You can forward messages to <strong>up to 5 chats at once</strong>. Already-forwarded messages can only be shared with <strong>1 additional group</strong>. Messages labeled "Forwarded many times" can only be forwarded to <strong>1 chat at a time</strong>. See the <Link href="/guides/whatsapp-forward-limit-more-than-5-groups" className="text-green-700 hover:text-green-800">forward limit guide</Link> for full details.
+                  Up to <strong>5 chats</strong> per forward. A message that was already forwarded to you can go to only 1 more group chat, and a "Forwarded many times" message can go to only 1 chat at a time.
                 </p>
               </div>
 
@@ -491,7 +477,7 @@ export default function GroupLimitsPage() {
                   Does the 1,024 limit apply to WhatsApp Business?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  <strong>Yes</strong>, regular WhatsApp groups in both WhatsApp and WhatsApp Business apps support up to 1,024 members. The WhatsApp Groups API is a separate product limited to 8 participants per group and does not post into existing large groups. Learn more in the <Link href="/guides/whatsapp-groups-api-limits" className="text-green-700 hover:text-green-800">Groups API limits guide</Link>.
+                  WhatsApp's Help Center lists 1,024 members as the group size limit and does not give a separate number for the WhatsApp Business app. The WhatsApp Groups API is a separate product limited to 8 participants per group and does not post into existing large groups.
                 </p>
               </div>
 
@@ -500,7 +486,7 @@ export default function GroupLimitsPage() {
                   Can a broadcast list include groups?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  <strong>No.</strong> Broadcast lists send individual 1:1 messages to up to 256 contacts who have saved your number, not group messages. Broadcast lists and group messages are different features. See <Link href="/guides/whatsapp-broadcast-vs-group-vs-communities" className="text-green-700 hover:text-green-800">Broadcast vs Group vs Communities</Link>.
+                  <strong>No.</strong> Broadcast lists send individual 1:1 messages to up to 256 contacts who have saved your number, not group messages. Broadcast lists and group messages are different features.
                 </p>
               </div>
             </div>
@@ -508,11 +494,11 @@ export default function GroupLimitsPage() {
 
           <section className="bg-green-50 border-2 border-green-700 rounded-lg p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Reach Many Groups with Proper Pacing
+              Post to Many Groups from Your Own Numbers
             </h2>
             
             <p className="text-gray-700 mb-6 leading-relaxed">
-              When you need to post your own content to dozens or hundreds of groups, WaTask connects your own WhatsApp numbers with a QR scan and posts into groups those numbers are already in. Campaigns are spread across numbers, spaced out, and scheduled.
+              WaTask connects your own WhatsApp numbers with a QR scan and posts into groups those numbers are already in.
             </p>
 
             <div className="mb-6">

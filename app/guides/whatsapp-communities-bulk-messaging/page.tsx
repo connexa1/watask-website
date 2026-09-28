@@ -32,7 +32,7 @@ const faqSchema = {
       'name': 'What is a WhatsApp Community?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'A WhatsApp Community is a structure that organizes multiple related groups (up to 50) under one umbrella. It includes an announcement group where admins can broadcast to all members, plus linked sub-groups for focused discussions. Launched by Meta in 2022, Communities help organize larger group networks within WhatsApp.'
+        'text': 'A WhatsApp Community is a structure that organizes multiple related groups (up to 100) under one umbrella, with a total of 2,000 members. It includes an announcement group where admins can broadcast to all members, plus linked sub-groups for focused discussions. Launched by Meta in 2022, Communities help organize larger group networks within WhatsApp.'
       }
     },
     {
@@ -40,7 +40,7 @@ const faqSchema = {
       'name': 'How many groups can a WhatsApp Community have?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'A WhatsApp Community can have up to 100 groups, with a total of 2,000 members across all groups. Each group within a Community can have up to 1,024 participants. The announcement group and all sub-groups share the 2,000 total member cap.'
+        'text': 'A WhatsApp Community can have up to 100 groups, with a total of 2,000 members across its groups and announcement group. Each group within a Community can have up to 1,024 participants. See WhatsApp Group Limits 2026 for full details.'
       }
     },
     {
@@ -48,7 +48,7 @@ const faqSchema = {
       'name': 'What is the WhatsApp Community announcement group?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'The announcement group is the main group in every WhatsApp Community where only admins can send messages by default. It\'s designed for broadcasting updates to all community members. All Community members are automatically part of the announcement group, making it ideal for community-wide communications.'
+        'text': 'The announcement group is the main group in every WhatsApp Community where only admins can send messages by default (this can be changed in settings). It\'s designed for broadcasting updates to all community members. All Community members are automatically part of the announcement group, making it ideal for community-wide communications.'
       }
     },
     {
@@ -64,7 +64,7 @@ const faqSchema = {
       'name': 'How do WhatsApp Communities differ from regular groups?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'Regular WhatsApp groups are standalone chats. Communities organize multiple groups under one structure with a shared announcement group. Communities provide better organization for related groups (like a neighborhood with different interest groups), but individual groups within a Community function the same as regular groups.'
+        'text': 'Regular WhatsApp groups are standalone chats with no organizational structure above them. Communities organize multiple groups under one structure with a shared announcement group for broadcasts. Communities provide better organization for related groups (like a neighborhood with different interest groups), but individual groups within a Community function the same as regular standalone groups.'
       }
     },
     {
@@ -167,7 +167,7 @@ export default function CommunitiesGuidePage() {
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
               This guide explains what Communities are, how they compare to regular groups and broadcast lists, their limits 
-              (including the 50-group cap), and when you need a <Link href="/whatsapp-group-management-tool" className="text-green-700 hover:text-green-800 font-medium">multi-group platform</Link> beyond what Communities provide.
+              (including the 100-group and 2,000-member caps), and when you need a <Link href="/whatsapp-group-management-tool" className="text-green-700 hover:text-green-800 font-medium">multi-group platform</Link> beyond what Communities provide.
             </p>
           </section>
 
@@ -305,7 +305,7 @@ export default function CommunitiesGuidePage() {
                   groups for different teams, all under one Community.
                 </p>
                 <p className="text-gray-700 text-sm italic">
-                  The 50-group limit means large organizations or networks with 100+ groups cannot fit everything 
+                  The 100-group and 2,000-member limits mean large organizations or networks cannot always fit everything 
                   in one Community.
                 </p>
               </div>
@@ -469,11 +469,10 @@ export default function CommunitiesGuidePage() {
 
               <div className="bg-red-50 border border-red-200 rounded-lg p-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  Groups Beyond the 50-Group Cap
+                  Groups Beyond One Community's Limits
                 </h3>
                 <p className="text-gray-700">
-                  Large agencies, franchises, or civic organizations often manage 100+ groups. WhatsApp's 50-group limit 
-                  per Community means you either split into multiple Communities (losing unified broadcast) or leave 
+                  Large agencies, franchises, or civic organizations can outgrow one Community. WhatsApp's 100-group and 2,000-member limits per Community means you either split into multiple Communities (losing unified broadcast) or leave 
                   groups outside Communities entirely.
                 </p>
               </div>
@@ -549,7 +548,7 @@ export default function CommunitiesGuidePage() {
                   <span className="text-green-700 font-bold text-xl flex-shrink-0">✓</span>
                   <span>
                     <strong>Use multi-group platforms for campaigns:</strong> When you need to send to selected groups 
-                    across multiple Communities, target specific sub-groups, or manage 50+ groups, use a multi-group tool.
+                    across multiple Communities, target specific sub-groups, or manage more groups than one Community holds, use a multi-group tool.
                   </span>
                 </li>
                 <li className="flex gap-3">
@@ -598,8 +597,7 @@ export default function CommunitiesGuidePage() {
                   How many groups can a WhatsApp Community have?
                 </h3>
                 <p className="text-gray-700">
-                  A WhatsApp Community can have <strong>up to 100 groups total</strong>, with a total of <strong>2,000 members</strong> across all groups and the announcement group combined. 
-                  Each group within a Community can have up to 1,024 participants. See <Link href="/guides/whatsapp-group-limits" className="text-green-700 hover:text-green-800">WhatsApp Group Limits 2026</Link> for full details.
+                  A WhatsApp Community can have <strong>up to 100 groups</strong>, with a total of <strong>2,000 members</strong> across its groups and announcement group. Each group within a Community can have up to 1,024 participants. See <Link href="/guides/whatsapp-group-limits" className="text-green-700 hover:text-green-800">WhatsApp Group Limits 2026</Link> for full details.
                 </p>
               </div>
 
@@ -657,15 +655,7 @@ export default function CommunitiesGuidePage() {
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
                   Do I need a multi-group tool if I use Communities?
                 </h3>
-                <p className="text-gray-700">
-                  It depends on your needs:
-                </p>
-                <ul className="mt-3 space-y-2 text-gray-700 ml-6">
-                  <li>• If all your groups fit within one Community (up to 50) and you only need to broadcast to all 
-                  members via the announcement group, Communities may be enough.</li>
-                  <li>• If you manage groups across multiple Communities, manage 100+ groups, need to send different 
-                  messages to different segments, or want pacing/monitoring features, you need a multi-group platform.</li>
-                </ul>
+                <p className="text-gray-700">It depends. If all your groups fit within one Community (up to 100 groups and 2,000 total members) and you only need to broadcast via the announcement group, Communities may be enough. If you manage groups across multiple Communities, clients, or independent organizations, or need advanced features like pacing and delivery monitoring, you need a multi-group platform.</p>
               </div>
 
               <div className="pb-6">
@@ -695,11 +685,11 @@ export default function CommunitiesGuidePage() {
 
           <section className="border border-2 border-green-700 bg-gray-50 rounded-lg p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Need to Campaign Across Multiple Communities or 50+ Groups?
+              Need to Campaign Across Multiple Communities or More Groups?
             </h2>
             
             <p className="text-gray-700 mb-6">
-              If your group network extends beyond one Community's 50-group limit, or you need to send different campaigns 
+              If your group network extends beyond one Community's 100-group or 2,000-member limit, or you need to send different campaigns 
               to different segments, WaTask helps you manage collections, pace sends, and monitor delivery across your 
               entire group network — Communities, standalone groups, and everything in between.
             </p>
