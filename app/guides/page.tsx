@@ -67,8 +67,8 @@ const guides = [
     href: '/guides/schedule-whatsapp-group-messages',
     category: 'How-To',
     status: 'Published',
-    intent: 'Can you schedule messages in WhatsApp groups and schedule campaigns across many groups? Native status, workarounds, and multi-group scheduling.',
-    youllLearn: 'Native scheduling status, iPhone/Android workarounds, and how to schedule campaigns across dozens of groups at once.',
+    intent: 'Can you schedule messages in WhatsApp groups and schedule campaigns across many groups? Native status, your options, and multi-group scheduling.',
+    youllLearn: 'Native scheduling status, iPhone/Android options, and how to schedule campaigns across dozens of groups at once.',
   },
   {
     title: 'WhatsApp Forward Limit: Send to More Than 5 Groups',
