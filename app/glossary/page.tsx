@@ -41,7 +41,7 @@ const glossarySchema = {
     {
       '@type': 'DefinedTerm',
       'name': 'WhatsApp Community',
-      'description': 'A structure that organizes multiple related groups under one umbrella. Communities have an announcement group that reaches all members, plus up to 50 linked groups.'
+      'description': 'A structure that organizes multiple related groups under one umbrella. Communities have an announcement group that reaches all members, plus up to 100 linked groups with a total of 2,000 members.'
     },
     {
       '@type': 'DefinedTerm',
@@ -240,14 +240,16 @@ const terms: Term[] = [
     term: 'WhatsApp Group',
     definition: 'A chat where multiple participants (up to 1,024) can see and respond to each other\'s messages. Admins control who joins, can set permissions for who can send messages and edit group info, and manage group settings. Different from broadcast lists where recipients see 1:1 messages.',
     relatedGuides: [
+      { title: 'WhatsApp Group Limits 2026', href: '/guides/whatsapp-group-limits' },
       { title: 'Broadcast vs Group vs Communities', href: '/guides/whatsapp-broadcast-vs-group-vs-communities' },
       { title: 'Multi-Group Campaigns', href: '/guides/send-bulk-messages-to-multiple-whatsapp-groups' }
     ]
   },
   {
     term: 'WhatsApp Community',
-    definition: 'A structure that organizes multiple related groups (up to 50) under one umbrella. Communities have an announcement group where admins can broadcast to all community members, plus linked sub-groups for focused discussions. Launched by Meta in 2022 for organizing larger group networks.',
+    definition: 'A structure that organizes multiple related groups (up to 100) under one umbrella, with a total of 2,000 members. Communities have an announcement group where admins can broadcast to all community members, plus linked sub-groups for focused discussions. Launched by Meta in 2022 for organizing larger group networks.',
     relatedGuides: [
+      { title: 'WhatsApp Group Limits 2026', href: '/guides/whatsapp-group-limits' },
       { title: 'Communities Bulk Messaging Guide', href: '/guides/whatsapp-communities-bulk-messaging' },
       { title: 'Broadcast vs Group vs Communities', href: '/guides/whatsapp-broadcast-vs-group-vs-communities' }
     ]

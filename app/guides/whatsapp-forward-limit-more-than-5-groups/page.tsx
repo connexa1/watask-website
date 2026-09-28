@@ -475,6 +475,11 @@ export default function ForwardLimitPage() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/guides/whatsapp-group-limits" className="text-green-700 hover:text-green-800">
+                    WhatsApp Group Limits 2026 →
+                  </Link>
+                </li>
+                <li>
                   <Link href="/guides/whatsapp-communities-bulk-messaging" className="text-green-700 hover:text-green-800">
                     WhatsApp Communities for Bulk Messaging →
                   </Link>

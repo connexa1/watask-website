@@ -79,6 +79,14 @@ const guides = [
     youllLearn: 'Exact forward limit rules, why forwarded messages hit stricter caps, and six ways to share content with many groups.',
   },
   {
+    title: 'WhatsApp Group Limits 2026: Members & Communities',
+    href: '/guides/whatsapp-group-limits',
+    category: 'Reference',
+    status: 'Published',
+    intent: 'Current WhatsApp limits for group size (1,024), Communities (100 groups / 2,000 members), forwarding, broadcast lists, and joining groups — with sources.',
+    youllLearn: 'One dated table for every limit that trips up group admins, plus what to do when you hit each cap.',
+  },
+  {
     title: 'Does WhatsApp Business API Support Groups?',
     href: '/guides/does-whatsapp-business-api-support-groups',
     category: 'FAQ',

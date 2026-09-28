@@ -40,7 +40,7 @@ const faqSchema = {
       'name': 'How many groups can a WhatsApp Community have?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'A WhatsApp Community can have up to 50 groups, including the announcement group. Each group within a Community can have up to 1,024 participants. The total Community membership isn\'t capped by a separate limit — it\'s determined by the sum of unique members across all groups.'
+        'text': 'A WhatsApp Community can have up to 100 groups, with a total of 2,000 members across all groups. Each group within a Community can have up to 1,024 participants. The announcement group and all sub-groups share the 2,000 total member cap.'
       }
     },
     {
@@ -72,7 +72,7 @@ const faqSchema = {
       'name': 'Do I need a multi-group tool if I use Communities?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'It depends. If all your groups fit within one Community (up to 50 groups) and you only need to broadcast via the announcement group, Communities may be enough. If you manage groups across multiple Communities, clients, or independent organizations, or need advanced features like pacing and delivery monitoring, you need a multi-group platform.'
+        'text': 'It depends. If all your groups fit within one Community (up to 100 groups and 2,000 total members) and you only need to broadcast via the announcement group, Communities may be enough. If you manage groups across multiple Communities, clients, or independent organizations, or need advanced features like pacing and delivery monitoring, you need a multi-group platform.'
       }
     }
   ]
@@ -181,7 +181,7 @@ export default function CommunitiesGuidePage() {
                 Definition:
               </p>
               <p className="text-gray-700 leading-relaxed">
-                A WhatsApp Community is a structure that organizes <strong>up to 50 groups</strong> under one umbrella. 
+                A WhatsApp Community is a structure that organizes <strong>up to 100 groups</strong> under one umbrella, with a total of <strong>2,000 members</strong> across all groups. 
                 It includes one <strong>announcement group</strong> where admins broadcast to all Community members, plus 
                 linked sub-groups for focused discussions.
               </p>
@@ -205,12 +205,12 @@ export default function CommunitiesGuidePage() {
 
               <div className="border-l-4 border-cyan border bg-gray-50 p-6 rounded-r-lg">
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                  Sub-Groups (Up to 50 Total)
+                  Sub-Groups (Up to 100 Total)
                 </h4>
                 <p className="text-gray-700">
-                  You can add up to <strong>50 groups total</strong> (including the announcement group) to a Community. 
+                  You can add up to <strong>100 groups total</strong> to a Community. 
                   These groups work like regular WhatsApp groups — participants can chat, share media, and interact. 
-                  Each group can have up to 1,024 members.
+                  Each group can have up to 1,024 members, and the total Community membership is capped at <strong>2,000 members</strong> across all groups.
                 </p>
               </div>
 
@@ -247,7 +247,11 @@ export default function CommunitiesGuidePage() {
                 <tbody className="divide-y divide-gray-200">
                   <tr>
                     <td className="px-6 py-4 text-gray-700">Maximum groups per Community</td>
-                    <td className="px-6 py-4 text-gray-900 font-medium">50 groups total</td>
+                    <td className="px-6 py-4 text-gray-900 font-medium">100 groups total</td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 text-gray-700">Maximum members per Community</td>
+                    <td className="px-6 py-4 text-gray-900 font-medium">2,000 members total</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-gray-700">Maximum participants per group</td>
@@ -368,7 +372,7 @@ export default function CommunitiesGuidePage() {
                       announcement group. All members see the message in that group chat context.
                     </p>
                     <p className="text-gray-700 mb-3">
-                      <strong>Scope:</strong> One Community only (up to 50 groups). Cannot reach groups in other 
+                      <strong>Scope:</strong> One Community only (up to 100 groups, 2,000 total members). Cannot reach groups in other 
                       Communities or standalone groups.
                     </p>
                     <p className="text-gray-700">
@@ -583,7 +587,7 @@ export default function CommunitiesGuidePage() {
                   What is a WhatsApp Community?
                 </h3>
                 <p className="text-gray-700">
-                  A WhatsApp Community is a structure that organizes multiple related groups (up to 50) under one umbrella. 
+                  A WhatsApp Community is a structure that organizes multiple related groups (up to 100) under one umbrella, with a total of 2,000 members. 
                   It includes an announcement group where admins can broadcast to all members, plus linked sub-groups for 
                   focused discussions. Launched by Meta in 2022, Communities help organize larger group networks within WhatsApp.
                 </p>
@@ -594,9 +598,8 @@ export default function CommunitiesGuidePage() {
                   How many groups can a WhatsApp Community have?
                 </h3>
                 <p className="text-gray-700">
-                  A WhatsApp Community can have <strong>up to 50 groups total</strong>, including the announcement group. 
-                  Each group within a Community can have up to 1,024 participants. The total Community membership isn't capped 
-                  by a separate limit — it's determined by the sum of unique members across all groups.
+                  A WhatsApp Community can have <strong>up to 100 groups total</strong>, with a total of <strong>2,000 members</strong> across all groups and the announcement group combined. 
+                  Each group within a Community can have up to 1,024 participants. See <Link href="/guides/whatsapp-group-limits" className="text-green-700 hover:text-green-800">WhatsApp Group Limits 2026</Link> for full details.
                 </p>
               </div>
 
@@ -660,7 +663,7 @@ export default function CommunitiesGuidePage() {
                 <ul className="mt-3 space-y-2 text-gray-700 ml-6">
                   <li>• If all your groups fit within one Community (up to 50) and you only need to broadcast to all 
                   members via the announcement group, Communities may be enough.</li>
-                  <li>• If you manage groups across multiple Communities, manage 50+ groups, need to send different 
+                  <li>• If you manage groups across multiple Communities, manage 100+ groups, need to send different 
                   messages to different segments, or want pacing/monitoring features, you need a multi-group platform.</li>
                 </ul>
               </div>
@@ -672,7 +675,7 @@ export default function CommunitiesGuidePage() {
                 <p className="text-gray-700 mb-3">
                   In WhatsApp, go to the Communities tab → tap "New Community" → add a name, description, and icon → 
                   create or link existing groups to the Community. You become the Community admin automatically. You can 
-                  add up to 50 groups total.
+                  add up to 100 groups total, with 2,000 total members.
                 </p>
                 <p className="text-gray-700">
                   Note: This guide focuses on using Communities for messaging at scale, not the technical setup process. 
