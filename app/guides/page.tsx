@@ -258,6 +258,42 @@ export default function GuidesPage() {
               </div>
               
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                Best Tools to Message Many WhatsApp Groups
+              </h3>
+              
+              <div className="mb-3">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  <span className="font-medium text-gray-900">Intent:</span> Buyer's roundup for teams comparing tools to post into many existing groups — multi-group platforms, BSPs, Communities, extensions, and manual posting.
+                </p>
+              </div>
+              
+              <div className="mb-4">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  <span className="font-medium text-gray-900">You'll learn:</span> What each tool category can and cannot do, comparison matrix, and how to choose the right fit for your job.
+                </p>
+              </div>
+              
+              <div className="flex items-center gap-4 text-sm">
+                <Link 
+                  href="/compare/best-tools-message-many-whatsapp-groups"
+                  className="text-green-700 hover:text-green-800 font-medium"
+                >
+                  View buyer's roundup →
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">Comparison</span>
+                  <span className="text-xs px-2.5 py-1 rounded-full font-medium bg-green-100 text-green-700">
+                    Published
+                  </span>
+                </div>
+              </div>
+              
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
                 Multi-Group Tools vs BSP Platforms vs Chrome Extensions
               </h3>
               
