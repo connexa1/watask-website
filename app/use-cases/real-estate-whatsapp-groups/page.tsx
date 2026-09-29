@@ -414,6 +414,11 @@ export default function RealEstateGroupsPage() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/use-cases/resellers-whatsapp-groups" className="text-green-700 hover:text-green-800">
+                    Resellers WhatsApp Groups Use Case →
+                  </Link>
+                </li>
+                <li>
                   <Link href="/whatsapp-group-management-tool" className="text-green-700 hover:text-green-800">
                     WhatsApp Group Management Tool →
                   </Link>
