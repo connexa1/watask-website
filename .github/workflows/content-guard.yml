@@ -1,0 +1,87 @@
+# WATASK-GUARD-1 — blocks broken or off-brand content from reaching main.
+#
+# Checks (scripts/content-guard/guard.mjs):
+#   a. npm ci && npm run build must succeed
+#   b. banned words in app/ and components/ (exceptions: .github/content-allowlist.txt)
+#   c. no email addresses; every wa.me link goes to 306981337327
+#   d. every sitemap page: <title> <= 60 chars, meta description <= 160 chars,
+#      FAQPage JSON-LD answers match the visible FAQ text, no sentence repeated on a page
+#   e. sitemap has no duplicate URLs and every URL returns 200 on the local build
+#
+# Mode: by default a pull request fails only for problems it ADDS compared with main
+# (main already had known issues when this guard was introduced).
+# To fail on EVERY problem, set STRICT to 'true' below.
+
+name: content-guard
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: content-guard-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  content-guard:
+    name: content-guard
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      STRICT: 'false'
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - name: Check out pull request
+        uses: actions/checkout@v4
+        with:
+          path: head
+
+      - name: Check out main (for comparison)
+        if: env.STRICT != 'true'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: base
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: head/package-lock.json
+
+      - name: (a) Install and build the pull request
+        working-directory: head
+        run: npm ci && npm run build
+
+      - name: (b–e) Content checks on the pull request
+        id: head
+        working-directory: head
+        run: |
+          set +e
+          node scripts/content-guard/guard.mjs all --json "$RUNNER_TEMP/head.json"
+          code=$?
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          if [ "$STRICT" = "true" ]; then exit $code; fi
+          if [ ! -s "$RUNNER_TEMP/head.json" ]; then echo "::error::content guard produced no report"; exit 1; fi
+          exit 0
+
+      - name: Build main (for comparison)
+        if: env.STRICT != 'true' && steps.head.outputs.code != '0'
+        working-directory: base
+        run: npm ci && npm run build
+
+      - name: Content checks on main (for comparison)
+        if: env.STRICT != 'true' && steps.head.outputs.code != '0'
+        working-directory: base
+        env:
+          GUARD_ALLOWLIST: ${{ github.workspace }}/head/.github/content-allowlist.txt
+        run: |
+          node "$GITHUB_WORKSPACE/head/scripts/content-guard/guard.mjs" all --json "$RUNNER_TEMP/base.json" > /dev/null || true
+          [ -s "$RUNNER_TEMP/base.json" ] || echo '[]' > "$RUNNER_TEMP/base.json"
+
+      - name: Fail only on NEW problems
+        if: env.STRICT != 'true' && steps.head.outputs.code != '0'
+        run: node head/scripts/content-guard/guard.mjs compare "$RUNNER_TEMP/base.json" "$RUNNER_TEMP/head.json"

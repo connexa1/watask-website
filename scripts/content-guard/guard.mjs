@@ -5,17 +5,21 @@
 //   node scripts/content-guard/guard.mjs source    # banned words + contact rules on app/ and components/
 //   node scripts/content-guard/guard.mjs rendered  # runs the built site (next start) and checks every sitemap URL
 //   node scripts/content-guard/guard.mjs all       # both (needs `npm run build` first)
+//   add  --json <file>  to also write the list of problems as JSON
+//   node scripts/content-guard/guard.mjs compare <base.json> <head.json>
+//        fails only on problems in head.json that are not already in base.json
+//        (used by CI so a pull request is blocked only for problems it adds)
 //
 // Exits 1 if any check fails. Every failure names the check, the file or page, and the offending text.
 // No dependencies beyond Node 20+.
 
-import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { join, relative, extname } from 'node:path';
 import { spawn } from 'node:child_process';
 
 const ROOT = process.cwd();
 const SOURCE_DIRS = ['app', 'components'];
-const ALLOWLIST_FILE = '.github/content-allowlist.txt';
+const ALLOWLIST_FILE = process.env.GUARD_ALLOWLIST || '.github/content-allowlist.txt';
 const WHATSAPP_NUMBER = '306981337327';
 const TITLE_MAX = 60;
 const DESCRIPTION_MAX = 160;
@@ -54,8 +58,11 @@ const EMAIL_RE = /[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\.[A-Za-z]{
 const WAME_RE = /wa\.me\/([^\s"'`)<>\]\\]*)/gi;
 
 const failures = [];
-function fail(check, where, detail) {
-  failures.push({ check, where, detail });
+// `key` identifies the problem independent of line numbers, so the same old problem
+// on main and on a pull request compare as equal.
+function fail(check, where, detail, key) {
+  const k = `${check}|${key ?? `${where.replace(/:\d+$/, '')}|${detail}`}`;
+  failures.push({ check, where, detail, key: k });
 }
 
 // ---------------------------------------------------------------- helpers
@@ -131,7 +138,7 @@ function sourceChecks() {
         re.lastIndex = 0;
         let m;
         while ((m = re.exec(line))) {
-          fail('banned-words', loc, `banned term "${label}" found as "${m[0]}" in: ${short(raw.trim())}`);
+          fail('banned-words', loc, `banned term "${label}" found as "${m[0]}" in: ${short(raw.trim())}`, `${rel}|${label}`);
         }
       }
 
@@ -140,7 +147,7 @@ function sourceChecks() {
       while ((e = EMAIL_RE.exec(raw))) {
         // skip image-density names like logo@2x.png
         if (/@\d+x\.(png|jpe?g|webp|avif|gif|svg)$/i.test(e[0])) continue;
-        fail('contact-email', loc, `email address "${e[0]}" found in: ${short(raw.trim())}`);
+        fail('contact-email', loc, `email address "${e[0]}" found in: ${short(raw.trim())}`, `${rel}|${e[0].toLowerCase()}`);
       }
 
       WAME_RE.lastIndex = 0;
@@ -151,7 +158,7 @@ function sourceChecks() {
         if (/\[href[\^*$]?=["']?(https?:\/\/)?$/i.test(before)) continue;
         const num = (w[1].match(/^\+?(\d*)/) || [])[1] || '';
         if (num !== WHATSAPP_NUMBER) {
-          fail('contact-whatsapp', loc, `wa.me link points to "${num || '(no number)'}" instead of ${WHATSAPP_NUMBER}: ${short(w[0])}`);
+          fail('contact-whatsapp', loc, `wa.me link points to "${num || '(no number)'}" instead of ${WHATSAPP_NUMBER}: ${short(w[0])}`, `${rel}|${num}`);
         }
       }
     });
@@ -207,22 +214,22 @@ function checkPage(path, html) {
   // title
   const head = (html.match(/<head[^>]*>([\s\S]*?)<\/head>/i) || [, html])[1];
   const t = head.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
-  if (!t) fail('title', where, 'no <title> tag');
+  if (!t) fail('title', where, 'no <title> tag', `${path}|missing`);
   else {
     const title = normalize(decode(t[1]));
-    if (!title) fail('title', where, 'empty <title>');
-    else if (title.length > TITLE_MAX) fail('title', where, `<title> is ${title.length} chars (max ${TITLE_MAX}): "${title}"`);
+    if (!title) fail('title', where, 'empty <title>', `${path}|empty`);
+    else if (title.length > TITLE_MAX) fail('title', where, `<title> is ${title.length} chars (max ${TITLE_MAX}): "${title}"`, `${path}|${title}`);
   }
 
   // meta description
   const metas = [...head.matchAll(/<meta\b[^>]*>/gi)].map((m) => m[0]);
   const desc = metas.find((m) => /\bname=["']description["']/i.test(m));
-  if (!desc) fail('meta-description', where, 'no <meta name="description">');
+  if (!desc) fail('meta-description', where, 'no <meta name="description">', `${path}|missing`);
   else {
     const c = desc.match(/\bcontent=(?:"([^"]*)"|'([^']*)')/i);
     const text = normalize(decode((c && (c[1] ?? c[2])) || ''));
-    if (!text) fail('meta-description', where, 'meta description is empty');
-    else if (text.length > DESCRIPTION_MAX) fail('meta-description', where, `meta description is ${text.length} chars (max ${DESCRIPTION_MAX}): "${text}"`);
+    if (!text) fail('meta-description', where, 'meta description is empty', `${path}|empty`);
+    else if (text.length > DESCRIPTION_MAX) fail('meta-description', where, `meta description is ${text.length} chars (max ${DESCRIPTION_MAX}): "${text}"`, `${path}|${text}`);
   }
 
   const blocks = visibleBlocks(html);
@@ -234,7 +241,7 @@ function checkPage(path, html) {
     try {
       collectFaqs(JSON.parse(m[1]), faqs);
     } catch (err) {
-      fail('faq-jsonld', where, `JSON-LD block is not valid JSON: ${err.message}`);
+      fail('faq-jsonld', where, `JSON-LD block is not valid JSON: ${err.message}`, `${path}|invalid-json|${short(m[1], 300)}`);
     }
   }
   for (const { question, answer } of faqs) {
@@ -254,7 +261,8 @@ function checkPage(path, html) {
       `FAQ answer in JSON-LD does not match the visible answer word for word.\n` +
       `      Q:        ${short(normalize(stripTags(question)), 200)}\n` +
       `      JSON-LD:  ${short(want, 400)}\n` +
-      `      Visible:  ${bestScore > 0.3 ? short(best, 400) : '(no matching visible answer found)'}`);
+      `      Visible:  ${bestScore > 0.3 ? short(best, 400) : '(no matching visible answer found)'}`,
+      `${path}|${question}|${want}|${bestScore > 0.3 ? best : ''}`);
   }
 
   // duplicate visible sentences
@@ -269,16 +277,16 @@ function checkPage(path, html) {
     }
   }
   for (const { text, n } of seen.values()) {
-    if (n > 1) fail('duplicate-sentence', where, `sentence appears ${n} times: "${short(text, 300)}"`);
+    if (n > 1) fail('duplicate-sentence', where, `sentence appears ${n} times: "${short(text, 300)}"`, `${path}|${text.toLowerCase()}|${n}`);
   }
 
   // rendered wa.me links (catches links built from variables)
   for (const m of html.matchAll(/href=["']([^"']*wa\.me\/[^"']*)["']/gi)) {
     const num = (m[1].match(/wa\.me\/\+?(\d*)/i) || [])[1] || '';
-    if (num !== WHATSAPP_NUMBER) fail('contact-whatsapp', where, `rendered wa.me link points to "${num || '(no number)'}": ${short(m[1])}`);
+    if (num !== WHATSAPP_NUMBER) fail('contact-whatsapp', where, `rendered wa.me link points to "${num || '(no number)'}": ${short(m[1])}`, `${path}|${num}`);
   }
   for (const m of html.matchAll(/href=["']mailto:([^"']*)["']/gi)) {
-    fail('contact-email', where, `rendered mailto link: ${m[1]}`);
+    fail('contact-email', where, `rendered mailto link: ${m[1]}`, `${path}|${m[1].toLowerCase()}`);
   }
 }
 
@@ -358,21 +366,13 @@ async function renderedChecks() {
 }
 
 // ---------------------------------------------------------------- main
-const mode = process.argv[2] || 'all';
-if (!['source', 'rendered', 'all'].includes(mode)) {
-  console.error('usage: guard.mjs source|rendered|all');
-  process.exit(2);
-}
-if (mode === 'source' || mode === 'all') sourceChecks();
-if (mode === 'rendered' || mode === 'all') await renderedChecks();
-
-if (failures.length) {
+function report(list, heading) {
   const byCheck = {};
-  for (const f of failures) (byCheck[f.check] ||= []).push(f);
-  console.log(`\nCONTENT GUARD FAILED — ${failures.length} problem(s)\n`);
-  for (const [check, list] of Object.entries(byCheck)) {
-    console.log(`## ${check} (${list.length})`);
-    for (const f of list) {
+  for (const f of list) (byCheck[f.check] ||= []).push(f);
+  console.log(`\n${heading}\n`);
+  for (const [check, items] of Object.entries(byCheck)) {
+    console.log(`## ${check} (${items.length})`);
+    for (const f of items) {
       console.log(`  ✗ ${f.where}\n      ${f.detail}`);
       if (process.env.GITHUB_ACTIONS) {
         const m = f.where.match(/^([^:\s]+):(\d+)$/);
@@ -383,6 +383,51 @@ if (failures.length) {
     }
     console.log('');
   }
+}
+
+const args = process.argv.slice(2);
+const mode = args[0] || 'all';
+
+if (mode === 'compare') {
+  const [baseFile, headFile] = args.slice(1);
+  if (!baseFile || !headFile) {
+    console.error('usage: guard.mjs compare <base.json> <head.json>');
+    process.exit(2);
+  }
+  const base = JSON.parse(readFileSync(baseFile, 'utf8'));
+  const head = JSON.parse(readFileSync(headFile, 'utf8'));
+  const budget = new Map();
+  for (const f of base) budget.set(f.key, (budget.get(f.key) || 0) + 1);
+  const added = [];
+  for (const f of head) {
+    const left = budget.get(f.key) || 0;
+    if (left > 0) budget.set(f.key, left - 1);
+    else added.push(f);
+  }
+  const existing = head.length - added.length;
+  console.log(`main already has ${base.length} known problem(s); this pull request has ${head.length} (${existing} old, ${added.length} new).`);
+  if (added.length) {
+    report(added, `CONTENT GUARD FAILED — this pull request adds ${added.length} new problem(s)`);
+    process.exit(1);
+  }
+  console.log('\nCONTENT GUARD PASSED — no new problems');
+  process.exit(0);
+}
+
+if (!['source', 'rendered', 'all'].includes(mode)) {
+  console.error('usage: guard.mjs source|rendered|all [--json <file>]  |  guard.mjs compare <base.json> <head.json>');
+  process.exit(2);
+}
+const jsonIdx = args.indexOf('--json');
+const jsonOut = jsonIdx > -1 ? args[jsonIdx + 1] : null;
+
+if (mode === 'source' || mode === 'all') sourceChecks();
+if (mode === 'rendered' || mode === 'all') await renderedChecks();
+
+if (jsonOut) writeFileSync(jsonOut, JSON.stringify(failures, null, 2));
+
+if (failures.length) {
+  report(failures, `CONTENT GUARD FAILED — ${failures.length} problem(s)`);
   process.exit(1);
 }
 console.log(`\nCONTENT GUARD PASSED (${mode})`);

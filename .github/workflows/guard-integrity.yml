@@ -1,0 +1,45 @@
+# WATASK-GUARD-1 — stops a pull request from switching the guard off.
+#
+# A pull request could otherwise edit content-guard.yml or the guard script so the
+# content-guard check "passes" without checking anything. This job runs the copy of
+# this file that is on main (pull_request_target), never runs code from the pull
+# request, and fails if the pull request touches any guard file.
+#
+# To change the guard on purpose: the owner temporarily disables the "main protection"
+# ruleset (Settings → Rules → Rulesets), merges the change, then re-enables it.
+
+name: guard-integrity
+
+on:
+  pull_request_target:
+    branches: [main]
+    types: [opened, synchronize, reopened, edited]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  guard-integrity:
+    name: guard-integrity
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Fail if the pull request changes guard files
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          gh api --paginate "repos/$REPO/pulls/$PR/files" --jq '.[] | .filename, (.previous_filename // empty)' > files.txt
+          echo "Files changed in this pull request:"; sed 's/^/  /' files.txt
+          protected=$(grep -E '^(\.github/|scripts/content-guard/)' files.txt || true)
+          if [ -n "$protected" ]; then
+            echo ""
+            echo "GUARD INTEGRITY FAILED — this pull request changes protected guard files:"
+            echo "$protected" | sed 's/^/  ✗ /'
+            echo "::error title=guard-integrity::This pull request changes guard files (.github/ or scripts/content-guard/). Only the owner can change these, by temporarily disabling the main ruleset."
+            exit 1
+          fi
+          echo "GUARD INTEGRITY PASSED — no guard files changed"
