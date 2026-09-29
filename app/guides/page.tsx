@@ -60,7 +60,7 @@ const guides = [
     category: 'Best Practices',
     status: 'Published',
     intent: 'Pacing, consent, group norms, and account-health habits for operators.',
-    youllLearn: 'Practical send hygiene — not fear, not "unlimited blast" advice.',
+    youllLearn: 'Practical send hygiene — not fear, not "send unlimited" advice.',
   },
   {
     title: 'How to Schedule WhatsApp Group Messages',
