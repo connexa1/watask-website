@@ -61,7 +61,7 @@ const homepageFaqSchema = {
       'name': 'How does pacing work and why does it matter?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'Pacing spreads your campaign sends over time instead of blasting hundreds of groups instantly. This respects how communities experience posts and reduces the risk of appearing spammy. WaTask includes built-in pacing controls so you can set send intervals and quiet windows.'
+        'text': 'Pacing spreads your posts over time instead of sending to hundreds of groups at once. This respects how communities experience posts and keeps repeated posts from feeling overwhelming.'
       }
     },
     {
@@ -109,7 +109,7 @@ const homepageFaqSchema = {
       'name': 'How does pacing help with multi-group campaigns?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'WaTask includes pacing controls and delivery monitoring so you can spread sends over time and avoid spam reports. The key is respecting group members: use proper pacing, provide value, and ensure your messages are relevant and welcome in each group. Capability does not equal permission.'
+        'text': 'Spreading posts over time keeps each group from receiving everything at once. The key is respecting group members: pace your posts, provide value, and make sure your messages are relevant and welcome in each group. Capability does not equal permission.'
       }
     },
     {
@@ -457,7 +457,7 @@ export default function HomePage() {
                 How does pacing work and why does it matter?
               </h3>
               <p className="text-text-secondary leading-relaxed">
-                Pacing spreads your campaign sends over time instead of blasting hundreds of groups instantly. This respects how communities experience posts and reduces the risk of appearing spammy. WaTask includes built-in pacing controls so you can set send intervals and quiet windows.
+                Pacing spreads your posts over time instead of sending to hundreds of groups at once. This respects how communities experience posts and keeps repeated posts from feeling overwhelming.
               </p>
             </div>
 
@@ -511,7 +511,7 @@ export default function HomePage() {
                 How does pacing help with multi-group campaigns?
               </h3>
               <p className="text-text-secondary leading-relaxed">
-                WaTask includes pacing controls and delivery monitoring so you can spread sends over time and avoid spam reports. The key is respecting group members: use proper pacing, provide value, and ensure your messages are relevant and welcome in each group. Capability does not equal permission.
+                Spreading posts over time keeps each group from receiving everything at once. The key is respecting group members: pace your posts, provide value, and make sure your messages are relevant and welcome in each group. Capability does not equal permission.
               </p>
             </div>
 
