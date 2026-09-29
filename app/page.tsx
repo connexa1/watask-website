@@ -253,6 +253,21 @@ export default function HomePage() {
               <p className="text-text-secondary">Regional / franchise groups</p>
             </div>
           </div>
+
+          <div className="mt-8 text-center">
+            <p className="text-sm text-text-muted mb-2">
+              <strong className="text-text-primary">Real estate example:</strong>
+            </p>
+            <Link 
+              href="/use-cases/real-estate-whatsapp-groups"
+              className="text-cyber hover:text-cyber-hover text-sm font-medium inline-flex items-center gap-1"
+            >
+              How agents post listings into property groups
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
 
