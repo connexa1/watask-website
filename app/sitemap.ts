@@ -77,6 +77,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/use-cases/resellers-whatsapp-groups`,
+      lastModified: new Date('2026-09-29'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/guides/does-whatsapp-business-api-support-groups`,
       lastModified: new Date('2026-09-10'),
       changeFrequency: 'monthly',

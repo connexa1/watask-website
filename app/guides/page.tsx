@@ -241,6 +241,42 @@ export default function GuidesPage() {
                 </Link>
               </div>
             </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">Use Case</span>
+                  <span className="text-xs px-2.5 py-1 rounded-full font-medium bg-green-100 text-green-700">
+                    Published
+                  </span>
+                </div>
+              </div>
+              
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                WhatsApp Groups for Resellers: Post Deals Faster
+              </h3>
+              
+              <div className="mb-3">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  <span className="font-medium text-gray-900">Intent:</span> How resellers and deal posters get the same product update into many WhatsApp groups — templates, dedicated numbers, and spaced posts.
+                </p>
+              </div>
+              
+              <div className="mb-4">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  <span className="font-medium text-gray-900">You'll learn:</span> Deal templates, daily posting routine, affiliate link disclosure, splitting groups across numbers, and pacing to avoid looking automated.
+                </p>
+              </div>
+              
+              <div className="flex items-center gap-4 text-sm">
+                <Link 
+                  href="/use-cases/resellers-whatsapp-groups"
+                  className="text-green-700 hover:text-green-800 font-medium"
+                >
+                  View use case →
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
 
