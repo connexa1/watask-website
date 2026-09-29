@@ -60,7 +60,7 @@ const guides = [
     category: 'Best Practices',
     status: 'Published',
     intent: 'Pacing, consent, group norms, and account-health habits for operators.',
-    youllLearn: 'Practical send hygiene — not fear, not "unlimited blast" advice.',
+    youllLearn: 'Practical send hygiene — not fear, not "send unlimited" advice.',
   },
   {
     title: 'How to Schedule WhatsApp Group Messages',
@@ -228,7 +228,7 @@ export default function GuidesPage() {
               
               <div className="mb-4">
                 <p className="text-sm text-gray-700 leading-relaxed">
-                  <span className="font-medium text-gray-900">You'll learn:</span> Listing templates, local vs portal groups, posting times, rotating wording, spreading posts across multiple numbers, and respecting group norms.
+                  <span className="font-medium text-gray-900">You'll learn:</span> Listing templates, local vs portal groups, posting times, varying the wording, using several numbers, and respecting group norms.
                 </p>
               </div>
               
