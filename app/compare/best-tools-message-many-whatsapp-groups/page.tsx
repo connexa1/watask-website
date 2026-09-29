@@ -158,7 +158,7 @@ export default function BestToolsMessageManyGroupsPage() {
           </h2>
 
           <p className="text-gray-700 mb-6">
-            This comparison covers tools for posting into <strong>existing WhatsApp groups your numbers are already in</strong> — groups with 50-500+ members where your team is already an admin or member. This is distinct from:
+            This comparison covers tools for posting into <strong>existing WhatsApp groups your numbers are already in</strong> — existing large groups where your team is already an admin or member. This is distinct from:
           </p>
 
           <ul className="space-y-2 text-gray-700 mb-8 ml-6">
@@ -310,7 +310,7 @@ export default function BestToolsMessageManyGroupsPage() {
               <div className="mb-6">
                 <p className="text-gray-900 font-semibold mb-2">What they cannot do</p>
                 <p className="text-gray-700">
-                  Post into your existing large consumer groups. The Cloud API provides 1:1 messaging only. Meta's Groups API allows small API-created groups (max 8 participants), but it cannot access your existing groups with 50-500+ members.
+                  Post into your existing large groups your numbers are already in. The Cloud API provides 1:1 messaging only. Meta's Groups API allows small API-created groups (max 8 participants), but it cannot access your existing large groups your numbers are already in.
                 </p>
                 <p className="text-gray-700 mt-2">
                   <Link href="/guides/whatsapp-groups-api-limits" className="text-green-700 hover:text-green-800 font-medium">
@@ -373,7 +373,7 @@ export default function BestToolsMessageManyGroupsPage() {
                   <li>• <strong>100 groups</strong> maximum per Community</li>
                   <li>• <strong>2,000 members</strong> maximum across all groups in the Community</li>
                   <li>• Only works within one Community (cannot broadcast across multiple Communities)</li>
-                  <li>• No pacing controls, delivery monitoring, or campaign features</li>
+                  <li>• No built-in way to space posts across many separate Communities or pick subsets of groups outside the announcement group</li>
                   <li>• Announcement group broadcasts to all members (no sub-group targeting)</li>
                 </ul>
               </div>
