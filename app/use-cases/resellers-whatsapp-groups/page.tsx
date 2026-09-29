@@ -3,13 +3,13 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'WhatsApp Groups for Resellers: Post Deals Faster',
-  description: 'How resellers and deal posters get the same product update into many WhatsApp groups — templates, dedicated numbers, and spaced posts. Updated 2026.',
+  description: 'How resellers and deal posters get the same product update into many WhatsApp groups — templates, dedicated numbers, and spaced posting. Updated 2026.',
   alternates: {
     canonical: 'https://www.watask.com/use-cases/resellers-whatsapp-groups',
   },
   openGraph: {
     title: 'WhatsApp Groups for Resellers: Post Deals Faster',
-    description: 'How resellers and deal posters get the same product update into many WhatsApp groups — templates, dedicated numbers, and spaced posts. Updated 2026.',
+    description: 'How resellers and deal posters get the same product update into many WhatsApp groups — templates, dedicated numbers, and spaced posting. Updated 2026.',
     url: 'https://www.watask.com/use-cases/resellers-whatsapp-groups',
     type: 'article',
     images: [
@@ -180,7 +180,7 @@ export default function ResellersGroupsPage() {
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-4">
-              Send in waves, not one burst. Post to the first batch of groups, wait a few minutes, then move to the next batch. This pacing keeps your number from looking like a blast tool. WhatsApp restricts numbers that send like spam, so space posts out.
+              Send in waves, not one burst. Post to the first batch of groups, wait a few minutes, then move to the next batch. Leave a few minutes between batches so the sends don't look automated.
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-0">
@@ -221,11 +221,11 @@ export default function ResellersGroupsPage() {
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-4">
-              Some groups ban affiliate links entirely. Some allow them if you disclose. Check each group's pinned messages or ask admins before posting affiliate-tracked URLs.
+              Some groups do not allow affiliate links at all. Some allow them if you disclose. Check each group's pinned messages or ask admins before posting affiliate-tracked URLs.
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-0">
-              Use link shorteners carefully. Some groups flag shortened URLs as spam. When in doubt, use clean links or the retailer's direct URL.
+              Use link shorteners carefully. Some groups remove or flag shortened URLs. When in doubt, use clean links or the retailer's direct URL.
             </p>
           </section>
 
