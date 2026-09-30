@@ -71,6 +71,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/guides/whatsapp-restricted-after-group-posting`,
+      lastModified: new Date('2026-09-30'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/use-cases/real-estate-whatsapp-groups`,
       lastModified: new Date('2026-09-29'),
       changeFrequency: 'monthly',
