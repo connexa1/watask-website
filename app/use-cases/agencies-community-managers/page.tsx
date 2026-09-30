@@ -261,7 +261,7 @@ export default function AgenciesCommunityManagersPage() {
             </h2>
             
             <p className="text-gray-700 leading-relaxed mb-4">
-              WhatsApp may restrict numbers that look automated, so space posts out. Post with gaps of 30-60 seconds between groups instead of blasting all groups at once.
+              Pacing reduces the chance that WhatsApp flags the activity as automated. Post with gaps of 30-60 seconds between groups instead of blasting all groups at once.
             </p>
 
             <p className="text-gray-700 leading-relaxed">

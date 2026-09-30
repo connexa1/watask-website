@@ -252,7 +252,7 @@ export default function AmbassadorsMultiGroupPage() {
             </h2>
             
             <p className="text-gray-700 leading-relaxed mb-4">
-              Frequent promotional posts annoy group members. Ambassadors balance brand updates with their group's culture.
+              Too many promotional posts risk member complaints. Ambassadors balance brand updates with their group's culture.
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-4">
@@ -260,7 +260,7 @@ export default function AmbassadorsMultiGroupPage() {
             </p>
 
             <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
-              <li>1-2 brand posts per month per group is safe for most communities</li>
+              <li>1-2 brand posts per month per group works for most communities</li>
               <li>High-value updates (exclusive offers, event invitations) can justify more frequent posts</li>
               <li>Ambassadors adjust based on group feedback and member engagement</li>
             </ul>

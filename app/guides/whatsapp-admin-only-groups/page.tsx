@@ -173,7 +173,7 @@ export default function AdminOnlyGroupsPage() {
             </p>
 
             <p className="text-gray-700 leading-relaxed">
-              This setting is useful for one-way announcement channels where replies, questions, or discussions are not needed. Admin-only groups keep noise down and make sure members see only official updates.
+              This setting is useful for one-way announcement channels where replies, questions, or discussions are not needed. Admin-only groups keep noise down and make sure members see only announcements from admins.
             </p>
           </section>
 

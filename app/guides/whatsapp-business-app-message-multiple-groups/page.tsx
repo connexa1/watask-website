@@ -175,11 +175,11 @@ export default function WhatsAppBusinessMultipleGroupsPage() {
             </h2>
             
             <p className="text-gray-700 leading-relaxed mb-4">
-              Broadcast lists in WhatsApp Business let you send one message to many individual contacts (up to 256). Recipients see the message as a direct 1:1 chat, not as a group message.
+              Broadcast lists in WhatsApp Business let you send one message to many individual contacts (up to 256). Each recipient receives it as a private 1:1 message, not as a group post.
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-4">
-              Broadcast lists do not post into groups. They are for customer messaging, announcements to saved contacts, and updates where you want replies to come back privately.
+              Broadcast lists are for customer messaging, announcements to saved contacts, and updates where you want replies to come back privately — not for posting into groups.
             </p>
 
             <p className="text-gray-700 leading-relaxed">

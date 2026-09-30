@@ -189,7 +189,7 @@ export default function HowManyGroupsCanJoinPage() {
             </h2>
             
             <p className="text-gray-700 leading-relaxed mb-4">
-              The cooldown typically lasts several hours to a day. Duration varies by account history and how quickly you joined groups. Once the cooldown ends, you can join more groups.
+              Most cooldowns last several hours, though some extend to a full day. How long depends on your account history and joining speed. After it expires, you can resume joining groups.
             </p>
 
             <p className="text-gray-700 leading-relaxed">
@@ -229,7 +229,7 @@ export default function HowManyGroupsCanJoinPage() {
             </ol>
 
             <p className="text-gray-700 leading-relaxed">
-              No support contact or setting changes the cooldown. The limit is automatic and cannot be raised.
+              No support contact or setting adjusts the cooldown. WhatsApp sets the limit automatically and does not offer a way to increase it.
             </p>
           </section>
 
@@ -261,7 +261,7 @@ export default function HowManyGroupsCanJoinPage() {
             <div className="space-y-6">
               <div className="border-b border-gray-200 pb-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                  How many WhatsApp groups can I join?
+                  What is the WhatsApp group join limit?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
                   WhatsApp does not publish a hard join limit. In practice, if you join many groups in a short time, you may see a "you have reached the limit" message. This limit appears to reset after a waiting period, typically hours or a day. Join groups gradually rather than all at once.

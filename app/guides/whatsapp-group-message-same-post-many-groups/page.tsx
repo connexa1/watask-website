@@ -267,7 +267,7 @@ export default function SamePostManyGroupsPage() {
             </h2>
             
             <p className="text-gray-700 leading-relaxed mb-4">
-              Posting the same text into many groups instantly can trigger restrictions. WhatsApp may restrict numbers that look automated, so space posts out.
+              Posting identical text into many groups at once can trigger restrictions. Pacing your sends helps reduce the chance WhatsApp flags your activity as automated.
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-4">
