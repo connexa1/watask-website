@@ -341,7 +341,7 @@ export default function WhatsAppRestrictedPage() {
             </p>
 
             <p className="text-gray-700 leading-relaxed">
-              WhatsApp restricts numbers that send like spam, so space posts out. No tool prevents restrictions. Pacing your sends — whether you post manually, with WaTask, or with any other method — reduces the chance of triggering a restriction, but risk always remains.
+              WhatsApp may restrict numbers that look automated, so space posts out. No tool prevents restrictions. Pacing your sends — whether you post manually, with WaTask, or with any other method — reduces the chance of triggering a restriction, but risk always remains.
             </p>
           </section>
 
