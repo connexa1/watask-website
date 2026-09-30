@@ -654,6 +654,11 @@ export default function SaferCampaignsPage() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/guides/whatsapp-restricted-after-group-posting" className="text-green-700 hover:text-green-800">
+                    WhatsApp Restricted After Group Posting? Fixes →
+                  </Link>
+                </li>
+                <li>
                   <Link href="/guides/whatsapp-groups-api-limits" className="text-green-700 hover:text-green-800">
                     WhatsApp Groups API Limits Explained →
                   </Link>

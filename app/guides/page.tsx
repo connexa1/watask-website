@@ -87,6 +87,14 @@ const guides = [
     youllLearn: 'One dated table for every limit that trips up group admins, plus what to do when you hit each cap.',
   },
   {
+    title: 'WhatsApp Restricted After Group Posting? Fixes',
+    href: '/guides/whatsapp-restricted-after-group-posting',
+    category: 'Best Practices',
+    status: 'Published',
+    intent: 'Why a WhatsApp number gets restricted after group posts or adds, what to do next, and how to pace multi-group sending.',
+    youllLearn: 'Common restriction triggers, what to do while waiting, and pacing habits for your next send to reduce restriction risk.',
+  },
+  {
     title: 'Does WhatsApp Business API Support Groups?',
     href: '/guides/does-whatsapp-business-api-support-groups',
     category: 'FAQ',
