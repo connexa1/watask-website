@@ -3,13 +3,13 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'WhatsApp Restricted After Group Posting? Fixes',
-  description: 'Why WhatsApp restricts after group posts or adds, what to do next, and how to pace multi-group sending so posts look less automated. Updated 2026.',
+  description: 'Why a WhatsApp number gets restricted after group posts or adds, what to do next, and how to pace multi-group sending so posts look less automated. Updated 2026',
   alternates: {
     canonical: 'https://www.watask.com/guides/whatsapp-restricted-after-group-posting',
   },
   openGraph: {
     title: 'WhatsApp Restricted After Group Posting? Fixes',
-    description: 'Why WhatsApp restricts after group posts or adds, what to do next, and how to pace multi-group sending so posts look less automated. Updated 2026.',
+    description: 'Why a WhatsApp number gets restricted after group posts or adds, what to do next, and how to pace multi-group sending so posts look less automated. Updated 2026',
     url: 'https://www.watask.com/guides/whatsapp-restricted-after-group-posting',
     type: 'article',
     images: [
