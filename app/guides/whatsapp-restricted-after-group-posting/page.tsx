@@ -3,13 +3,13 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'WhatsApp Restricted After Group Posting? Fixes',
-  description: 'Why a WhatsApp number gets restricted after group posts or adds, what to do next, and how to pace multi-group sending. Updated 2026.',
+  description: 'Why a WhatsApp number gets restricted after group posts or adds, what to do next, and how to pace multi-group sending so posts look less automated. Updated 2026.',
   alternates: {
     canonical: 'https://www.watask.com/guides/whatsapp-restricted-after-group-posting',
   },
   openGraph: {
     title: 'WhatsApp Restricted After Group Posting? Fixes',
-    description: 'Why a WhatsApp number gets restricted after group posts or adds, what to do next, and how to pace multi-group sending. Updated 2026.',
+    description: 'Why a WhatsApp number gets restricted after group posts or adds, what to do next, and how to pace multi-group sending so posts look less automated. Updated 2026.',
     url: 'https://www.watask.com/guides/whatsapp-restricted-after-group-posting',
     type: 'article',
     images: [
@@ -56,7 +56,7 @@ const faqSchema = {
       'name': 'Can I prevent WhatsApp from restricting my number when posting to groups?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'No tool or method prevents restrictions entirely. WhatsApp restricts numbers that send like spam, so space posts out. Post with 30-60 seconds between groups, vary your message wording, respect group rules, and avoid posting where members might report you. These pacing habits reduce restriction risk but do not eliminate it.'
+        'text': 'No tool or method prevents restrictions entirely. Pace your sends; WhatsApp may restrict numbers that look automated. Post with 30-60 seconds between groups, vary your message wording, respect group rules, and avoid posting where members might report you. These pacing habits reduce restriction risk but do not eliminate it.'
       }
     },
     {
@@ -72,7 +72,7 @@ const faqSchema = {
       'name': 'Will WaTask or other multi-group tools prevent my number from being restricted?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'No. WaTask connects your own WhatsApp numbers with a QR scan and posts into groups those numbers are already in. WhatsApp restricts numbers that send like spam, so space posts out. No tool prevents restrictions. Pacing your sends reduces risk.'
+        'text': 'No. WaTask posts from your own numbers into groups they are already in. Leave gaps between batches so sends do not look automated. No tool prevents restrictions. Pacing your sends reduces risk.'
       }
     }
   ]
@@ -383,7 +383,7 @@ export default function WhatsAppRestrictedPage() {
                   Can I prevent WhatsApp from restricting my number when posting to groups?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  No tool or method prevents restrictions entirely. WhatsApp restricts numbers that send like spam, so space posts out. Post with 30-60 seconds between groups, vary your message wording, respect group rules, and avoid posting where members might report you. These pacing habits reduce restriction risk but do not eliminate it.
+                  No tool or method prevents restrictions entirely. Pace your sends; WhatsApp may restrict numbers that look automated. Post with 30-60 seconds between groups, vary your message wording, respect group rules, and avoid posting where members might report you. These pacing habits reduce restriction risk but do not eliminate it.
                 </p>
               </div>
 
@@ -401,7 +401,7 @@ export default function WhatsAppRestrictedPage() {
                   Will WaTask or other multi-group tools prevent my number from being restricted?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  No. WaTask connects your own WhatsApp numbers with a QR scan and posts into groups those numbers are already in. WhatsApp restricts numbers that send like spam, so space posts out. No tool prevents restrictions. Pacing your sends reduces risk.
+                  No. WaTask posts from your own numbers into groups they are already in. Leave gaps between batches so sends do not look automated. No tool prevents restrictions. Pacing your sends reduces risk.
                 </p>
               </div>
             </div>
@@ -413,7 +413,7 @@ export default function WhatsAppRestrictedPage() {
             </h2>
             
             <p className="text-gray-700 mb-6 leading-relaxed">
-              WaTask connects your own WhatsApp numbers with a QR scan and posts into groups those numbers are already in.
+              WaTask posts from your own numbers into groups they are already in.
             </p>
 
             <div className="mb-6">
