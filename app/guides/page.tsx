@@ -95,6 +95,46 @@ const guides = [
     youllLearn: 'Common restriction triggers, what to do while waiting, and pacing habits for your next send to reduce restriction risk.',
   },
   {
+    title: 'Group Campaigns From Several WhatsApp Numbers',
+    href: '/guides/multiple-whatsapp-numbers-group-campaigns',
+    category: 'Best Practices',
+    status: 'Published',
+    intent: 'How to split WhatsApp group posting across several of your own numbers — which number sits where, QR connect, staggered sends.',
+    youllLearn: 'Mapping numbers to groups, connecting each number, staggering sends, and handling restrictions when one number is flagged.',
+  },
+  {
+    title: 'WhatsApp Admin-Only Groups: How Announcements Work',
+    href: '/guides/whatsapp-admin-only-groups',
+    category: 'How-To',
+    status: 'Published',
+    intent: 'How admin-only WhatsApp groups work for announcements, who can post, and how to reach many groups when only admins can send.',
+    youllLearn: 'What admin-only groups are, how to enable them, and posting into many admin-only groups at once.',
+  },
+  {
+    title: 'How Many WhatsApp Groups Can I Join?',
+    href: '/guides/how-many-whatsapp-groups-can-i-join',
+    category: 'FAQ',
+    status: 'Published',
+    intent: 'WhatsApp group join limits, temporary cooldowns, and practical tips when you hit "you have reached the limit."',
+    youllLearn: 'What the join cooldown means, how long it lasts, and how to avoid hitting it.',
+  },
+  {
+    title: 'WhatsApp Business App: Message Multiple Groups?',
+    href: '/guides/whatsapp-business-app-message-multiple-groups',
+    category: 'FAQ',
+    status: 'Published',
+    intent: 'Can the WhatsApp Business app send one message to many groups? What broadcast lists do, and options for multi-group posting.',
+    youllLearn: 'What WhatsApp Business features cover, what broadcast lists do, and your options for multi-group posting.',
+  },
+  {
+    title: 'Post the Same Message to Many WhatsApp Groups',
+    href: '/guides/whatsapp-group-message-same-post-many-groups',
+    category: 'How-To',
+    status: 'Published',
+    intent: 'Practical ways to get one update into many WhatsApp groups — forward batches, Communities, and multi-group tools.',
+    youllLearn: 'Phone-first practical options for posting the same message to many groups at once.',
+  },
+  {
     title: 'Does WhatsApp Business API Support Groups?',
     href: '/guides/does-whatsapp-business-api-support-groups',
     category: 'FAQ',
@@ -285,6 +325,114 @@ export default function GuidesPage() {
                 </Link>
               </div>
             </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">Use Case</span>
+                  <span className="text-xs px-2.5 py-1 rounded-full font-medium bg-green-100 text-green-700">
+                    Published
+                  </span>
+                </div>
+              </div>
+              
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                Agency WhatsApp Groups: Run Client Announcements
+              </h3>
+              
+              <div className="mb-3">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  <span className="font-medium text-gray-900">Intent:</span> How agencies and community managers post one update across many client or member WhatsApp groups — workflows, dedicated numbers, pacing.
+                </p>
+              </div>
+              
+              <div className="mb-4">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  <span className="font-medium text-gray-900">You'll learn:</span> Announcement templates, admin-only groups, assigning numbers per client, and spacing posts so activity looks natural.
+                </p>
+              </div>
+              
+              <div className="flex items-center gap-4 text-sm">
+                <Link 
+                  href="/use-cases/agencies-community-managers"
+                  className="text-green-700 hover:text-green-800 font-medium"
+                >
+                  View use case →
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">Use Case</span>
+                  <span className="text-xs px-2.5 py-1 rounded-full font-medium bg-green-100 text-green-700">
+                    Published
+                  </span>
+                </div>
+              </div>
+              
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                Promote Events in WhatsApp Groups the Right Way
+              </h3>
+              
+              <div className="mb-3">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  <span className="font-medium text-gray-900">Intent:</span> How to promote an event across many WhatsApp groups — ask admins, timing, announcements vs reminders, and pacing so posts stay welcome.
+                </p>
+              </div>
+              
+              <div className="mb-4">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  <span className="font-medium text-gray-900">You'll learn:</span> Permission checks, announcement timing, varying copy, UTM tracking, and pacing multi-group event promotions.
+                </p>
+              </div>
+              
+              <div className="flex items-center gap-4 text-sm">
+                <Link 
+                  href="/use-cases/event-promoters-whatsapp-groups"
+                  className="text-green-700 hover:text-green-800 font-medium"
+                >
+                  View use case →
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">Use Case</span>
+                  <span className="text-xs px-2.5 py-1 rounded-full font-medium bg-green-100 text-green-700">
+                    Published
+                  </span>
+                </div>
+              </div>
+              
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                Ambassador WhatsApp Groups: Share Updates Faster
+              </h3>
+              
+              <div className="mb-3">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  <span className="font-medium text-gray-900">Intent:</span> How brands activate ambassador and community-leader WhatsApp groups with one update across many groups they already belong to.
+                </p>
+              </div>
+              
+              <div className="mb-4">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  <span className="font-medium text-gray-900">You'll learn:</span> Ambassador distribution workflows, posting frequency, central vs regional groups, and respecting group norms.
+                </p>
+              </div>
+              
+              <div className="flex items-center gap-4 text-sm">
+                <Link 
+                  href="/use-cases/ambassadors-multi-group-distribution"
+                  className="text-green-700 hover:text-green-800 font-medium"
+                >
+                  View use case →
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -395,6 +543,78 @@ export default function GuidesPage() {
                   className="text-green-700 hover:text-green-800 font-medium"
                 >
                   View alternatives guide →
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">Comparison</span>
+                  <span className="text-xs px-2.5 py-1 rounded-full font-medium bg-green-100 text-green-700">
+                    Published
+                  </span>
+                </div>
+              </div>
+              
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                Chrome WhatsApp Senders vs Multi-Group Tools
+              </h3>
+              
+              <div className="mb-3">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  <span className="font-medium text-gray-900">Intent:</span> How browser WhatsApp bulk senders differ from dedicated multi-group tools — groups vs contacts, pacing, and when each fits.
+                </p>
+              </div>
+              
+              <div className="mb-4">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  <span className="font-medium text-gray-900">You'll learn:</span> What Chrome extensions do, how multi-group platforms differ, and when to choose each approach.
+                </p>
+              </div>
+              
+              <div className="flex items-center gap-4 text-sm">
+                <Link 
+                  href="/compare/chrome-bulk-sender-vs-multi-group-platform"
+                  className="text-green-700 hover:text-green-800 font-medium"
+                >
+                  View comparison →
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:border-gray-300 transition-colors">
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">Developers</span>
+                  <span className="text-xs px-2.5 py-1 rounded-full font-medium bg-green-100 text-green-700">
+                    Published
+                  </span>
+                </div>
+              </div>
+              
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                Bulk Send to WhatsApp Groups: Build vs Buy
+              </h3>
+              
+              <div className="mb-3">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  <span className="font-medium text-gray-900">Intent:</span> What developers need to know about posting into many existing WhatsApp groups via APIs or platforms — limits, ops, and when to buy.
+                </p>
+              </div>
+              
+              <div className="mb-4">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  <span className="font-medium text-gray-900">You'll learn:</span> What Cloud API and Groups API cover, what building requires, and the build-vs-buy decision matrix.
+                </p>
+              </div>
+              
+              <div className="flex items-center gap-4 text-sm">
+                <Link 
+                  href="/developers/bulk-send-whatsapp-groups-api"
+                  className="text-green-700 hover:text-green-800 font-medium"
+                >
+                  View developer guide →
                 </Link>
               </div>
             </div>
