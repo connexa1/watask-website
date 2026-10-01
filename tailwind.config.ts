@@ -28,6 +28,8 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        'outfit': ['Outfit', 'Inter', 'system-ui', 'sans-serif'],
+        'dm-sans': ['DM Sans', 'Inter', 'system-ui', 'sans-serif'],
       },
     },
   },
