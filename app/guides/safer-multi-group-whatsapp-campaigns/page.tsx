@@ -32,7 +32,7 @@ const faqSchema = {
       'name': 'What is pacing and why does it matter for WhatsApp group campaigns?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'Pacing means spreading your campaign sends over time instead of posting to hundreds of groups instantly. It helps maintain account health, reduces the risk of appearing spammy, and respects how communities experience your posts. Recommended pacing intervals range from 15-60 seconds between groups, depending on your network size and account history.'
+        'text': 'Pacing means spreading your campaign sends over time instead of posting to hundreds of groups instantly. WhatsApp may restrict numbers that look automated, so spacing posts out helps maintain account health and respects how communities experience your posts. Recommended pacing intervals range from 15-60 seconds between groups, depending on your network size and account history.'
       }
     },
     {
@@ -40,7 +40,7 @@ const faqSchema = {
       'name': 'Will posting to multiple WhatsApp groups get my account banned?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'Account risk depends on behavior, not capability. Posting to groups your numbers are in with proper pacing, relevant content, and community consent is professional group management. Risk increases when you spam irrelevant content, blast hundreds of groups instantly, ignore complaints, or post to groups where your messages aren\'t welcome. Capability does not equal permission.'
+        'text': 'Account risk depends on behavior, not capability. Posting to groups your numbers are in with proper pacing, relevant content, and community consent is professional group management. Risk increases when you send irrelevant content, blast hundreds of groups instantly, ignore complaints, or post to groups where your messages aren\'t welcome. Capability does not equal permission.'
       }
     },
     {
@@ -148,7 +148,7 @@ export default function SaferCampaignsPage() {
             Multi-Group Campaign Best Practices
           </h1>
           <p className="text-xl sm:text-2xl text-gray-700 leading-relaxed max-w-4xl">
-            Operational playbook for running multi-group campaigns professionally: pacing, consent, group norms, account health, and avoiding spam behavior.
+            Operational playbook for running multi-group campaigns professionally: pacing, consent, group norms, and maintaining account health.
           </p>
         </header>
 
@@ -162,12 +162,12 @@ export default function SaferCampaignsPage() {
                 Capability ≠ Permission
               </p>
               <p className="text-gray-700 leading-relaxed mb-0">
-                Just because you <em>can</em> post to hundreds of groups doesn't mean you <em>should</em> spam them. Professional multi-group campaigns balance efficiency with respect: proper pacing, relevant content, community consent, and account health monitoring. This guide teaches professionalism, not evasion tactics.
+                Just because you <em>can</em> post to hundreds of groups doesn't mean every message belongs in every group. Professional multi-group campaigns balance efficiency with respect: proper pacing, relevant content, community consent, and account health monitoring. This guide teaches professionalism, not evasion tactics.
               </p>
             </div>
 
             <p className="text-gray-700 leading-relaxed">
-              Multi-group WhatsApp campaigns are a legitimate operational need for agencies, community managers, and brands whose numbers are already in many groups. The difference between professional multi-group management and spammy behavior comes down to <strong className="text-gray-900">how</strong> you execute: pacing your sends, ensuring relevance, respecting group norms, and monitoring feedback.
+              Multi-group WhatsApp campaigns are a legitimate operational need for agencies, community managers, and brands whose numbers are already in many groups. The difference between professional multi-group management and unwanted posting comes down to <strong className="text-gray-900">how</strong> you execute: pacing your sends, ensuring relevance, respecting group norms, and monitoring feedback.
             </p>
             <p className="text-gray-700 leading-relaxed">
               This guide provides practical operational habits without fear-mongering or ban-evasion instructions. Follow these principles to run campaigns that serve your communities while maintaining account health.
@@ -222,7 +222,7 @@ export default function SaferCampaignsPage() {
 
                   <div className="bg-white border border-amber-200 rounded-lg p-4">
                     <p className="text-sm text-gray-700 mb-0">
-                      <strong>Why this matters:</strong> Sudden bulk joining or member additions can trigger automated restrictions. Gradual, natural growth maintains account health and shows WhatsApp that your activity is legitimate community management, not spam.
+                      <strong>Why this matters:</strong> Sudden bulk joining or member additions can trigger automated restrictions. Gradual, natural growth maintains account health and shows WhatsApp that your activity is legitimate community management.
                     </p>
                   </div>
                 </div>
@@ -268,7 +268,7 @@ export default function SaferCampaignsPage() {
                       <li>• <strong>Account health:</strong> Sudden high-volume posting can trigger automated risk detection</li>
                       <li>• <strong>Community experience:</strong> Spreading posts over time feels less like a blast and more like natural admin activity</li>
                       <li>• <strong>Delivery reliability:</strong> Paced sending maintains consistent delivery rates</li>
-                      <li>• <strong>Professionalism:</strong> Distinguishes you from spam tools that blast everything instantly</li>
+                      <li>• <strong>Professionalism:</strong> Distinguishes you from tools that blast everything instantly without controls</li>
                     </ul>
                   </div>
 
@@ -407,7 +407,7 @@ export default function SaferCampaignsPage() {
 
                 <div className="space-y-4">
                   <p className="text-gray-700 leading-relaxed">
-                    The easiest way to maintain account health: <strong>only send messages that group members actually want to receive</strong>. Spam isn't defined by volume alone — it's defined by unwanted or irrelevant content.
+                    The easiest way to maintain account health: <strong>only send messages that group members actually want to receive</strong>. Unwanted content is defined by relevance and value, not volume alone.
                   </p>
 
                   <div>
@@ -422,7 +422,7 @@ export default function SaferCampaignsPage() {
                   </div>
 
                   <div className="bg-white border border-orange-200 rounded-lg p-6">
-                    <h4 className="font-semibold text-gray-900 mb-3">Examples of value-first vs spam:</h4>
+                    <h4 className="font-semibold text-gray-900 mb-3">Examples of value-first vs unwanted posting:</h4>
                     <div className="space-y-3 text-sm">
                       <div>
                         <p className="text-green-700 font-medium mb-1">✓ Value-first:</p>
@@ -431,7 +431,7 @@ export default function SaferCampaignsPage() {
                         </p>
                       </div>
                       <div>
-                        <p className="text-red-700 font-medium mb-1">✗ Spam:</p>
+                        <p className="text-red-700 font-medium mb-1">✗ Unwanted:</p>
                         <p className="text-gray-700">
                           Blasting a generic promotion to every group you manage, regardless of relevance
                         </p>
@@ -443,7 +443,7 @@ export default function SaferCampaignsPage() {
                         </p>
                       </div>
                       <div>
-                        <p className="text-red-700 font-medium mb-1">✗ Spam:</p>
+                        <p className="text-red-700 font-medium mb-1">✗ Unwanted:</p>
                         <p className="text-gray-700">
                           Posting multiple promotional messages daily to groups that joined for occasional updates
                         </p>
@@ -500,7 +500,7 @@ export default function SaferCampaignsPage() {
                         <li>• Usually no built-in pacing — you must implement delays manually</li>
                         <li>• No account health monitoring or warning systems</li>
                         <li>• Limited or no team collaboration features</li>
-                        <li>• May look spammy or trigger suspicion if used carelessly</li>
+                        <li>• May trigger suspicion or restrictions if used carelessly</li>
                       </ul>
                       <p className="text-sm text-gray-700 mt-3">
                         <strong>If you use extensions:</strong> Implement your own strict pacing rules, monitor feedback carefully, and limit volume until you're confident in your approach.
@@ -533,7 +533,7 @@ export default function SaferCampaignsPage() {
             </h2>
             
             <p className="text-gray-700 mb-6 leading-relaxed">
-              These behaviors increase risk and cross the line from professional group management to spam:
+              These behaviors increase risk and cross the line from professional group management to unwanted posting:
             </p>
 
             <div className="space-y-4 sm:space-y-5">
@@ -544,7 +544,7 @@ export default function SaferCampaignsPage() {
                     Unlimited instant blasts with no pacing
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Posting to hundreds of groups in seconds looks automated and spammy. Always use deliberate pacing.
+                    Posting to hundreds of groups in seconds looks automated. WhatsApp may restrict numbers that look automated, so always use deliberate pacing.
                   </p>
                 </div>
               </div>
@@ -556,7 +556,7 @@ export default function SaferCampaignsPage() {
                     Posting irrelevant content to every group you manage
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Generic promotions blasted everywhere are spam, even if you're an admin. Segment and target relevant groups.
+                    Generic promotions blasted everywhere are unwanted, even if you're an admin. Segment and target relevant groups.
                   </p>
                 </div>
               </div>
@@ -580,7 +580,7 @@ export default function SaferCampaignsPage() {
                     Posting to groups where you're not the admin or where messages aren't welcome
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    This guide is for managing groups your numbers are already in. Posting to groups where your content isn't wanted crosses into spam territory.
+                    This guide is for managing groups your numbers are already in. Posting to groups where your content isn't wanted risks account restrictions.
                   </p>
                 </div>
               </div>
@@ -610,7 +610,7 @@ export default function SaferCampaignsPage() {
                   What is pacing and why does it matter for WhatsApp group campaigns?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  <strong>Pacing</strong> means spreading your campaign sends over time instead of posting to hundreds of groups instantly. It helps maintain account health, reduces the risk of appearing spammy, and respects how communities experience your posts. Recommended pacing intervals range from 15-60 seconds between groups, depending on your network size and account history.
+                  <strong>Pacing</strong> means spreading your campaign sends over time instead of posting to hundreds of groups instantly. WhatsApp may restrict numbers that look automated, so spacing posts out helps maintain account health and respects how communities experience your posts. Recommended pacing intervals range from 15-60 seconds between groups, depending on your network size and account history.
                 </p>
               </div>
 
@@ -619,7 +619,7 @@ export default function SaferCampaignsPage() {
                   Will posting to multiple WhatsApp groups get my account banned?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Account risk depends on <strong>behavior, not capability</strong>. Posting to groups your numbers are in with proper pacing, relevant content, and community consent is professional group management. Risk increases when you spam irrelevant content, blast hundreds of groups instantly, ignore complaints, or post to groups where your messages aren't welcome. Capability does not equal permission.
+                  Account risk depends on <strong>behavior, not capability</strong>. Posting to groups your numbers are in with proper pacing, relevant content, and community consent is professional group management. Risk increases when you send irrelevant content, blast hundreds of groups instantly, ignore complaints, or post to groups where your messages aren't welcome. Capability does not equal permission.
                 </p>
               </div>
 
