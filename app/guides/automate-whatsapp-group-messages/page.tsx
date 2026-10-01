@@ -118,38 +118,7 @@ const breadcrumbSchema = {
 
 export default function AutomateWhatsAppGroupMessagesPage() {
   return (
-    <div className="bg-white" style={{ fontFamily: '"Outfit", "Inter", system-ui, sans-serif' }}>
-      <style jsx global>{`
-        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap');
-        
-        .hero-pattern {
-          background-image: 
-            radial-gradient(circle at 20% 50%, rgba(34, 197, 94, 0.08) 0%, transparent 50%),
-            radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.08) 0%, transparent 50%);
-        }
-        
-        .sticky-toc {
-          position: sticky;
-          top: 2rem;
-          max-height: calc(100vh - 4rem);
-          overflow-y: auto;
-        }
-        
-        .content-body h2 {
-          font-family: 'Outfit', sans-serif;
-          font-weight: 700;
-          scroll-margin-top: 2rem;
-        }
-        
-        .content-body h3 {
-          font-family: 'Outfit', sans-serif;
-          font-weight: 600;
-        }
-        
-        .content-body p, .content-body li {
-          font-family: 'DM Sans', sans-serif;
-        }
-      `}</style>
+    <div className="bg-white font-outfit">
       
       <script
         type="application/ld+json"
@@ -165,7 +134,9 @@ export default function AutomateWhatsAppGroupMessagesPage() {
       />
 
       {/* Hero Section with Illustration */}
-      <section className="hero-pattern bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 py-16 md:py-24 px-4 sm:px-6 lg:px-8 border-b-4 border-green-600">
+      <section className="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 py-16 md:py-24 px-4 sm:px-6 lg:px-8 border-b-4 border-green-600" style={{
+        backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(34, 197, 94, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.08) 0%, transparent 50%)'
+      }}>
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -176,11 +147,11 @@ export default function AutomateWhatsAppGroupMessagesPage() {
                 Back to Guides
               </Link>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 leading-tight" style={{ fontFamily: "'Outfit', sans-serif" }}>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 leading-tight font-outfit">
                 How to Automate WhatsApp Group Messages
               </h1>
               
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8 font-dm-sans">
                 The complete guide to scheduling, batching, and automation for WhatsApp group campaigns — what works, what's risky, and how to stay compliant.
               </p>
               
@@ -242,7 +213,7 @@ export default function AutomateWhatsAppGroupMessagesPage() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-12">
           {/* Sticky TOC */}
           <aside className="hidden lg:block lg:col-span-3">
-            <nav className="sticky-toc bg-gray-50 rounded-xl p-6 border-2 border-gray-200">
+            <nav className="sticky top-8 bg-gray-50 rounded-xl p-6 border-2 border-gray-200" style={{ maxHeight: 'calc(100vh - 4rem)', overflowY: 'auto' }}>
               <h3 className="font-bold text-gray-900 mb-4 text-sm uppercase tracking-wide">On This Page</h3>
               <ul className="space-y-3 text-sm">
                 <li><a href="#tldr" className="text-gray-700 hover:text-green-700 transition-colors">TL;DR Summary</a></li>
@@ -260,7 +231,7 @@ export default function AutomateWhatsAppGroupMessagesPage() {
           </aside>
 
           {/* Main Content */}
-          <article className="lg:col-span-9 content-body">
+          <article className="lg:col-span-9" style={{ scrollMarginTop: '2rem' }}>
             {/* TL;DR Box */}
             <div id="tldr" className="bg-yellow-50 border-2 border-yellow-400 rounded-2xl p-8 mb-12 scroll-mt-8">
               <div className="flex items-start gap-4">
@@ -270,8 +241,8 @@ export default function AutomateWhatsAppGroupMessagesPage() {
                   </svg>
                 </div>
                 <div>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4">TL;DR: Automation Levels Explained</h2>
-                  <div className="space-y-3 text-gray-800" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4 font-outfit">TL;DR: Automation Levels Explained</h2>
+                  <div className="space-y-3 text-gray-800 font-dm-sans">
                     <p><strong className="text-green-700">✓ Batching (Low Risk):</strong> Select many groups, send to all at once. You approve every campaign manually. Removes copy-paste overhead.</p>
                     <p><strong className="text-green-700">✓ Scheduling (Low Risk):</strong> Compose now, platform sends later at your chosen time. You still approve each campaign before scheduling.</p>
                     <p><strong className="text-red-700">⚠ Unattended (Higher Risk):</strong> Messages go out without human action (daily posts, event-triggered). Can trigger account restrictions if not paced carefully.</p>
@@ -283,9 +254,9 @@ export default function AutomateWhatsAppGroupMessagesPage() {
 
             {/* Three Levels Section */}
             <section id="three-levels" className="mb-16 scroll-mt-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What People Mean by "Automate WhatsApp Group Messages"</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-outfit">What People Mean by "Automate WhatsApp Group Messages"</h2>
               
-              <p className="text-lg text-gray-700 leading-relaxed mb-8" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+              <p className="text-lg text-gray-700 leading-relaxed mb-8 font-dm-sans">
                 When people search for automation, they usually want one of three things:
               </p>
 
@@ -366,9 +337,9 @@ export default function AutomateWhatsAppGroupMessagesPage() {
 
             {/* Why No Native Section */}
             <section id="why-no-native" className="mb-16 scroll-mt-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why Native WhatsApp Doesn't Have Group Automation</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-outfit">Why Native WhatsApp Doesn't Have Group Automation</h2>
               
-              <p className="text-lg text-gray-700 leading-relaxed mb-6" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+              <p className="text-lg text-gray-700 leading-relaxed mb-6 font-dm-sans">
                 WhatsApp groups are designed for conversational interaction, not mass distribution. Native WhatsApp does not include:
               </p>
 
@@ -401,9 +372,9 @@ export default function AutomateWhatsAppGroupMessagesPage() {
 
             {/* Scheduling Section */}
             <section id="scheduling" className="mb-16 scroll-mt-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Scheduling WhatsApp Group Messages</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-outfit">Scheduling WhatsApp Group Messages</h2>
               
-              <p className="text-lg text-gray-700 leading-relaxed mb-8" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+              <p className="text-lg text-gray-700 leading-relaxed mb-8 font-dm-sans">
                 Scheduling means setting a message to send at a future date and time. This is useful when you want to prepare content in advance or reach groups in different time zones at optimal hours.
               </p>
 
@@ -492,9 +463,9 @@ export default function AutomateWhatsAppGroupMessagesPage() {
 
             {/* Batching Section */}
             <section id="batching" className="mb-16 scroll-mt-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Batching: Send to Many Groups at Once</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-outfit">Batching: Send to Many Groups at Once</h2>
               
-              <p className="text-lg text-gray-700 leading-relaxed mb-8" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+              <p className="text-lg text-gray-700 leading-relaxed mb-8 font-dm-sans">
                 Batching means selecting many groups and posting the same message to all of them in one action. This is not fully automated (you still trigger each send), but it removes the repetitive work of opening each group individually.
               </p>
 
@@ -579,7 +550,7 @@ export default function AutomateWhatsAppGroupMessagesPage() {
 
             {/* Unattended Automation Section */}
             <section id="unattended" className="mb-16 scroll-mt-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">True Automation: Unattended Recurring Posts</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-outfit">True Automation: Unattended Recurring Posts</h2>
               
               <div className="bg-red-50 border-4 border-red-500 rounded-2xl p-8 mb-8">
                 <div className="flex items-start gap-4">
@@ -684,7 +655,7 @@ export default function AutomateWhatsAppGroupMessagesPage() {
 
             {/* Business API Section */}
             <section id="api" className="mb-16 scroll-mt-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What About the WhatsApp Business API?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-outfit">What About the WhatsApp Business API?</h2>
               
               <div className="bg-blue-50 border-2 border-blue-300 rounded-2xl p-8">
                 <div className="flex items-start gap-4 mb-6">
@@ -726,9 +697,9 @@ export default function AutomateWhatsAppGroupMessagesPage() {
 
             {/* Choosing Level Section */}
             <section id="choose-level" className="mb-16 scroll-mt-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Choosing the Right Level of Automation</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-outfit">Choosing the Right Level of Automation</h2>
               
-              <p className="text-lg text-gray-700 leading-relaxed mb-8" style={{ fontFamily: "'DM Sans', sans-serif" }}>
+              <p className="text-lg text-gray-700 leading-relaxed mb-8 font-dm-sans">
                 The automation level you choose depends on your job, send frequency, and risk tolerance.
               </p>
 
@@ -803,7 +774,7 @@ export default function AutomateWhatsAppGroupMessagesPage() {
 
             {/* Best Practices Section */}
             <section id="best-practices" className="mb-16 scroll-mt-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Best Practices for Safer Automation</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-outfit">Best Practices for Safer Automation</h2>
               
               <div className="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 border-4 border-green-600 rounded-2xl p-8 shadow-lg">
                 <p className="text-lg text-gray-800 leading-relaxed mb-8 font-semibold">
@@ -863,7 +834,7 @@ export default function AutomateWhatsAppGroupMessagesPage() {
 
             {/* FAQ Section */}
             <section id="faq" className="mb-16 scroll-mt-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Frequently Asked Questions</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 font-outfit">Frequently Asked Questions</h2>
               
               <div className="space-y-4">
                 <details className="group bg-white border-2 border-gray-200 hover:border-green-600 rounded-xl p-6 transition-colors">
@@ -993,7 +964,7 @@ export default function AutomateWhatsAppGroupMessagesPage() {
       {/* CTA Section */}
       <section className="bg-gradient-to-br from-green-600 via-emerald-600 to-teal-600 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-6" style={{ fontFamily: "'Outfit', sans-serif" }}>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-6 font-outfit">
             Ready to Batch and Schedule Your Group Campaigns?
           </h2>
           <p className="text-xl text-green-50 mb-10 leading-relaxed">
