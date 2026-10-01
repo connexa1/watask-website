@@ -140,10 +140,10 @@ export default function BroadcastVsGroupPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       
-      <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <header className="mb-16">
-          <div className="flex items-center gap-2 mb-4">
-            <Link href="/guides" className="text-sm text-green-700 hover:text-green-800 inline-flex items-center gap-2">
+      <article className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+        <header className="mb-20">
+          <div className="flex items-center gap-2 mb-6">
+            <Link href="/guides" className="text-sm font-medium text-green-700 hover:text-green-800 inline-flex items-center gap-2 transition-colors">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
@@ -151,26 +151,26 @@ export default function BroadcastVsGroupPage() {
             </Link>
           </div>
           
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-gray-900 mb-8 leading-[1.1] tracking-tight">
             WhatsApp Broadcast vs Group Messaging vs Communities (2026)
           </h1>
-          <p className="text-xl sm:text-2xl text-gray-600 leading-relaxed max-w-4xl">
+          <p className="text-2xl sm:text-3xl text-gray-700 leading-relaxed max-w-5xl font-light">
             Clear taxonomy so you can stop mixing broadcast lists, group posts, and Communities announcement groups — and choose the right approach for your messaging needs.
           </p>
         </header>
 
         <div className="prose prose-lg max-w-none">
-          <section className="mb-16">
-            <p className="text-gray-700 leading-relaxed">
+          <section className="mb-20 bg-gradient-to-br from-gray-50 to-white p-8 sm:p-10 rounded-2xl border border-gray-100">
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
               One of the most common confusions in WhatsApp marketing is mixing up <strong>broadcast lists</strong>, <strong>group chats</strong>, and <strong>Communities</strong>. Search results often use "broadcast to groups" or "group broadcast" interchangeably, but these are <em>fundamentally different</em> messaging constructs with different capabilities and use cases.
             </p>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed mb-0">
               This guide defines each construct clearly, explains when each fits, and clarifies when you still need multi-group management tools even after understanding all three options.
             </p>
           </section>
 
-          <section className="mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-10">
+          <section className="mb-20">
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-12 tracking-tight">
               The Three Messaging Constructs
             </h2>
 
