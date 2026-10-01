@@ -32,15 +32,15 @@ const faqSchema = {
       'name': 'What is pacing and why does it matter for WhatsApp group campaigns?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'Pacing means spreading your campaign sends over time instead of posting to hundreds of groups instantly. It helps maintain account health, reduces the risk of appearing spammy, and respects how communities experience your posts. Recommended pacing intervals range from 15-60 seconds between groups, depending on your network size and account history.'
+        'text': 'Pacing means spreading your campaign sends over time instead of posting to hundreds of groups instantly. WhatsApp may restrict numbers that look automated, so spacing posts out helps maintain account health and respects how communities experience your posts. Recommended pacing intervals range from 15-60 seconds between groups, depending on your network size and account history.'
       }
     },
     {
       '@type': 'Question',
-      'name': 'Will posting to multiple WhatsApp groups get my account banned?',
+      'name': 'Will posting to multiple WhatsApp groups get my account restricted?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'Account risk depends on behavior, not capability. Posting to groups your numbers are in with proper pacing, relevant content, and community consent is professional group management. Risk increases when you spam irrelevant content, blast hundreds of groups instantly, ignore complaints, or post to groups where your messages aren\'t welcome. Capability does not equal permission.'
+        'text': 'Account risk depends on behavior, not capability. Posting to groups your numbers are in with proper pacing, relevant content, and community consent is professional group management. Risk increases when you send irrelevant content, blast hundreds of groups instantly, ignore complaints, or post to groups where your messages aren\'t welcome. Capability does not equal permission.'
       }
     },
     {
@@ -77,7 +77,7 @@ const articleSchema = {
   'description': 'Operational best practices for multi-group campaigns: pacing send intervals, respecting group norms, monitoring account health.',
   'image': 'https://www.watask.com/opengraph-image',
   'datePublished': '2026-01-15',
-  'dateModified': '2026-09-25',
+  'dateModified': '2026-10-01',
   'author': {
     '@type': 'Organization',
     'name': 'WaTask'
@@ -133,54 +133,135 @@ export default function SaferCampaignsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <header className="mb-12">
-          <div className="flex items-center gap-2 mb-4">
-            <Link href="/guides" className="text-sm text-green-700 hover:text-green-800 inline-flex items-center gap-2">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-              </svg>
-              Back to Guides
-            </Link>
-          </div>
-          
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Multi-Group Campaign Best Practices
-          </h1>
-          <p className="text-xl text-gray-700 leading-relaxed">
-            Operational playbook for running multi-group campaigns professionally: pacing, consent, group norms, account health, and avoiding spam behavior.
-          </p>
-        </header>
-
-        <div className="prose prose-lg max-w-none">
-          <section className="mb-12">
-            <div className="border border-2 border-green-700/30 rounded-xl p-8 mb-8 bg-gray-50">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 mt-0">
-                The Core Principle
-              </h2>
-              <p className="text-gray-900 text-lg font-semibold mb-3">
-                Capability ≠ Permission
-              </p>
-              <p className="text-gray-700 leading-relaxed mb-0">
-                Just because you <em>can</em> post to hundreds of groups doesn't mean you <em>should</em> spam them. Professional multi-group campaigns balance efficiency with respect: proper pacing, relevant content, community consent, and account health monitoring. This guide teaches professionalism, not evasion tactics.
+      <article className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+        {/* Hero Section with Image */}
+        <div className="mb-24 relative">
+          <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 rounded-3xl -z-10 opacity-60"></div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center py-12 lg:py-16 px-6 lg:px-12">
+            <div>
+              <div className="flex items-center gap-2 mb-6">
+                <Link href="/guides" className="text-sm font-medium text-green-700 hover:text-green-800 inline-flex items-center gap-2 transition-colors">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                  </svg>
+                  Back to Guides
+                </Link>
+              </div>
+              
+              <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-8 leading-[1.05] tracking-tight">
+                Multi-Group Campaign Best Practices
+              </h1>
+              <p className="text-xl sm:text-2xl text-gray-700 leading-relaxed font-light">
+                Operational playbook for running multi-group campaigns professionally: pacing, consent, group norms, and maintaining account health.
               </p>
             </div>
+            <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" 
+                alt="Professional team planning campaign strategy" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
 
-            <p className="text-gray-700 leading-relaxed">
-              Multi-group WhatsApp campaigns are a legitimate operational need for agencies, community managers, and brands whose numbers are already in many groups. The difference between professional multi-group management and spammy behavior comes down to <strong className="text-gray-900">how</strong> you execute: pacing your sends, ensuring relevance, respecting group norms, and monitoring feedback.
-            </p>
-            <p className="text-gray-700 leading-relaxed">
-              This guide provides practical operational habits without fear-mongering or ban-evasion instructions. Follow these principles to run campaigns that serve your communities while maintaining account health.
-            </p>
+        <div className="prose prose-lg max-w-none">
+          <section className="mb-20">
+            {/* Core Principle Callout */}
+            <div className="border-2 border-green-300 rounded-3xl p-10 sm:p-12 mb-12 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 shadow-lg">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-green-600 to-teal-600 rounded-2xl flex items-center justify-center shadow-lg">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <h2 className="font-display text-3xl font-bold text-gray-900 mb-4 tracking-tight">
+                    The Core Principle
+                  </h2>
+                  <p className="text-gray-900 text-2xl font-bold mb-6">
+                    Capability ≠ Permission
+                  </p>
+                  <p className="text-gray-800 leading-relaxed text-lg mb-0">
+                    Just because you <em>can</em> post to hundreds of groups doesn't mean every message belongs in every group. Professional multi-group campaigns balance efficiency with respect: proper pacing, relevant content, community consent, and account health monitoring. This guide teaches professionalism, not evasion tactics.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-8 sm:p-10 rounded-2xl border border-gray-100 mb-12">
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                Multi-group WhatsApp campaigns are a legitimate operational need for agencies, community managers, and brands whose numbers are already in many groups. The difference between professional multi-group management and unwanted posting comes down to <strong className="text-gray-900">how</strong> you execute: pacing your sends, ensuring relevance, respecting group norms, and monitoring feedback.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed mb-0">
+                This guide provides practical operational habits without fear-mongering. Follow these principles to run campaigns that serve your communities while maintaining account health.
+              </p>
+            </div>
+            
+            {/* Mid-page Visual */}
+            <div className="mb-12 rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&q=80" 
+                alt="Data analysis and campaign metrics on laptop" 
+                className="w-full h-[400px] object-cover"
+              />
+            </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
-              Five Operational Principles
+          <section className="mb-20">
+            <h2 className="font-display text-4xl sm:text-5xl font-bold text-gray-900 mb-12 tracking-tight">
+              Six Operational Principles
             </h2>
 
-            <div className="space-y-8">
-              <div className="border-2 border-green-700 rounded-xl p-8 bg-green-50">
+            <div className="space-y-6">
+              <div className="border-2 border-amber-600 rounded-xl p-6 sm:p-8 bg-amber-50 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
+                    0
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                      Join Groups and Add Members Slowly
+                    </h3>
+                    <p className="text-sm text-gray-600">
+                      Build your group network gradually, not all at once
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <p className="text-gray-700 leading-relaxed">
+                    Before you campaign across many groups, you need to be in those groups. How you join them and add members matters for account health.
+                  </p>
+
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-3">Joining groups:</h4>
+                    <ul className="space-y-2 text-gray-700">
+                      <li>• Join a few groups at a time, not dozens in one session</li>
+                      <li>• Space out join requests over days or weeks</li>
+                      <li>• Wait before heavy posting in newly joined groups</li>
+                      <li>• Let the account establish a natural presence first</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-3">Adding members to your groups:</h4>
+                    <ul className="space-y-2 text-gray-700">
+                      <li>• Add members gradually, not in large batches instantly</li>
+                      <li>• Space member additions across multiple sessions</li>
+                      <li>• Ensure added members consent to joining</li>
+                      <li>• Avoid mass-adding from scraped contact lists</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-white border border-amber-200 rounded-lg p-4">
+                    <p className="text-sm text-gray-700 mb-0">
+                      <strong>Why this matters:</strong> Sudden bulk joining or member additions can trigger automated restrictions. Gradual, natural growth maintains account health and shows WhatsApp that your activity is legitimate community management.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="border-2 border-green-700 rounded-xl p-6 sm:p-8 bg-green-50 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-green-700 rounded-lg flex items-center justify-center text-white font-bold text-xl">
                     1
@@ -221,23 +302,19 @@ export default function SaferCampaignsPage() {
                       <li>• <strong>Account health:</strong> Sudden high-volume posting can trigger automated risk detection</li>
                       <li>• <strong>Community experience:</strong> Spreading posts over time feels less like a blast and more like natural admin activity</li>
                       <li>• <strong>Delivery reliability:</strong> Paced sending maintains consistent delivery rates</li>
-                      <li>• <strong>Professionalism:</strong> Distinguishes you from spam tools that blast everything instantly</li>
+                      <li>• <strong>Professionalism:</strong> Distinguishes you from tools that blast everything instantly without controls</li>
                     </ul>
                   </div>
 
                   <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
                     <p className="text-sm text-gray-700 mb-0">
-                      <strong>Platform advantage:</strong> Tools like{' '}
-                      <Link href="/" className="text-green-700 hover:text-green-800 font-semibold">
-                        WaTask
-                      </Link>{' '}
-                      include built-in pacing controls so you don't have to manually time each send. With Chrome extensions or DIY approaches, you must implement pacing yourself.
+                      <strong>Platform advantage:</strong> Multi-group platforms help you spread sends over time. With Chrome extensions or DIY approaches, you must implement pacing yourself.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="border-2 border-blue-600 rounded-xl p-8 bg-blue-50">
+              <div className="border-2 border-blue-600 rounded-xl p-6 sm:p-8 bg-blue-50 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
                     2
@@ -292,7 +369,7 @@ export default function SaferCampaignsPage() {
                 </div>
               </div>
 
-              <div className="border-2 border-purple-600 rounded-xl p-8 bg-purple-50">
+              <div className="border-2 border-purple-600 rounded-xl p-6 sm:p-8 bg-purple-50 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
                     3
@@ -347,7 +424,7 @@ export default function SaferCampaignsPage() {
                 </div>
               </div>
 
-              <div className="border-2 border-orange-600 rounded-xl p-8 bg-orange-50">
+              <div className="border-2 border-orange-600 rounded-xl p-6 sm:p-8 bg-orange-50 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
                     4
@@ -364,7 +441,7 @@ export default function SaferCampaignsPage() {
 
                 <div className="space-y-4">
                   <p className="text-gray-700 leading-relaxed">
-                    The easiest way to maintain account health: <strong>only send messages that group members actually want to receive</strong>. Spam isn't defined by volume alone — it's defined by unwanted or irrelevant content.
+                    The easiest way to maintain account health: <strong>only send messages that group members actually want to receive</strong>. Unwanted content is defined by relevance and value, not volume alone.
                   </p>
 
                   <div>
@@ -379,7 +456,7 @@ export default function SaferCampaignsPage() {
                   </div>
 
                   <div className="bg-white border border-orange-200 rounded-lg p-6">
-                    <h4 className="font-semibold text-gray-900 mb-3">Examples of value-first vs spam:</h4>
+                    <h4 className="font-semibold text-gray-900 mb-3">Examples of value-first vs unwanted posting:</h4>
                     <div className="space-y-3 text-sm">
                       <div>
                         <p className="text-green-700 font-medium mb-1">✓ Value-first:</p>
@@ -388,7 +465,7 @@ export default function SaferCampaignsPage() {
                         </p>
                       </div>
                       <div>
-                        <p className="text-red-700 font-medium mb-1">✗ Spam:</p>
+                        <p className="text-red-700 font-medium mb-1">✗ Unwanted:</p>
                         <p className="text-gray-700">
                           Blasting a generic promotion to every group you manage, regardless of relevance
                         </p>
@@ -400,7 +477,7 @@ export default function SaferCampaignsPage() {
                         </p>
                       </div>
                       <div>
-                        <p className="text-red-700 font-medium mb-1">✗ Spam:</p>
+                        <p className="text-red-700 font-medium mb-1">✗ Unwanted:</p>
                         <p className="text-gray-700">
                           Posting multiple promotional messages daily to groups that joined for occasional updates
                         </p>
@@ -410,7 +487,7 @@ export default function SaferCampaignsPage() {
                 </div>
               </div>
 
-              <div className="border-2 border-teal-600 rounded-xl p-8 bg-teal-50">
+              <div className="border-2 border-teal-600 rounded-xl p-6 sm:p-8 bg-teal-50 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-teal-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
                     5
@@ -439,11 +516,10 @@ export default function SaferCampaignsPage() {
                         Platforms like <Link href="/" className="text-green-700 hover:text-green-800 font-semibold">WaTask</Link> are built for controlled multi-group operations:
                       </p>
                       <ul className="space-y-2 text-sm text-gray-700">
-                        <li>• Built-in pacing controls and send intervals</li>
-                        <li>• Collections and segmentation to target relevant groups</li>
-                        <li>• Delivery monitoring and account health signals</li>
-                        <li>• Team collaboration and audit trails</li>
-                        <li>• Scheduled campaigns and quiet-window settings</li>
+                        <li>• Help you space out sends over time</li>
+                        <li>• Organize groups for targeted campaigns</li>
+                        <li>• Schedule campaigns for future delivery</li>
+                        <li>• Share access across team members</li>
                       </ul>
                     </div>
 
@@ -458,7 +534,7 @@ export default function SaferCampaignsPage() {
                         <li>• Usually no built-in pacing — you must implement delays manually</li>
                         <li>• No account health monitoring or warning systems</li>
                         <li>• Limited or no team collaboration features</li>
-                        <li>• May look spammy or trigger suspicion if used carelessly</li>
+                        <li>• May trigger suspicion or restrictions if used carelessly</li>
                       </ul>
                       <p className="text-sm text-gray-700 mt-3">
                         <strong>If you use extensions:</strong> Implement your own strict pacing rules, monitor feedback carefully, and limit volume until you're confident in your approach.
@@ -485,24 +561,24 @@ export default function SaferCampaignsPage() {
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          <section className="mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
               What to Avoid
             </h2>
             
             <p className="text-gray-700 mb-6 leading-relaxed">
-              These behaviors increase risk and cross the line from professional group management to spam:
+              These behaviors increase risk and cross the line from professional group management to unwanted posting:
             </p>
 
-            <div className="space-y-4">
-              <div className="flex gap-4 items-start bg-red-50 border-2 border-red-200 rounded-lg p-6">
+            <div className="space-y-4 sm:space-y-5">
+              <div className="flex flex-col sm:flex-row gap-4 items-start bg-red-50 border-2 border-red-200 rounded-xl p-5 sm:p-6 hover:border-red-300 transition-colors shadow-sm">
                 <span className="flex-shrink-0 text-red-600 font-bold text-2xl">✗</span>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">
                     Unlimited instant blasts with no pacing
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Posting to hundreds of groups in seconds looks automated and spammy. Always use deliberate pacing.
+                    Posting to hundreds of groups in seconds looks automated. WhatsApp may restrict numbers that look automated, so always use deliberate pacing.
                   </p>
                 </div>
               </div>
@@ -514,7 +590,7 @@ export default function SaferCampaignsPage() {
                     Posting irrelevant content to every group you manage
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Generic promotions blasted everywhere are spam, even if you're an admin. Segment and target relevant groups.
+                    Generic promotions blasted everywhere are unwanted, even if you're an admin. Segment and target relevant groups.
                   </p>
                 </div>
               </div>
@@ -538,7 +614,7 @@ export default function SaferCampaignsPage() {
                     Posting to groups where you're not the admin or where messages aren't welcome
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    This guide is for managing groups your numbers are already in. Posting to groups where your content isn't wanted crosses into spam territory.
+                    This guide is for managing groups your numbers are already in. Posting to groups where your content isn't wanted risks account restrictions.
                   </p>
                 </div>
               </div>
@@ -550,34 +626,34 @@ export default function SaferCampaignsPage() {
                     Using sketchy tools with no account protection
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Tools that promise "unlimited" sends or advertise ban evasion are red flags. Professional tools emphasize control and pacing, not circumvention.
+                    Tools that promise "unlimited" sends are red flags. Professional tools emphasize control and pacing, not circumvention.
                   </p>
                 </div>
               </div>
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
+          <section className="mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-10">
               Frequently Asked Questions
             </h2>
             
-            <div className="space-y-6">
-              <div className="border-b border-gray-200 pb-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+            <div className="space-y-8">
+              <div className="border-b-2 border-gray-100 pb-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
                   What is pacing and why does it matter for WhatsApp group campaigns?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  <strong>Pacing</strong> means spreading your campaign sends over time instead of posting to hundreds of groups instantly. It helps maintain account health, reduces the risk of appearing spammy, and respects how communities experience your posts. Recommended pacing intervals range from 15-60 seconds between groups, depending on your network size and account history.
+                  <strong>Pacing</strong> means spreading your campaign sends over time instead of posting to hundreds of groups instantly. WhatsApp may restrict numbers that look automated, so spacing posts out helps maintain account health and respects how communities experience your posts. Recommended pacing intervals range from 15-60 seconds between groups, depending on your network size and account history.
                 </p>
               </div>
 
               <div className="border-b border-gray-200 pb-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                  Will posting to multiple WhatsApp groups get my account banned?
+                  Will posting to multiple WhatsApp groups get my account restricted?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Account risk depends on <strong>behavior, not capability</strong>. Posting to groups your numbers are in with proper pacing, relevant content, and community consent is professional group management. Risk increases when you spam irrelevant content, blast hundreds of groups instantly, ignore complaints, or post to groups where your messages aren't welcome. Capability does not equal permission.
+                  Account risk depends on <strong>behavior, not capability</strong>. Posting to groups your numbers are in with proper pacing, relevant content, and community consent is professional group management. Risk increases when you send irrelevant content, blast hundreds of groups instantly, ignore complaints, or post to groups where your messages aren't welcome. Capability does not equal permission.
                 </p>
               </div>
 
@@ -613,19 +689,19 @@ export default function SaferCampaignsPage() {
                   Is there a limit to how many groups I can post to per day?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  There's no single official limit, but <strong>recommended practice</strong> suggests starting conservatively (50-100 groups per campaign for new accounts) and increasing gradually based on account health. Focus on <em>relevance and pacing</em> rather than pushing maximum volume. Professional operators prioritize value and account health over raw throughput.
+                  There's no single documented limit, but <strong>recommended practice</strong> suggests starting conservatively (50-100 groups per campaign for new accounts) and increasing gradually based on account health. Focus on <em>relevance and pacing</em> rather than pushing maximum volume. Professional operators prioritize value and account health over raw throughput.
                 </p>
               </div>
             </div>
           </section>
 
-          <section className="bg-green-50 border-2 border-green-700 rounded-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          <section className="bg-gradient-to-br from-green-50 to-white border-2 border-green-700 rounded-xl p-6 sm:p-8 shadow-md">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
               Multi-Group Campaigns with Built-In Controls
             </h2>
             
             <p className="text-gray-700 mb-6 leading-relaxed">
-              WaTask includes pacing controls, delivery monitoring, and collections to help you run professional multi-group campaigns — without manual pacing or guesswork.
+              WaTask connects your own WhatsApp numbers with a QR scan and posts into groups those numbers are already in. Space your posts out to maintain account health while reaching many groups efficiently.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
