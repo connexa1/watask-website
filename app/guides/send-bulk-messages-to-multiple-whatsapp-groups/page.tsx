@@ -127,6 +127,7 @@ const breadcrumbSchema = {
 export default function BulkWhatsAppGroupsGuidePage() {
   return (
     <div className="bg-white">
+      {/* Force deploy 2026-10-01 */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
