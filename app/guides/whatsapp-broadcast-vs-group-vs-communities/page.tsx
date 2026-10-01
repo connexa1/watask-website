@@ -64,7 +64,7 @@ const faqSchema = {
       'name': 'Do I need special tools to manage multiple WhatsApp groups?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'If you only manage a few groups, manual posting works. For dozens or hundreds of groups — especially across multiple clients or regions — you need a multi-group platform. WaTask connects your own WhatsApp numbers with a QR scan and posts into groups those numbers are already in.'
+        'text': 'If you only manage a few groups, manual posting works. For dozens or hundreds of groups — especially across multiple clients or regions — you need a multi-group platform. Connect your WhatsApp numbers via QR and post into the groups you\'re already part of.'
       }
     },
     {
@@ -486,7 +486,7 @@ export default function BroadcastVsGroupPage() {
                 This is the job WaTask solves
               </h3>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                WaTask connects your own WhatsApp numbers with a QR scan and posts into groups those numbers are already in. Space your posts out to maintain account health while reaching many groups efficiently.
+                Connect your own WhatsApp numbers via QR code and post into the groups they're already members of. WaTask helps you space your posts out to maintain account health while reaching many groups efficiently.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link 
@@ -570,7 +570,7 @@ export default function BroadcastVsGroupPage() {
                   Do I need special tools to manage multiple WhatsApp groups?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  If you only manage a few groups, manual posting works. For <strong>dozens or hundreds of groups</strong> — especially across multiple clients or regions — you need a multi-group platform. WaTask connects your own WhatsApp numbers with a QR scan and posts into groups those numbers are already in.
+                  If you only manage a few groups, manual posting works. For <strong>dozens or hundreds of groups</strong> — especially across multiple clients or regions — you need a multi-group platform. Connect your WhatsApp numbers via QR and post into the groups you're already part of.
                 </p>
               </div>
             </div>
