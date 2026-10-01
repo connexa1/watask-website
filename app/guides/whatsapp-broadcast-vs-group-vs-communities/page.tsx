@@ -40,7 +40,7 @@ const faqSchema = {
       'name': 'What are WhatsApp Communities and how do they differ from groups?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'WhatsApp Communities are organizational structures that contain multiple related groups under one umbrella. A Community includes an announcement group that can reach all members, plus up to 50 linked groups. Regular groups are standalone chats with up to 1,024 members. Communities help organize related groups but don\'t replace the need for multi-group management tools when you have independent groups across different communities or clients.'
+        'text': 'WhatsApp Communities are organizational structures that contain multiple related groups under one umbrella. A Community includes an announcement group that can reach all members, plus up to 100 linked groups. Regular groups are standalone chats with up to 1,024 members. Communities help organize related groups but don\'t replace the need for multi-group management tools when you have independent groups across different communities or clients.'
       }
     },
     {
@@ -64,7 +64,15 @@ const faqSchema = {
       'name': 'Do I need special tools to manage multiple WhatsApp groups?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'If you only manage a few groups, manual posting works. For dozens or hundreds of groups — especially across multiple clients or regions — multi-group management platforms like WaTask provide collections, pacing controls, campaign management, and team collaboration features that make large-scale group operations practical.'
+        'text': 'If you only manage a few groups, manual posting works. For dozens or hundreds of groups — especially across multiple clients or regions — you need a multi-group platform. WaTask connects your own WhatsApp numbers with a QR scan and posts into groups those numbers are already in.'
+      }
+    },
+    {
+      '@type': 'Question',
+      'name': 'Can I add a WhatsApp group to a broadcast list?',
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': 'No. Broadcast lists only include individual contacts who have your number saved. A group is a shared chat — to reach many groups you post in each group (or use a multi-group campaign tool), not a broadcast list.'
       }
     }
   ]
@@ -76,7 +84,7 @@ const articleSchema = {
   'headline': 'WhatsApp Broadcast vs Group vs Communities',
   'image': 'https://www.watask.com/opengraph-image',
   'datePublished': '2026-01-15',
-  'dateModified': '2026-09-25',
+  'dateModified': '2026-10-01',
   'author': {
     '@type': 'Organization',
     'name': 'WaTask'
@@ -132,8 +140,8 @@ export default function BroadcastVsGroupPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <header className="mb-12">
+      <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+        <header className="mb-16">
           <div className="flex items-center gap-2 mb-4">
             <Link href="/guides" className="text-sm text-green-700 hover:text-green-800 inline-flex items-center gap-2">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -143,16 +151,16 @@ export default function BroadcastVsGroupPage() {
             </Link>
           </div>
           
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             WhatsApp Broadcast vs Group Messaging vs Communities (2026)
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed">
+          <p className="text-xl sm:text-2xl text-gray-600 leading-relaxed max-w-4xl">
             Clear taxonomy so you can stop mixing broadcast lists, group posts, and Communities announcement groups — and choose the right approach for your messaging needs.
           </p>
         </header>
 
         <div className="prose prose-lg max-w-none">
-          <section className="mb-12">
+          <section className="mb-16">
             <p className="text-gray-700 leading-relaxed">
               One of the most common confusions in WhatsApp marketing is mixing up <strong>broadcast lists</strong>, <strong>group chats</strong>, and <strong>Communities</strong>. Search results often use "broadcast to groups" or "group broadcast" interchangeably, but these are <em>fundamentally different</em> messaging constructs with different capabilities and use cases.
             </p>
@@ -161,13 +169,13 @@ export default function BroadcastVsGroupPage() {
             </p>
           </section>
 
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
+          <section className="mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-10">
               The Three Messaging Constructs
             </h2>
 
-            <div className="space-y-8">
-              <div className="border-2 border-blue-600 rounded-xl p-8 bg-blue-50">
+            <div className="space-y-6">
+              <div className="border-2 border-blue-600 rounded-xl p-6 sm:p-8 bg-blue-50 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -188,7 +196,7 @@ export default function BroadcastVsGroupPage() {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">How it works:</h4>
                     <p className="text-gray-700 leading-relaxed">
-                      A broadcast list lets you send the same message to up to <strong>256 contacts</strong> at once. Each recipient receives your message as a <strong>personal 1:1 chat</strong> — they see the message in their individual conversation with you, not in a group. Recipients cannot see who else received the message, and they cannot interact with each other.
+                      A broadcast list lets you send the same message to up to <strong>256 contacts</strong> at once. Each recipient receives your message as a <strong>personal 1:1 chat</strong> — they see the message in their individual conversation with you, not in a group. Recipients cannot see who else received the message, and they cannot interact with each other. <strong>Important:</strong> You cannot add WhatsApp groups to a broadcast list — broadcast lists only include individual contacts. Group posts stay in the group chat.
                     </p>
                   </div>
 
@@ -224,7 +232,7 @@ export default function BroadcastVsGroupPage() {
                 </div>
               </div>
 
-              <div className="border-2 border-green-700 rounded-xl p-8 bg-green-50">
+              <div className="border-2 border-green-700 rounded-xl p-6 sm:p-8 bg-green-50 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-green-700 rounded-lg flex items-center justify-center">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -285,7 +293,7 @@ export default function BroadcastVsGroupPage() {
                 </div>
               </div>
 
-              <div className="border-2 border-purple-600 rounded-xl p-8 bg-purple-50">
+              <div className="border-2 border-purple-600 rounded-xl p-6 sm:p-8 bg-purple-50 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -306,14 +314,14 @@ export default function BroadcastVsGroupPage() {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">How it works:</h4>
                     <p className="text-gray-700 leading-relaxed">
-                      WhatsApp Communities are an <strong>organizational layer</strong> that contains multiple related groups under one umbrella. A Community includes an <strong>announcement group</strong> (where admins can post to all community members) plus up to <strong>50 linked groups</strong>. Members of linked groups automatically see Community announcements.
+                      WhatsApp Communities are an <strong>organizational layer</strong> that contains multiple related groups under one umbrella. A Community includes an <strong>announcement group</strong> (where admins can post to all community members) plus up to <strong>100 linked groups</strong>. Members of linked groups automatically see Community announcements.
                     </p>
                   </div>
 
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-2">Key features:</h4>
                     <ul className="space-y-2 text-gray-700">
-                      <li>• One Community can contain up to 50 groups</li>
+                      <li>• One Community can contain up to 100 groups</li>
                       <li>• Shared announcement group reaches all members</li>
                       <li>• Members can be part of some or all linked groups</li>
                       <li>• Hierarchical organization (Community → groups)</li>
@@ -345,13 +353,13 @@ export default function BroadcastVsGroupPage() {
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
+          <section className="mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-10">
               Side-by-Side Comparison
             </h2>
 
-            <div className="overflow-x-auto">
-              <table className="w-full border-collapse bg-white shadow-sm rounded-lg overflow-hidden">
+            <div className="overflow-x-auto -mx-4 sm:mx-0">
+              <table className="w-full border-collapse bg-white shadow-md rounded-lg overflow-hidden min-w-[640px]">
                 <thead className="bg-gray-100">
                   <tr>
                     <th className="border border-gray-200 px-4 py-3 text-left font-semibold text-gray-900">Feature</th>
@@ -371,7 +379,7 @@ export default function BroadcastVsGroupPage() {
                     <td className="border border-gray-200 px-4 py-3 font-medium text-gray-900">Max recipients</td>
                     <td className="border border-gray-200 px-4 py-3 text-gray-700">256 contacts</td>
                     <td className="border border-gray-200 px-4 py-3 text-gray-700">1,024 members</td>
-                    <td className="border border-gray-200 px-4 py-3 text-gray-700">50 groups (no single limit)</td>
+                    <td className="border border-gray-200 px-4 py-3 text-gray-700">100 groups (2,000 total members)</td>
                   </tr>
                   <tr>
                     <td className="border border-gray-200 px-4 py-3 font-medium text-gray-900">Recipients see each other?</td>
@@ -402,8 +410,8 @@ export default function BroadcastVsGroupPage() {
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          <section className="mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
               When You Still Need Multi-Group Management Tools
             </h2>
             
@@ -411,8 +419,8 @@ export default function BroadcastVsGroupPage() {
               Understanding broadcast lists, groups, and Communities is important — but none of these features solve the <strong>multi-group campaign</strong> challenge at scale. Here's when you need a dedicated platform:
             </p>
 
-            <div className="space-y-4">
-              <div className="flex gap-4 items-start bg-gray-50 border border-gray-200 rounded-lg p-6">
+            <div className="space-y-4 sm:space-y-6">
+              <div className="flex flex-col sm:flex-row gap-4 items-start bg-gray-50 border-2 border-gray-200 rounded-xl p-5 sm:p-6 hover:border-green-300 transition-colors">
                 <span className="flex-shrink-0 w-8 h-8 bg-green-700 text-white rounded-lg flex items-center justify-center font-bold">
                   1
                 </span>
@@ -421,7 +429,7 @@ export default function BroadcastVsGroupPage() {
                     You manage dozens or hundreds of independent groups
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    If you run 40 client groups, 100 regional groups, or 200 interest groups that don't fit under one Community umbrella, manually posting to each becomes impractical. Multi-group platforms organize groups into collections and let you campaign across selected segments.
+                    If you run 40 client groups, 100 regional groups, or 200 interest groups that don't fit under one Community umbrella, manually posting to each becomes impractical. Multi-group platforms let you organize groups and campaign across selected segments.
                   </p>
                 </div>
               </div>
@@ -432,14 +440,14 @@ export default function BroadcastVsGroupPage() {
                 </span>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">
-                    You need campaign controls beyond simple posting
+                    You need to pace sends and monitor delivery
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Pacing (spreading sends over time), delivery monitoring, message variants per collection, and{' '}
+                    WhatsApp may restrict numbers that look automated, so spacing posts out is essential. Multi-group platforms help you spread sends over time and{' '}
                     <Link href="/guides/schedule-whatsapp-group-messages" className="text-green-700 hover:text-green-800 font-medium">
-                      scheduled campaigns
+                      schedule campaigns
                     </Link>{' '}
-                    are features that require a purpose-built platform.
+                    for future delivery.
                   </p>
                 </div>
               </div>
@@ -450,10 +458,10 @@ export default function BroadcastVsGroupPage() {
                 </span>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">
-                    Your team collaborates on group operations
+                    Your team shares access to group operations
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Agencies, multi-location brands, and large community operations need shared access, roles, audit trails, and campaign history — capabilities that go beyond WhatsApp's native features.
+                    Agencies and multi-location brands often need multiple people to manage campaigns across shared group networks — capabilities that go beyond WhatsApp's native features.
                   </p>
                 </div>
               </div>
@@ -478,7 +486,7 @@ export default function BroadcastVsGroupPage() {
                 This is the job WaTask solves
               </h3>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                WaTask is a multi-group management platform built for teams that need to organize, segment, and campaign across many existing groups — with collections, pacing, and team collaboration features that WhatsApp's native tools don't provide.
+                WaTask connects your own WhatsApp numbers with a QR scan and posts into groups those numbers are already in. Space your posts out to maintain account health while reaching many groups efficiently.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link 
@@ -497,14 +505,14 @@ export default function BroadcastVsGroupPage() {
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
+          <section className="mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-10">
               Frequently Asked Questions
             </h2>
             
-            <div className="space-y-6">
-              <div className="border-b border-gray-200 pb-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+            <div className="space-y-8">
+              <div className="border-b-2 border-gray-100 pb-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
                   What is the difference between WhatsApp broadcast and group?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -517,7 +525,7 @@ export default function BroadcastVsGroupPage() {
                   What are WhatsApp Communities and how do they differ from groups?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  WhatsApp Communities are organizational structures that contain <strong>multiple related groups</strong> under one umbrella. A Community includes an announcement group that can reach all members, plus up to 50 linked groups. Regular groups are standalone chats with up to 1,024 members. Communities help organize related groups but don't replace the need for multi-group management tools when you have independent groups across different communities or clients.
+                  WhatsApp Communities are organizational structures that contain <strong>multiple related groups</strong> under one umbrella. A Community includes an announcement group that can reach all members, plus up to 100 linked groups. Regular groups are standalone chats with up to 1,024 members. Communities help organize related groups but don't replace the need for multi-group management tools when you have independent groups across different communities or clients.
                 </p>
               </div>
 
@@ -548,19 +556,28 @@ export default function BroadcastVsGroupPage() {
                 </p>
               </div>
 
+              <div className="border-b border-gray-200 pb-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  Can I add a WhatsApp group to a broadcast list?
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  <strong>No.</strong> Broadcast lists only include individual contacts who have your number saved. A group is a shared chat — to reach many groups you post in each group (or use a multi-group campaign tool), not a broadcast list.
+                </p>
+              </div>
+
               <div className="pb-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
                   Do I need special tools to manage multiple WhatsApp groups?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  If you only manage a few groups, manual posting works. For <strong>dozens or hundreds of groups</strong> — especially across multiple clients or regions — multi-group management platforms like WaTask provide collections, pacing controls, campaign management, and team collaboration features that make large-scale group operations practical.
+                  If you only manage a few groups, manual posting works. For <strong>dozens or hundreds of groups</strong> — especially across multiple clients or regions — you need a multi-group platform. WaTask connects your own WhatsApp numbers with a QR scan and posts into groups those numbers are already in.
                 </p>
               </div>
             </div>
           </section>
 
-          <section className="bg-gray-50 border border-gray-200 rounded-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          <section className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-200 rounded-xl p-6 sm:p-8 shadow-sm">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
               Read Next
             </h2>
             

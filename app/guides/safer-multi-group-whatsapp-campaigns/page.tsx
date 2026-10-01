@@ -77,7 +77,7 @@ const articleSchema = {
   'description': 'Operational best practices for multi-group campaigns: pacing send intervals, respecting group norms, monitoring account health.',
   'image': 'https://www.watask.com/opengraph-image',
   'datePublished': '2026-01-15',
-  'dateModified': '2026-09-25',
+  'dateModified': '2026-10-01',
   'author': {
     '@type': 'Organization',
     'name': 'WaTask'
@@ -133,8 +133,8 @@ export default function SaferCampaignsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <header className="mb-12">
+      <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+        <header className="mb-16">
           <div className="flex items-center gap-2 mb-4">
             <Link href="/guides" className="text-sm text-green-700 hover:text-green-800 inline-flex items-center gap-2">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -144,17 +144,17 @@ export default function SaferCampaignsPage() {
             </Link>
           </div>
           
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             Multi-Group Campaign Best Practices
           </h1>
-          <p className="text-xl text-gray-700 leading-relaxed">
+          <p className="text-xl sm:text-2xl text-gray-700 leading-relaxed max-w-4xl">
             Operational playbook for running multi-group campaigns professionally: pacing, consent, group norms, account health, and avoiding spam behavior.
           </p>
         </header>
 
         <div className="prose prose-lg max-w-none">
-          <section className="mb-12">
-            <div className="border border-2 border-green-700/30 rounded-xl p-8 mb-8 bg-gray-50">
+          <section className="mb-16">
+            <div className="border-2 border-green-700/30 rounded-xl p-6 sm:p-8 mb-10 bg-gradient-to-br from-gray-50 to-white shadow-sm">
               <h2 className="text-2xl font-bold text-gray-900 mb-4 mt-0">
                 The Core Principle
               </h2>
@@ -174,13 +174,60 @@ export default function SaferCampaignsPage() {
             </p>
           </section>
 
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
-              Five Operational Principles
+          <section className="mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-10">
+              Six Operational Principles
             </h2>
 
-            <div className="space-y-8">
-              <div className="border-2 border-green-700 rounded-xl p-8 bg-green-50">
+            <div className="space-y-6">
+              <div className="border-2 border-amber-600 rounded-xl p-6 sm:p-8 bg-amber-50 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
+                    0
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                      Join Groups and Add Members Slowly
+                    </h3>
+                    <p className="text-sm text-gray-600">
+                      Build your group network gradually, not all at once
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <p className="text-gray-700 leading-relaxed">
+                    Before you campaign across many groups, you need to be in those groups. How you join them and add members matters for account health.
+                  </p>
+
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-3">Joining groups:</h4>
+                    <ul className="space-y-2 text-gray-700">
+                      <li>• Join a few groups at a time, not dozens in one session</li>
+                      <li>• Space out join requests over days or weeks</li>
+                      <li>• Wait before heavy posting in newly joined groups</li>
+                      <li>• Let the account establish a natural presence first</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-3">Adding members to your groups:</h4>
+                    <ul className="space-y-2 text-gray-700">
+                      <li>• Add members gradually, not in large batches instantly</li>
+                      <li>• Space member additions across multiple sessions</li>
+                      <li>• Ensure added members consent to joining</li>
+                      <li>• Avoid mass-adding from scraped contact lists</li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-white border border-amber-200 rounded-lg p-4">
+                    <p className="text-sm text-gray-700 mb-0">
+                      <strong>Why this matters:</strong> Sudden bulk joining or member additions can trigger automated restrictions. Gradual, natural growth maintains account health and shows WhatsApp that your activity is legitimate community management, not spam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="border-2 border-green-700 rounded-xl p-6 sm:p-8 bg-green-50 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-green-700 rounded-lg flex items-center justify-center text-white font-bold text-xl">
                     1
@@ -227,17 +274,13 @@ export default function SaferCampaignsPage() {
 
                   <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
                     <p className="text-sm text-gray-700 mb-0">
-                      <strong>Platform advantage:</strong> Tools like{' '}
-                      <Link href="/" className="text-green-700 hover:text-green-800 font-semibold">
-                        WaTask
-                      </Link>{' '}
-                      include built-in pacing controls so you don't have to manually time each send. With Chrome extensions or DIY approaches, you must implement pacing yourself.
+                      <strong>Platform advantage:</strong> Multi-group platforms help you spread sends over time. With Chrome extensions or DIY approaches, you must implement pacing yourself.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="border-2 border-blue-600 rounded-xl p-8 bg-blue-50">
+              <div className="border-2 border-blue-600 rounded-xl p-6 sm:p-8 bg-blue-50 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
                     2
@@ -292,7 +335,7 @@ export default function SaferCampaignsPage() {
                 </div>
               </div>
 
-              <div className="border-2 border-purple-600 rounded-xl p-8 bg-purple-50">
+              <div className="border-2 border-purple-600 rounded-xl p-6 sm:p-8 bg-purple-50 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
                     3
@@ -347,7 +390,7 @@ export default function SaferCampaignsPage() {
                 </div>
               </div>
 
-              <div className="border-2 border-orange-600 rounded-xl p-8 bg-orange-50">
+              <div className="border-2 border-orange-600 rounded-xl p-6 sm:p-8 bg-orange-50 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
                     4
@@ -410,7 +453,7 @@ export default function SaferCampaignsPage() {
                 </div>
               </div>
 
-              <div className="border-2 border-teal-600 rounded-xl p-8 bg-teal-50">
+              <div className="border-2 border-teal-600 rounded-xl p-6 sm:p-8 bg-teal-50 shadow-sm hover:shadow-md transition-shadow">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-teal-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
                     5
@@ -439,11 +482,10 @@ export default function SaferCampaignsPage() {
                         Platforms like <Link href="/" className="text-green-700 hover:text-green-800 font-semibold">WaTask</Link> are built for controlled multi-group operations:
                       </p>
                       <ul className="space-y-2 text-sm text-gray-700">
-                        <li>• Built-in pacing controls and send intervals</li>
-                        <li>• Collections and segmentation to target relevant groups</li>
-                        <li>• Delivery monitoring and account health signals</li>
-                        <li>• Team collaboration and audit trails</li>
-                        <li>• Scheduled campaigns and quiet-window settings</li>
+                        <li>• Help you space out sends over time</li>
+                        <li>• Organize groups for targeted campaigns</li>
+                        <li>• Schedule campaigns for future delivery</li>
+                        <li>• Share access across team members</li>
                       </ul>
                     </div>
 
@@ -485,8 +527,8 @@ export default function SaferCampaignsPage() {
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          <section className="mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
               What to Avoid
             </h2>
             
@@ -494,8 +536,8 @@ export default function SaferCampaignsPage() {
               These behaviors increase risk and cross the line from professional group management to spam:
             </p>
 
-            <div className="space-y-4">
-              <div className="flex gap-4 items-start bg-red-50 border-2 border-red-200 rounded-lg p-6">
+            <div className="space-y-4 sm:space-y-5">
+              <div className="flex flex-col sm:flex-row gap-4 items-start bg-red-50 border-2 border-red-200 rounded-xl p-5 sm:p-6 hover:border-red-300 transition-colors shadow-sm">
                 <span className="flex-shrink-0 text-red-600 font-bold text-2xl">✗</span>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">
@@ -557,14 +599,14 @@ export default function SaferCampaignsPage() {
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
+          <section className="mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-10">
               Frequently Asked Questions
             </h2>
             
-            <div className="space-y-6">
-              <div className="border-b border-gray-200 pb-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+            <div className="space-y-8">
+              <div className="border-b-2 border-gray-100 pb-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
                   What is pacing and why does it matter for WhatsApp group campaigns?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -619,13 +661,13 @@ export default function SaferCampaignsPage() {
             </div>
           </section>
 
-          <section className="bg-green-50 border-2 border-green-700 rounded-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          <section className="bg-gradient-to-br from-green-50 to-white border-2 border-green-700 rounded-xl p-6 sm:p-8 shadow-md">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
               Multi-Group Campaigns with Built-In Controls
             </h2>
             
             <p className="text-gray-700 mb-6 leading-relaxed">
-              WaTask includes pacing controls, delivery monitoring, and collections to help you run professional multi-group campaigns — without manual pacing or guesswork.
+              WaTask connects your own WhatsApp numbers with a QR scan and posts into groups those numbers are already in. Space your posts out to maintain account health while reaching many groups efficiently.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-6">

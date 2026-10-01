@@ -84,7 +84,7 @@ const articleSchema = {
   'headline': 'WhatsApp Communities for Multi-Group Campaigns',
   'image': 'https://www.watask.com/opengraph-image',
   'datePublished': '2026-01-15',
-  'dateModified': '2026-09-25',
+  'dateModified': '2026-10-01',
   'author': {
     '@type': 'Organization',
     'name': 'WaTask'
@@ -140,8 +140,8 @@ export default function CommunitiesGuidePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <header className="mb-12">
+      <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+        <header className="mb-16">
           <div className="flex items-center gap-2 mb-4">
             <Link href="/guides" className="text-sm text-green-700 hover:text-green-800 transition-colors inline-flex items-center gap-2">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -150,16 +150,16 @@ export default function CommunitiesGuidePage() {
               Back to Guides
             </Link>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
             WhatsApp Communities for Bulk Messaging & Multi-Group Campaigns (2026)
           </h1>
-          <p className="text-xl text-gray-700 leading-relaxed">
+          <p className="text-xl sm:text-2xl text-gray-700 leading-relaxed max-w-4xl">
             How WhatsApp Communities work, their limits, when the announcement group helps with bulk messaging, and when you need multi-group tools for campaigns across Communities or independent groups.
           </p>
         </header>
 
         <div className="prose prose-lg max-w-none">
-          <section className="mb-12">
+          <section className="mb-16">
             <p className="text-lg text-gray-700 leading-relaxed">
               WhatsApp Communities launched in 2022 as a way to organize related groups under one umbrella structure. 
               For admins managing many groups, Communities offer built-in broadcast capabilities through the announcement 
@@ -171,12 +171,12 @@ export default function CommunitiesGuidePage() {
             </p>
           </section>
 
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          <section className="mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
               What Are WhatsApp Communities?
             </h2>
             
-            <div className="border border-2 border-green-700/30 bg-gray-50 rounded-xl p-8 mb-6">
+            <div className="border-2 border-green-700/30 bg-gradient-to-br from-gray-50 to-white rounded-xl p-6 sm:p-8 mb-8 shadow-sm">
               <p className="text-gray-900 font-semibold mb-4">
                 Definition:
               </p>
@@ -186,12 +186,12 @@ export default function CommunitiesGuidePage() {
               </p>
             </div>
 
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+            <h3 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-6 mt-8">
               Key Components of a Community
             </h3>
 
-            <div className="space-y-4">
-              <div className="border-l-4 border-green-700 border bg-gray-50 p-6 rounded-r-lg">
+            <div className="space-y-4 sm:space-y-5">
+              <div className="border-l-4 border-green-700 bg-gray-50 p-5 sm:p-6 rounded-r-xl shadow-sm">
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">
                   Announcement Group
                 </h4>
@@ -225,8 +225,8 @@ export default function CommunitiesGuidePage() {
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          <section className="mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
               Community Limits You Need to Know
             </h2>
 
@@ -235,8 +235,17 @@ export default function CommunitiesGuidePage() {
               These limits are set by Meta and documented in WhatsApp Help Center articles.
             </p>
 
-            <div className="border border-gray-200 bg-gray-50 rounded-xl overflow-hidden mb-6">
-              <table className="w-full">
+            <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-5 mb-6 shadow-sm">
+              <p className="text-sm text-gray-700">
+                <strong>As of 2026-10-01:</strong> Community limits commonly cited are up to <strong>100 groups</strong> and about <strong>2,000 members</strong> across the Community. For the full limits reference, see{' '}
+                <Link href="/guides/whatsapp-group-limits" className="text-green-700 hover:text-green-800 font-medium">
+                  WhatsApp Group Limits 2026
+                </Link>. Note that these numbers can change.
+              </p>
+            </div>
+
+            <div className="border-2 border-gray-200 bg-gray-50 rounded-xl overflow-hidden mb-6 shadow-sm -mx-4 sm:mx-0">
+              <table className="w-full min-w-[500px]">
                 <thead className="bg-gray-100">
                   <tr>
                     <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Limit Type</th>
@@ -284,8 +293,8 @@ export default function CommunitiesGuidePage() {
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          <section className="mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
               How Admins Use Communities
             </h2>
 
@@ -293,8 +302,8 @@ export default function CommunitiesGuidePage() {
               Here are the most common ways admins use WhatsApp Communities for organizing and messaging at scale:
             </p>
 
-            <div className="space-y-6">
-              <div className="border border-gray-200 bg-gray-50 rounded-lg p-6">
+            <div className="space-y-5 sm:space-y-6">
+              <div className="border-2 border-gray-200 bg-gradient-to-br from-gray-50 to-white rounded-xl p-5 sm:p-6 hover:border-green-300 transition-colors shadow-sm">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   1. Organizing Related Groups
                 </h3>
@@ -347,8 +356,8 @@ export default function CommunitiesGuidePage() {
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          <section className="mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
               Communities vs Broadcast Lists vs Multi-Group Tools
             </h2>
 
@@ -445,8 +454,8 @@ export default function CommunitiesGuidePage() {
             </div>
           </section>
 
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          <section className="mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
               When Communities Fall Short for Multi-Group Campaigns
             </h2>
 
@@ -574,14 +583,14 @@ export default function CommunitiesGuidePage() {
             </p>
           </section>
 
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
+          <section className="mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-10">
               Frequently Asked Questions
             </h2>
             
-            <div className="space-y-6">
-              <div className="border-b border-gray-200 pb-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+            <div className="space-y-8">
+              <div className="border-b-2 border-gray-100 pb-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
                   What is a WhatsApp Community?
                 </h3>
                 <p className="text-gray-700">
@@ -682,8 +691,8 @@ export default function CommunitiesGuidePage() {
             </div>
           </section>
 
-          <section className="border border-2 border-green-700 bg-gray-50 rounded-lg p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          <section className="border-2 border-green-700 bg-gradient-to-br from-green-50 to-white rounded-xl p-6 sm:p-8 shadow-md">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
               Need to Campaign Across Multiple Communities or More Groups?
             </h2>
             
