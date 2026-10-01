@@ -37,7 +37,7 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      'name': 'Will posting to multiple WhatsApp groups get my account banned?',
+      'name': 'Will posting to multiple WhatsApp groups get my account restricted?',
       'acceptedAnswer': {
         '@type': 'Answer',
         'text': 'Account risk depends on behavior, not capability. Posting to groups your numbers are in with proper pacing, relevant content, and community consent is professional group management. Risk increases when you send irrelevant content, blast hundreds of groups instantly, ignore complaints, or post to groups where your messages aren\'t welcome. Capability does not equal permission.'
@@ -170,7 +170,7 @@ export default function SaferCampaignsPage() {
               Multi-group WhatsApp campaigns are a legitimate operational need for agencies, community managers, and brands whose numbers are already in many groups. The difference between professional multi-group management and unwanted posting comes down to <strong className="text-gray-900">how</strong> you execute: pacing your sends, ensuring relevance, respecting group norms, and monitoring feedback.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              This guide provides practical operational habits without fear-mongering or ban-evasion instructions. Follow these principles to run campaigns that serve your communities while maintaining account health.
+              This guide provides practical operational habits without fear-mongering. Follow these principles to run campaigns that serve your communities while maintaining account health.
             </p>
           </section>
 
@@ -592,7 +592,7 @@ export default function SaferCampaignsPage() {
                     Using sketchy tools with no account protection
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
-                    Tools that promise "unlimited" sends or advertise ban evasion are red flags. Professional tools emphasize control and pacing, not circumvention.
+                    Tools that promise "unlimited" sends are red flags. Professional tools emphasize control and pacing, not circumvention.
                   </p>
                 </div>
               </div>
@@ -616,7 +616,7 @@ export default function SaferCampaignsPage() {
 
               <div className="border-b border-gray-200 pb-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                  Will posting to multiple WhatsApp groups get my account banned?
+                  Will posting to multiple WhatsApp groups get my account restricted?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
                   Account risk depends on <strong>behavior, not capability</strong>. Posting to groups your numbers are in with proper pacing, relevant content, and community consent is professional group management. Risk increases when you send irrelevant content, blast hundreds of groups instantly, ignore complaints, or post to groups where your messages aren't welcome. Capability does not equal permission.
@@ -655,7 +655,7 @@ export default function SaferCampaignsPage() {
                   Is there a limit to how many groups I can post to per day?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  There's no single official limit, but <strong>recommended practice</strong> suggests starting conservatively (50-100 groups per campaign for new accounts) and increasing gradually based on account health. Focus on <em>relevance and pacing</em> rather than pushing maximum volume. Professional operators prioritize value and account health over raw throughput.
+                  There's no single documented limit, but <strong>recommended practice</strong> suggests starting conservatively (50-100 groups per campaign for new accounts) and increasing gradually based on account health. Focus on <em>relevance and pacing</em> rather than pushing maximum volume. Professional operators prioritize value and account health over raw throughput.
                 </p>
               </div>
             </div>

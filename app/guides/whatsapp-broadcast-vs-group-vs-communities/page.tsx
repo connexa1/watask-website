@@ -285,7 +285,7 @@ export default function BroadcastVsGroupPage() {
 
                 <div className="mt-6 bg-white border border-green-200 rounded-lg p-4">
                   <p className="text-sm text-gray-700 mb-2">
-                    <strong>Important distinction:</strong> "Broadcast to groups" is not an official WhatsApp feature. When people search for this, they usually mean <em>posting the same message into many existing groups</em> — which requires manual work or a multi-group platform like{' '}
+                    <strong>Important distinction:</strong> "Broadcast to groups" is not a WhatsApp feature. When people search for this, they usually mean <em>posting the same message into many existing groups</em> — which requires manual work or a multi-group platform like{' '}
                     <Link href="/" className="text-green-700 hover:text-green-800 font-semibold">
                       WaTask
                     </Link>.
@@ -549,10 +549,10 @@ export default function BroadcastVsGroupPage() {
 
               <div className="border-b border-gray-200 pb-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                  Is "group broadcast" an official WhatsApp feature?
+                  Is "group broadcast" a WhatsApp feature?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  No. "Group broadcast" is not an official WhatsApp term or feature. People often search for this when they mean <strong>posting the same message into many existing groups</strong>. This requires either manual posting into each group or a multi-group management platform that automates this workflow with pacing and controls.
+                  No. "Group broadcast" is not a WhatsApp term or feature. People often search for this when they mean <strong>posting the same message into many existing groups</strong>. This requires either manual posting into each group or a multi-group management platform that automates this workflow with pacing and controls.
                 </p>
               </div>
 
