@@ -140,27 +140,62 @@ export default function BroadcastVsGroupPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       
-      <article className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-        <header className="mb-20">
-          <div className="flex items-center gap-2 mb-6">
-            <Link href="/guides" className="text-sm font-medium text-green-700 hover:text-green-800 inline-flex items-center gap-2 transition-colors">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-              </svg>
-              Back to Guides
-            </Link>
+      <article className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+        {/* Hero Section with Image */}
+        <div className="mb-24 relative">
+          <div className="absolute inset-0 bg-gradient-to-br from-green-50 via-teal-50 to-blue-50 rounded-3xl -z-10 opacity-60"></div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center py-12 lg:py-16 px-6 lg:px-12">
+            <div>
+              <div className="flex items-center gap-2 mb-6">
+                <Link href="/guides" className="text-sm font-medium text-green-700 hover:text-green-800 inline-flex items-center gap-2 transition-colors">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                  </svg>
+                  Back to Guides
+                </Link>
+              </div>
+              
+              <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-8 leading-[1.05] tracking-tight">
+                WhatsApp Broadcast vs Group Messaging vs Communities (2026)
+              </h1>
+              <p className="text-xl sm:text-2xl text-gray-700 leading-relaxed font-light">
+                Clear taxonomy so you can stop mixing broadcast lists, group posts, and Communities announcement groups — and choose the right approach for your messaging needs.
+              </p>
+            </div>
+            <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&q=80" 
+                alt="Team collaboration and communication" 
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
-          
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-gray-900 mb-8 leading-[1.1] tracking-tight">
-            WhatsApp Broadcast vs Group Messaging vs Communities (2026)
-          </h1>
-          <p className="text-2xl sm:text-3xl text-gray-700 leading-relaxed max-w-5xl font-light">
-            Clear taxonomy so you can stop mixing broadcast lists, group posts, and Communities announcement groups — and choose the right approach for your messaging needs.
-          </p>
-        </header>
+        </div>
 
         <div className="prose prose-lg max-w-none">
-          <section className="mb-20 bg-gradient-to-br from-gray-50 to-white p-8 sm:p-10 rounded-2xl border border-gray-100">
+          {/* TL;DR Callout */}
+          <section className="mb-20 bg-gradient-to-br from-teal-50 via-green-50 to-emerald-50 p-10 sm:p-12 rounded-3xl border-2 border-teal-200/50 shadow-lg">
+            <div className="flex items-start gap-4 mb-6">
+              <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-teal-500 to-green-600 rounded-2xl flex items-center justify-center shadow-lg">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <div className="flex-1">
+                <h2 className="font-display text-3xl font-bold text-gray-900 mb-4 tracking-tight">TL;DR</h2>
+                <div className="space-y-4 text-lg text-gray-800">
+                  <p className="leading-relaxed">
+                    <strong>Broadcast lists</strong> send 1:1 personal messages to up to 256 contacts. <strong>Group chats</strong> are shared conversations with up to 1,024 members. <strong>Communities</strong> organize up to 100 related groups under one umbrella with an announcement group.
+                  </p>
+                  <p className="leading-relaxed">
+                    None of these solve <em>multi-group campaigns</em> at scale — posting one campaign across dozens or hundreds of independent groups requires dedicated multi-group platforms.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="mb-20 bg-white p-8 sm:p-10 rounded-2xl border border-gray-100">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               One of the most common confusions in WhatsApp marketing is mixing up <strong>broadcast lists</strong>, <strong>group chats</strong>, and <strong>Communities</strong>. Search results often use "broadcast to groups" or "group broadcast" interchangeably, but these are <em>fundamentally different</em> messaging constructs with different capabilities and use cases.
             </p>
@@ -170,7 +205,7 @@ export default function BroadcastVsGroupPage() {
           </section>
 
           <section className="mb-20">
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-12 tracking-tight">
+            <h2 className="font-display text-4xl sm:text-5xl font-bold text-gray-900 mb-12 tracking-tight">
               The Three Messaging Constructs
             </h2>
 
@@ -353,10 +388,19 @@ export default function BroadcastVsGroupPage() {
             </div>
           </section>
 
-          <section className="mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-10">
+          <section className="mb-20">
+            <h2 className="font-display text-4xl sm:text-5xl font-bold text-gray-900 mb-10 tracking-tight">
               Side-by-Side Comparison
             </h2>
+            
+            {/* Visual Break with Image */}
+            <div className="mb-12 rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=80" 
+                alt="Business team analyzing data and strategy" 
+                className="w-full h-[400px] object-cover"
+              />
+            </div>
 
             <div className="overflow-x-auto -mx-4 sm:mx-0">
               <table className="w-full border-collapse bg-white shadow-md rounded-lg overflow-hidden min-w-[640px]">

@@ -133,49 +133,83 @@ export default function SaferCampaignsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       
-      <article className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-        <header className="mb-20">
-          <div className="flex items-center gap-2 mb-6">
-            <Link href="/guides" className="text-sm font-medium text-green-700 hover:text-green-800 inline-flex items-center gap-2 transition-colors">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-              </svg>
-              Back to Guides
-            </Link>
+      <article className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+        {/* Hero Section with Image */}
+        <div className="mb-24 relative">
+          <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-orange-50 to-red-50 rounded-3xl -z-10 opacity-60"></div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center py-12 lg:py-16 px-6 lg:px-12">
+            <div>
+              <div className="flex items-center gap-2 mb-6">
+                <Link href="/guides" className="text-sm font-medium text-green-700 hover:text-green-800 inline-flex items-center gap-2 transition-colors">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                  </svg>
+                  Back to Guides
+                </Link>
+              </div>
+              
+              <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-8 leading-[1.05] tracking-tight">
+                Multi-Group Campaign Best Practices
+              </h1>
+              <p className="text-xl sm:text-2xl text-gray-700 leading-relaxed font-light">
+                Operational playbook for running multi-group campaigns professionally: pacing, consent, group norms, and maintaining account health.
+              </p>
+            </div>
+            <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" 
+                alt="Professional team planning campaign strategy" 
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
-          
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-gray-900 mb-8 leading-[1.1] tracking-tight">
-            Multi-Group Campaign Best Practices
-          </h1>
-          <p className="text-2xl sm:text-3xl text-gray-700 leading-relaxed max-w-5xl font-light">
-            Operational playbook for running multi-group campaigns professionally: pacing, consent, group norms, and maintaining account health.
-          </p>
-        </header>
+        </div>
 
         <div className="prose prose-lg max-w-none">
           <section className="mb-20">
-            <div className="border-2 border-green-700/30 rounded-2xl p-8 sm:p-10 mb-12 bg-gradient-to-br from-green-50 via-white to-green-50/30 shadow-sm">
-              <h2 className="text-3xl font-extrabold text-gray-900 mb-6 mt-0 tracking-tight">
-                The Core Principle
-              </h2>
-              <p className="text-gray-900 text-xl font-bold mb-4">
-                Capability ≠ Permission
-              </p>
-              <p className="text-gray-700 leading-relaxed text-lg mb-0">
-                Just because you <em>can</em> post to hundreds of groups doesn't mean every message belongs in every group. Professional multi-group campaigns balance efficiency with respect: proper pacing, relevant content, community consent, and account health monitoring. This guide teaches professionalism, not evasion tactics.
-              </p>
+            {/* Core Principle Callout */}
+            <div className="border-2 border-green-300 rounded-3xl p-10 sm:p-12 mb-12 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 shadow-lg">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-green-600 to-teal-600 rounded-2xl flex items-center justify-center shadow-lg">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <h2 className="font-display text-3xl font-bold text-gray-900 mb-4 tracking-tight">
+                    The Core Principle
+                  </h2>
+                  <p className="text-gray-900 text-2xl font-bold mb-6">
+                    Capability ≠ Permission
+                  </p>
+                  <p className="text-gray-800 leading-relaxed text-lg mb-0">
+                    Just because you <em>can</em> post to hundreds of groups doesn't mean every message belongs in every group. Professional multi-group campaigns balance efficiency with respect: proper pacing, relevant content, community consent, and account health monitoring. This guide teaches professionalism, not evasion tactics.
+                  </p>
+                </div>
+              </div>
             </div>
 
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Multi-group WhatsApp campaigns are a legitimate operational need for agencies, community managers, and brands whose numbers are already in many groups. The difference between professional multi-group management and unwanted posting comes down to <strong className="text-gray-900">how</strong> you execute: pacing your sends, ensuring relevance, respecting group norms, and monitoring feedback.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              This guide provides practical operational habits without fear-mongering. Follow these principles to run campaigns that serve your communities while maintaining account health.
-            </p>
+            <div className="bg-white p-8 sm:p-10 rounded-2xl border border-gray-100 mb-12">
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                Multi-group WhatsApp campaigns are a legitimate operational need for agencies, community managers, and brands whose numbers are already in many groups. The difference between professional multi-group management and unwanted posting comes down to <strong className="text-gray-900">how</strong> you execute: pacing your sends, ensuring relevance, respecting group norms, and monitoring feedback.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed mb-0">
+                This guide provides practical operational habits without fear-mongering. Follow these principles to run campaigns that serve your communities while maintaining account health.
+              </p>
+            </div>
+            
+            {/* Mid-page Visual */}
+            <div className="mb-12 rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&q=80" 
+                alt="Data analysis and campaign metrics on laptop" 
+                className="w-full h-[400px] object-cover"
+              />
+            </div>
           </section>
 
           <section className="mb-20">
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-12 tracking-tight">
+            <h2 className="font-display text-4xl sm:text-5xl font-bold text-gray-900 mb-12 tracking-tight">
               Six Operational Principles
             </h2>
 
