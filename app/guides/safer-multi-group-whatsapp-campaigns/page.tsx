@@ -133,10 +133,10 @@ export default function SaferCampaignsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       
-      <article className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <header className="mb-16">
-          <div className="flex items-center gap-2 mb-4">
-            <Link href="/guides" className="text-sm text-green-700 hover:text-green-800 inline-flex items-center gap-2">
+      <article className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+        <header className="mb-20">
+          <div className="flex items-center gap-2 mb-6">
+            <Link href="/guides" className="text-sm font-medium text-green-700 hover:text-green-800 inline-flex items-center gap-2 transition-colors">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
@@ -144,38 +144,38 @@ export default function SaferCampaignsPage() {
             </Link>
           </div>
           
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-gray-900 mb-8 leading-[1.1] tracking-tight">
             Multi-Group Campaign Best Practices
           </h1>
-          <p className="text-xl sm:text-2xl text-gray-700 leading-relaxed max-w-4xl">
+          <p className="text-2xl sm:text-3xl text-gray-700 leading-relaxed max-w-5xl font-light">
             Operational playbook for running multi-group campaigns professionally: pacing, consent, group norms, and maintaining account health.
           </p>
         </header>
 
         <div className="prose prose-lg max-w-none">
-          <section className="mb-16">
-            <div className="border-2 border-green-700/30 rounded-xl p-6 sm:p-8 mb-10 bg-gradient-to-br from-gray-50 to-white shadow-sm">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4 mt-0">
+          <section className="mb-20">
+            <div className="border-2 border-green-700/30 rounded-2xl p-8 sm:p-10 mb-12 bg-gradient-to-br from-green-50 via-white to-green-50/30 shadow-sm">
+              <h2 className="text-3xl font-extrabold text-gray-900 mb-6 mt-0 tracking-tight">
                 The Core Principle
               </h2>
-              <p className="text-gray-900 text-lg font-semibold mb-3">
+              <p className="text-gray-900 text-xl font-bold mb-4">
                 Capability ≠ Permission
               </p>
-              <p className="text-gray-700 leading-relaxed mb-0">
+              <p className="text-gray-700 leading-relaxed text-lg mb-0">
                 Just because you <em>can</em> post to hundreds of groups doesn't mean every message belongs in every group. Professional multi-group campaigns balance efficiency with respect: proper pacing, relevant content, community consent, and account health monitoring. This guide teaches professionalism, not evasion tactics.
               </p>
             </div>
 
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
               Multi-group WhatsApp campaigns are a legitimate operational need for agencies, community managers, and brands whose numbers are already in many groups. The difference between professional multi-group management and unwanted posting comes down to <strong className="text-gray-900">how</strong> you execute: pacing your sends, ensuring relevance, respecting group norms, and monitoring feedback.
             </p>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-700 leading-relaxed">
               This guide provides practical operational habits without fear-mongering. Follow these principles to run campaigns that serve your communities while maintaining account health.
             </p>
           </section>
 
-          <section className="mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-10">
+          <section className="mb-20">
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-12 tracking-tight">
               Six Operational Principles
             </h2>
 
