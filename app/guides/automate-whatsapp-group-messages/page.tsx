@@ -32,7 +32,7 @@ const faqSchema = {
       'name': 'Can I fully automate WhatsApp group posting?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'True unattended automation (where messages send to many groups with no human oversight) is technically possible but carries account risk. WhatsApp\'s terms discourage automated bulk posting because it can look like spam. Most teams use semi-automation: scheduling messages, batching sends across groups, or using multi-group platforms that still require manual campaign approval.'
+        'text': 'True unattended automation (where messages send to many groups with no human oversight) is technically possible but carries account risk. Posting to many groups quickly without pacing can look automated and trigger restrictions. Most teams use semi-automation: scheduling messages, batching sends across groups, or using multi-group platforms that still require manual campaign approval.'
       }
     },
     {
@@ -133,26 +133,34 @@ export default function AutomateWhatsAppGroupMessagesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      {/* Hero Section with Illustration */}
-      <section className="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 py-16 md:py-24 px-4 sm:px-6 lg:px-8 border-b-4 border-green-600" style={{
-        backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(34, 197, 94, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.08) 0%, transparent 50%)'
-      }}>
-        <div className="max-w-7xl mx-auto">
+      {/* Hero Section with Real Photos */}
+      <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-16 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        {/* Background overlay with real photo */}
+        <div className="absolute inset-0 opacity-20">
+          <img 
+            src="https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=1600&q=80" 
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-br from-green-900/40 via-emerald-900/30 to-teal-900/40"></div>
+        
+        <div className="relative max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <Link href="/guides" className="inline-flex items-center gap-2 text-green-700 hover:text-green-800 font-medium mb-6 transition-colors">
+            <div className="relative z-10">
+              <Link href="/guides" className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 font-medium mb-6 transition-colors">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                 </svg>
                 Back to Guides
               </Link>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 leading-tight font-outfit">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight font-outfit">
                 How to Automate WhatsApp Group Messages
               </h1>
               
-              <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-8 font-dm-sans">
-                The complete guide to scheduling, batching, and automation for WhatsApp group campaigns — what works, what's risky, and how to stay compliant.
+              <p className="text-lg md:text-xl text-gray-200 leading-relaxed mb-8 font-dm-sans">
+                The complete guide to scheduling, batching, and automation for WhatsApp group campaigns — what works, what's risky, and how to manage it.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
@@ -162,47 +170,34 @@ export default function AutomateWhatsAppGroupMessagesPage() {
                 >
                   Start Free Trial
                 </Link>
-                <a href="#tldr" className="inline-flex items-center justify-center px-8 py-4 border-2 border-green-600 text-green-700 hover:bg-green-50 font-semibold rounded-xl transition-all">
+                <a href="#tldr" className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white hover:bg-white/10 font-semibold rounded-xl transition-all backdrop-blur-sm">
                   Skip to Summary
                 </a>
               </div>
             </div>
             
-            {/* Hero Illustration */}
-            <div className="relative lg:block hidden">
-              <div className="bg-white rounded-2xl shadow-2xl p-8 border-4 border-green-600 rotate-2 hover:rotate-0 transition-transform duration-300">
-                <svg viewBox="0 0 400 300" className="w-full h-auto">
-                  {/* Phone screens showing automation */}
-                  <rect x="30" y="40" width="120" height="220" rx="12" fill="#1F2937" />
-                  <rect x="35" y="60" width="110" height="180" rx="8" fill="#10B981" opacity="0.1" />
-                  <text x="90" y="90" textAnchor="middle" className="text-xs" fill="#10B981" fontWeight="600">9:00 AM</text>
-                  <circle cx="90" cy="120" r="25" fill="#10B981" opacity="0.2" />
-                  <path d="M 75 120 L 85 130 L 105 110" stroke="#10B981" strokeWidth="3" fill="none" strokeLinecap="round" />
-                  <rect x="50" y="150" width="80" height="8" rx="4" fill="#10B981" opacity="0.3" />
-                  <rect x="50" y="165" width="60" height="8" rx="4" fill="#10B981" opacity="0.3" />
-                  <rect x="50" y="180" width="70" height="8" rx="4" fill="#10B981" opacity="0.3" />
-                  
-                  <rect x="180" y="20" width="120" height="220" rx="12" fill="#1F2937" />
-                  <rect x="185" y="40" width="110" height="180" rx="8" fill="#10B981" opacity="0.1" />
-                  <text x="240" y="70" textAnchor="middle" className="text-xs" fill="#10B981" fontWeight="600">2:00 PM</text>
-                  <circle cx="240" cy="100" r="25" fill="#FCD34D" opacity="0.3" />
-                  <path d="M 240 85 L 240 105 L 250 100" stroke="#F59E0B" strokeWidth="3" fill="none" strokeLinecap="round" />
-                  <rect x="200" y="130" width="80" height="8" rx="4" fill="#10B981" opacity="0.3" />
-                  <rect x="200" y="145" width="60" height="8" rx="4" fill="#10B981" opacity="0.3" />
-                  <rect x="200" y="160" width="70" height="8" rx="4" fill="#10B981" opacity="0.3" />
-                  
-                  {/* Connection arrows */}
-                  <path d="M 150 100 Q 165 80 180 90" stroke="#10B981" strokeWidth="3" fill="none" strokeDasharray="5,5" opacity="0.6" />
-                  <circle cx="180" cy="90" r="4" fill="#10B981" />
-                  
-                  <path d="M 150 160 Q 165 170 180 165" stroke="#10B981" strokeWidth="3" fill="none" strokeDasharray="5,5" opacity="0.6" />
-                  <circle cx="180" cy="165" r="4" fill="#10B981" />
-                  
-                  {/* Automation icon */}
-                  <circle cx="200" cy="270" r="25" fill="#10B981" />
-                  <path d="M 190 270 L 200 280 L 210 260" stroke="white" strokeWidth="3" fill="none" strokeLinecap="round" />
-                  <circle cx="205" cy="265" r="3" fill="white" />
-                </svg>
+            {/* Hero Image - Real Photo */}
+            <div className="relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-green-500 transform lg:rotate-2 hover:rotate-0 transition-transform duration-300">
+                <img 
+                  src="https://images.unsplash.com/photo-1556155092-8707de31f9c4?w=800&q=80"
+                  alt="Person using phone to manage WhatsApp automation"
+                  className="w-full h-auto"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-green-900/60 via-transparent to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <div className="text-sm font-bold">Campaign Automation</div>
+                      <div className="text-xs text-green-200">Schedule • Batch • Monitor</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -232,21 +227,32 @@ export default function AutomateWhatsAppGroupMessagesPage() {
 
           {/* Main Content */}
           <article className="lg:col-span-9" style={{ scrollMarginTop: '2rem' }}>
-            {/* TL;DR Box */}
-            <div id="tldr" className="bg-yellow-50 border-2 border-yellow-400 rounded-2xl p-8 mb-12 scroll-mt-8">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6 text-yellow-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            {/* TL;DR Box - Enhanced Tinted Highlight */}
+            <div id="tldr" className="relative bg-gradient-to-br from-yellow-100 via-amber-50 to-yellow-100 border-4 border-yellow-500 rounded-2xl p-8 mb-12 scroll-mt-8 shadow-xl">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-yellow-400 rounded-bl-full opacity-10"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-amber-400 rounded-tr-full opacity-10"></div>
+              <div className="relative flex items-start gap-4">
+                <div className="flex-shrink-0 w-14 h-14 bg-yellow-500 rounded-full flex items-center justify-center shadow-lg">
+                  <svg className="w-7 h-7 text-yellow-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <div>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4 font-outfit">TL;DR: Automation Levels Explained</h2>
-                  <div className="space-y-3 text-gray-800 font-dm-sans">
-                    <p><strong className="text-green-700">✓ Batching (Low Risk):</strong> Select many groups, send to all at once. You approve every campaign manually. Removes copy-paste overhead.</p>
-                    <p><strong className="text-green-700">✓ Scheduling (Low Risk):</strong> Compose now, platform sends later at your chosen time. You still approve each campaign before scheduling.</p>
-                    <p><strong className="text-red-700">⚠ Unattended (Higher Risk):</strong> Messages go out without human action (daily posts, event-triggered). Can trigger account restrictions if not paced carefully.</p>
-                    <p className="pt-2 border-t border-yellow-300"><strong>Most teams stick to batching + scheduling.</strong> They remove manual work while keeping account risk low.</p>
+                <div className="flex-1">
+                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 font-outfit">TL;DR: Automation Levels Explained</h2>
+                  <div className="space-y-4 text-gray-800 font-dm-sans">
+                    <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border-2 border-green-300">
+                      <p className="font-semibold"><span className="text-green-700 text-xl">✓</span> <strong className="text-green-700">Batching (Low Risk):</strong> Select many groups, send to all at once. You approve every campaign manually. Removes copy-paste overhead.</p>
+                    </div>
+                    <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border-2 border-blue-300">
+                      <p className="font-semibold"><span className="text-blue-700 text-xl">✓</span> <strong className="text-blue-700">Scheduling (Low Risk):</strong> Compose now, platform sends later at your chosen time. You still approve each campaign before scheduling.</p>
+                    </div>
+                    <div className="bg-white/60 backdrop-blur-sm rounded-xl p-4 border-2 border-red-300">
+                      <p className="font-semibold"><span className="text-red-700 text-xl">⚠</span> <strong className="text-red-700">Unattended (Higher Risk):</strong> Messages go out without human action (daily posts, event-triggered). Can trigger account restrictions if not paced carefully.</p>
+                    </div>
+                    <div className="pt-4 border-t-2 border-yellow-400">
+                      <p className="text-lg font-bold text-gray-900">Most teams stick to batching + scheduling.</p>
+                      <p className="text-gray-700">They remove manual work while keeping account risk low.</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -259,6 +265,28 @@ export default function AutomateWhatsAppGroupMessagesPage() {
               <p className="text-lg text-gray-700 leading-relaxed mb-8 font-dm-sans">
                 When people search for automation, they usually want one of three things:
               </p>
+
+              {/* Real Photo Feature */}
+              <div className="mb-12 rounded-2xl overflow-hidden shadow-2xl border-4 border-green-600">
+                <img 
+                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&q=80"
+                  alt="Team collaborating on WhatsApp campaign strategy"
+                  className="w-full h-64 md:h-80 object-cover"
+                />
+                <div className="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 p-6 md:p-8">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                    </div>
+                    <h3 className="text-xl md:text-2xl font-bold text-gray-900">Most Teams Use Batching + Scheduling</h3>
+                  </div>
+                  <p className="text-gray-700 leading-relaxed">
+                    These two methods remove manual overhead while keeping you in control of every campaign. No unattended sends, no account risk.
+                  </p>
+                </div>
+              </div>
 
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div className="bg-gradient-to-br from-blue-50 to-cyan-50 border-2 border-blue-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
@@ -377,6 +405,31 @@ export default function AutomateWhatsAppGroupMessagesPage() {
               <p className="text-lg text-gray-700 leading-relaxed mb-8 font-dm-sans">
                 Scheduling means setting a message to send at a future date and time. This is useful when you want to prepare content in advance or reach groups in different time zones at optimal hours.
               </p>
+
+              {/* Real Photo - Scheduling Context */}
+              <div className="mb-8 rounded-2xl overflow-hidden shadow-xl border-4 border-blue-500">
+                <div className="relative">
+                  <img 
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=80"
+                    alt="Team planning scheduled WhatsApp campaigns"
+                    className="w-full h-64 md:h-80 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 via-blue-900/40 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <div className="text-lg font-bold">Schedule Once, Deliver Everywhere</div>
+                        <div className="text-sm text-blue-200">Set it and forget it — messages send at the perfect time</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               {/* Visual: Scheduling Flow */}
               <div className="bg-white border-4 border-green-600 rounded-2xl p-8 mb-8 shadow-xl">
@@ -657,26 +710,29 @@ export default function AutomateWhatsAppGroupMessagesPage() {
             <section id="api" className="mb-16 scroll-mt-8">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-outfit">What About the WhatsApp Business API?</h2>
               
-              <div className="bg-blue-50 border-2 border-blue-300 rounded-2xl p-8">
+              <div className="bg-gradient-to-br from-blue-100 via-blue-50 to-cyan-50 border-4 border-blue-400 rounded-2xl p-8 shadow-lg">
                 <div className="flex items-start gap-4 mb-6">
-                  <div className="flex-shrink-0 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex-shrink-0 w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center shadow-md">
+                    <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <div>
-                    <p className="text-gray-800 leading-relaxed mb-4">
+                  <div className="flex-1">
+                    <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">API Limits You Should Know</h3>
+                    <p className="text-gray-800 leading-relaxed mb-4 text-lg">
                       The WhatsApp Cloud API (also called WhatsApp Business API) is built for 1:1 messaging. Businesses use it to send template messages to individual contacts, handle inbox conversations, and manage customer support at scale.
                     </p>
-                    <p className="text-gray-800 leading-relaxed font-semibold">
-                      The Cloud API <span className="text-red-700">does not provide access</span> to your existing large groups. It cannot post into community or marketing groups that have dozens or hundreds of members.
-                    </p>
+                    <div className="bg-white border-2 border-red-300 rounded-xl p-5 mb-4">
+                      <p className="text-gray-800 leading-relaxed font-semibold text-lg">
+                        The Cloud API <span className="text-red-700 font-bold">does not provide access</span> to your existing large groups. It cannot post into community or marketing groups that have dozens or hundreds of members.
+                      </p>
+                    </div>
                   </div>
                 </div>
                 
-                <div className="bg-white border border-blue-300 rounded-lg p-6">
-                  <h4 className="font-bold text-gray-900 mb-3">Groups API Limitations</h4>
-                  <p className="text-gray-700 leading-relaxed text-sm">
+                <div className="bg-white border-2 border-blue-300 rounded-xl p-6">
+                  <h4 className="font-bold text-gray-900 mb-3 text-lg">Groups API Limitations</h4>
+                  <p className="text-gray-700 leading-relaxed">
                     The Groups API exists but is limited to small invite-only groups with a maximum of 8 participants that are created via the API. This is designed for use cases like order tracking or support threads, not marketing campaigns into large groups.
                   </p>
                 </div>
@@ -776,6 +832,24 @@ export default function AutomateWhatsAppGroupMessagesPage() {
             <section id="best-practices" className="mb-16 scroll-mt-8">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-outfit">Best Practices for Safer Automation</h2>
               
+              {/* Real Photo - Best Practices */}
+              <div className="mb-8 rounded-2xl overflow-hidden shadow-xl border-4 border-green-600">
+                <div className="relative">
+                  <img 
+                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=80"
+                    alt="Professional managing WhatsApp campaigns safely"
+                    className="w-full h-64 md:h-72 object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-green-900/90 via-green-900/70 to-transparent"></div>
+                  <div className="absolute inset-0 flex items-center">
+                    <div className="p-8 text-white max-w-2xl">
+                      <h3 className="text-2xl md:text-3xl font-bold mb-3">Follow These Habits to Reduce Risk</h3>
+                      <p className="text-lg text-green-100">Pace your sends, vary wording, and monitor closely for the best results.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
               <div className="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 border-4 border-green-600 rounded-2xl p-8 shadow-lg">
                 <p className="text-lg text-gray-800 leading-relaxed mb-8 font-semibold">
                   If you automate group posting, follow these habits to reduce restriction risk:
@@ -845,7 +919,7 @@ export default function AutomateWhatsAppGroupMessagesPage() {
                     </svg>
                   </summary>
                   <p className="text-gray-700 leading-relaxed mt-4 pt-4 border-t border-gray-100">
-                    True unattended automation (where messages send to many groups with no human oversight) is technically possible but carries account risk. WhatsApp's terms discourage automated bulk posting because it can look like spam. Most teams use semi-automation: scheduling messages, batching sends across groups, or using multi-group platforms that still require manual campaign approval.
+                    True unattended automation (where messages send to many groups with no human oversight) is technically possible but carries account risk. Posting to many groups quickly without pacing can look automated and trigger restrictions. Most teams use semi-automation: scheduling messages, batching sends across groups, or using multi-group platforms that still require manual campaign approval.
                   </p>
                 </details>
 
