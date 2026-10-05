@@ -71,6 +71,14 @@ const guides = [
     youllLearn: 'Native scheduling status, iPhone/Android options, and how to schedule campaigns across dozens of groups at once.',
   },
   {
+    title: 'How to Automate WhatsApp Group Messages',
+    href: '/guides/automate-whatsapp-group-messages',
+    category: 'How-To',
+    status: 'Published',
+    intent: 'What automation means for WhatsApp group posting, what you can schedule or batch, and why true unattended automation carries account risks.',
+    youllLearn: 'The three levels of automation (batching, scheduling, unattended), what each one means, and which approach reduces risk while removing manual work.',
+  },
+  {
     title: 'WhatsApp Forward Limit: Send to More Than 5 Groups',
     href: '/guides/whatsapp-forward-limit-more-than-5-groups',
     category: 'How-To',
