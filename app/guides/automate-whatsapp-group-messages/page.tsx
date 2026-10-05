@@ -486,7 +486,7 @@ export default function AutomateWhatsAppGroupMessagesPage() {
                     <span className="text-red-500">❌</span> Native WhatsApp
                   </h4>
                   <p className="text-gray-700 leading-relaxed text-sm">
-                    As of 2026, native WhatsApp still does not offer built-in message scheduling for groups. Some third-party keyboard apps or system-level automation tools on Android may let you schedule text sends, but these workarounds do not reliably handle media or multi-group campaigns.
+                    As of 2026, native WhatsApp still does not offer built-in message scheduling for groups. Some third-party keyboard apps or system-level automation tools on Android may let you schedule text sends, but these third-party tools do not reliably handle media or multi-group campaigns.
                   </p>
                 </div>
 
@@ -830,14 +830,14 @@ export default function AutomateWhatsAppGroupMessagesPage() {
 
             {/* Best Practices Section */}
             <section id="best-practices" className="mb-16 scroll-mt-8">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-outfit">Best Practices for Safer Automation</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 font-outfit">Best Practices for Automated Group Campaigns</h2>
               
               {/* Real Photo - Best Practices */}
               <div className="mb-8 rounded-2xl overflow-hidden shadow-xl border-4 border-green-600">
                 <div className="relative">
                   <img 
                     src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=80"
-                    alt="Professional managing WhatsApp campaigns safely"
+                    alt="Professional planning WhatsApp group campaigns"
                     className="w-full h-64 md:h-72 object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-green-900/90 via-green-900/70 to-transparent"></div>
