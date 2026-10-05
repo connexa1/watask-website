@@ -733,7 +733,7 @@ export default function AutomateWhatsAppGroupMessagesPage() {
                 <div className="bg-white border-2 border-blue-300 rounded-xl p-6">
                   <h4 className="font-bold text-gray-900 mb-3 text-lg">Groups API Limitations</h4>
                   <p className="text-gray-700 leading-relaxed">
-                    The Groups API exists but is limited to small invite-only groups with a maximum of 8 participants that are created via the API. This is designed for use cases like order tracking or support threads, not marketing campaigns into large groups.
+                    The Groups API is restricted to small invite-only groups with up to 8 participants created through the API itself. This constraint makes it suitable for use cases like order tracking or support threads, not marketing campaigns into large existing groups.
                   </p>
                 </div>
               </div>

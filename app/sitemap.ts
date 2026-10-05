@@ -59,6 +59,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/guides/automate-whatsapp-group-messages`,
+      lastModified: new Date('2026-10-05'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/guides/whatsapp-forward-limit-more-than-5-groups`,
       lastModified: new Date('2026-09-27'),
       changeFrequency: 'monthly',

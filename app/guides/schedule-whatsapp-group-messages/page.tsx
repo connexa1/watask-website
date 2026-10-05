@@ -220,7 +220,7 @@ export default function ScheduleGroupMessagesPage() {
             </ul>
 
             <p className="text-gray-700 leading-relaxed">
-              This would solve single-group scheduling natively, but it won't address multi-group campaigns — scheduling the same message to 50+ groups would still require posting to each group individually or using a platform built for that workflow.
+              This would solve single-group scheduling natively, but it won't address multi-group campaigns — scheduling the same message to 50+ groups would still require posting to each group individually or using a platform built for that workflow. For a broader look at scheduling alongside batching and true unattended posting, see our <Link href="/guides/automate-whatsapp-group-messages" className="text-green-700 hover:text-green-800 underline">guide to automating WhatsApp group messages</Link>.
             </p>
 
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mt-6">
