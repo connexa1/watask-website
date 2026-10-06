@@ -308,7 +308,7 @@ export default function DoesAPISupportGroupsPage() {
                 Common Scenario (That the API Doesn't Solve)
               </h3>
               <p className="text-gray-700 mb-3 leading-relaxed">
-                You're an agency managing 40 client WhatsApp groups. Each group has 80-200 members. You want to send one campaign announcement into all 40 groups, with pacing to avoid spam. You searched for "WhatsApp Business API for groups" hoping the official solution could help.
+                You're an agency managing 40 client WhatsApp groups. Each group has 80-200 members. You want to send one campaign announcement into all 40 groups, with pacing to avoid sending too fast. You searched for "WhatsApp Business API for groups" hoping the documented solution could help.
               </p>
               <p className="text-gray-700 font-semibold leading-relaxed">
                 Problem: Neither the Cloud API nor the Groups API solves this job. Cloud API is 1:1 only. Groups API is limited to 8-participant API-created groups, not your existing large groups.
@@ -402,7 +402,7 @@ export default function DoesAPISupportGroupsPage() {
             <div className="space-y-6">
               <div className="border-b border-gray-200 pb-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                  Does WhatsApp Business API support groups?
+                  Does the WhatsApp Business API work with groups?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
                   The WhatsApp Cloud API (used by BSPs) focuses on <strong>1:1 messaging</strong> and does not support posting to existing consumer groups. The WhatsApp Groups API is a separate limited feature for small API-created groups with a maximum of <strong>8 participants</strong>. It cannot post into your existing large community or marketing groups with 50-500+ members.

@@ -32,7 +32,7 @@ const faqSchema = {
       'name': 'What is the WhatsApp Groups API participant limit?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'The WhatsApp Groups API is limited to a maximum of 8 participants per group. These groups must be created through the API and are invite-only. This is documented in Meta\'s official Business Messaging documentation (updated June 2026).'
+        'text': 'The WhatsApp Groups API is limited to a maximum of 8 participants per group. These groups must be created through the API and are invite-only. This is documented in Meta\'s Business Messaging documentation (updated June 2026).'
       }
     },
     {
@@ -169,13 +169,13 @@ export default function GroupsAPILimitsPage() {
               When developers and marketers search for ways to message multiple WhatsApp groups, many assume the WhatsApp Business API has a solution. The <strong className="text-gray-900">WhatsApp Groups API</strong> does exist on the Business Platform, but its design and constraints mean it's <em>not</em> the answer for most multi-group campaign needs.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              This guide documents the official constraints with citations from Meta's documentation, explains what the API <em>can</em> do, and clarifies why it doesn't solve the "send one campaign to many existing large groups" job.
+              This guide documents the Groups API constraints with citations from Meta's documentation, explains what the API <em>can</em> do, and clarifies why it doesn't solve the "send one campaign to many existing large groups" job.
             </p>
           </section>
 
           <section className="mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Official Groups API Constraints
+              Groups API Constraints
             </h2>
 
             <div className="space-y-6">
@@ -425,7 +425,7 @@ export default function GroupsAPILimitsPage() {
                   What is the WhatsApp Groups API participant limit?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  The WhatsApp Groups API is limited to a <strong className="text-gray-900">maximum of 8 participants per group</strong>. These groups must be created through the API and are invite-only. This is documented in Meta's official Business Messaging documentation (updated June 2026).
+                  The WhatsApp Groups API is limited to a <strong className="text-gray-900">maximum of 8 participants per group</strong>. These groups must be created through the API and are invite-only. This is documented in Meta's Business Messaging documentation (updated June 2026).
                 </p>
               </div>
 
