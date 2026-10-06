@@ -48,7 +48,7 @@ const faqSchema = {
       'name': 'What are recommended send intervals for multi-group campaigns?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'Conservative intervals: 30-60 seconds between groups for new accounts or first campaigns. Moderate: 15-30 seconds for established accounts with good history. Start conservatively with 50-100 groups per campaign as a starting point and adjust based on how groups respond. Always use pacing — never blast instantly.'
+        'text': 'Conservative (new accounts or first campaigns): 30-60 seconds between groups. Moderate (established accounts): 15-30 seconds between groups. Start with 50-100 groups per campaign as a starting point and adjust based on how groups respond. Always use pacing — never blast instantly.'
       }
     },
     {

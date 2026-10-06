@@ -66,7 +66,7 @@ const glossarySchema = {
     {
       '@type': 'DefinedTerm',
       'name': 'OBA',
-      'description': 'Official Business Account. A Meta-verified WhatsApp business account obtained through Meta Business verification. Required for using the Groups API and certain Business Platform features.'
+      'description': 'Organizational Business Account. A Meta-verified WhatsApp business account obtained through Meta Business verification. Required for using the Groups API and certain Business Platform features.'
     },
     {
       '@type': 'DefinedTerm',
@@ -278,14 +278,14 @@ const terms: Term[] = [
   },
   {
     term: 'WhatsApp Groups API',
-    definition: 'A Meta API for creating and managing small API-based groups. Strictly limited to 8 participants per group, invite-only, and cannot access or post into existing large consumer groups. Part of the Cloud API Business Platform. Requires an Official Business Account (OBA). You can manage up to 10,000 groups per phone number.',
+    definition: 'A Meta API for creating and managing small API-based groups. Strictly limited to 8 participants per group, invite-only, and cannot access or post into existing large consumer groups. Part of the Cloud API Business Platform. Requires an OBA (Organizational Business Account). You can manage up to 10,000 groups per phone number.',
     relatedGuides: [
       { title: 'Groups API Limits Explained', href: '/guides/whatsapp-groups-api-limits' },
       { title: 'Does Business API Support Groups?', href: '/guides/does-whatsapp-business-api-support-groups' }
     ]
   },
   {
-    term: 'OBA (Official Business Account)',
+    term: 'OBA (Organizational Business Account)',
     definition: 'A Meta-verified WhatsApp business account obtained through Meta Business verification. Required for using the Groups API and certain advanced Business Platform features. Verification confirms business identity with Meta.',
     relatedGuides: []
   },

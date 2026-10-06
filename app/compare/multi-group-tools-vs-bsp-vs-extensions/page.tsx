@@ -40,7 +40,7 @@ const faqSchema = {
       'name': 'Can Chrome extensions send to multiple WhatsApp groups?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'Yes, some Chrome extensions can send messages to multiple groups via WhatsApp Web automation. However, they typically lack features like group collections, team collaboration, pacing controls, delivery monitoring, and account health management that productized multi-group platforms provide. Extensions also carry account risks if not used carefully.'
+        'text': 'Yes, some Chrome extensions can send messages to multiple groups via WhatsApp Web automation. However, they typically lack features like group collections, team collaboration, pacing controls, delivery monitoring, and account health management that productized multi-group platforms provide. Extensions also carry account risks if not used carefully (no built-in pacing controls).'
       }
     },
     {
@@ -48,7 +48,7 @@ const faqSchema = {
       'name': 'Which category should I choose for posting into existing large groups?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'For posting campaigns into many existing large groups you already manage, choose a multi-group platform. BSPs cannot access your groups (they only do 1:1 messaging), and Chrome extensions work but lack professional features and carry account risks. Multi-group platforms are purpose-built for this job with control and pacing features.'
+        'text': 'For posting campaigns into many existing large groups you already manage, choose a multi-group platform. BSPs cannot access your groups (they only do 1:1 messaging), and Chrome extensions work but lack professional features and carry account risks. Multi-group platforms are purpose-built for this job with control features.'
       }
     }
   ]
@@ -282,7 +282,7 @@ export default function CategoryComparisonPage() {
                   <p className="font-semibold text-gray-900 mb-2">Risks:</p>
                   <p className="text-gray-700">
                     <strong>Account health risks</strong> if used without proper pacing. Some extensions have been flagged 
-                    for excessive permissions or unclear privacy policies. Chrome Web Store reviews mention account bans 
+                    for excessive permissions or unclear privacy policies. Chrome Web Store reviews mention account restrictions 
                     from aggressive use. Professional businesses often avoid extensions due to trust concerns.
                   </p>
                 </div>
@@ -422,7 +422,7 @@ export default function CategoryComparisonPage() {
                 <li>• You're not running business-critical operations</li>
               </ul>
               <p className="text-gray-700 mt-4">
-                <strong>Warning:</strong> Extensions carry account risks and lack professional features. Not recommended 
+                <strong>Warning:</strong> Extensions carry account risks and lack professional features. Not suitable 
                 for business operations at scale or when account reputation matters.
               </p>
             </div>

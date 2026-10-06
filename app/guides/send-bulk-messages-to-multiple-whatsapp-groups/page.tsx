@@ -40,7 +40,7 @@ const faqSchema = {
       'name': 'What is the WhatsApp Groups API participant limit?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': '8 participants maximum. The Meta WhatsApp Groups API is limited to groups with up to 8 participants, and these groups must be invite-only and created through the API. This is documented in Meta\'s official Business Messaging documentation.'
+        'text': '8 participants maximum. The Meta WhatsApp Groups API is limited to groups with up to 8 participants, and these groups must be invite-only and created through the API. This is documented in Meta\'s Business Messaging documentation.'
       }
     },
     {
@@ -48,7 +48,7 @@ const faqSchema = {
       'name': 'Is a WhatsApp broadcast the same as posting to groups?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'No. A WhatsApp broadcast list or Cloud API campaign sends individual 1:1 messages to contacts in your list. Group posting means sending a message inside group chats where all members can see and respond to each other.'
+        'text': 'No. A WhatsApp broadcast list or Cloud API campaign sends individual 1:1 messages to contacts in your list. Each recipient sees the message in their personal chat with you. Group posting means sending a message inside group chats where all members can see and respond to each other.'
       }
     },
     {
@@ -64,7 +64,7 @@ const faqSchema = {
       'name': 'Do Chrome WhatsApp group senders work?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'Some Chrome extensions do work for Web-session multi-select group sending. However, they carry account risks if not used carefully, especially without proper pacing and consent. Consider trust, account health, and whether a productized platform with built-in pacing and scheduling controls would be more appropriate for business use.'
+        'text': 'Some do work for Web-session multi-select group sending. However, they carry account risks if not used carefully, especially without proper pacing and consent. Consider trust, account health, and whether a productized platform with built-in pacing and scheduling controls would be more appropriate for business use.'
       }
     },
     {
@@ -486,7 +486,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
             <div className="mt-8 bg-green-50 border border-green-200 rounded-lg p-6">
               <p className="text-gray-700 mb-3">
                 <strong>Important:</strong> Always respect consent and group norms. Just because you can post 
-                to many groups doesn't mean you should spam them. The best multi-group campaigns are relevant, 
+                to many groups doesn't mean you should post irrelevant content to them. The best multi-group campaigns are relevant, 
                 valuable, and respectful of each community's expectations.
               </p>
               <Link 
@@ -620,7 +620,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
                 <p className="text-gray-700">
                   <strong>8 participants maximum.</strong> The Meta WhatsApp Groups API is limited to groups with up 
                   to 8 participants, and these groups must be invite-only and created through the API. This is 
-                  documented in Meta's official Business Messaging documentation. You can manage up to 10,000 such 
+                  documented in Meta's Business Messaging documentation. You can manage up to 10,000 such 
                   groups per phone number, but each group is capped at 8 members.
                 </p>
               </div>
@@ -678,7 +678,7 @@ export default function BulkWhatsAppGroupsGuidePage() {
                 </h3>
                 <p className="text-gray-700">
                   <strong>Use a BSP</strong> (Business Service Provider) like WATI or AiSensy when you need 
-                  1:1 template messaging and inbox management for opted-in contacts. <strong>Use a multi-group tool</strong> 
+                  1:1 template messaging and inbox management for opted-in contacts. <strong>Use a multi-group tool</strong>{' '}
                   when your job is to send campaigns into many existing groups your numbers are already in.
                 </p>
               </div>

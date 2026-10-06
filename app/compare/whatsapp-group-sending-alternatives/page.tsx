@@ -274,7 +274,7 @@ export default function AlternativesPage() {
               </p>
               <div className="bg-orange-100 border border-orange-300 rounded p-4 mt-4">
                 <p className="text-sm text-gray-700">
-                  <strong>Note:</strong> Check Chrome Web Store reviews carefully. User reviews mention account bans from 
+                  <strong>Note:</strong> Check Chrome Web Store reviews carefully. User reviews mention account restrictions from 
                   aggressive use. Professional businesses often avoid extensions due to trust concerns.
                 </p>
               </div>

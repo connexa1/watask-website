@@ -253,7 +253,7 @@ export default function ResellersGroupsPage() {
             </h2>
             
             <p className="text-gray-700 leading-relaxed mb-4">
-              Don't blast every group at once. Send to a few groups, wait a few minutes, then send to the next batch. This pacing keeps your account healthy. WhatsApp restricts numbers that send like spam, so space posts out.
+              Don't blast every group at once. Send to a few groups, wait a few minutes, then send to the next batch. This pacing keeps your account healthy. WhatsApp restricts numbers that post too fast, so space posts out.
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-4">
