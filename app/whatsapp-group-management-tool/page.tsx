@@ -63,7 +63,7 @@ const categoryFaqSchema = {
       'name': 'What features should I look for in a group management tool?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'Essential features include: Group inventory and collections (organize by client, region, or topic), Multi-group campaign sending (post one message to many groups), Pacing and delivery controls (steady send intervals, not instant blasts), Team collaboration and roles (shared access, audit trails), and Delivery monitoring (track status and pause when needed). Professional tools are built for control and pacing over raw volume.'
+        'text': 'Essential features include: group inventory and collections (organize by client, region, or topic), multi-group campaign sending, pacing and delivery controls, team collaboration and roles, and delivery monitoring. Professional tools prioritize control and pacing over raw volume.'
       }
     }
   ]
@@ -247,8 +247,18 @@ export default function CategoryPage() {
               <h3 className="text-lg font-semibold text-gray-900 mb-3">
                 What features should I look for in a group management tool?
               </h3>
-              <p className="text-gray-700 leading-relaxed">
-                Essential features include: <strong className="text-gray-900">Group inventory and collections</strong> (organize by client, region, or topic), <strong className="text-gray-900">Multi-group campaign sending</strong> (post one message to many groups), <strong className="text-gray-900">Pacing and delivery controls</strong> (steady send intervals, not instant blasts), <strong className="text-gray-900">Team collaboration and roles</strong> (shared access, audit trails), and <strong className="text-gray-900">Delivery monitoring</strong> (track status and pause when needed). Professional tools are built for control and pacing over raw volume.
+              <p className="text-gray-700 leading-relaxed mb-3">
+                Essential features include:
+              </p>
+              <ul className="space-y-2 text-gray-700">
+                <li>• <strong className="text-gray-900">Group inventory and collections</strong> (organize by client, region, or topic)</li>
+                <li>• <strong className="text-gray-900">Multi-group campaign sending</strong> (post one message to many groups)</li>
+                <li>• <strong className="text-gray-900">Pacing and delivery controls</strong> (steady send intervals, not instant blasts)</li>
+                <li>• <strong className="text-gray-900">Team collaboration and roles</strong> (shared access, audit trails)</li>
+                <li>• <strong className="text-gray-900">Delivery monitoring</strong> (track status and pause when needed)</li>
+              </ul>
+              <p className="text-gray-700 leading-relaxed mt-3">
+                Professional tools prioritize control and pacing over raw volume.
               </p>
             </div>
 
