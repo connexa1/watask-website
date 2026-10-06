@@ -63,7 +63,7 @@ const categoryFaqSchema = {
       'name': 'What features should I look for in a group management tool?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'Essential features include: group inventory and collections (organize by client, region, or topic), multi-group campaign sending, pacing and delivery controls, team collaboration and roles, and delivery monitoring. Professional tools prioritize control and pacing over raw volume.'
+        'text': 'Essential features include: • Group inventory and collections (organize by client, region, or topic) • Multi-group campaign sending (post one message to many groups) • Pacing and delivery controls (steady send intervals, not instant blasts) • Team collaboration and roles (shared access, audit trails) • Delivery monitoring (track status and pause when needed) Professional tools prioritize control and pacing over raw volume.'
       }
     }
   ]
