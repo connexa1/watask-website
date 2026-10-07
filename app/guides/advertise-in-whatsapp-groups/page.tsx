@@ -232,7 +232,7 @@ export default function AdvertiseInWhatsAppGroupsPage() {
             <div id="tldr" className="relative bg-gradient-to-br from-blue-100 via-cyan-50 to-blue-100 border-4 border-blue-500 rounded-2xl p-8 mb-12 scroll-mt-8 shadow-xl">
               <div className="absolute top-0 right-0 w-32 h-32 bg-blue-400 rounded-bl-full opacity-10"></div>
               <div className="absolute bottom-0 left-0 w-24 h-24 bg-cyan-400 rounded-tr-full opacity-10"></div>
-              <div className="relative flex items-start gap-4">
+              <div className="relative flex flex-col md:flex-row md:items-start gap-4">
                 <div className="flex-shrink-0 w-14 h-14 bg-blue-500 rounded-full flex items-center justify-center shadow-lg">
                   <svg className="w-7 h-7 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
@@ -428,7 +428,10 @@ export default function AdvertiseInWhatsAppGroupsPage() {
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 <div className="bg-red-50 border-2 border-red-300 rounded-xl p-6">
                   <h4 className="font-bold text-gray-900 mb-3 flex items-center gap-2">
-                    <span className="text-red-500">❌</span> Formal Ad Copy
+                    <svg className="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>Formal Ad Copy</span>
                   </h4>
                   <div className="bg-white border border-red-200 rounded-lg p-4 mb-3">
                     <p className="text-sm text-gray-700 italic">
@@ -443,7 +446,10 @@ export default function AdvertiseInWhatsAppGroupsPage() {
 
                 <div className="bg-green-50 border-2 border-green-600 rounded-xl p-6">
                   <h4 className="font-bold text-gray-900 mb-3 flex items-center gap-2">
-                    <span className="text-green-600">✓</span> Helpful Update
+                    <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span>Helpful Update</span>
                   </h4>
                   <div className="bg-white border border-green-200 rounded-lg p-4 mb-3">
                     <p className="text-sm text-gray-700 italic">
@@ -545,7 +551,9 @@ export default function AdvertiseInWhatsAppGroupsPage() {
                     <p className="text-gray-700 leading-relaxed"><strong>Never post the same offer multiple times per day.</strong> That's the fastest way to get removed.</p>
                   </div>
                   <div className="flex items-start gap-3">
-                    <span className="text-blue-600 text-xl font-bold">💡</span>
+                    <svg className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                    </svg>
                     <p className="text-gray-700 leading-relaxed"><strong>Space out promotional posts with genuine participation.</strong> Answer questions, share helpful content, and engage naturally between your promotional messages.</p>
                   </div>
                 </div>
