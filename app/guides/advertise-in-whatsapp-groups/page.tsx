@@ -138,7 +138,7 @@ export default function AdvertiseInWhatsAppGroupsPage() {
         {/* Background overlay with real photo */}
         <div className="absolute inset-0 opacity-20">
           <img 
-            src="https://images.unsplash.com/photo-1556155092-8707de31f9c4?w=1600&q=80" 
+            src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1600&q=80" 
             alt=""
             className="w-full h-full object-cover"
           />
@@ -296,7 +296,9 @@ export default function AdvertiseInWhatsAppGroupsPage() {
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                      <span className="text-2xl">🔍</span>
+                      <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                      </svg>
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-900 mb-2 text-lg">Industry Contacts</h4>
@@ -305,7 +307,9 @@ export default function AdvertiseInWhatsAppGroupsPage() {
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                      <span className="text-2xl">🌐</span>
+                      <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                      </svg>
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-900 mb-2 text-lg">Community Forums</h4>
@@ -314,7 +318,10 @@ export default function AdvertiseInWhatsAppGroupsPage() {
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                      <span className="text-2xl">📍</span>
+                      <svg className="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-900 mb-2 text-lg">Local Business Groups</h4>
@@ -323,7 +330,9 @@ export default function AdvertiseInWhatsAppGroupsPage() {
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center">
-                      <span className="text-2xl">🎯</span>
+                      <svg className="w-5 h-5 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-900 mb-2 text-lg">Niche Interest Groups</h4>
@@ -358,13 +367,13 @@ export default function AdvertiseInWhatsAppGroupsPage() {
                 <div className="space-y-4">
                   <div className="bg-white border-2 border-yellow-300 rounded-xl p-6">
                     <h4 className="font-bold text-gray-900 mb-3 text-lg flex items-center gap-2">
-                      <span className="text-2xl">1️⃣</span> Check Pinned Messages
+                      <span className="w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center font-outfit font-bold text-lg">1</span> Check Pinned Messages
                     </h4>
                     <p className="text-gray-700 leading-relaxed">Most groups pin their rules at the top of the chat. Look for guidelines about promotional posts.</p>
                   </div>
                   <div className="bg-white border-2 border-yellow-300 rounded-xl p-6">
                     <h4 className="font-bold text-gray-900 mb-3 text-lg flex items-center gap-2">
-                      <span className="text-2xl">2️⃣</span> Message the Admin Privately
+                      <span className="w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center font-outfit font-bold text-lg">2</span> Message the Admin Privately
                     </h4>
                     <p className="text-gray-700 leading-relaxed mb-3">Introduce yourself, explain what you want to share, and ask if promotional posts are allowed.</p>
                     <div className="bg-gray-50 border-2 border-gray-200 rounded-lg p-4">
@@ -375,7 +384,7 @@ export default function AdvertiseInWhatsAppGroupsPage() {
                   </div>
                   <div className="bg-white border-2 border-yellow-300 rounded-xl p-6">
                     <h4 className="font-bold text-gray-900 mb-3 text-lg flex items-center gap-2">
-                      <span className="text-2xl">3️⃣</span> Respect the Answer
+                      <span className="w-8 h-8 bg-yellow-500 text-white rounded-full flex items-center justify-center font-outfit font-bold text-lg">3</span> Respect the Answer
                     </h4>
                     <p className="text-gray-700 leading-relaxed">If the admin says no or asks for changes, follow their guidance. Posting anyway gets you removed.</p>
                   </div>
@@ -494,19 +503,31 @@ export default function AdvertiseInWhatsAppGroupsPage() {
 
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div className="bg-gradient-to-br from-blue-50 to-cyan-50 border-2 border-blue-200 rounded-xl p-6 text-center">
-                  <div className="text-4xl mb-3">🌅</div>
+                  <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                  </div>
                   <h4 className="font-bold text-gray-900 mb-2">Morning (8-10 AM)</h4>
                   <p className="text-sm text-gray-700">People check groups during commute or coffee. Good for time-sensitive offers.</p>
                 </div>
 
                 <div className="bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-200 rounded-xl p-6 text-center">
-                  <div className="text-4xl mb-3">🌆</div>
+                  <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                  </div>
                   <h4 className="font-bold text-gray-900 mb-2">Evening (6-8 PM)</h4>
                   <p className="text-sm text-gray-700">Peak engagement. Groups are most active after work hours.</p>
                 </div>
 
                 <div className="bg-gradient-to-br from-yellow-50 to-amber-50 border-2 border-yellow-200 rounded-xl p-6 text-center">
-                  <div className="text-4xl mb-3">🌙</div>
+                  <div className="w-12 h-12 bg-indigo-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                  </div>
                   <h4 className="font-bold text-gray-900 mb-2">Avoid Late Night</h4>
                   <p className="text-sm text-gray-700">Posts get buried overnight. Members see them hours later when the chat has moved on.</p>
                 </div>
@@ -671,19 +692,31 @@ export default function AdvertiseInWhatsAppGroupsPage() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Recommended Pacing</h3>
                 <div className="grid md:grid-cols-3 gap-6">
                   <div className="bg-white rounded-xl p-6 text-center border-2 border-yellow-300">
-                    <div className="text-4xl mb-3">🐌</div>
+                    <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    </div>
                     <h4 className="font-bold text-gray-900 mb-2">30-60 seconds</h4>
                     <p className="text-sm text-gray-700">Between posts to different groups</p>
                   </div>
 
                   <div className="bg-white rounded-xl p-6 text-center border-2 border-yellow-300">
-                    <div className="text-4xl mb-3">⏱️</div>
+                    <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
                     <h4 className="font-bold text-gray-900 mb-2">1-2 hours</h4>
                     <p className="text-sm text-gray-700">If posting to many groups (20+) in one session</p>
                   </div>
 
                   <div className="bg-white rounded-xl p-6 text-center border-2 border-yellow-300">
-                    <div className="text-4xl mb-3">📅</div>
+                    <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                    </div>
                     <h4 className="font-bold text-gray-900 mb-2">Across days</h4>
                     <p className="text-sm text-gray-700">For large campaigns, split groups across multiple days</p>
                   </div>
@@ -733,7 +766,9 @@ export default function AdvertiseInWhatsAppGroupsPage() {
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                      <span className="text-2xl">📱</span>
+                      <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                      </svg>
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-900 mb-2 text-lg">Assign groups to each number</h4>
@@ -743,7 +778,10 @@ export default function AdvertiseInWhatsAppGroupsPage() {
 
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                      <span className="text-2xl">🎯</span>
+                      <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-900 mb-2 text-lg">Group by category or region</h4>
@@ -753,7 +791,9 @@ export default function AdvertiseInWhatsAppGroupsPage() {
 
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                      <span className="text-2xl">🔄</span>
+                      <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                      </svg>
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-900 mb-2 text-lg">Rotate which number you use</h4>
@@ -763,7 +803,9 @@ export default function AdvertiseInWhatsAppGroupsPage() {
 
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center">
-                      <span className="text-2xl">⏳</span>
+                      <svg className="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
                     </div>
                     <div>
                       <h4 className="font-bold text-gray-900 mb-2 text-lg">Age new numbers before heavy posting</h4>
@@ -974,7 +1016,11 @@ export default function AdvertiseInWhatsAppGroupsPage() {
                   href="/guides/send-bulk-messages-to-multiple-whatsapp-groups" 
                   className="flex items-center gap-4 p-5 bg-white border-2 border-green-200 hover:border-green-600 rounded-xl transition-all group shadow-sm hover:shadow-md"
                 >
-                  <div className="text-4xl">📱</div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                  </div>
                   <div className="flex-1">
                     <div className="font-bold text-gray-900 group-hover:text-green-700 mb-1">Multi-Group Messaging</div>
                     <p className="text-xs text-gray-600">Post to many groups at once</p>
@@ -987,7 +1033,11 @@ export default function AdvertiseInWhatsAppGroupsPage() {
                   href="/guides/safer-multi-group-whatsapp-campaigns" 
                   className="flex items-center gap-4 p-5 bg-white border-2 border-green-200 hover:border-green-600 rounded-xl transition-all group shadow-sm hover:shadow-md"
                 >
-                  <div className="text-4xl">🛡️</div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                    <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                  </div>
                   <div className="flex-1">
                     <div className="font-bold text-gray-900 group-hover:text-green-700 mb-1">Campaign Best Practices</div>
                     <p className="text-xs text-gray-600">Pacing, consent, account health</p>
@@ -1000,7 +1050,12 @@ export default function AdvertiseInWhatsAppGroupsPage() {
                   href="/guides/whatsapp-restricted-after-group-posting" 
                   className="flex items-center gap-4 p-5 bg-white border-2 border-green-200 hover:border-green-600 rounded-xl transition-all group shadow-sm hover:shadow-md"
                 >
-                  <div className="text-4xl">🔧</div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+                    <svg className="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
                   <div className="flex-1">
                     <div className="font-bold text-gray-900 group-hover:text-green-700 mb-1">Fix Restrictions</div>
                     <p className="text-xs text-gray-600">What to do if your number is flagged</p>
@@ -1013,7 +1068,11 @@ export default function AdvertiseInWhatsAppGroupsPage() {
                   href="/guides/automate-whatsapp-group-messages" 
                   className="flex items-center gap-4 p-5 bg-white border-2 border-green-200 hover:border-green-600 rounded-xl transition-all group shadow-sm hover:shadow-md"
                 >
-                  <div className="text-4xl">⚡</div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center">
+                    <svg className="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
                   <div className="flex-1">
                     <div className="font-bold text-gray-900 group-hover:text-green-700 mb-1">Automate Group Messages</div>
                     <p className="text-xs text-gray-600">Scheduling, batching, and automation</p>
@@ -1026,7 +1085,11 @@ export default function AdvertiseInWhatsAppGroupsPage() {
                   href="/use-cases/resellers-whatsapp-groups" 
                   className="flex items-center gap-4 p-5 bg-white border-2 border-green-200 hover:border-green-600 rounded-xl transition-all group shadow-sm hover:shadow-md"
                 >
-                  <div className="text-4xl">💼</div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                    <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
                   <div className="flex-1">
                     <div className="font-bold text-gray-900 group-hover:text-green-700 mb-1">Resellers Use Case</div>
                     <p className="text-xs text-gray-600">Post deals across groups</p>
@@ -1039,7 +1102,11 @@ export default function AdvertiseInWhatsAppGroupsPage() {
                   href="/use-cases/event-promoters-whatsapp-groups" 
                   className="flex items-center gap-4 p-5 bg-white border-2 border-green-200 hover:border-green-600 rounded-xl transition-all group shadow-sm hover:shadow-md"
                 >
-                  <div className="text-4xl">🎉</div>
+                  <div className="flex-shrink-0 w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center">
+                    <svg className="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                    </svg>
+                  </div>
                   <div className="flex-1">
                     <div className="font-bold text-gray-900 group-hover:text-green-700 mb-1">Event Promoters Use Case</div>
                     <p className="text-xs text-gray-600">Promote events in groups</p>
