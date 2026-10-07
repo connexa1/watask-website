@@ -138,11 +138,11 @@ export default function AutomateWhatsAppGroupMessagesPage() {
         {/* Background texture pattern */}
         <div className="absolute inset-0" style={{
           backgroundImage: `
-            radial-gradient(circle at 30% 20%, rgba(16, 185, 129, 0.15) 0%, transparent 50%),
-            radial-gradient(circle at 70% 80%, rgba(20, 184, 166, 0.12) 0%, transparent 50%),
+            radial-gradient(circle at 30% 20%, rgba(16, 185, 129, 0.15) 0%, rgba(16, 185, 129, 0.08) 35%, rgba(16, 185, 129, 0.02) 55%, transparent 75%),
+            radial-gradient(circle at 70% 80%, rgba(20, 184, 166, 0.12) 0%, rgba(20, 184, 166, 0.06) 35%, rgba(20, 184, 166, 0.015) 55%, transparent 75%),
             radial-gradient(circle, rgba(255, 255, 255, 0.07) 1px, transparent 1px)
           `,
-          backgroundSize: '800px 800px, 900px 900px, 24px 24px',
+          backgroundSize: '1200px 1200px, 1300px 1300px, 24px 24px',
           backgroundPosition: 'top left, bottom right, 0 0'
         }}></div>
         <div className="absolute inset-0 bg-gradient-to-br from-green-900/40 via-emerald-900/30 to-teal-900/40"></div>
