@@ -135,14 +135,16 @@ export default function AutomateWhatsAppGroupMessagesPage() {
 
       {/* Hero Section with Real Photos */}
       <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-16 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        {/* Background overlay with real photo */}
-        <div className="absolute inset-0 opacity-20">
-          <img 
-            src="https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=1600&q=80" 
-            alt=""
-            className="w-full h-full object-cover"
-          />
-        </div>
+        {/* Background texture pattern */}
+        <div className="absolute inset-0" style={{
+          backgroundImage: `
+            radial-gradient(circle at 30% 20%, rgba(16, 185, 129, 0.15) 0%, transparent 50%),
+            radial-gradient(circle at 70% 80%, rgba(20, 184, 166, 0.12) 0%, transparent 50%),
+            radial-gradient(circle, rgba(255, 255, 255, 0.07) 1px, transparent 1px)
+          `,
+          backgroundSize: '800px 800px, 900px 900px, 24px 24px',
+          backgroundPosition: 'top left, bottom right, 0 0'
+        }}></div>
         <div className="absolute inset-0 bg-gradient-to-br from-green-900/40 via-emerald-900/30 to-teal-900/40"></div>
         
         <div className="relative max-w-7xl mx-auto">
