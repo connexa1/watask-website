@@ -180,8 +180,8 @@ export default function AutomateWhatsAppGroupMessagesPage() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-green-500 transform lg:rotate-2 hover:rotate-0 transition-transform duration-300">
                 <img 
-                  src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?w=800&q=80"
-                  alt="Professional using mobile phone for business automation"
+                  src="https://images.unsplash.com/photo-1653762379954-8943c787e78b?w=800&q=80"
+                  alt="Woman at a cafe table smiling while checking group messages on her phone"
                   className="w-full h-auto"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-green-900/60 via-transparent to-transparent"></div>
