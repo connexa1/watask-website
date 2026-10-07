@@ -381,6 +381,11 @@ export default function EventPromotersPage() {
               </p>
               <ul className="space-y-2 text-sm">
                 <li>
+                  <Link href="/guides/advertise-in-whatsapp-groups" className="text-green-700 hover:text-green-800">
+                    How to Advertise in WhatsApp Groups →
+                  </Link>
+                </li>
+                <li>
                   <Link href="/guides/send-bulk-messages-to-multiple-whatsapp-groups" className="text-green-700 hover:text-green-800">
                     How to Send Bulk Messages to Multiple WhatsApp Groups →
                   </Link>
