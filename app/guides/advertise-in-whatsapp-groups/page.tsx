@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'How to Advertise in WhatsApp Groups | WaTask',
-  description: 'Learn how to advertise products and services in WhatsApp groups — finding groups, asking admins, writing posts that feel natural, tracking links, and managing restrictions.',
+  description: 'Learn to advertise in WhatsApp groups — finding groups, asking admins, writing natural posts, tracking links, and managing restrictions.',
   alternates: {
     canonical: 'https://www.watask.com/guides/advertise-in-whatsapp-groups',
   },
