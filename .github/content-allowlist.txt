@@ -1,2 +1,3 @@
 # WATASK-GUARD-1 — exact phrases (case-sensitive) the banned-words scan ignores. One per line.
+Official Business Account (OBA)
 safer-multi-group-whatsapp-campaigns
