@@ -261,7 +261,7 @@ export default function DoesAPISupportGroupsPage() {
                       <li>• Groups must be <strong>created through the API</strong> (invite-only)</li>
                       <li>• Cannot access or post into <strong>existing consumer groups</strong></li>
                       <li>• Up to 10,000 such groups per business number</li>
-                      <li>• Requires Official Business Account (OBA)</li>
+                      <li>• Requires verified business account (OBA)</li>
                     </ul>
                   </div>
 

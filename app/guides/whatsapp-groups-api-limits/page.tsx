@@ -53,10 +53,10 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      'name': 'Do I need an Official Business Account (OBA) to use the Groups API?',
+      'name': 'Do I need a verified business account (OBA) to use the Groups API?',
       'acceptedAnswer': {
         '@type': 'Answer',
-        'text': 'Yes. The WhatsApp Groups API requires an Official Business Account (OBA). Standard Business Accounts cannot use the Groups API features.'
+        'text': 'Yes. The WhatsApp Groups API requires a verified business account (OBA). Standard Business Accounts cannot use the Groups API features.'
       }
     },
     {
@@ -242,10 +242,10 @@ export default function GroupsAPILimitsPage() {
                   <span className="flex-shrink-0 w-8 h-8 bg-green-700 text-white rounded-lg flex items-center justify-center font-bold">
                     4
                   </span>
-                  Requires Official Business Account (OBA)
+                  Requires Verified Business Account (OBA)
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  To use the WhatsApp Groups API, you need an <strong className="text-gray-900">Official Business Account (OBA)</strong> with Meta. Standard Business Accounts cannot access Groups API features. OBA requirements include verification, meeting Meta's commerce and messaging policies, and meeting eligibility criteria.
+                  To use the WhatsApp Groups API, you need a <strong className="text-gray-900">verified business account (OBA)</strong> with Meta. Standard Business Accounts cannot access Groups API features. OBA requirements include verification, meeting Meta's commerce and messaging policies, and meeting eligibility criteria.
                 </p>
               </div>
             </div>
@@ -326,7 +326,7 @@ export default function GroupsAPILimitsPage() {
                 Example Scenario That Won't Work with Groups API
               </h3>
               <p className="text-gray-700 mb-3 leading-relaxed">
-                You're a digital marketing agency managing 40 client WhatsApp groups. Each group has 80-200 members who engage with your client's content. You want to send one campaign announcement into all 40 groups at once, with pacing to avoid looking spammy.
+                You're a digital marketing agency managing 40 client WhatsApp groups. Each group has 80-200 members who engage with your client's content. You want to send one campaign announcement into all 40 groups at once, with pacing to avoid sending too aggressively.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 <strong className="text-gray-900">Problem:</strong> The Groups API can't access those existing groups (they weren't API-created), and even if you could recreate them via API, each would be limited to 8 members — fundamentally changing the nature of the community.
@@ -449,10 +449,10 @@ export default function GroupsAPILimitsPage() {
 
               <div className="border border-gray-200 p-6 rounded-lg bg-gray-50">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                  Do I need an Official Business Account (OBA) to use the Groups API?
+                  Do I need a verified business account (OBA) to use the Groups API?
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Yes. The WhatsApp Groups API requires an Official Business Account (OBA). Standard Business Accounts cannot use the Groups API features.
+                  Yes. The WhatsApp Groups API requires a verified business account (OBA). Standard Business Accounts cannot use the Groups API features.
                 </p>
               </div>
 
