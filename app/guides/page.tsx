@@ -143,6 +143,14 @@ const guides = [
     youllLearn: 'Phone-first practical options for posting the same message to many groups at once.',
   },
   {
+    title: 'How to Advertise in WhatsApp Groups',
+    href: '/guides/advertise-in-whatsapp-groups',
+    category: 'How-To',
+    status: 'Published',
+    intent: 'How to advertise products and services in WhatsApp groups — finding groups, asking admins, writing posts that feel natural, and managing restrictions.',
+    youllLearn: 'Finding relevant groups organically, getting permission from admins, writing conversational promotional posts, pacing sends, tracking with UTM links, and using multiple numbers.',
+  },
+  {
     title: 'Does WhatsApp Business API Support Groups?',
     href: '/guides/does-whatsapp-business-api-support-groups',
     category: 'FAQ',
