@@ -135,14 +135,16 @@ export default function AutomateWhatsAppGroupMessagesPage() {
 
       {/* Hero Section with Real Photos */}
       <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-16 md:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        {/* Background overlay with real photo */}
-        <div className="absolute inset-0 opacity-20">
-          <img 
-            src="https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=1600&q=80" 
-            alt=""
-            className="w-full h-full object-cover"
-          />
-        </div>
+        {/* Background texture pattern */}
+        <div className="absolute inset-0" style={{
+          backgroundImage: `
+            radial-gradient(circle at 30% 20%, rgba(16, 185, 129, 0.15) 0%, rgba(16, 185, 129, 0.08) 35%, rgba(16, 185, 129, 0.02) 55%, transparent 75%),
+            radial-gradient(circle at 70% 80%, rgba(20, 184, 166, 0.12) 0%, rgba(20, 184, 166, 0.06) 35%, rgba(20, 184, 166, 0.015) 55%, transparent 75%),
+            radial-gradient(circle, rgba(255, 255, 255, 0.07) 1px, transparent 1px)
+          `,
+          backgroundSize: '1200px 1200px, 1300px 1300px, 24px 24px',
+          backgroundPosition: 'top left, bottom right, 0 0'
+        }}></div>
         <div className="absolute inset-0 bg-gradient-to-br from-green-900/40 via-emerald-900/30 to-teal-900/40"></div>
         
         <div className="relative max-w-7xl mx-auto">
@@ -180,8 +182,8 @@ export default function AutomateWhatsAppGroupMessagesPage() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-green-500 transform lg:rotate-2 hover:rotate-0 transition-transform duration-300">
                 <img 
-                  src="https://images.unsplash.com/photo-1556155092-8707de31f9c4?w=800&q=80"
-                  alt="Person using phone to manage WhatsApp automation"
+                  src="https://images.unsplash.com/photo-1653762379954-8943c787e78b?w=800&q=80"
+                  alt="Woman at a cafe table smiling while checking group messages on her phone"
                   className="w-full h-auto"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-green-900/60 via-transparent to-transparent"></div>
