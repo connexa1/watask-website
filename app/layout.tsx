@@ -47,6 +47,11 @@ const organizationSchema = {
     url: 'https://wa.me/306981337327',
     contactType: 'customer support',
   },
+  parentOrganization: {
+    '@type': 'Organization',
+    name: 'Connexa',
+    url: 'https://myconnexa.com',
+  },
 };
 
 const websiteSchema = {
