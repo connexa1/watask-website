@@ -22,7 +22,7 @@ The platform connects to your WhatsApp or WhatsApp Business numbers and posts in
 - Send bulk messages to multiple WhatsApp groups: https://www.watask.com/guides/send-bulk-messages-to-multiple-whatsapp-groups
 - WhatsApp groups API limits: https://www.watask.com/guides/whatsapp-groups-api-limits
 - WhatsApp broadcast vs group vs communities: https://www.watask.com/guides/whatsapp-broadcast-vs-group-vs-communities
-- Safer multi-group WhatsApp campaigns: https://www.watask.com/guides/safer-multi-group-whatsapp-campaigns
+- Multi-group WhatsApp campaign best practices: https://www.watask.com/guides/safer-multi-group-whatsapp-campaigns
 - Schedule WhatsApp group messages: https://www.watask.com/guides/schedule-whatsapp-group-messages
 - Automate WhatsApp group messages: https://www.watask.com/guides/automate-whatsapp-group-messages
 - WhatsApp forward limit (more than 5 groups): https://www.watask.com/guides/whatsapp-forward-limit-more-than-5-groups
@@ -57,11 +57,7 @@ The platform connects to your WhatsApp or WhatsApp Business numbers and posts in
 
 ## Resources
 
-- Glossary: https://www.watask.com/glossary
-
-## About
-
-WaTask is a product by Connexa (https://myconnexa.com)`;
+- Glossary: https://www.watask.com/glossary`;
 
   return new NextResponse(llmsTxt, {
     headers: {
